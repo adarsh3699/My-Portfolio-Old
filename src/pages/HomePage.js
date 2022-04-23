@@ -2,9 +2,6 @@ import React from 'react';
 import Bar from "../components/Bar";
 import FootBar from "../components/FootBar";
 import '../css/home.css';
-import topWave from "../img/wave-top.png";
-import midWave from "../img/wave-mid.png";
-import botWave from "../img/wave-bot.png";
 
 function HomePage() {
     return (

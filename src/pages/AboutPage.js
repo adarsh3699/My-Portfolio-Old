@@ -7,7 +7,6 @@ import logoFireIng from "../img/logoFire.jpg"
 import notesImg1 from "../img/projects/user-home.jpg"
 import notesImg2 from "../img/projects/notes-todos.jpg"
 
-
 function AboutPage() {
     return (
         <>
