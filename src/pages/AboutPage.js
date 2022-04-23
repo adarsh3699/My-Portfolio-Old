@@ -61,9 +61,9 @@ function AboutPage() {
                         <img src={notesImg1} alt="image not load" height="300px" />
 
                         <div>
-                            <div>This is Multi-User Notes app.</div>
-                            <div>Which allows multiple login and New user can also create their New account to login.</div>
-                            <div>Each user can store their notes and To-Do separately to others and securely</div>
+                            <div>This is a Multi-User Notes app.</div>
+                            <div>Which allows multiple logins and new users can also create their own new account to login.</div>
+                            <div>Each user can keep their notes and to-dos separate and secure from others.</div>
                         </div>
                     </div>
 
@@ -71,9 +71,9 @@ function AboutPage() {
                         <img src={notesImg2} alt="image not load" height="300px" id="logoMoblie" />
 
                         <div>
-                            <div>This Notes app facilitate Both Notes type and To-dos type with all your basic features.</div>
-                            <div>Notes type provide you a unlimited space for your notes with self extended input box.</div>
-                            <div>To-dos Type Come with is Done CheckBox which help you to remember you works.</div>
+                            <div>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
+                            <div>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
+                            <div>Type To-dos Come with Done CheckBox, which helps you remember your works.</div>
                         </div>
 
                         <img src={notesImg2} alt="image not load" height="300px" id="logoPc" />
