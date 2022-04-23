@@ -1,8 +1,15 @@
 import React from 'react';
+import Bar from "../components/Bar";
 
 function HomePage() {
     return (
-        <div>home</div>
+        <>
+            <Bar/>
+            <div id='background'>
+                home
+            </div>
+            <div id="bottomBar"></div>
+        </>
     )
 }
 

@@ -6,7 +6,7 @@ function AboutPage() {
         <>
             <Bar/>
             <div id='background'>
-                about
+                ContactPage
             </div>
             <div id="bottomBar"></div>
         </>

@@ -1,53 +1,70 @@
-import React from 'react';
-import Select from 'react-select';
+import React, { useReducer, useState } from 'react';
 import Bhemu from "./Bhemu";
 
-// import {MNgoTextEditor} from 'mngo-text-editor';
-
+// class Learning extends React.Component {}
 function Learning() {
+    const [text, setText] = useState("");
+    const [toDos, setToDos] = useState([{text: "one", isDone: false}]); //{element: "one", isDone: true}
+
+    // const [myName, setMyName] = useState("Adarsh");
+    // let myName = "Adarsh";
+    // functon setMyName(value) {
+    //     myName = value;
+    // }
+    
+    function handleTextChange(e) {
+        const value = e.target.value;
+        setText(value);
+    }
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        
+        //when enter is pressed new to do is created
+        setToDos([ ...toDos, {text, isDone: false} ]);
+        setText("");
+    }
+
+    function handleCheckboxClick(index, isDone) {
+        const newToDos = toDos.map(function(toDo, i) {
+            return (i === index ? { ...toDo, isDone: !isDone } : toDo)
+        })
+
+        setToDos(newToDos);
+    }
+    
     return (
         <>
             <div id="asd">hello bhemus</div>
-            <div id="selectCont">
-                <Select
-                    option={[
-                        { value: '1', label: 'Aditya Suman' },
-                        { value: '2', label: 'Adarsh' },
-                        { value: '3', label: 'Aditi' }
-                    ]}
-                />
-            </div>
+            <br />
+
+            <form onSubmit={handleSubmit}>
+                <input type="text" onChange={handleTextChange} value={text}/>
+            </form>
+            
+
+            {
+                toDos.map(function(toDo, index) {
+                    return (
+                        <div key={index}>
+                            <input type="checkbox" checked={toDo.isDone} onChange={() => handleCheckboxClick(index, toDo.isDone)} />
+                            <span>{toDo.text}</span>
+                        </div>
+                    )
+                })
+            }
+            <br />
+            {/* <div onClick={ () => handleAddBtnClick()}>
+                addBtn
+            </div> */}
+
+            {/* <div>myName (state): {myName}</div>
+            <div>myName2 (normal variable): {myName2}</div>
+            <button onClick={handleBtnClick}>click me</button>
 
             <Bhemu
-                name={"Adarsh"}
+                name={myName}
                 type={"biy"}
-            />
-
-
-            {/* <MNgoTextEditor
-                title={"adarsh suman"}
-                typeWriterText1={"Hello <b>Bhemu</b>"}
-                typeWriterText2={"<a>This a biro</a>"}
-                files={ [
-                    {
-                        "type": "folder", "srcKey": "adityasuman", "defaultOpen": true,
-                        "files": [
-                            { "type": "file", "srcKey": "about_me.html" },
-                            { "type": "file", "srcKey": "contact_me.html" },
-                            {
-                                "type": "folder", "srcKey": "work_experience",
-                                "files": [ ]
-                            }
-                        ]
-                    },
-                    { "type": "file", "srcKey": "follow_me.html" },
-                ]}
-                filesContent={{
-                    "about_me.html": {
-                        title: "<Adarsh Suman>",
-                        content: "kauaa is a bird"
-                    }
-                }}
             /> */}
         </>
     )
