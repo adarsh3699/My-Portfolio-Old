@@ -23,7 +23,7 @@ function HomePage() {
                 <div id="welcome">
                     <div>
                         <div>Hello <span>World</span></div>
-                        <div className="bhemu anim-typewriter">Thank you for visting my site</div>
+                        <div className="bhemu bhemu-typewriter">Thank you for visting my site</div>
                     </div>
                 </div>
             </div>
