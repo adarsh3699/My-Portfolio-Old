@@ -77,10 +77,6 @@ a {
   height: 26px;
 }
 
-#mobileMenu {
-  display: none;
-}
-
 #social {
  display: flex;
  align-items: center;
@@ -109,18 +105,8 @@ a {
       justify-content: center;
       padding: 10px 20px 10px 10px;
       /* background-color: rebeccapurple; */
-  
-
   }
   
-  #mobileMenu {
-      display: none;
-      border-top: 1px solid #f1f1f1;
-  }
-  
-  .show {
-      display: block !important;
-  }
   #mobileMenu a {
       display: block;
       color: white;
