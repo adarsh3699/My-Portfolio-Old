@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 import logoImg from '../img/logo.png';
 import instaLogo from '../img/insta.png';
@@ -6,7 +6,25 @@ import youtubeLogo from '../img/youtube.png';
 import mobileMenuIcon from '../img/menu.png';
 
 function Bar() {
+    const mobileIconRef = useRef();
+
     const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
+
+    //component did mount
+    useEffect(function() {
+        document.addEventListener('click', handleClickOutside, true);
+      
+        //component did un-mount
+        return function() {
+            document.removeEventListener('click', handleClickOutside, true);
+        }
+    }, []);
+    
+    function handleClickOutside(e) {    
+        if (mobileIconRef.current && !mobileIconRef.current.contains(e.target)) {
+            setIsMobileMenuVisible(false);
+        }
+    }
 
     function handleMobileMenuClick() {
         setIsMobileMenuVisible(!isMobileMenuVisible);
@@ -37,7 +55,7 @@ function Bar() {
                     </a>
                 </div>
 
-                <div id="mobileIcon" onClick={handleMobileMenuClick}>
+                <div id="mobileIcon" onClick={handleMobileMenuClick} ref={mobileIconRef}>
                     <img src={mobileMenuIcon} />
                 </div>
             </div>
