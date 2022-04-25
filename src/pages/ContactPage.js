@@ -29,10 +29,13 @@ function AboutPage() {
         setError({});
         let tempError = {};
         if ((emailValue).trim() == "") {
-            tempError.email =  "write email";
+            tempError.email =  "Please write email";
         }
         if ((msgValue).trim() == "") {
-            tempError.msg =  "write msg";
+            tempError.msg =  "Please write msg";
+        }
+        if ((emailValue).trim() && (msgValue).trim()) {
+            tempError.msg =  "Sent";
         }
 
         setError(tempError);
@@ -103,7 +106,7 @@ function AboutPage() {
                     </div>
 
                     <div>
-                        <a href="http://mngo.in/bhemu/">
+                        <a href="https://www.bhemu.me/" target="blank">
                             <img src={websiteIconImg} /><div>Website</div>
                         </a>
                     </div>
