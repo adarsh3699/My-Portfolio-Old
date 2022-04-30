@@ -1,16 +1,10 @@
 import React, { useState } from 'react';
-import Bhemu from "./Bhemu";
 
 // class Learning extends React.Component {}
 function Learning() {
     const [text, setText] = useState("");
     const [toDos, setToDos] = useState([{text: "one", isDone: false}]); //{element: "one", isDone: true}
 
-    // const [myName, setMyName] = useState("Adarsh");
-    // let myName = "Adarsh";
-    // functon setMyName(value) {
-    //     myName = value;
-    // }
     
     function handleTextChange(e) {
         const value = e.target.value;
@@ -35,9 +29,6 @@ function Learning() {
     
     return (
         <>
-            <div id="asd">hello bhemus</div>
-            <br />
-
             <form onSubmit={handleSubmit}>
                 <input type="text" onChange={handleTextChange} value={text}/>
             </form>
@@ -53,19 +44,6 @@ function Learning() {
                     )
                 })
             }
-            <br />
-            {/* <div onClick={ () => handleAddBtnClick()}>
-                addBtn
-            </div> */}
-
-            {/* <div>myName (state): {myName}</div>
-            <div>myName2 (normal variable): {myName2}</div>
-            <button onClick={handleBtnClick}>click me</button>
-
-            <Bhemu
-                name={myName}
-                type={"biy"}
-            /> */}
         </>
     )
 }
