@@ -94,9 +94,29 @@ color: #f1f1f1;
     border-radius: 5px;
 }
 
-.img_text div {
+.pointSection {
+    margin: 0px 0 0 10px;
+}
+
+.aboutPoints {
     margin: 10px;
     padding-right: 10px;
+}
+
+#subTitle {
+    font-size: 25px;
+    border-radius: 2px;
+    background-color: #696262;
+    text-align: center;
+    padding-top: 2px;
+    margin-bottom: 13px;
+}
+
+#technologiesLogo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
 }
 
 #nextDiv {

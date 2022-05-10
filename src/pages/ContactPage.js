@@ -91,7 +91,7 @@ function AboutPage() {
                     </div>
 
                     <div>
-                        <a href="https://www.youtube.com/channel/UCkdSVbjY4sS1I7hw9ZJMdew" target="_blank">
+                        <a href="https://www.youtube.com/channel/UCkdSVbjY4sS1I7hw9ZJMdew" target="_blank"  >
                             <img src={youtubeIconImg} /><div>YouTube</div>
                         </a>
                     </div>
