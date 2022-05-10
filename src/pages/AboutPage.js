@@ -90,19 +90,19 @@ function AboutPage() {
                                 
                                 <div id='technologiesLogo'>
                                     <div>
-                                        <img src={react} height="60px"></img>
+                                        <img src={react} id="reactLogo"></img>
                                         <div>React</div>
                                     </div>
                                     <div>
-                                        <img src={nodeJs} height="50px" style={{backgroundColor: "white", padding: "5px"}}></img>
+                                        <img src={nodeJs} id="nodeJsLogo" ></img>
                                         <div>NodeJS</div>
                                     </div>
                                     <div>
-                                        <img src={javaScript} height="60px"></img>
+                                        <img src={javaScript} id='javaScriptLogo'></img>
                                         <div>JavaScript</div>
                                     </div>
                                     <div>
-                                        <img src={mongoDB} height="50px" style={{backgroundColor: "white", padding: "5px"}}></img>
+                                        <img src={mongoDB} id="mongoDbLogo"></img>
                                         <div>MongoDB</div>
                                     </div>
                                 </div>

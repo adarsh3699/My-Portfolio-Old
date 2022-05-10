@@ -109,7 +109,8 @@ color: #f1f1f1;
     background-color: #696262;
     text-align: center;
     padding-top: 2px;
-    margin-bottom: 13px;
+    margin-top: 7%;
+    margin-bottom: 20px;
 }
 
 #technologiesLogo {
@@ -119,15 +120,48 @@ color: #f1f1f1;
     text-align: center;
 }
 
+#reactLogo, #javaScriptLogo {
+    height: 60px;
+} 
+
+#nodeJsLogo, #mongoDbLogo {
+    background-color: white;
+    height: 50px;
+    padding: 5px;
+}
+
 #nextDiv {
     margin-top: 20px;
 }
 
 /* ...............................mWeb............................. */
 /*tablet*/
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1204px) {
+    .aboutBox {
+        width: 85%;
+    }
+
+}
+
+@media screen and (max-width: 1139px) {
+
     .aboutBox {
         width: 90%;
+    }
+
+
+    #subTitle {
+        margin: 10px 0 15px 0;
+    }
+
+    #reactLogo, #javaScriptLogo {
+        height: 50px;
+    } 
+    
+    #nodeJsLogo, #mongoDbLogo {
+        background-color: white;
+        height: 40px;
+        padding: 5px;
     }
 }
 
@@ -186,5 +220,24 @@ color: #f1f1f1;
 
     #logoPc {
         display: none;
+    }
+
+    #technologiesLogo {
+        font-size: 15px;
+    }
+
+    #subTitle {
+        margin: 15px 0 20px 0;
+        padding: 2px;
+    }
+
+    #reactLogo, #javaScriptLogo {
+        height: 38px;
+    } 
+    
+    #nodeJsLogo, #mongoDbLogo {
+        background-color: white;
+        height: 30px;
+        padding: 4px;
     }
 }

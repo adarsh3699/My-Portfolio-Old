@@ -28,10 +28,10 @@ function AboutPage() {
     
         setError({});
         let tempError = {};
-        if ((emailValue).trim() == "") {
+        if ((emailValue).trim() === "") {
             tempError.email =  "Please write email";
         }
-        if ((msgValue).trim() == "") {
+        if ((msgValue).trim() === "") {
             tempError.msg =  "Please write msg";
         }
         if ((emailValue).trim() && (msgValue).trim()) {
