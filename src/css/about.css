@@ -100,7 +100,16 @@ color: #f1f1f1;
 
 .aboutPoints {
     margin: 10px;
-    padding-right: 10px;
+}
+
+#link {
+    margin: 5%;
+    text-align: center;
+    font-size: 25px;
+}
+
+#link a:hover {
+    color: #9fd1db;
 }
 
 #subTitle {
@@ -108,7 +117,7 @@ color: #f1f1f1;
     border-radius: 2px;
     background-color: #696262;
     text-align: center;
-    padding-top: 2px;
+    padding-top: 3px;
     margin-top: 7%;
     margin-bottom: 20px;
 }
@@ -149,19 +158,24 @@ color: #f1f1f1;
         width: 90%;
     }
 
-
-    #subTitle {
-        margin: 12px 0 15px 0;
-    }
-
     #reactLogo, #javaScriptLogo {
         height: 50px;
     } 
     
     #nodeJsLogo, #mongoDbLogo {
-        background-color: white;
         height: 40px;
-        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 1066px) {
+    #subTitle {
+        margin: 5% 0 15px 0;
+    }
+}
+
+@media screen and (max-width: 1015px) {
+    #subTitle {
+        margin: 10px 0 15px 0;
     }
 }
 

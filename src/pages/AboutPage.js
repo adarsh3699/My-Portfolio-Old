@@ -71,7 +71,10 @@ function AboutPage() {
                             <div className='aboutPoints'>Which allows multiple logins and new users can also create their own new account to login.</div>
                             <div className='aboutPoints'>Each user can keep their notes and to-dos separate and secure from others.</div>
                             <div className='aboutPoints'>Where user data and their notes store in encrypted form in Database.</div>
-                            <div className='aboutPoints'><a href='https://notes.bhemu.me/' target="_blank">Link :- https://notes.bhemu.me/</a></div>
+                            <div id='link'>
+                                Link :-
+                                <a href='https://notes.bhemu.me/' target="_blank"> https://notes.bhemu.me/</a>
+                            </div>
                        
                             
                         </div>
