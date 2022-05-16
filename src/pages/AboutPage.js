@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Bar from "../components/Bar";
 import FootBar from "../components/FootBar";
 import "../css/about.css"
@@ -12,6 +12,10 @@ import javaScript from "../img/projects/javascript.svg"
 import mongoDB from "../img/projects/mongodb.svg"
 
 function AboutPage() {
+    useEffect(() => {
+        document.title = "Adarsh Suman | About"
+     }, []);
+
     return (
         <>
             <Bar />

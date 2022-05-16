@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Bar from "../components/Bar";
 import FootBar from "../components/FootBar";
 import "../css/contact.css"
@@ -12,6 +12,10 @@ function AboutPage() {
     const [emailValue, setEmailValue] = useState("");
     const [msgValue, setMsgValue] = useState("");
     const [error, setError] = useState({});
+
+    useEffect(() => {
+        document.title = "Adarsh Suman | Contact"
+     }, []);
 
     function handelEmailChange(e) {
         const value = e.target.value;
