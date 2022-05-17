@@ -43,18 +43,18 @@ function AboutPage() {
                 <div id="title">Contact Us</div>
                 <form id="msgUs" method="post" action="https://send.pageclip.co/YYFiRgfPYOw99mcNfB9R8RHgiwcappSO">
                     <div>
-                        <input type="text" className='invalid' placeholder="Enter Your Name" required name="name" id="email" value={nameValue} onChange={handelEmailChange}  />
+                        <input type="text" placeholder="Enter Your Name" required name="name" id="email" value={nameValue} onChange={handelEmailChange}  />
                     </div>
 
                     <div>
-                        <input type="email" className='invalid' placeholder=" Enter Your Email" required name="email" id="email" value={emailValue} onChange={handelEmailChange} />
+                        <input type="email" placeholder=" Enter Your Email" required name="email" id="email" value={emailValue} onChange={handelEmailChange} />
                     </div>
 
                     <div>
                         <textarea id="textArea" required name="body" cols="40" rows="13" placeholder="Write your msg here" value={msgValue} onChange={handelMsgChange}></textarea>
                     </div>
                     <div>
-                        <button id="send" className="pageclip-form__submit"><span>Send</span></button>
+                        <button id="send"><span>Send</span></button>
                     </div>
 
                 </form>
