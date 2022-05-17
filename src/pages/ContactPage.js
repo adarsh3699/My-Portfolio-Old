@@ -10,19 +10,12 @@ import youtubeIconImg from "../img/youtube2.png"
 import websiteIconImg from "../img/website.png"
 
 function AboutPage() {
-    const [nameValue, setNameValue] = useState("");
     const [emailValue, setEmailValue] = useState("");
     const [msgValue, setMsgValue] = useState("");
 
     useEffect(() => {
         document.title = "Adarsh Suman | Contact"
     }, []);
-
-    function handelNameChange(e) {
-        const value = e.target.value;
-        setNameValue(value)
-    }
-
 
     function handelEmailChange(e) {
         const value = e.target.value;
@@ -42,9 +35,6 @@ function AboutPage() {
 
                 <div id="title">Contact Us</div>
                 <form id="msgUs" method="post" action="https://send.pageclip.co/YYFiRgfPYOw99mcNfB9R8RHgiwcappSO">
-                    <div>
-                        <input type="text" placeholder="Enter Your Name" required name="name" id="email" value={nameValue} onChange={handelEmailChange}  />
-                    </div>
 
                     <div>
                         <input type="email" placeholder=" Enter Your Email" required name="email" id="email" value={emailValue} onChange={handelEmailChange} />
