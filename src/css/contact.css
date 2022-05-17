@@ -37,10 +37,6 @@ body {
     width: 220px;
 }
 
-#confirmEmail, #confirmMsg {
-    color: rgb(255, 129, 129);
-}
-
 #send {
     background-color: #e09f63;
     margin-bottom: 10px;
