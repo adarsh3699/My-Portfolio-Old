@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Bar from "../components/Bar";
 import FootBar from "../components/FootBar";
-import ValidForm from '@pageclip/valid-form'
 
 import "../css/contact.css"
+import "https://s.pageclip.co/v1/pageclip.css"
 
 import emailIconImg from "../img/email.png"
 import telegramIconImg from "../img/telegram.svg"
@@ -15,9 +15,6 @@ function AboutPage() {
     const [emailValue, setEmailValue] = useState("");
     const [msgValue, setMsgValue] = useState("");
     const [error, setError] = useState({});
-
-    const formElement = document.querySelector('form')
-    // ValidForm(formElement) 
 
     useEffect(() => {
         document.title = "Adarsh Suman | Contact"
@@ -33,25 +30,6 @@ function AboutPage() {
         setMsgValue(value)
     }
 
-    function handleFormSubmit(e) {
-        e.preventDefault();
-    
-        setError({});
-        let tempError = {};
-        if ((emailValue).trim() === "") {
-            tempError.email =  "Please write email";
-        }
-        if ((msgValue).trim() === "") {
-            tempError.msg =  "Please write msg";
-        }
-        if ((emailValue).trim() && (msgValue).trim()) {
-            tempError.msg =  "Sent";
-            ValidForm(formElement) 
-        }
-
-        setError(tempError);
-    }
-
     return (
         <>
             <Bar />
@@ -59,17 +37,18 @@ function AboutPage() {
             <div id="background">
 
                 <div id="title">Contact Us</div>
-                <form id="msgUs"  method="post" action="https://send.pageclip.co/YYFiRgfPYOw99mcNfB9R8RHgiwcappSO">
+                <form id="msgUs" className="pageclip-form" method="post" action="https://send.pageclip.co/YYFiRgfPYOw99mcNfB9R8RHgiwcappSO">
                     <div>
-                        <input type="email" required placeholder="Email" name="email" id="email" value={emailValue} onChange={handelEmailChange}/>
-                        <div id="confirmEmail">{error.email}</div>
+                        <input type="email" placeholder="Email" required name="email" id="email" value={emailValue} onChange={handelEmailChange}/>
                     </div>
 
                     <div>
                         <textarea id="textArea" required name="body" cols="40" rows="13" placeholder="Write your msg" value={msgValue} onChange={handelMsgChange}></textarea>
-                        <div id="confirmMsg">{error.msg}</div>
                     </div>
-                    <div><button id="send"><span>Send</span></button></div>
+                    <div>
+                        <button id="send" className="pageclip-form__submit"><span>Send</span></button>
+                    </div>
+
                 </form>
 
                 <div id="contact">
