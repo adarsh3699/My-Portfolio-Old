@@ -99,8 +99,8 @@
     font-weight: 900;
     text-shadow: 2px 2px 4px #000000;
     color: #f1f1f1;
-    /* background-color: blue; */
     z-index: 5;
+    letter-spacing: 1px;
 }
 
 #welcome span {
@@ -129,7 +129,7 @@
 /*tablet*/
 @media screen and (max-width: 1150px) {
     #welcome {
-        top: 18%;
+        top: 25%;
     }
 }
 
@@ -137,7 +137,6 @@
     #welcome {
         font-size: 40px;
         margin: auto;
-        /* text-align: start; */
         width: fit-content;
     }
 

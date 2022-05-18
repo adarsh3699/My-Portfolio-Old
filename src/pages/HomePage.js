@@ -7,6 +7,7 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 import '../css/home.css';
 
 AOS.init();
+
 function HomePage() {
 
     return (
