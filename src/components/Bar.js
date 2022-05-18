@@ -48,10 +48,10 @@ function Bar() {
 
                 <div id="social">
                     <a href="https://www.instagram.com/_adarsh.s/" target="_blank">
-                        <img src={instaLogo} height="22px" />
+                        <img src={instaLogo} height="22.01px" />
                     </a>
                     <a href="https://www.youtube.com/channel/UCkdSVbjY4sS1I7hw9ZJMdew" target="_blank">
-                        <img src={youtubeLogo} height="20px" />                    
+                        <img src={youtubeLogo} height="22px" />                    
                     </a>
                 </div>
 
@@ -63,7 +63,7 @@ function Bar() {
             {
                 isMobileMenuVisible ?
                     <div id="mobileMenu">
-                        <a href="/">Home</a>
+                        <a href="/" style={{borderTop: "1px #f1f1f1 solid"}}>Home</a>
                         <a href="/about">About</a>
                         <a href="/contact">Contact</a>
                     </div>

@@ -2,7 +2,7 @@ import React from "react";
 import logoImg from "../img/logo.png";
 import googleImg from "../img/google.png";
 import instaImg from "../img/insta.png";
-import youtubeImg from "../img/youtube.png";
+import youtubeImg from "../img/youtube.svg";
 
 function FootBar() {
     return (
@@ -27,18 +27,17 @@ function FootBar() {
             <div id="footSocial">
                 <a href="mailto:adarsh3699@gmail.com" target="_blank">
                     <img src={googleImg} height="22px" />
-                    adarsh3699<div>
-                    </div>
+                    <div> adarsh3699</div>
                 </a>
 
                 <a href="https://www.instagram.com/_adarsh.s/" target="_blank">
                     <img src={instaImg} height="19px" />
-                    <div>Instagram</div>
+                    <div> Instagram</div>
                 </a>
 
                 <a href="https://www.youtube.com/channel/UCkdSVbjY4sS1I7hw9ZJMdew" target="_blank">
                     <img src={youtubeImg} height="18px" />
-                    <div>&nbsp; YouTube</div>
+                    <div> YouTube</div>
                 </a>
             </div>
         </div>
