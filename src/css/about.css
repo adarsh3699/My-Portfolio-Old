@@ -60,7 +60,7 @@ color: #f1f1f1;
 
 /*----------------Animation_End--------------- */
 .aboutBox {
-    margin: 20px auto;
+    margin: 40px auto;
     background-color: rgb(61, 57, 57);
     border-radius: 5px;
     width: 80%;
@@ -70,7 +70,7 @@ color: #f1f1f1;
 .title {
     /* width: 280px; */
     padding: 7px 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     background-color: rgba(24, 23, 23, 0.781);
     border-radius: 5px;
     font-size: 22px ;
@@ -109,7 +109,12 @@ color: #f1f1f1;
 }
 
 #link a:hover {
+    transition-duration: 0.2s;
     color: #9fd1db;
+}
+
+#nextDiv {
+    margin-top: 20px;
 }
 
 #subTitle {
@@ -139,8 +144,9 @@ color: #f1f1f1;
     padding: 5px;
 }
 
-#nextDiv {
-    margin-top: 20px;
+#technologiesLogo img:hover, #technologiesLogo div div:hover{
+    transform: scale(1.10);
+    transition-duration: 0.2s;
 }
 
 /* ...............................mWeb............................. */
@@ -185,7 +191,15 @@ color: #f1f1f1;
         width: 85%;
         height: 40px;
     }
+    .aboutBox {
+        margin: 20px auto;
+    }
+    
+    .pointSection {
+        margin: 30px 0 50px 10px;
+    }
 
+/*----------------mWeb_Animation--------------- */
     .line-1{
         font-size: 26px ;
         width: 350px;
@@ -241,8 +255,8 @@ color: #f1f1f1;
     }
 
     #subTitle {
-        margin: 15px 0 20px 0;
-        padding: 2px;
+        margin: 30px 0 20px 0;
+        padding: 3px;
     }
 
     #reactLogo, #javaScriptLogo {
@@ -250,7 +264,6 @@ color: #f1f1f1;
     } 
     
     #nodeJsLogo, #mongoDbLogo {
-        background-color: white;
         height: 30px;
         padding: 4px;
     }

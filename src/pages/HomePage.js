@@ -1,9 +1,14 @@
 import React from 'react';
 import Bar from "../components/Bar";
 import FootBar from "../components/FootBar";
+import AOS from 'aos';
+
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 import '../css/home.css';
 
+AOS.init();
 function HomePage() {
+
     return (
         <>
             <Bar />
@@ -22,7 +27,9 @@ function HomePage() {
 
                 <div id="welcome">
                     <div>
-                        <div>Hello <span>World</span></div>
+                        <div data-aos="zoom-out" data-aos-duration="600" data-aos-delay="100">
+                            <div>Hello <span>World</span></div>
+                        </div>
                         <div className="bhemu bhemu-typewriter">Thank you for visting my site</div>
                     </div>
                 </div>
