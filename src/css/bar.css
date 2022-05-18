@@ -112,10 +112,10 @@ a {
   #mobileMenu a {
       display: block;
       color: white;
-      font-size: 19px;
+      font-size: 17px;
       text-decoration: none;
       border-bottom: 1px #f1f1f1 solid;
-      padding: 8px;
+      padding: 9px;
       text-align: center;
       letter-spacing: 3px;
   }
