@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 
+import "../css/bar.css";
+
 import logoImg from '../img/logo.png';
 import instaLogo from '../img/insta.png';
 import youtubeLogo from '../img/youtube.png';
