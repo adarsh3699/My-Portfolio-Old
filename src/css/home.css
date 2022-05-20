@@ -101,27 +101,32 @@
     color: #f1f1f1;
     z-index: 5;
     letter-spacing: 1px;
+    /* background-color: black; */
+    width: fit-content;
 }
 
 #welcome span {
     color: rgba(255,0,0, .8);
+    /* background-color: blue; */
 }
 
 .bhemu {
     font-size: 23px;
     font-weight: 500;
     white-space: nowrap;
-    overflow: hidden;	
-    max-width: fit-content;
+    overflow: hidden;
+    max-width: 340px;
+    /* background-color: red; */
 }
 
 .bhemu-typewriter {
-    animation: typewriter 4s steps(30) normal, blinkTextCursor .7s ease-in-out infinite
+    animation: typewriter 3s steps(30) normal,
+    blinkTextCursor .7s ease-in-out infinite
 }
 
 @keyframes typewriter {
-    from { width: 0 }
-    to { width: fit-content }
+    from { width: 0px }
+    to { width: 340px }
 }
 
 /* ...............................mWeb............................. */
@@ -136,11 +141,18 @@
 @media screen and (max-width: 700px) {
     #welcome {
         font-size: 40px;
-        margin: auto;
-        width: fit-content;
+        letter-spacing: 2px;
     }
 
     .bhemu {
         font-size: 15px;
+        max-width: 223px;
+        letter-spacing: 1px;
     }
+
+    @keyframes typewriter {
+        from { width: 0px }
+        to { width: 223px }
+    }
+
 }

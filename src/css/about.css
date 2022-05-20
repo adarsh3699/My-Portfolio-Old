@@ -10,8 +10,8 @@ color: #f1f1f1;
     align-items: center;
     background-color: rgba(32, 30, 30,0.3);
     border-radius: 5px;
-    margin: 0px auto;
-    margin-bottom: 20px;
+    margin: 20px auto;
+    margin-top: 80px;
     padding: 20px;
     width: 90%;
     height: 50px;
@@ -206,8 +206,7 @@ color: #f1f1f1;
         letter-spacing: 1.5px;
     }
 
-    .anim-typewriter2
-    {
+    .anim-typewriter2 {
         width : 285px;
     }
 
@@ -215,24 +214,6 @@ color: #f1f1f1;
     {
         from{width: 0;}
         to{width: 350px ; }
-    }
-
-    @keyframes typewriter_remove
-    {
-        from{width: 350px ;}
-        to{width: 0px;}
-    }
-
-    @keyframes typewriter2
-    {
-        from{width: 0;}
-        to{width: 285px;}
-    }
-
-    @keyframes typewriter_remove2
-    {
-        from{width: 285px;}
-        to{width: 0px;}
     }
 
     /*----------------mWeb_Animation_End--------------- */

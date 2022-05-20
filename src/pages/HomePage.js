@@ -27,12 +27,8 @@ function HomePage() {
                 </div>
 
                 <div id="welcome">
-                    <div>
-                        <div data-aos="zoom-out" data-aos-duration="700" data-aos-delay="100">
-                            <div>Hello <span>World</span></div>
-                        </div>
+                        <div data-aos="zoom-out" data-aos-duration="700" data-aos-delay="100">Hello <span>World</span></div>
                         <div className="bhemu bhemu-typewriter">Thank you for visting my site</div>
-                    </div>
                 </div>
             </div>
             <FootBar />
