@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect} from 'react';
 import Bar from "../components/Bar";
 import FootBar from "../components/FootBar";
 import AOS from 'aos';
@@ -17,7 +17,10 @@ import mongoDB from "../img/projects/mongodb.svg"
 
 
 AOS.init();
-
+const aosStyle =  "fade-up";
+const aosDelay =  "100";
+const aosDuration= "1000";
+const aosOffset = "250"
 function AboutPage() {
     useEffect(() => {
         document.title = "Adarsh Suman | About"
@@ -34,9 +37,9 @@ function AboutPage() {
                 </div>
 
                 <div className="aboutBox"
-                    data-aos="fade-left"
-                    data-aos-delay="50"
-                    data-aos-duration="600"
+                    data-aos= {aosStyle}
+                    data-aos-delay = "50"
+                    data-aos-duration = {aosDuration}
                 >
 
                     <div className="title">About Me</div>
@@ -44,11 +47,15 @@ function AboutPage() {
                     <div className="img_text">
                         <img src={aboutMeIng} alt="image not load" height="300px"
                             data-aos="zoom-in"
-                            data-aos-delay="100"
-                            data-aos-duration="600"
+                            data-aos-delay="50"
+                            data-aos-duration = {aosDuration}
                         />
 
-                        <div className='pointSection' data-aos="zoom-in-up" data-aos-delay="50">
+                        <div className='pointSection' 
+                            data-aos="zoom-in-up"
+                            data-aos-delay="50"
+                            data-aos-duration = {aosDuration}
+                        >
                             <div className='aboutPoints'>I'm a computer geek and a beginner programmer.</div>
                             <div className='aboutPoints'>
                                 Other than programming I use to spend time in gaming,
@@ -59,19 +66,25 @@ function AboutPage() {
                 </div>
 
                 <div className="aboutBox"
-                    data-aos="fade-right"
-                    data-aos-offset="200"
-                    data-aos-delay="50"
+                    data-aos-offset = {aosOffset}
+                    data-aos = {aosStyle}
+                    data-aos-delay = {aosDelay}
+                    data-aos-duration = {aosDuration}
                 >
                     <div className="title">My Logo</div>
 
                     <div className="img_text text_img">
                         <img src={logoFireIng} alt="image not load" height="300px" id="logoMoblie"
                             data-aos="zoom-in"
-                            data-aos-delay="100"
+                            data-aos-delay = {aosDelay}
+                            data-aos-duration = {aosDuration}
                         />
 
-                        <div className='pointSection' data-aos="zoom-in-up" data-aos-delay="50">
+                        <div className='pointSection'
+                            data-aos="zoom-in-up"
+                            data-aos-delay = {aosDelay}
+                            data-aos-duration = {aosDuration}
+                        >
                             <div className='aboutPoints'>Our logo is combination of A and S, where :-
 
                                 <li>A for Adarsh</li>
@@ -85,25 +98,32 @@ function AboutPage() {
 
                         <img src={logoFireIng} alt="image not load" height="300px" id="logoPc"
                             data-aos="zoom-in"
-                            data-aos-delay="100"
+                            data-aos-delay = {aosDelay}
+                            data-aos-duration = {aosDuration}
                         />
                     </div>
                 </div>
 
                 <div className="aboutBox"
-                    data-aos="fade-left"
-                    data-aos-offset="200"
-                    data-aos-delay="50"
+                    data-aos-offset = {aosOffset}
+                    data-aos = {aosStyle}
+                    data-aos-delay = {aosDelay}
+                    data-aos-duration = {aosDuration}
                 >
                     <div className="title">The Notes App</div>
 
                     <div className="img_text">
                         <img src={notesImg1} alt="image not load" height="300px"
                             data-aos="zoom-in"
-                            data-aos-delay="100"
+                            data-aos-delay = {aosDelay}
+                            data-aos-duration = {aosDuration}
                         />
 
-                        <div className='pointSection' data-aos="zoom-in-up" data-aos-delay="50">
+                        <div className='pointSection' 
+                            data-aos="zoom-in-up" 
+                            data-aos-delay = {aosDelay}
+                            data-aos-duration = {aosDuration}
+                        >
                             <div className='aboutPoints'>This is a Multi-User Notes app.</div>
                             <div className='aboutPoints'>Which allows multiple logins and new users can also create their own new account to login.</div>
                             <div className='aboutPoints'>Each user can keep their notes and to-dos separate and secure from others.</div>
@@ -120,10 +140,15 @@ function AboutPage() {
                     <div id="nextDiv" className="img_text text_img">
                         <img src={notesImg2} alt="image not load" height="300px" id="logoMoblie"
                             data-aos="zoom-in"
-                            data-aos-delay="100"
+                            data-aos-delay = {aosDelay}
+                            data-aos-duration = {aosDuration}
                         />
 
-                        <div className='pointSection' data-aos="zoom-in-up" data-aos-delay="50">
+                        <div className='pointSection' 
+                            data-aos="zoom-in-up" 
+                            data-aos-delay = {aosDelay}
+                            data-aos-duration = {aosDuration}
+                        >
                             <div className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
                             <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
                             <div className='aboutPoints'>Type To-dos Come with Done CheckBox, which helps you remember your works.</div>
@@ -154,7 +179,8 @@ function AboutPage() {
 
                         <img src={notesImg2} alt="image not load" height="300px" id="logoPc"
                             data-aos="zoom-in"
-                            data-aos-delay="100"
+                            data-aos-delay = {aosDelay}
+                            data-aos-duration = {aosDuration}
                         />
                     </div>
                 </div>

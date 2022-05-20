@@ -13,6 +13,10 @@ import youtubeIconImg from "../img/youtube2.png"
 import websiteIconImg from "../img/website.png"
 
 AOS.init();
+const aosStyle =  "fade-up";
+const aosDelay =  "50";
+const aosDuration= "1000";
+const aosOffset = "250"
 
 function AboutPage() {
     const [emailValue, setEmailValue] = useState("");
@@ -40,10 +44,10 @@ function AboutPage() {
 
                 <div id="title">Contact Us</div>
                 <form id="msgUs" method="post" action="https://send.pageclip.co/YYFiRgfPYOw99mcNfB9R8RHgiwcappSO"
-                    data-aos="fade-up"
-                    data-aos-offset="200"
-                    data-aos-delay="50"
-                    data-aos-duration="500"
+                    data-aos-offset = {aosOffset}
+                    data-aos = {aosStyle}
+                    data-aos-delay = {aosDelay}
+                    data-aos-duration = {aosDuration}
                 >
 
                     <div>
@@ -60,10 +64,10 @@ function AboutPage() {
                 </form>
 
                 <div id="contact"
-                    data-aos="fade-up"
-                    data-aos-offset="200"
-                    data-aos-delay="100"
-                    data-aos-duration="600"
+                    data-aos-offset = {aosOffset}
+                    data-aos = {aosStyle}
+                    data-aos-delay = {aosDelay}
+                    data-aos-duration = {aosDuration}
                 >
                     <div className="subTitle">Contact On </div>
 
