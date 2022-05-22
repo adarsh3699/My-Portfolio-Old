@@ -3,7 +3,7 @@ import Bar from "../components/Bar";
 import FootBar from "../components/FootBar";
 import AOS from 'aos';
 
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css';
 import '../css/home.css';
 
 AOS.init();

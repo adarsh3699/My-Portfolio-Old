@@ -1,4 +1,4 @@
-import React, { useEffect} from 'react';
+import React from 'react';
 import Bar from "../components/Bar";
 import FootBar from "../components/FootBar";
 import AOS from 'aos';
@@ -15,6 +15,7 @@ import nodeJs from "../img/projects/nodejs.svg"
 import javaScript from "../img/projects/javascript.svg"
 import mongoDB from "../img/projects/mongodb.svg"
 
+document.title = "Adarsh Suman | About"
 
 AOS.init();
 const aosStyle =  "fade-up";
@@ -22,10 +23,6 @@ const aosDelay =  "100";
 const aosDuration= "1000";
 const aosOffset = "250"
 function AboutPage() {
-    useEffect(() => {
-        document.title = "Adarsh Suman | About"
-    }, []);
-
     return (
         <>
             <Bar />

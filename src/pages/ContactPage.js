@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Bar from "../components/Bar";
 import FootBar from "../components/FootBar";
 import AOS from 'aos';
@@ -12,7 +12,10 @@ import instaIconImg from "../img/instagram.png"
 import youtubeIconImg from "../img/youtube2.png"
 import websiteIconImg from "../img/website.png"
 
+document.title = "Adarsh Suman | Contact"
+
 AOS.init();
+
 const aosStyle =  "fade-up";
 const aosDelay =  "50";
 const aosDuration= "1000";
@@ -21,10 +24,6 @@ const aosOffset = "250"
 function AboutPage() {
     const [emailValue, setEmailValue] = useState("");
     const [msgValue, setMsgValue] = useState("");
-
-    useEffect(() => {
-        document.title = "Adarsh Suman | Contact"
-    }, []);
 
     function handelEmailChange(e) {
         const value = e.target.value;
