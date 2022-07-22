@@ -63,6 +63,7 @@ body {
 
 #contact {
     margin: 20px auto;;
+    margin-bottom: 40px;
     background-color: rgb(61, 57, 57);
     border-radius: 5px;
     width: 60%;

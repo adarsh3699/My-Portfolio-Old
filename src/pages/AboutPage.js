@@ -22,6 +22,7 @@ const aosStyle =  "fade-up";
 const aosDelay =  "100";
 const aosDuration= "1000";
 const aosOffset = "250"
+
 function AboutPage() {
     return (
         <>

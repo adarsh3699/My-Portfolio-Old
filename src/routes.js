@@ -9,7 +9,7 @@ import { BrowserRouter, Routes as Switch, Route } from 'react-router-dom';
 const HomePage = lazy(() => import('./pages/HomePage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
-const Learning = lazy(() => import('./components/Learning'));
+const WorksPage = lazy(() => import('./pages/WorksPage'));
 
 function Routes() {
     return (
@@ -17,7 +17,7 @@ function Routes() {
             <Suspense fallback={
                 <>
                     <div id='loadingScreen'>
-                        loading
+                        Loading
                         <div id='loadingIcon'>
                             <div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
                         </div>
@@ -27,10 +27,10 @@ function Routes() {
                 <Switch>
                     <Route exact path="/" element={<HomePage />} />
                     <Route exact path="/about" element={<AboutPage />} />
+                    <Route exact path="/works" element={<WorksPage />} />
                     <Route exact path="/contact" element={<ContactPage />} />
-                    <Route exact path="/learn" element={<Learning />} />
 
-                    <Route path="*" element={<div>page not found</div>} />
+                    <Route path="*" element={<center><h1>Page Not Found</h1></center>} />
                 </Switch>
             </Suspense>
         </BrowserRouter>
