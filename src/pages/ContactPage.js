@@ -41,7 +41,7 @@ function AboutPage() {
 
             <div id="background">
 
-                <div id="title">Contact Us</div>
+                <div id="title">Contact Me</div>
                 <form id="msgUs" method="post" action="https://send.pageclip.co/YYFiRgfPYOw99mcNfB9R8RHgiwcappSO"
                     data-aos-offset={aosOffset}
                     data-aos={aosStyle}
@@ -88,7 +88,7 @@ function AboutPage() {
                         </a>
                     </div>
 
-                    <div className="subTitle">Follow Us</div>
+                    <div className="subTitle">Follow Me</div>
 
                     <div>
                         <a href="https://www.instagram.com/_adarsh.s/" target="_blank" className='socialLinksBox'>

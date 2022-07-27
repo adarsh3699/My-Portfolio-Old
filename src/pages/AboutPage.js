@@ -54,7 +54,8 @@ function AboutPage() {
                             data-aos-delay="50"
                             data-aos-duration = {aosDuration}
                         >
-                            <div className='aboutPoints'>I'm a computer geek and a beginner programmer.</div>
+                            <div className='aboutPoints'>I'm a programmer and a computer geek.</div>
+                            <div className='aboutPoints'>I have skill in Web Application Development.</div>
                             <div className='aboutPoints'>
                                 Other than programming I use to spend time in gaming,
                                 listening songs and graphics designing.
