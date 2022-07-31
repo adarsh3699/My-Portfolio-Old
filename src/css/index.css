@@ -14,10 +14,13 @@ body {
   }
   
   #background {
+    position: fixed;
     background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);
-    overflow: hidden;
+    /* overflow: hidden; */
+    top: 0;
+    z-index: -1;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100vh !important;
   }
   
   #loadingScreen {

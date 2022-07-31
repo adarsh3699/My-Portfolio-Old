@@ -2,126 +2,138 @@ import React, { useState } from 'react';
 import Bar from "../components/Bar";
 import FootBar from "../components/FootBar";
 import AOS from 'aos';
+import { Slide } from 'react-slideshow-image';
 
+import 'react-slideshow-image/dist/styles.css';
 import 'aos/dist/aos.css';
-import "../css/contact.css"
+import "../css/works.css"
 
-import emailIconImg from "../img/email.png"
-import telegramIconImg from "../img/telegram.svg"
-import instaIconImg from "../img/instagram.png"
-import youtubeIconImg from "../img/youtube2.png"
-import websiteIconImg from "../img/website.png"
+import notesImg1 from "../img/projects/user-home.jpg"
+import notesImg2 from "../img/projects/notes-todos.jpg"
+import react from "../img/projects/react.png"
+import nodeJs from "../img/projects/nodejs.svg"
+import javaScript from "../img/projects/javascript.svg"
+import mongoDB from "../img/projects/mongodb.svg"
 
-document.title = "Adarsh Suman | Contact"
+document.title = "Adarsh Suman | Works"
 
 AOS.init();
 
-const aosStyle = "fade-up";
+const aosStyle = "zoom-out";
 const aosDelay = "50";
 const aosDuration = "1000";
 const aosOffset = "250"
 
-function AboutPage() {
-    const [emailValue, setEmailValue] = useState("");
-    const [msgValue, setMsgValue] = useState("");
+const images = [
+    "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+    "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
+    "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+];
 
-    function handelEmailChange(e) {
-        const value = e.target.value;
-        setEmailValue(value)
-    }
-
-    function handelMsgChange(e) {
-        const value = e.target.value;
-        setMsgValue(value)
-    }
+function WorksPage() {
 
     return (
         <>
             <Bar />
+            <div id="background"></div>
 
-            <div id="background">
+            <div id='content'>
+                <Slide>
+                    <div className="each-slide-effect">
+                        <div style={{ 'backgroundImage': `url(${images[0]})` }}><span>Demo 1</span></div>
+                    </div>
+                    <div className="each-slide-effect">
+                        <div style={{ 'backgroundImage': `url(${images[1]})` }}><span>Demo 1</span></div>
+                    </div>
+                    <div className="each-slide-effect">
+                        <div style={{ 'backgroundImage': `url(${images[2]})` }}><span>Demo 1</span></div>
+                    </div>
+                </Slide>
+                <div id="title">My Works</div>
 
-                <div id="title">Contact Us</div>
-                <form id="msgUs" method="post" action="https://send.pageclip.co/YYFiRgfPYOw99mcNfB9R8RHgiwcappSO"
-                    data-aos-offset={aosOffset}
+                <div className="aboutBox"
                     data-aos={aosStyle}
                     data-aos-delay={aosDelay}
                     data-aos-duration={aosDuration}
                 >
+                    <div className="title">The Notes App</div>
 
-                    <div>
-                        <input type="email" placeholder=" Enter Your Email" required name="email" id="email" value={emailValue} onChange={handelEmailChange} />
+                    <div className="img_text">
+                        <img src={notesImg1} alt="image not load" height="300px"
+                            data-aos="zoom-in"
+                            data-aos-delay={aosDelay}
+                            data-aos-duration={aosDuration}
+                        />
+
+                        <div className='pointSection'
+                            data-aos="zoom-in-up"
+                            data-aos-delay={aosDelay}
+                            data-aos-duration={aosDuration}
+                        >
+                            <div className='aboutPoints'>This is a Multi-User Notes app.</div>
+                            <div className='aboutPoints'>Which allows multiple logins and new users can also create their own new account to login.</div>
+                            <div className='aboutPoints'>Each user can keep their notes and to-dos separate and secure from others.</div>
+                            <div className='aboutPoints'>Where user data and their notes store in encrypted form in Database.</div>
+                            <div id='link'>
+                                Link :-
+                                <a href='https://notes.bhemu.me/' target="_blank"> https://notes.bhemu.me/</a>
+                            </div>
+
+
+                        </div>
                     </div>
 
-                    <div>
-                        <textarea id="textArea" required name="body" placeholder="Write your msg here" value={msgValue} onChange={handelMsgChange}></textarea>
-                    </div>
-                    <div>
-                        <button id="send"><span>Send</span></button>
-                    </div>
+                    <div id="nextDiv" className="img_text text_img">
+                        <img src={notesImg2} alt="image not load" height="300px" id="logoMoblie"
+                            data-aos="zoom-in"
+                            data-aos-delay={aosDelay}
+                            data-aos-duration={aosDuration}
+                        />
 
-                </form>
+                        <div className='pointSection'
+                            data-aos="zoom-in-up"
+                            data-aos-delay={aosDelay}
+                            data-aos-duration={aosDuration}
+                        >
+                            <div className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
+                            <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
+                            <div className='aboutPoints'>Type To-dos Come with Done CheckBox, which helps you remember your works.</div>
 
-                <div id="contact"
-                    data-aos-offset={aosOffset}
-                    data-aos={aosStyle}
-                    data-aos-delay={aosDelay}
-                    data-aos-duration={aosDuration}
-                >
-                    <div className="subTitle">Contact On </div>
+                            <div className='aboutPoints'>
+                                <div id='subTitle'>Technologies used</div>
 
-                    <div>
-                        <a href="mailto:adarsh3699@gmail.com" className='socialLinksBox'>
-                            <img src={emailIconImg} /><div>adarsh3699@gmail.com</div>
-                        </a>
-                    </div>
+                                <div id='technologiesLogo'>
+                                    <div>
+                                        <img src={react} id="reactLogo"></img>
+                                        <div>React</div>
+                                    </div>
+                                    <div>
+                                        <img src={nodeJs} id="nodeJsLogo" ></img>
+                                        <div>NodeJS</div>
+                                    </div>
+                                    <div>
+                                        <img src={javaScript} id='javaScriptLogo'></img>
+                                        <div>JavaScript</div>
+                                    </div>
+                                    <div>
+                                        <img src={mongoDB} id="mongoDbLogo"></img>
+                                        <div>MongoDB</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                    <div>
-                        <a href="mailto:bhemu3699@gmail.com" className='socialLinksBox'>
-                            <img src={emailIconImg} /><div>bhemu3699@gmail.com</div>
-                        </a>
-                    </div>
-
-                    <div>
-                        <a href="https://t.me/adarsh3699" target="_blank" className='socialLinksBox'>
-                            <img src={telegramIconImg} height="40px" /><div>Telegram</div>
-                        </a>
-                    </div>
-
-                    <div className="subTitle">Follow Us</div>
-
-                    <div>
-                        <a href="https://www.instagram.com/_adarsh.s/" target="_blank" className='socialLinksBox'>
-                            <img src={instaIconImg} /><div>Instagram</div>
-                        </a>
-                    </div>
-
-                    <div>
-                        <a href="https://www.youtube.com/channel/UCkdSVbjY4sS1I7hw9ZJMdew" target="_blank" className='socialLinksBox'>
-                            <img src={youtubeIconImg} /><div>YouTube</div>
-                        </a>
-                    </div>
-
-                    <div>
-                        <a href="https://github.com/adarsh3699" target="_blank" className='socialLinksBox'>
-                            <svg height="30" viewBox="0 0 16 16" version="1.1" id="git">
-                                <path fillRule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-                            </svg>
-                            <div>GitHub</div>
-                        </a>
-                    </div>
-
-                    <div>
-                        <a href="https://www.bhemu.me/" target="blank" className='socialLinksBox'>
-                            <img src={websiteIconImg} /><div>Website</div>
-                        </a>
+                        <img src={notesImg2} alt="image not load" height="300px" id="logoPc"
+                            data-aos="zoom-in"
+                            data-aos-delay={aosDelay}
+                            data-aos-duration={aosDuration}
+                        />
                     </div>
                 </div>
             </div>
-
             <FootBar />
         </>
     )
 }
 
-export default AboutPage;
+export default WorksPage;

@@ -45,7 +45,7 @@ function Bar() {
                 <div id="desktopMenu">
                     <a href="/">Home</a>
                     <a href="/about">About</a>
-                    {/* <a href="/works">Works</a> */}
+                    <a href="/works">Works</a>
                     <a href="/contact">Contact</a>
                 </div>
 

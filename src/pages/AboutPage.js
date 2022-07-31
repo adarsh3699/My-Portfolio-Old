@@ -18,16 +18,17 @@ import mongoDB from "../img/projects/mongodb.svg"
 document.title = "Adarsh Suman | About"
 
 AOS.init();
-const aosStyle =  "fade-up";
-const aosDelay =  "100";
-const aosDuration= "1000";
+const aosStyle = "fade-up";
+const aosDelay = "100";
+const aosDuration = "1000";
 const aosOffset = "250"
 
 function AboutPage() {
     return (
         <>
             <Bar />
-            <div id="background">
+            <div id="background"></div>
+            <div id='content'>
                 <div id="myIntro">
                     <div className="welcome_msg">
                         <p className="line-1 anim-typewriter">My name is <b>Adarsh</b> <a>Suman</a></p>
@@ -35,9 +36,9 @@ function AboutPage() {
                 </div>
 
                 <div className="aboutBox"
-                    data-aos= {aosStyle}
-                    data-aos-delay = "50"
-                    data-aos-duration = {aosDuration}
+                    data-aos={aosStyle}
+                    data-aos-delay="50"
+                    data-aos-duration={aosDuration}
                 >
 
                     <div className="title">About Me</div>
@@ -46,13 +47,13 @@ function AboutPage() {
                         <img src={aboutMeIng} alt="image not load" height="300px"
                             data-aos="zoom-in"
                             data-aos-delay="50"
-                            data-aos-duration = {aosDuration}
+                            data-aos-duration={aosDuration}
                         />
 
-                        <div className='pointSection' 
+                        <div className='pointSection'
                             data-aos="zoom-in-up"
                             data-aos-delay="50"
-                            data-aos-duration = {aosDuration}
+                            data-aos-duration={aosDuration}
                         >
                             <div className='aboutPoints'>I'm a programmer and a computer geek.</div>
                             <div className='aboutPoints'>I have skill in Web Application Development.</div>
@@ -65,24 +66,24 @@ function AboutPage() {
                 </div>
 
                 <div className="aboutBox"
-                    data-aos-offset = {aosOffset}
-                    data-aos = {aosStyle}
-                    data-aos-delay = {aosDelay}
-                    data-aos-duration = {aosDuration}
+                    data-aos-offset={aosOffset}
+                    data-aos={aosStyle}
+                    data-aos-delay={aosDelay}
+                    data-aos-duration={aosDuration}
                 >
                     <div className="title">My Logo</div>
 
                     <div className="img_text text_img">
                         <img src={logoFireIng} alt="image not load" height="300px" id="logoMoblie"
                             data-aos="zoom-in"
-                            data-aos-delay = {aosDelay}
-                            data-aos-duration = {aosDuration}
+                            data-aos-delay={aosDelay}
+                            data-aos-duration={aosDuration}
                         />
 
                         <div className='pointSection'
                             data-aos="zoom-in-up"
-                            data-aos-delay = {aosDelay}
-                            data-aos-duration = {aosDuration}
+                            data-aos-delay={aosDelay}
+                            data-aos-duration={aosDuration}
                         >
                             <div className='aboutPoints'>Our logo is combination of A and S, where :-
 
@@ -97,31 +98,31 @@ function AboutPage() {
 
                         <img src={logoFireIng} alt="image not load" height="300px" id="logoPc"
                             data-aos="zoom-in"
-                            data-aos-delay = {aosDelay}
-                            data-aos-duration = {aosDuration}
+                            data-aos-delay={aosDelay}
+                            data-aos-duration={aosDuration}
                         />
                     </div>
                 </div>
 
                 <div className="aboutBox"
-                    data-aos-offset = {aosOffset}
-                    data-aos = {aosStyle}
-                    data-aos-delay = {aosDelay}
-                    data-aos-duration = {aosDuration}
+                    data-aos-offset={aosOffset}
+                    data-aos={aosStyle}
+                    data-aos-delay={aosDelay}
+                    data-aos-duration={aosDuration}
                 >
                     <div className="title">The Notes App</div>
 
                     <div className="img_text">
                         <img src={notesImg1} alt="image not load" height="300px"
                             data-aos="zoom-in"
-                            data-aos-delay = {aosDelay}
-                            data-aos-duration = {aosDuration}
+                            data-aos-delay={aosDelay}
+                            data-aos-duration={aosDuration}
                         />
 
-                        <div className='pointSection' 
-                            data-aos="zoom-in-up" 
-                            data-aos-delay = {aosDelay}
-                            data-aos-duration = {aosDuration}
+                        <div className='pointSection'
+                            data-aos="zoom-in-up"
+                            data-aos-delay={aosDelay}
+                            data-aos-duration={aosDuration}
                         >
                             <div className='aboutPoints'>This is a Multi-User Notes app.</div>
                             <div className='aboutPoints'>Which allows multiple logins and new users can also create their own new account to login.</div>
@@ -139,14 +140,14 @@ function AboutPage() {
                     <div id="nextDiv" className="img_text text_img">
                         <img src={notesImg2} alt="image not load" height="300px" id="logoMoblie"
                             data-aos="zoom-in"
-                            data-aos-delay = {aosDelay}
-                            data-aos-duration = {aosDuration}
+                            data-aos-delay={aosDelay}
+                            data-aos-duration={aosDuration}
                         />
 
-                        <div className='pointSection' 
-                            data-aos="zoom-in-up" 
-                            data-aos-delay = {aosDelay}
-                            data-aos-duration = {aosDuration}
+                        <div className='pointSection'
+                            data-aos="zoom-in-up"
+                            data-aos-delay={aosDelay}
+                            data-aos-duration={aosDuration}
                         >
                             <div className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
                             <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
@@ -178,8 +179,8 @@ function AboutPage() {
 
                         <img src={notesImg2} alt="image not load" height="300px" id="logoPc"
                             data-aos="zoom-in"
-                            data-aos-delay = {aosDelay}
-                            data-aos-duration = {aosDuration}
+                            data-aos-delay={aosDelay}
+                            data-aos-duration={aosDuration}
                         />
                     </div>
                 </div>

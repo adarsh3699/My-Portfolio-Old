@@ -38,9 +38,9 @@ function AboutPage() {
     return (
         <>
             <Bar />
+            <div id="background"></div>
 
-            <div id="background">
-
+            <div id='content'>
                 <div id="title">Contact Me</div>
                 <form id="msgUs" method="post" action="https://send.pageclip.co/YYFiRgfPYOw99mcNfB9R8RHgiwcappSO"
                     data-aos-offset={aosOffset}
