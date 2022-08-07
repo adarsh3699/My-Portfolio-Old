@@ -3,7 +3,7 @@ import Bar from "../components/Bar";
 import FootBar from "../components/FootBar";
 import AOS from 'aos';
 import { Slide } from 'react-slideshow-image';
-import { Accordion } from 'react-bootstrap-accordion'
+import { Accordion } from '../components/Accordion'
 
 import '../css/accordion.css'
 import 'react-slideshow-image/dist/styles.css';
@@ -93,7 +93,7 @@ function WorksPage() {
                         />
 
                         <div className='pointSection'
-                            data-aos="zoom-in-up"
+                            data-aos="fade-up"
                             data-aos-delay={aosDelay}
                             data-aos-duration={aosDuration}
                         >
@@ -132,8 +132,35 @@ function WorksPage() {
                         />
                     </div>
                     <br />
-                    <Accordion style={{backgroundColor: "red"}} title="Custom Accordion Title1" >
-                        ka
+                    <Accordion>
+                        <div className='pointSection'>
+                            <div className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
+                            <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
+                            <div className='aboutPoints'>Type To-dos Come with Done CheckBox, which helps you remember your works.</div>
+
+                            <div className='aboutPoints'>
+                                <div id='subTitle'>Technologies used</div>
+
+                                <div id='technologiesLogo'>
+                                    <div>
+                                        <img src={react} id="reactLogo"></img>
+                                        <div>React</div>
+                                    </div>
+                                    <div>
+                                        <img src={nodeJs} id="nodeJsLogo" ></img>
+                                        <div>NodeJS</div>
+                                    </div>
+                                    <div>
+                                        <img src={javaScript} id='javaScriptLogo'></img>
+                                        <div>JavaScript</div>
+                                    </div>
+                                    <div>
+                                        <img src={mongoDB} id="mongoDbLogo"></img>
+                                        <div>MongoDB</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </Accordion>
                     <Accordion title="Custom Accordion Title2" >
                         ku

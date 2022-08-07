@@ -1,190 +1,204 @@
 #bar {
-  position: fixed;
-  top: 0px;
-  left: 0;
-  font-weight: 500;
-  font-size: 18px;
-  background-color: rgba(29, 28, 28, 0.9);
-  color: rgb(255, 255, 255);
-  width: 100%;
-  z-index: 100;
-  user-select: none;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: rgba(29, 28, 28, 0.9);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    z-index: 100;
+    user-select: none;
 }
 
 #topBar {
-  display: flex;
-  align-items: center; 
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 a {
- color: white;
- text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 #logo {
-  width: 33.3%;
-  letter-spacing: 2px;
+    width: 33.3%;
+    letter-spacing: 2px;
 }
 
-#logo a{
-  display: flex;
-  align-items: center;
-  width: fit-content;
+#logo a {
+    display: flex;
+    align-items: center;
+    width: fit-content;
 }
 
 #adarsh {
-  font-size: 20px;
-  font-weight: bold;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #desktopMenu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 33.3%;
-  letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+    letter-spacing: 3px;
 }
 
-#desktopMenu a{
-  padding: 0px 20px;
+#desktopMenu a {
+    padding: 0px 20px;
 }
 
-#desktopMenu a:hover{
-  transform: scale(1.10);
-  transition-duration: 0.2s;
+#desktopMenu a:hover {
+    transform: scale(1.10);
+    transition-duration: 0.2s;
 }
 
 #mobileIcon {
-  display: none;
+    display: none;
 }
 
 #mobileIcon img {
-  height: 26px;
+    height: 26px;
 }
 
 #social {
- display: flex;
- align-items: center;
- justify-content: flex-end;
- width: 33.3%;
- margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 33.3%;
+    margin-right: 20px;
 }
 
 #social a {
-  padding-right: 10px;
+    padding-right: 10px;
 }
 
 #social img:hover {
-  transform: scale(1.10);
-  transition-duration: 0.2s;
-}
-
-/*------------------mWebBar-------------------*/
-@media screen and (max-width: 700px) {
-  #desktopMenu {
-      display: none;
-  }
-  
-  #mobileIcon {
-      display: flex;
-      justify-content: center;
-      padding: 10px 20px 10px 10px;
-      /* background-color: rebeccapurple; */
-  }
-  
-  #mobileMenu a {
-      display: block;
-      color: white;
-      font-size: 17px;
-      text-decoration: none;
-      border-bottom: 1px #f1f1f1 solid;
-      padding: 9px;
-      text-align: center;
-      letter-spacing: 3px;
-  }
-
-  #social {
-      display: none;
-  }
+    transform: scale(1.10);
+    transition-duration: 0.2s;
 }
 
 /* ..........................bottomBar.......................... */
 #bottomBar {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  background-color: rgb(29, 27, 27);
-  color: white;
-  font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(29, 27, 27);
+    color: white;
+    font-size: 15px;
 }
 
 #bottomBar a {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 #footMemu {
-  display: flex;
-  padding-top: 30px ;
-  width: 33.5%;
-  letter-spacing: 1px;
+    display: flex;
+    padding-top: 30px;
+    width: 33.5%;
+    letter-spacing: 1px;
 }
 
-#footMemu a{
-  padding-left: 15px;
+#footMemu a {
+    padding-left: 15px;
 }
 
 #footLogo {
-  text-align: center;
-  width: 33%;
-  font-size: 11px;
-  padding-bottom: 20px;
+    text-align: center;
+    width: 33%;
+    font-size: 11px;
+    padding-bottom: 20px;
 }
 
 #footSocial {
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 30px;
-  width: 33.5%;
-  /* letter-spacing: 1px; */
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+    width: 33.5%;
+    /* letter-spacing: 1px; */
 }
 
 #footSocial a {
-  display: flex;
-  align-items: center;
-  height: fit-content;
-  padding-right: 15px;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    padding-right: 15px;
 }
 
 #footSocial img {
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
-/* ..........................mBottomBar.......................... */
+/* ..........................mWeb.......................... */
 @media screen and (max-width: 931px) {
-  #footMemu {
-      display: block;
-      width: 32%;
-  }
+    #logo {
+        width: 140px;
+    }
 
-  #footMemu div {
-      padding-bottom: 10px;
-  }
-  #footLogo {
-      font-size: 10px;
-  }
-  #footLogo img{
-      padding-top: 20px;
-      height: 60px;
-  }
+    #desktopMenu {
+        width: 75%;
+    }
 
-  #footSocial {
-      display: block;
-  }
-  #footSocial a {
-      padding-bottom: 10px;
-      justify-content: flex-end;
-  }
+    #social {
+        width: 84px;
+        margin-right: 5px;
+    }
 
+    #footMemu {
+        display: block;
+        width: 32%;
+    }
+
+    #footMemu div {
+        padding-bottom: 10px;
+    }
+
+    #footLogo {
+        font-size: 10px;
+    }
+
+    #footLogo img {
+        padding-top: 20px;
+        height: 60px;
+    }
+
+    #footSocial {
+        display: block;
+    }
+
+    #footSocial a {
+        padding-bottom: 10px;
+        justify-content: flex-end;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    #desktopMenu {
+        display: none;
+    }
+
+    #mobileIcon {
+        display: flex;
+        justify-content: center;
+        padding: 10px 20px 10px 10px;
+    }
+
+    #mobileMenu a {
+        display: block;
+        color: white;
+        font-size: 17px;
+        text-decoration: none;
+        border-bottom: 1px #f1f1f1 solid;
+        padding: 9px;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+
+    #social {
+        display: none;
+    }
 }

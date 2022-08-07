@@ -145,7 +145,7 @@ function AboutPage() {
                         />
 
                         <div className='pointSection'
-                            data-aos="zoom-in-up"
+                            data-aos="fade-up"
                             data-aos-delay={aosDelay}
                             data-aos-duration={aosDuration}
                         >

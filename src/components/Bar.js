@@ -68,6 +68,7 @@ function Bar() {
                     <div id="mobileMenu">
                         <a href="/" style={{borderTop: "1px #f1f1f1 solid"}}>Home</a>
                         <a href="/about">About</a>
+                        <a href="/works">Works</a>
                         <a href="/contact">Contact</a>
                     </div>
                     : null
