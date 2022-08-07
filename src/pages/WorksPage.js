@@ -3,7 +3,9 @@ import Bar from "../components/Bar";
 import FootBar from "../components/FootBar";
 import AOS from 'aos';
 import { Slide } from 'react-slideshow-image';
+import { Accordion } from 'react-bootstrap-accordion'
 
+import '../css/accordion.css'
 import 'react-slideshow-image/dist/styles.css';
 import 'aos/dist/aos.css';
 import "../css/works.css"
@@ -129,6 +131,17 @@ function WorksPage() {
                             data-aos-duration={aosDuration}
                         />
                     </div>
+                    <br />
+                    <Accordion style={{backgroundColor: "red"}} title="Custom Accordion Title1" >
+                        ka
+                    </Accordion>
+                    <Accordion title="Custom Accordion Title2" >
+                        ku
+                    </Accordion>
+
+                    <Accordion title="Custom Accordion Title3" >
+                        ki
+                    </Accordion>
                 </div>
             </div>
             <FootBar />
