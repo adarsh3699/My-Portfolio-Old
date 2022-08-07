@@ -3,7 +3,7 @@ import Bar from "../components/Bar";
 import FootBar from "../components/FootBar";
 import AOS from 'aos';
 import { Slide } from 'react-slideshow-image';
-import { Accordion } from '../components/Accordion'
+import { Accordion } from '../components/Accordion/'
 
 import '../css/accordion.css'
 import 'react-slideshow-image/dist/styles.css';
@@ -11,7 +11,6 @@ import 'aos/dist/aos.css';
 import "../css/works.css"
 
 import notesImg1 from "../img/projects/user-home.jpg"
-import notesImg2 from "../img/projects/notes-todos.jpg"
 import react from "../img/projects/react.png"
 import nodeJs from "../img/projects/nodejs.svg"
 import javaScript from "../img/projects/javascript.svg"
@@ -72,67 +71,51 @@ function WorksPage() {
                             data-aos-delay={aosDelay}
                             data-aos-duration={aosDuration}
                         >
-                            <div className='aboutPoints'>This is a Multi-User Notes app.</div>
-                            <div className='aboutPoints'>Which allows multiple logins and new users can also create their own new account to login.</div>
-                            <div className='aboutPoints'>Each user can keep their notes and to-dos separate and secure from others.</div>
-                            <div className='aboutPoints'>Where user data and their notes store in encrypted form in Database.</div>
+                            <li className='aboutPoints'>This is a Multi-User Notes app.</li>
+                            <li className='aboutPoints'>Which allows multiple logins and new users can also create their own new account to login.</li>
+                            <li className='aboutPoints'>Each user can keep their notes and to-dos separate and secure from others.</li>
+                            <li className='aboutPoints'>Where user data and their notes store in encrypted form in Database.</li>
+                            <li className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</li>
+                            <li className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</li>
+                            <li className='aboutPoints'>Type To-dos Come with Done CheckBox, which helps you remember your works.</li>
+                        </div>
+                    </div>
+
+                    <div className='pointSection'
+                        data-aos="fade-up"
+                        data-aos-delay={aosDelay}
+                        data-aos-duration={aosDuration}
+                    >
+                        <div className='aboutPoints'>
+                            <div id='subTitle'>Technologies used</div>
+
+                            <div id='technologiesLogo'>
+                                <div>
+                                    <img src={react} id="reactLogo"></img>
+                                    <div>React</div>
+                                </div>
+                                <div>
+                                    <img src={nodeJs} id="nodeJsLogo" ></img>
+                                    <div>NodeJS</div>
+                                </div>
+                                <div>
+                                    <img src={javaScript} id='javaScriptLogo'></img>
+                                    <div>JavaScript</div>
+                                </div>
+                                <div>
+                                    <img src={mongoDB} id="mongoDbLogo"></img>
+                                    <div>MongoDB</div>
+                                </div>
+                            </div>
                             <div id='link'>
                                 Link :-
                                 <a href='https://notes.bhemu.me/' target="_blank"> https://notes.bhemu.me/</a>
                             </div>
-
-
                         </div>
                     </div>
 
-                    <div id="nextDiv" className="img_text text_img">
-                        <img src={notesImg2} alt="image not load" height="300px" id="logoMoblie"
-                            data-aos="zoom-in"
-                            data-aos-delay={aosDelay}
-                            data-aos-duration={aosDuration}
-                        />
-
-                        <div className='pointSection'
-                            data-aos="fade-up"
-                            data-aos-delay={aosDelay}
-                            data-aos-duration={aosDuration}
-                        >
-                            <div className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
-                            <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
-                            <div className='aboutPoints'>Type To-dos Come with Done CheckBox, which helps you remember your works.</div>
-
-                            <div className='aboutPoints'>
-                                <div id='subTitle'>Technologies used</div>
-
-                                <div id='technologiesLogo'>
-                                    <div>
-                                        <img src={react} id="reactLogo"></img>
-                                        <div>React</div>
-                                    </div>
-                                    <div>
-                                        <img src={nodeJs} id="nodeJsLogo" ></img>
-                                        <div>NodeJS</div>
-                                    </div>
-                                    <div>
-                                        <img src={javaScript} id='javaScriptLogo'></img>
-                                        <div>JavaScript</div>
-                                    </div>
-                                    <div>
-                                        <img src={mongoDB} id="mongoDbLogo"></img>
-                                        <div>MongoDB</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <img src={notesImg2} alt="image not load" height="300px" id="logoPc"
-                            data-aos="zoom-in"
-                            data-aos-delay={aosDelay}
-                            data-aos-duration={aosDuration}
-                        />
-                    </div>
                     <br />
-                    <Accordion>
+                    <Accordion title="Login Page">
                         <div className='pointSection'>
                             <div className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
                             <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
@@ -162,11 +145,11 @@ function WorksPage() {
                             </div>
                         </div>
                     </Accordion>
-                    <Accordion title="Custom Accordion Title2" >
+                    <Accordion title="Home Page" >
                         ku
                     </Accordion>
 
-                    <Accordion title="Custom Accordion Title3" >
+                    <Accordion title="Notes" >
                         ki
                     </Accordion>
                 </div>
