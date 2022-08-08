@@ -67,7 +67,6 @@
 /*----------------Animation_End--------------- */
 .img_text {
     display: flex;
-    font-size: 16px;
 }
 
 #logoMoblie {
@@ -80,14 +79,6 @@
 
 .img_text img {
     border-radius: 5px;
-}
-
-.pointSection {
-    margin: 0px 0 0 10px;
-}
-
-.aboutPoints {
-    margin: 10px;
 }
 
 #link {
@@ -166,20 +157,14 @@
 }
 
 @media screen and (max-width: 750px) {
-
-    /*----------------mWeb_Animation--------------- */
     #myIntro {
         width: 85%;
         height: 40px;
     }
 
-    .pointSection {
-        margin: 30px 0 50px 10px;
-    }
-
     /*----------------mWeb_Animation--------------- */
     .line-1 {
-        font-size: 26px;
+        font-size: 24px;
         width: 350px;
         letter-spacing: 1.5px;
     }

@@ -6,6 +6,7 @@
     color: #F4F4F3;
     background-color: #2A2B2D;
     box-shadow: 0px 16px 32px 0px rgba(18, 18, 18, 0.2);
+    font-size: 15px;
 }
 
 .containerTitle {
@@ -18,14 +19,21 @@
     font-weight: bold;
 }
 
-@media screen and (max-width: 1139px) {
-    .container {
-        width: 94%;
-    }
+.pointSection {
+    margin-left:10px;
+}
+
+.aboutPoints {
+    margin: 10px;
 }
 
 @media screen and (max-width: 750px) {
     .container {
         margin: 20px auto;
+        /* font-size: 15px; */
+    }
+
+    .pointSection {
+        margin: 30px 0 50px 10px;
     }
 }

@@ -42,7 +42,6 @@
 
 .img_text {
     display: flex;
-    font-size: 16px;
 }
 
 #logoMoblie {
@@ -105,8 +104,8 @@
 #nodeJsLogo,
 #mongoDbLogo {
     background-color: white;
-    height: 50px;
-    padding: 5px;
+    height: 58px;
+    padding: 7px;
 }
 
 #technologiesLogo img:hover {
@@ -124,7 +123,7 @@
 
     #nodeJsLogo,
     #mongoDbLogo {
-        height: 40px;
+        height: 45px;
     }
 }
 
@@ -141,10 +140,6 @@
 }
 
 @media screen and (max-width: 750px) {
-    .aboutBox {
-        margin: 20px auto;
-    }
-
     .pointSection {
         margin: 30px 0 50px 10px;
     }
