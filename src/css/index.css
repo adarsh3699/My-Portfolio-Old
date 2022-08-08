@@ -15,7 +15,8 @@ body {
   
   #background {
     position: fixed;
-    background-image: linear-gradient(to top, #86377b, #27273c 80%);
+    /* background-image: linear-gradient(to top, #86377b, #27273c 80%); */
+    background-color: rgb(61, 57, 57);
     /* overflow: hidden; */
     top: 0;
     z-index: -1;

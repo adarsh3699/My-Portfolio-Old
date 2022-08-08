@@ -50,27 +50,19 @@ function WorksPage() {
                         <div style={{ 'backgroundImage': `url(${images[2]})` }}><span>Demo 1</span></div>
                     </div>
                 </Slide>
-                <div id="title">My Works</div>
+                <div className="mainTitle">My Works</div>
 
-                <div className="aboutBox"
-                    data-aos={aosStyle}
-                    data-aos-delay={aosDelay}
-                    data-aos-duration={aosDuration}
-                >
+                <div className="aboutBox">
                     <div className="title">The Notes App</div>
 
-                    <div className="img_text">
-                        <img src={notesImg1} alt="image not load" height="300px"
-                            data-aos="zoom-in"
-                            data-aos-delay={aosDelay}
-                            data-aos-duration={aosDuration}
-                        />
+                    <div className="img_text"
+                        data-aos="fade-up"
+                        data-aos-delay={aosDelay}
+                        data-aos-duration={aosDuration}
+                    >
+                        <img src={notesImg1} alt="image not load" height="300px"/>
 
-                        <div className='pointSection'
-                            data-aos="zoom-in-up"
-                            data-aos-delay={aosDelay}
-                            data-aos-duration={aosDuration}
-                        >
+                        <div className='pointSection'>
                             <li className='aboutPoints'>This is a Multi-User Notes app.</li>
                             <li className='aboutPoints'>Which allows multiple logins and new users can also create their own new account to login.</li>
                             <li className='aboutPoints'>Each user can keep their notes and to-dos separate and secure from others.</li>

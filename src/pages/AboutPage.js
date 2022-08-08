@@ -113,17 +113,9 @@ function AboutPage() {
                     <div className="title">The Notes App</div>
 
                     <div className="img_text">
-                        <img src={notesImg1} alt="image not load" height="300px"
-                            data-aos="zoom-in"
-                            data-aos-delay={aosDelay}
-                            data-aos-duration={aosDuration}
-                        />
+                        <img src={notesImg1} alt="image not load" height="300px" />
 
-                        <div className='pointSection'
-                            data-aos="zoom-in-up"
-                            data-aos-delay={aosDelay}
-                            data-aos-duration={aosDuration}
-                        >
+                        <div className='pointSection'>
                             <div className='aboutPoints'>This is a Multi-User Notes app.</div>
                             <div className='aboutPoints'>Which allows multiple logins and new users can also create their own new account to login.</div>
                             <div className='aboutPoints'>Each user can keep their notes and to-dos separate and secure from others.</div>
@@ -137,18 +129,14 @@ function AboutPage() {
                         </div>
                     </div>
 
-                    <div id="nextDiv" className="img_text text_img">
-                        <img src={notesImg2} alt="image not load" height="300px" id="logoMoblie"
-                            data-aos="zoom-in"
-                            data-aos-delay={aosDelay}
-                            data-aos-duration={aosDuration}
-                        />
+                    <div id="nextDiv" className="img_text text_img"
+                        data-aos="fade-up"
+                        data-aos-delay={aosDelay}
+                        data-aos-duration={aosDuration}
+                    >
+                        <img src={notesImg2} alt="image not load" height="300px" id="logoMoblie"/>
 
-                        <div className='pointSection'
-                            data-aos="fade-up"
-                            data-aos-delay={aosDelay}
-                            data-aos-duration={aosDuration}
-                        >
+                        <div className='pointSection'>
                             <div className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
                             <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
                             <div className='aboutPoints'>Type To-dos Come with Done CheckBox, which helps you remember your works.</div>
@@ -177,11 +165,7 @@ function AboutPage() {
                             </div>
                         </div>
 
-                        <img src={notesImg2} alt="image not load" height="300px" id="logoPc"
-                            data-aos="zoom-in"
-                            data-aos-delay={aosDelay}
-                            data-aos-duration={aosDuration}
-                        />
+                        <img src={notesImg2} alt="image not load" height="300px" id="logoPc"/>
                     </div>
                 </div>
             </div>
