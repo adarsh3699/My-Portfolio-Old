@@ -5,6 +5,7 @@ import AOS from 'aos';
 
 import 'aos/dist/aos.css';
 import "../css/about.css"
+import "../css/container.css"
 
 import aboutMeIng from "../img/myImg.jpg"
 import logoFireIng from "../img/logoFire.jpg"
@@ -25,152 +26,151 @@ const aosOffset = "250"
 
 function AboutPage() {
     return (
-        <>
+        <div id="background">
             <Bar />
-            <div id="background"></div>
-            <div id='content'>
-                <div id="myIntro">
-                    <div className="welcome_msg">
-                        <p className="line-1 anim-typewriter">My name is <b>Adarsh</b> <a>Suman</a></p>
-                    </div>
+            <div id="myIntro">
+                <div className="welcome_msg">
+                    <p className="line-1 anim-typewriter">My name is <b>Adarsh</b> <a>Suman</a></p>
                 </div>
+            </div>
 
-                <div className="aboutBox"
-                    data-aos={aosStyle}
-                    data-aos-delay="50"
-                    data-aos-duration={aosDuration}
-                >
+            <div className="container"
+                data-aos={aosStyle}
+                data-aos-delay="50"
+                data-aos-duration={aosDuration}
+            >
 
-                    <div className="title">About Me</div>
+                <div className="containerTitle">About Me</div>
 
-                    <div className="img_text">
-                        <img src={aboutMeIng} alt="image not load" height="300px"
-                            data-aos="zoom-in"
-                            data-aos-delay="50"
-                            data-aos-duration={aosDuration}
-                        />
+                <div className="img_text">
+                    <img src={aboutMeIng} alt="image not load" height="300px"
+                        data-aos="zoom-in"
+                        data-aos-delay="50"
+                        data-aos-duration={aosDuration}
+                    />
 
-                        <div className='pointSection'
-                            data-aos="zoom-in-up"
-                            data-aos-delay="50"
-                            data-aos-duration={aosDuration}
-                        >
-                            <div className='aboutPoints'>I'm a programmer and a computer geek.</div>
-                            <div className='aboutPoints'>I have skill in Web Application Development.</div>
-                            <div className='aboutPoints'>
-                                Other than programming I use to spend time in gaming,
-                                listening songs and graphics designing.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="aboutBox"
-                    data-aos-offset={aosOffset}
-                    data-aos={aosStyle}
-                    data-aos-delay={aosDelay}
-                    data-aos-duration={aosDuration}
-                >
-                    <div className="title">My Logo</div>
-
-                    <div className="img_text text_img">
-                        <img src={logoFireIng} alt="image not load" height="300px" id="logoMoblie"
-                            data-aos="zoom-in"
-                            data-aos-delay={aosDelay}
-                            data-aos-duration={aosDuration}
-                        />
-
-                        <div className='pointSection'
-                            data-aos="zoom-in-up"
-                            data-aos-delay={aosDelay}
-                            data-aos-duration={aosDuration}
-                        >
-                            <div className='aboutPoints'>Our logo is combination of A and S, where :-
-
-                                <li>A for Adarsh</li>
-                                <li>S for Suman</li>
-                            </div>
-
-                            <div className='aboutPoints'>First time made this logo in className 5th during my Drawing className, after 1 year(in className 6th)
-                                i made this logo on pc with Ms paint, Ms PowerPoint.
-                            </div>
-                        </div>
-
-                        <img src={logoFireIng} alt="image not load" height="300px" id="logoPc"
-                            data-aos="zoom-in"
-                            data-aos-delay={aosDelay}
-                            data-aos-duration={aosDuration}
-                        />
-                    </div>
-                </div>
-
-                <div className="aboutBox"
-                    data-aos-offset={aosOffset}
-                    data-aos={aosStyle}
-                    data-aos-delay={aosDelay}
-                    data-aos-duration={aosDuration}
-                >
-                    <div className="title">The Notes App</div>
-
-                    <div className="img_text">
-                        <img src={notesImg1} alt="image not load" height="300px" />
-
-                        <div className='pointSection'>
-                            <div className='aboutPoints'>This is a Multi-User Notes app.</div>
-                            <div className='aboutPoints'>Which allows multiple logins and new users can also create their own new account to login.</div>
-                            <div className='aboutPoints'>Each user can keep their notes and to-dos separate and secure from others.</div>
-                            <div className='aboutPoints'>Where user data and their notes store in encrypted form in Database.</div>
-                            <div id='link'>
-                                Link :-
-                                <a href='https://notes.bhemu.me/' target="_blank"> https://notes.bhemu.me/</a>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                    <div id="nextDiv" className="img_text text_img"
-                        data-aos="fade-up"
-                        data-aos-delay={aosDelay}
+                    <div className='pointSection'
+                        data-aos="zoom-in-up"
+                        data-aos-delay="50"
                         data-aos-duration={aosDuration}
                     >
-                        <img src={notesImg2} alt="image not load" height="300px" id="logoMoblie"/>
-
-                        <div className='pointSection'>
-                            <div className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
-                            <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
-                            <div className='aboutPoints'>Type To-dos Come with Done CheckBox, which helps you remember your works.</div>
-
-                            <div className='aboutPoints'>
-                                <div id='subTitle'>Technologies used</div>
-
-                                <div id='technologiesLogo'>
-                                    <div>
-                                        <img src={react} id="reactLogo"></img>
-                                        <div>React</div>
-                                    </div>
-                                    <div>
-                                        <img src={nodeJs} id="nodeJsLogo" ></img>
-                                        <div>NodeJS</div>
-                                    </div>
-                                    <div>
-                                        <img src={javaScript} id='javaScriptLogo'></img>
-                                        <div>JavaScript</div>
-                                    </div>
-                                    <div>
-                                        <img src={mongoDB} id="mongoDbLogo"></img>
-                                        <div>MongoDB</div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div className='aboutPoints'>I'm a programmer and a computer geek.</div>
+                        <div className='aboutPoints'>I have skill in Web Application Development.</div>
+                        <div className='aboutPoints'>
+                            Other than programming I use to spend time in gaming,
+                            listening songs and graphics designing.
                         </div>
-
-                        <img src={notesImg2} alt="image not load" height="300px" id="logoPc"/>
                     </div>
                 </div>
             </div>
+
+            <div className="container"
+                data-aos-offset={aosOffset}
+                data-aos={aosStyle}
+                data-aos-delay={aosDelay}
+                data-aos-duration={aosDuration}
+            >
+                <div className="containerTitle">My Logo</div>
+
+                <div className="img_text text_img">
+                    <img src={logoFireIng} alt="image not load" height="300px" id="logoMoblie"
+                        data-aos="zoom-in"
+                        data-aos-delay={aosDelay}
+                        data-aos-duration={aosDuration}
+                    />
+
+                    <div className='pointSection'
+                        data-aos="zoom-in-up"
+                        data-aos-delay={aosDelay}
+                        data-aos-duration={aosDuration}
+                    >
+                        <div className='aboutPoints'>Our logo is combination of A and S, where :-
+
+                            <li>A for Adarsh</li>
+                            <li>S for Suman</li>
+                        </div>
+
+                        <div className='aboutPoints'>First time made this logo in className 5th during my Drawing className, after 1 year(in className 6th)
+                            i made this logo on pc with Ms paint, Ms PowerPoint.
+                        </div>
+                    </div>
+
+                    <img src={logoFireIng} alt="image not load" height="300px" id="logoPc"
+                        data-aos="zoom-in"
+                        data-aos-delay={aosDelay}
+                        data-aos-duration={aosDuration}
+                    />
+                </div>
+            </div>
+
+            <div className="container"
+                data-aos-offset={aosOffset}
+                data-aos={aosStyle}
+                data-aos-delay={aosDelay}
+                data-aos-duration={aosDuration}
+            >
+                <div className="containerTitle">The Notes App</div>
+
+                <div className="img_text">
+                    <img src={notesImg1} alt="image not load" height="300px" />
+
+                    <div className='pointSection'>
+                        <div className='aboutPoints'>This is a Multi-User Notes app.</div>
+                        <div className='aboutPoints'>Which allows multiple logins and new users can also create their own new account to login.</div>
+                        <div className='aboutPoints'>Each user can keep their notes and to-dos separate and secure from others.</div>
+                        <div className='aboutPoints'>Where user data and their notes store in encrypted form in Database.</div>
+                        <div id='link'>
+                            Link :-
+                            <a href='https://notes.bhemu.me/' target="_blank"> https://notes.bhemu.me/</a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div id="nextDiv" className="img_text text_img"
+                    data-aos="fade-up"
+                    data-aos-delay={aosDelay}
+                    data-aos-duration={aosDuration}
+                >
+                    <img src={notesImg2} alt="image not load" height="300px" id="logoMoblie" />
+
+                    <div className='pointSection'>
+                        <div className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
+                        <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
+                        <div className='aboutPoints'>Type To-dos Come with Done CheckBox, which helps you remember your works.</div>
+
+                        <div className='aboutPoints'>
+                            <div id='subTitle'>Technologies used</div>
+
+                            <div id='technologiesLogo'>
+                                <div>
+                                    <img src={react} id="reactLogo"></img>
+                                    <div>React</div>
+                                </div>
+                                <div>
+                                    <img src={nodeJs} id="nodeJsLogo" ></img>
+                                    <div>NodeJS</div>
+                                </div>
+                                <div>
+                                    <img src={javaScript} id='javaScriptLogo'></img>
+                                    <div>JavaScript</div>
+                                </div>
+                                <div>
+                                    <img src={mongoDB} id="mongoDbLogo"></img>
+                                    <div>MongoDB</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src={notesImg2} alt="image not load" height="300px" id="logoPc" />
+                </div>
+            </div>
+
             <FootBar />
-        </>
+        </div>
+
     )
 }
 
