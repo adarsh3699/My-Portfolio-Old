@@ -114,6 +114,11 @@ a {
     padding-bottom: 20px;
 }
 
+#navBarLogo {
+    width: fit-content;
+    margin: auto;
+}
+
 #footSocial {
     display: flex;
     justify-content: flex-end;

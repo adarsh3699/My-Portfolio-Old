@@ -4,6 +4,7 @@ import FootBar from "../components/FootBar";
 import AOS from 'aos';
 import { Slide } from 'react-slideshow-image';
 import { Accordion } from '../components/Accordion/'
+import animateScrollTo from 'animated-scroll-to';
 
 import '../css/accordion.css'
 import 'react-slideshow-image/dist/styles.css';
@@ -34,18 +35,22 @@ const images = [
 
 function WorksPage() {
 
+    function scrollDown() {
+        animateScrollTo(700)
+    }
+
     return (
         <div id="background">
             <Bar />
             <Slide>
                 <div className="each-slide-effect">
-                    <div style={{ 'backgroundImage': `url(${images[0]})` }}><span>Demo 1</span></div>
+                    <div onClick={scrollDown} style={{ 'backgroundImage': `url(${images[0]})` }}><span>Demo 1</span></div>
                 </div>
                 <div className="each-slide-effect">
-                    <div style={{ 'backgroundImage': `url(${images[1]})` }}><span>Demo 1</span></div>
+                    <div style={{ 'backgroundImage': `url(${images[1]})` }}><span>Demo 2</span></div>
                 </div>
                 <div className="each-slide-effect">
-                    <div style={{ 'backgroundImage': `url(${images[2]})` }}><span>Demo 1</span></div>
+                    <div style={{ 'backgroundImage': `url(${images[2]})` }}><span>Demo 3</span></div>
                 </div>
             </Slide>
             <div className="mainTitle">My Works</div>

@@ -1,4 +1,6 @@
 import React from "react";
+import GlitchClip from 'react-glitch-effect/core/GlitchClip';
+
 import logoImg from "../img/logo.png";
 import googleImg from "../img/google.png";
 import instaImg from "../img/insta.png";
@@ -19,7 +21,11 @@ function FootBar() {
                 </div>
             </div>
             <div id="footLogo">
-                <img src={logoImg} />
+                <div id="navBarLogo">
+                    <GlitchClip onHover={true}>
+                        <img src={logoImg} />
+                    </GlitchClip>
+                </div>
                 <div>© 2022-25 (V 1.0)</div>
                 <div>Developed by Adarsh Suman</div>
             </div>

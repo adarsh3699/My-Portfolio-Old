@@ -2,6 +2,7 @@ import React from 'react';
 import Bar from "../components/Bar";
 import FootBar from "../components/FootBar";
 import AOS from 'aos';
+import GlitchClip from 'react-glitch-effect/core/GlitchClip';
 
 import 'aos/dist/aos.css';
 import "../css/about.css"
@@ -43,11 +44,13 @@ function AboutPage() {
                 <div className="containerTitle">About Me</div>
 
                 <div className="img_text">
-                    <img src={aboutMeIng} alt="image not load" height="300px"
-                        data-aos="zoom-in"
-                        data-aos-delay="50"
-                        data-aos-duration={aosDuration}
-                    />
+                    <GlitchClip onHover={true}>
+                        <img src={aboutMeIng} alt="image not load" height="300px"
+                            data-aos="zoom-in"
+                            data-aos-delay="50"
+                            data-aos-duration={aosDuration}
+                        />
+                    </GlitchClip>
 
                     <div className='pointSection'
                         data-aos="zoom-in-up"
@@ -73,12 +76,13 @@ function AboutPage() {
                 <div className="containerTitle">My Logo</div>
 
                 <div className="img_text text_img">
-                    <img src={logoFireIng} alt="image not load" height="300px" id="logoMoblie"
-                        data-aos="zoom-in"
-                        data-aos-delay={aosDelay}
-                        data-aos-duration={aosDuration}
-                    />
-
+                    <GlitchClip onHover={true}>
+                        <img src={logoFireIng} alt="image not load" height="300px" id="logoMoblie"
+                            data-aos="zoom-in"
+                            data-aos-delay={aosDelay}
+                            data-aos-duration={aosDuration}
+                        />
+                    </GlitchClip>
                     <div className='pointSection'
                         data-aos="zoom-in-up"
                         data-aos-delay={aosDelay}
@@ -94,12 +98,13 @@ function AboutPage() {
                             i made this logo on pc with Ms paint, Ms PowerPoint.
                         </div>
                     </div>
-
-                    <img src={logoFireIng} alt="image not load" height="300px" id="logoPc"
-                        data-aos="zoom-in"
-                        data-aos-delay={aosDelay}
-                        data-aos-duration={aosDuration}
-                    />
+                    <GlitchClip onHover={true}>
+                        <img src={logoFireIng} alt="image not load" height="300px" id="logoPc"
+                            data-aos="zoom-in"
+                            data-aos-delay={aosDelay}
+                            data-aos-duration={aosDuration}
+                        />
+                    </GlitchClip>
                 </div>
             </div>
 
@@ -112,8 +117,9 @@ function AboutPage() {
                 <div className="containerTitle">The Notes App</div>
 
                 <div className="img_text">
-                    <img src={notesImg1} alt="image not load" height="300px" />
-
+                    <GlitchClip onHover={true}>
+                        <img src={notesImg1} alt="image not load" height="300px" />
+                    </GlitchClip>
                     <div className='pointSection'>
                         <div className='aboutPoints'>This is a Multi-User Notes app.</div>
                         <div className='aboutPoints'>Which allows multiple logins and new users can also create their own new account to login.</div>
@@ -133,8 +139,9 @@ function AboutPage() {
                     data-aos-delay={aosDelay}
                     data-aos-duration={aosDuration}
                 >
-                    <img src={notesImg2} alt="image not load" height="300px" id="logoMoblie" />
-
+                    <GlitchClip onHover={true}>
+                        <img src={notesImg2} alt="image not load" height="300px" id="logoMoblie" />
+                    </GlitchClip>
                     <div className='pointSection'>
                         <div className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
                         <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
@@ -163,8 +170,9 @@ function AboutPage() {
                             </div>
                         </div>
                     </div>
-
-                    <img src={notesImg2} alt="image not load" height="300px" id="logoPc" />
+                    <GlitchClip onHover={true}>
+                        <img src={notesImg2} alt="image not load" height="300px" id="logoPc" />
+                    </GlitchClip>
                 </div>
             </div>
 
