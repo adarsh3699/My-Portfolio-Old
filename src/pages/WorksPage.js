@@ -69,22 +69,23 @@ function WorksPage() {
                     <img src={notesImg1} alt="image not load" height="300px" />
 
                     <div className='pointSection'>
-                        <li className='aboutPoints'>This is a Multi-User Notes app.</li>
-                        <li className='aboutPoints'>Which allows multiple logins and new users can also create their own new account to login.</li>
-                        <li className='aboutPoints'>Each user can keep their notes and to-dos separate and secure from others.</li>
-                        <li className='aboutPoints'>Where user data and their notes store in encrypted form in Database.</li>
-                        <li className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</li>
-                        <li className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</li>
-                        <li className='aboutPoints'>Type To-dos Come with Done CheckBox, which helps you remember your works.</li>
+                        <div className='aboutPoints'>This is a Multi-User Notes app.</div>
+                        <div className='aboutPoints'>Which allows multiple logins and new users can also create their own new account to login.</div>
+                        <div className='aboutPoints'>Each user can keep their notes and to-dos separate and secure from others.</div>
+                        <div className='aboutPoints'>Where user data and their notes store in encrypted form in Database.</div>
+                        <div className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
+                        <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
+                        <div className='aboutPoints'>Type To-dos Come with Done CheckBox, which helps you remember your works.</div>
                     </div>
                 </div>
 
-                <div className='pointSection'
+                <div
+                    id='technologies'
                     data-aos="fade-up"
                     data-aos-delay={aosDelay}
                     data-aos-duration={aosDuration}
                 >
-                    <div className='aboutPoints'>
+                    <div>
                         <div id='subTitle'>Technologies used</div>
 
                         <div id='technologiesLogo'>
@@ -114,28 +115,36 @@ function WorksPage() {
 
                 <br />
                 <Accordion title="Login Page">
-                    <div className='pointSection'>
-                        <img src={LoginPage} width="50%" />
-                        <div className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
-                        <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
-                        <div className='aboutPoints'>Type To-dos Come with Done CheckBox, which helps you remember your works.</div>
+                    <div className='img_text'>
+                        <img className='accordionImg' src={LoginPage} />
+                        <div className='pointSection'>
+                            <div className='aboutPoints'>Our login system allows us to login with their email and password.</div>
+                            <div className='aboutPoints'>Anyone can easily create their account with their email and password.</div>
+                            <div className='aboutPoints'>There is also an option to "forget password" in case you forget your password.
+                            In which case you get an OTP on your registered email ID to change your password.</div>
+                            <div className='aboutPoints'>Your privacy is our responsibility. That is why your information is end-to-end encrypted.</div>
+                        </div>
                     </div>
                 </Accordion>
                 <Accordion title="Home Page" >
-                <div className='pointSection'>
-                        <img src={HomePage} width="50%" />
-                        <div className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
-                        <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
-                        <div className='aboutPoints'>Type To-dos Come with Done CheckBox, which helps you remember your works.</div>
+                    <div className='img_text'>
+                        <img className='accordionImg' src={HomePage} />
+                        <div>
+                            <div className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
+                            <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
+                            <div className='aboutPoints'>Type To-dos Come with Done CheckBox, which helps you remember your works.</div>
+                        </div>
                     </div>
                 </Accordion>
 
                 <Accordion title="Notes" >
-                <div className='pointSection'>
-                        <img src={NoteTodo} width="50%" />
-                        <div className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
-                        <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
-                        <div className='aboutPoints'>Type To-dos Come with Done CheckBox, which helps you remember your works.</div>
+                    <div className='img_text'>
+                        <img className='accordionImg' src={NoteTodo} />
+                        <div>
+                            <div className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
+                            <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
+                            <div className='aboutPoints'>Type To-dos Come with Done CheckBox, which helps you remember your works.</div>
+                        </div>
                     </div>
                 </Accordion>
             </div>
