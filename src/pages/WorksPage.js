@@ -17,6 +17,9 @@ import react from "../img/projects/react.png"
 import nodeJs from "../img/projects/nodejs.svg"
 import javaScript from "../img/projects/javascript.svg"
 import mongoDB from "../img/projects/mongodb.svg"
+import LoginPage from "../img/projects/loginPage.png"
+import HomePage from "../img/projects/homePage.png"
+import NoteTodo from "../img/projects/noteTodo.jpeg"
 
 document.title = "Adarsh Suman | Works"
 
@@ -112,40 +115,28 @@ function WorksPage() {
                 <br />
                 <Accordion title="Login Page">
                     <div className='pointSection'>
+                        <img src={LoginPage} width="50%" />
                         <div className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
                         <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
                         <div className='aboutPoints'>Type To-dos Come with Done CheckBox, which helps you remember your works.</div>
-
-                        <div className='aboutPoints'>
-                            <div id='subTitle'>Technologies used</div>
-
-                            <div id='technologiesLogo'>
-                                <div>
-                                    <img src={react} id="reactLogo"></img>
-                                    <div>React</div>
-                                </div>
-                                <div>
-                                    <img src={nodeJs} id="nodeJsLogo" ></img>
-                                    <div>NodeJS</div>
-                                </div>
-                                <div>
-                                    <img src={javaScript} id='javaScriptLogo'></img>
-                                    <div>JavaScript</div>
-                                </div>
-                                <div>
-                                    <img src={mongoDB} id="mongoDbLogo"></img>
-                                    <div>MongoDB</div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </Accordion>
                 <Accordion title="Home Page" >
-                    ku
+                <div className='pointSection'>
+                        <img src={HomePage} width="50%" />
+                        <div className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
+                        <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
+                        <div className='aboutPoints'>Type To-dos Come with Done CheckBox, which helps you remember your works.</div>
+                    </div>
                 </Accordion>
 
                 <Accordion title="Notes" >
-                    ki
+                <div className='pointSection'>
+                        <img src={NoteTodo} width="50%" />
+                        <div className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
+                        <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
+                        <div className='aboutPoints'>Type To-dos Come with Done CheckBox, which helps you remember your works.</div>
+                    </div>
                 </Accordion>
             </div>
             <FootBar />
