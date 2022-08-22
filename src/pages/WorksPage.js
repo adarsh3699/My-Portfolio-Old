@@ -10,7 +10,7 @@ import Button from '../components/Button';
 import '../css/accordion.css'
 import 'react-slideshow-image/dist/styles.css';
 import 'aos/dist/aos.css';
-import "../css/works.css"
+import "../css/worksPage.css"
 import "../css/container.css"
 
 import notesImg1 from "../img/projects/user-home.jpg"
@@ -21,6 +21,8 @@ import mongoDB from "../img/projects/mongodb.svg"
 import LoginPage from "../img/projects/loginPage.png"
 import HomePage from "../img/projects/homePage.png"
 import NoteTodo from "../img/projects/noteTodo.jpeg"
+import myProjectBanner from "../img/myProjects.png"
+import InternshipBanner from "../img/internshipBanner.jpeg"
 
 document.title = "Adarsh Suman | Works"
 
@@ -30,8 +32,8 @@ const aosDelay = "50";
 const aosDuration = "1000";
 
 const images = [
-    "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-    "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
+    myProjectBanner,
+    InternshipBanner,
     "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
 ];
 
@@ -60,13 +62,13 @@ function WorksPage() {
             <Bar />
             <Slide>
                 <div className="each-slide-effect">
-                    <div onClick={myProject} style={{ 'backgroundImage': `url(${images[0]})` }}><span>Demo 1</span></div>
+                    <div onClick={myProject} style={{ 'backgroundImage': `url(${images[0]})` }}></div>
                 </div>
                 <div className="each-slide-effect">
-                    <div style={{ 'backgroundImage': `url(${images[1]})` }}><span>Demo 2</span></div>
+                    <div style={{ 'backgroundImage': `url(${images[1]})` }}></div>
                 </div>
                 <div className="each-slide-effect">
-                    <div style={{ 'backgroundImage': `url(${images[2]})` }}><span>Demo 3</span></div>
+                    <div style={{ 'backgroundImage': `url(${images[2]})` }}></div>
                 </div>
             </Slide>
             <div className="mainTitle">My Works</div>
