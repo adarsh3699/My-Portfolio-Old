@@ -1,0 +1,41 @@
+.button {
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0 15px;
+    cursor: pointer;
+    width: fit-content;
+    user-select: none;
+    font-size: 18px;
+    color: #f1f1f1;
+}
+
+/* ..........For Syk Button........... */
+.sky {
+    background-color: #008CBA;
+    border: #02769d 1px solid;
+}
+.sky:hover {
+    transition-duration: 0.2s;
+    background-color: #02769d;
+}
+
+/* ..........For Green Button........... */
+.green {
+    background-color: #4CAF50;
+    border: #328a35 1px solid;
+}
+.green:hover {
+    transition-duration: 0.2s;
+    background-color: #328a35;
+}
+
+/* ..........For Orange Button........... */
+.orange {
+    background-color: #e09f63;
+    border: #c07630 1px solid;
+}
+.orange:hover {
+    transition-duration: 0.2s;
+    background-color: #c07630;
+}

@@ -24,6 +24,7 @@
 .default-nav {
     margin: 15px;
 }
+
 /* ...........slider_End............. */
 
 .mainTitle {
@@ -59,18 +60,18 @@
 .pointSection {
     margin: 0px 0 0 10px;
     padding-left: 10px;
+    text-align: left;
 }
 
 .aboutPoints {
     margin: 20px 10px;
-    display: list-item;        
+    display: list-item;
     list-style-type: square;
 }
 
 #link {
-    margin: 50px 0;
+    margin: 30px 0;
     text-align: center;
-    font-size: 23px;
 }
 
 #link a:hover {
@@ -85,7 +86,7 @@
 #technologies {
     margin: 20px 0;
     width: 90%;
-    margin: auto;
+    margin: 30px auto;
 }
 
 #subTitle {
@@ -100,7 +101,7 @@
 
 #technologiesLogo {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-around;
     text-align: center;
 }
@@ -113,8 +114,9 @@
 #nodeJsLogo,
 #mongoDbLogo {
     background-color: white;
+    border-radius: 5px;
     height: 58px;
-    padding: 7px;
+    padding: 6px 7px;
 }
 
 #technologiesLogo img:hover {
@@ -128,7 +130,8 @@
 
 /* ...............................mWeb............................. */
 
-@media screen and (max-width: 1139px) {
+@media screen and (max-width: 1066px) {
+
     #reactLogo,
     #javaScriptLogo {
         height: 50px;
@@ -136,23 +139,11 @@
 
     #nodeJsLogo,
     #mongoDbLogo {
-        height: 45px;
+        height: 48px;
     }
 }
 
-@media screen and (max-width: 1066px) {
-    #subTitle {
-        margin: 5% 0 15px 0;
-    }
-}
-
-@media screen and (max-width: 1015px) {
-    #subTitle {
-        margin: 10px 0 15px 0;
-    }
-}
-
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 770px) {
     .pointSection {
         margin: 30px 0 50px 10px;
     }
@@ -171,13 +162,17 @@
         display: none;
     }
 
-    #technologiesLogo {
-        font-size: 15px;
+    #technologies {
+        margin: 10px auto;
     }
 
     #subTitle {
-        margin: 30px 0 20px 0;
-        padding: 3px;
+        font-size: 20px;
+    }
+
+    #technologiesLogo {
+        font-size: 15px;
+        justify-content: space-between;
     }
 
     #reactLogo,
@@ -187,11 +182,37 @@
 
     #nodeJsLogo,
     #mongoDbLogo {
-        height: 30px;
+        height: 38px;
         padding: 4px;
     }
 
     .accordionImg {
-        width: 90%;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .each-slide-effect>div {
+        height: 400px;
+    }
+
+    .accordionImg {
+        width: 100%;
+    }
+
+    #technologiesLogo {
+        font-size: 12px;
+        justify-content: space-between;
+    }
+
+    #reactLogo,
+    #javaScriptLogo {
+        height: 30px;
+    }
+
+    #nodeJsLogo,
+    #mongoDbLogo {
+        height: 28px;
+        padding: 4px;
     }
 }

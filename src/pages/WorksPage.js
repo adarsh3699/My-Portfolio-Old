@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Bar from "../components/Bar";
 import FootBar from "../components/FootBar";
 import AOS from 'aos';
 import { Slide } from 'react-slideshow-image';
 import { Accordion } from '../components/Accordion/'
 import animateScrollTo from 'animated-scroll-to';
+import Button from '../components/Button';
 
 import '../css/accordion.css'
 import 'react-slideshow-image/dist/styles.css';
@@ -25,10 +26,8 @@ document.title = "Adarsh Suman | Works"
 
 AOS.init();
 
-const aosStyle = "zoom-out";
 const aosDelay = "50";
 const aosDuration = "1000";
-const aosOffset = "250"
 
 const images = [
     "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
@@ -36,10 +35,24 @@ const images = [
     "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
 ];
 
+function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+        width,
+        height
+    };
+}
+
 function WorksPage() {
 
-    function scrollDown() {
-        animateScrollTo(700)
+    function myProject() {
+        if (getWindowDimensions().width > 425 && getWindowDimensions().width <= 750) {
+            return animateScrollTo(600)
+        } else if (getWindowDimensions().width <= 425) {
+            return animateScrollTo(510)
+        } else {
+            return animateScrollTo(630)
+        }
     }
 
     return (
@@ -47,7 +60,7 @@ function WorksPage() {
             <Bar />
             <Slide>
                 <div className="each-slide-effect">
-                    <div onClick={scrollDown} style={{ 'backgroundImage': `url(${images[0]})` }}><span>Demo 1</span></div>
+                    <div onClick={myProject} style={{ 'backgroundImage': `url(${images[0]})` }}><span>Demo 1</span></div>
                 </div>
                 <div className="each-slide-effect">
                     <div style={{ 'backgroundImage': `url(${images[1]})` }}><span>Demo 2</span></div>
@@ -76,6 +89,15 @@ function WorksPage() {
                         <div className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
                         <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
                         <div className='aboutPoints'>Type To-dos Come with Done CheckBox, which helps you remember your works.</div>
+                        <div id='link'>
+                            <a href='https://notes.bhemu.me/' id='noteLink' target="_blank">
+                                <Button
+                                    title="Web-Link"
+                                    color="sky"
+                                    sx={{ fontSize: "20px" }}
+                                />
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -106,10 +128,6 @@ function WorksPage() {
                                 <div>MongoDB</div>
                             </div>
                         </div>
-                        <div id='link'>
-                            Link :-
-                            <a href='https://notes.bhemu.me/' target="_blank"> https://notes.bhemu.me/</a>
-                        </div>
                     </div>
                 </div>
 
@@ -121,18 +139,20 @@ function WorksPage() {
                             <div className='aboutPoints'>Our login system allows us to login with their email and password.</div>
                             <div className='aboutPoints'>Anyone can easily create their account with their email and password.</div>
                             <div className='aboutPoints'>There is also an option to "forget password" in case you forget your password.
-                            In which case you get an OTP on your registered email ID to change your password.</div>
+                                In which case you get an OTP on your registered email ID to change your password.</div>
                             <div className='aboutPoints'>Your privacy is our responsibility. That is why your information is end-to-end encrypted.</div>
                         </div>
                     </div>
                 </Accordion>
+
                 <Accordion title="Home Page" >
                     <div className='img_text'>
                         <img className='accordionImg' src={HomePage} />
-                        <div>
-                            <div className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
-                            <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
-                            <div className='aboutPoints'>Type To-dos Come with Done CheckBox, which helps you remember your works.</div>
+                        <div className='pointSection'>
+                            <div className='aboutPoints'>This is our new simple user-friendly UI.</div>
+                            <div className='aboutPoints'>Adding new notes is very easy from the input box in the navbar and by clicking the "Add Note" button.</div>
+                            <div className='aboutPoints'>Each note box shows us their note type in the right-upper corner, which helps us to navigate easily.</div>
+                            <div className='aboutPoints'>Each note box shows us the last saved time and date, which helps us to navigate easily.</div>
                         </div>
                     </div>
                 </Accordion>
@@ -140,10 +160,10 @@ function WorksPage() {
                 <Accordion title="Notes" >
                     <div className='img_text'>
                         <img className='accordionImg' src={NoteTodo} />
-                        <div>
-                            <div className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
+                        <div className='pointSection'>
+                            <div className='aboutPoints'>This is our note dialog box, with a simple UI and easy to navigate.</div>
                             <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
-                            <div className='aboutPoints'>Type To-dos Come with Done CheckBox, which helps you remember your works.</div>
+                            <div className='aboutPoints'>Type To-dos It comes with a Done CheckBox, which helps you remember your work progress.</div>
                         </div>
                     </div>
                 </Accordion>

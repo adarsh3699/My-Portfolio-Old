@@ -83,13 +83,7 @@
 
 #link {
     margin: 5%;
-    text-align: center;
-    font-size: 23px;
-}
-
-#link a:hover {
-    transition-duration: 0.2s;
-    color: #9fd1db;
+    display: flex;
 }
 
 #nextDiv {

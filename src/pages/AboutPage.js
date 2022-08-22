@@ -2,21 +2,22 @@ import React from 'react';
 import Bar from "../components/Bar";
 import FootBar from "../components/FootBar";
 import AOS from 'aos';
+import Button from '../components/Button';
 
 import 'aos/dist/aos.css';
-import "../css/about.css"
-import "../css/container.css"
+import "../css/about.css";
+import "../css/container.css";
 
-import aboutMeIng from "../img/myImg.jpg"
-import logoFireIng from "../img/logoFire.jpg"
-import notesImg1 from "../img/projects/user-home.jpg"
-import notesImg2 from "../img/projects/notes-todos.jpg"
-import react from "../img/projects/react.png"
-import nodeJs from "../img/projects/nodejs.svg"
-import javaScript from "../img/projects/javascript.svg"
-import mongoDB from "../img/projects/mongodb.svg"
+import aboutMeIng from "../img/myImg.jpg";
+import logoFireIng from "../img/logoFire.jpg";
+import notesImg1 from "../img/projects/user-home.jpg";
+import notesImg2 from "../img/projects/notes-todos.jpg";
+import react from "../img/projects/react.png";
+import nodeJs from "../img/projects/nodejs.svg";
+import javaScript from "../img/projects/javascript.svg";
+import mongoDB from "../img/projects/mongodb.svg";
 
-document.title = "Adarsh Suman | About"
+document.title = "Adarsh Suman | About";
 
 AOS.init();
 const aosStyle = "fade-up";
@@ -56,8 +57,11 @@ function AboutPage() {
                         data-aos-delay="50"
                         data-aos-duration={aosDuration}
                     >
+                        <div className='aboutPoints'>I'm in high school in the science stream.</div>
                         <div className='aboutPoints'>I'm a programmer and a computer geek.</div>
                         <div className='aboutPoints'>I have skill in Web Application Development.</div>
+                        <div className='aboutPoints'>I have experience in JavaScript, React, NodeJs, MySql, MongoDb, PHP, HTML and CSS.</div>
+                        <div className='aboutPoints'>I have done some of my personal projects and some internships at different companies.</div>
                         <div className='aboutPoints'>
                             Other than programming I use to spend time in gaming,
                             listening songs and graphics designing.
@@ -125,53 +129,20 @@ function AboutPage() {
                         <div className='aboutPoints'>Each user can keep their notes and to-dos separate and secure from others.</div>
                         <div className='aboutPoints'>Where user data and their notes store in encrypted form in Database.</div>
                         <div id='link'>
-                            Link :-
-                            <a href='https://notes.bhemu.me/' target="_blank"> https://notes.bhemu.me/</a>
-                        </div>
-
-
-                    </div>
-                </div>
-
-                <div id="nextDiv" className="img_text text_img"
-                    data-aos="fade-up"
-                    data-aos-delay={aosDelay}
-                    data-aos-duration={aosDuration}
-                >
-
-                    <img src={notesImg2} alt="image not load" height="300px" id="logoMoblie" />
-
-                    <div className='pointSection'>
-                        <div className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
-                        <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
-                        <div className='aboutPoints'>Type To-dos Come with Done CheckBox, which helps you remember your works.</div>
-
-                        <div className='aboutPoints'>
-                            <div id='subTitle'>Technologies used</div>
-
-                            <div id='technologiesLogo'>
-                                <div>
-                                    <img src={react} id="reactLogo"></img>
-                                    <div>React</div>
-                                </div>
-                                <div>
-                                    <img src={nodeJs} id="nodeJsLogo" ></img>
-                                    <div>NodeJS</div>
-                                </div>
-                                <div>
-                                    <img src={javaScript} id='javaScriptLogo'></img>
-                                    <div>JavaScript</div>
-                                </div>
-                                <div>
-                                    <img src={mongoDB} id="mongoDbLogo"></img>
-                                    <div>MongoDB</div>
-                                </div>
-                            </div>
+                            <a href='https://notes.bhemu.me/' id='noteLink' target="_blank">
+                                <Button
+                                    title="Web-Link"
+                                    color="sky"
+                                />
+                            </a>
+                            <a href="/works" id='knowMore'>
+                                <Button
+                                    title="Know More"
+                                    color="green"
+                                />
+                            </a>
                         </div>
                     </div>
-
-                    <img src={notesImg2} alt="image not load" height="300px" id="logoPc" />
-
                 </div>
             </div>
 

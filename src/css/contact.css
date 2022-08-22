@@ -42,15 +42,6 @@
     min-height: 270px;
 }
 
-#send {
-    background-color: #e09f63;
-    margin-bottom: 10px;
-    width: 150px;
-    height: 40px;
-    border-radius: 3px;
-    font-size: 18px;
-}
-
 .disableBtn {
     background-color: gray !important;
     pointer-events: none;

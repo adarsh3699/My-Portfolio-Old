@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Bar from "../components/Bar";
 import FootBar from "../components/FootBar";
 import AOS from 'aos';
+import Button from '../components/Button';
 
 import 'aos/dist/aos.css';
 import "../css/contact.css"
@@ -53,10 +54,18 @@ function AboutPage() {
                 <div>
                     <textarea id="textArea" required name="body" placeholder="Write your msg here" value={msgValue} onChange={handelMsgChange}></textarea>
                 </div>
-                <div>
-                    <button id="send"><span>Send</span></button>
-                </div>
+                <Button
+                    title="Send"
+                    color="orange"
 
+                    sx={{
+                        marginBottom: "10px",
+                        width: "150px",
+                        height: "40px",
+                        fontSize: "18px",
+                        color: "black"
+                    }}
+                />
             </form>
 
             <div id="contact"
