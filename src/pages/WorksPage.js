@@ -3,57 +3,49 @@ import Bar from "../components/Bar";
 import FootBar from "../components/FootBar";
 import AOS from 'aos';
 import { Slide } from 'react-slideshow-image';
-import { Accordion } from '../components/Accordion/'
+import { Accordion } from '../components/Accordion/';
 import animateScrollTo from 'animated-scroll-to';
 import Button from '../components/Button';
 
-import '../css/accordion.css'
+import '../css/accordion.css';
 import 'react-slideshow-image/dist/styles.css';
 import 'aos/dist/aos.css';
-import "../css/worksPage.css"
-import "../css/container.css"
+import "../css/worksPage.css";
+import "../css/container.css";
 
-import notesImg1 from "../img/projects/user-home.jpg"
-import react from "../img/projects/react.png"
-import nodeJs from "../img/projects/nodejs.svg"
-import javaScript from "../img/projects/javascript.svg"
-import mongoDB from "../img/projects/mongodb.svg"
-import LoginPage from "../img/projects/loginPage.png"
-import HomePage from "../img/projects/homePage.png"
-import NoteTodo from "../img/projects/noteTodo.jpeg"
-import myProjectBanner from "../img/myProjects.png"
-import InternshipBanner from "../img/internshipBanner.jpeg"
+import notesImg1 from "../img/projects/user-home.jpg";
+import react from "../img/projects/react.png";
+import nodeJs from "../img/projects/nodejs.svg";
+import javaScript from "../img/projects/javascript.svg";
+import mongoDB from "../img/projects/mongodb.svg";
+import LoginPage from "../img/projects/loginPage.png";
+import HomePage from "../img/projects/homePage.png";
+import NoteTodo from "../img/projects/noteTodo.jpeg";
+import myProjectBanner from "../img/myProjects.png";
+import InternshipBanner from "../img/internshipBanner.jpeg";
+import MettingBanner from "../img/meeting.jpg";
 
-document.title = "Adarsh Suman | Works"
+document.title = "Adarsh Suman | Works";
 
 AOS.init();
 
 const aosDelay = "50";
 const aosDuration = "1000";
 
-const images = [
-    myProjectBanner,
-    InternshipBanner,
-    "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-];
-
 function getWindowDimensions() {
     const { innerWidth: width, innerHeight: height } = window;
-    return {
-        width,
-        height
-    };
+    return { width, height };
 }
 
 function WorksPage() {
 
     function myProject() {
-        if (getWindowDimensions().width > 425 && getWindowDimensions().width <= 750) {
-            return animateScrollTo(600)
-        } else if (getWindowDimensions().width <= 425) {
-            return animateScrollTo(510)
-        } else {
-            return animateScrollTo(630)
+        if (getWindowDimensions().width > 1000) {
+            return animateScrollTo(600);
+        } else if (getWindowDimensions().width <= 1000 && getWindowDimensions().width > 750) {
+            return animateScrollTo(550);
+        } else if (getWindowDimensions().width <= 750) {
+            return animateScrollTo(350);
         }
     }
 
@@ -62,13 +54,19 @@ function WorksPage() {
             <Bar />
             <Slide>
                 <div className="each-slide-effect">
-                    <div onClick={myProject} style={{ 'backgroundImage': `url(${images[0]})` }}></div>
+                    <div className='bannerImg' style={{ 'backgroundImage': `url(${myProjectBanner})` }}>
+                        <span onClick={myProject}>My Projects</span>
+                    </div>
                 </div>
                 <div className="each-slide-effect">
-                    <div style={{ 'backgroundImage': `url(${images[1]})` }}></div>
+                    <div className='bannerImg' style={{ 'backgroundImage': `url(${InternshipBanner})` }}>
+                        <span>Internships</span>
+                    </div>
                 </div>
                 <div className="each-slide-effect">
-                    <div style={{ 'backgroundImage': `url(${images[2]})` }}></div>
+                    <div className='bannerImg' style={{ 'backgroundImage': `url(${MettingBanner})` }}>
+                        <span>Slide 1</span>
+                    </div>
                 </div>
             </Slide>
             <div className="mainTitle">My Works</div>
