@@ -7,11 +7,11 @@ import Button from '../components/Button';
 import 'aos/dist/aos.css';
 import "../css/contact.css"
 
-import emailIconImg from "../img/email.png"
-import telegramIconImg from "../img/telegram.svg"
-import instaIconImg from "../img/instagram.png"
-import youtubeIconImg from "../img/youtube2.png"
-import websiteIconImg from "../img/website.png"
+import emailIconImg from "../img/soical_logos/email.svg"
+import telegramIconImg from "../img/soical_logos/telegram.svg"
+import instaIconImg from "../img/soical_logos/instagram.svg"
+import youtubeIconImg from "../img/soical_logos/youtube.svg"
+import websiteIconImg from "../img/soical_logos/website.svg"
 
 document.title = "Adarsh Suman | Contact"
 
@@ -98,7 +98,7 @@ function AboutPage() {
 
                 <div>
                     <a href="https://www.instagram.com/_adarsh.s/" target="_blank" className='socialLinksBox'>
-                        <img src={instaIconImg} /><div>Instagram</div>
+                        <img style={{borderRadius: "50%"}} src={instaIconImg} /><div>Instagram</div>
                     </a>
                 </div>
 

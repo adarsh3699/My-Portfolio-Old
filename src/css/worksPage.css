@@ -113,8 +113,8 @@
     text-align: center;
 }
 
-#reactLogo,
-#javaScriptLogo {
+#reactLogo, #javaScriptLogo,
+#mySqlLogo, #cssLogo {
     height: 60px;
 }
 
@@ -126,9 +126,19 @@
     padding: 6px 7px;
 }
 
+#mySqlLogo {
+    background-color: white;
+    border-radius: 5px;
+}
+
 #technologiesLogo img:hover {
     transform: scale(1.10);
     transition-duration: 0.2s;
+}
+
+.accordionTitle {
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .accordionImg {
@@ -139,8 +149,8 @@
 
 @media screen and (max-width: 1066px) {
 
-    #reactLogo,
-    #javaScriptLogo {
+    #reactLogo, #javaScriptLogo,
+    #mySqlLogo, #cssLogo {
         height: 50px;
     }
 
@@ -199,8 +209,8 @@
         justify-content: space-between;
     }
 
-    #reactLogo,
-    #javaScriptLogo {
+    #reactLogo, #javaScriptLogo,
+    #mySqlLogo, #cssLogo {
         height: 38px;
     }
 
@@ -234,8 +244,8 @@
         justify-content: space-between;
     }
 
-    #reactLogo,
-    #javaScriptLogo {
+    #reactLogo, #javaScriptLogo,
+    #mySqlLogo, #cssLogo {
         height: 30px;
     }
 

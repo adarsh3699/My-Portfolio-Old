@@ -1,9 +1,8 @@
 import React from "react";
 
 import logoImg from "../img/logo.png";
-import googleImg from "../img/google.png";
-import instaImg from "../img/insta.png";
-import youtubeImg from "../img/youtube.svg";
+import googleImg from "../img/soical_logos/google.png";
+import youtubeImg from "../img/soical_logos/youtubeWhite.svg";
 
 function FootBar() {
     return (

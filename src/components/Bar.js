@@ -3,8 +3,8 @@ import React, { useState, useEffect, useRef } from "react";
 import "../css/bar.css";
 
 import logoImg from '../img/logo.png';
-import instaLogo from '../img/insta.png';
-import youtubeLogo from '../img/youtube.png';
+import instaLogo from '../img//soical_logos/instagramWhite.svg';
+import youtubeLogo from '../img/soical_logos/youtubeWhite.svg';
 import mobileMenuIcon from '../img/menu.png';
 
 function Bar() {
@@ -51,7 +51,7 @@ function Bar() {
 
                 <div id="social">
                     <a href="https://www.instagram.com/_adarsh.s/" target="_blank">
-                        <img src={instaLogo} height="22.01px" />
+                        <img src={instaLogo} height="27px" />
                     </a>
                     <a href="https://www.youtube.com/channel/UCkdSVbjY4sS1I7hw9ZJMdew" target="_blank">
                         <img src={youtubeLogo} height="22px" />                    

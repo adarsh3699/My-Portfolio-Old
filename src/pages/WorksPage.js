@@ -13,17 +13,22 @@ import 'aos/dist/aos.css';
 import "../css/worksPage.css";
 import "../css/container.css";
 
+
+import myProjectBanner from "../img/myProjects.png";
+import InternshipBanner from "../img/internshipBanner.jpeg";
+import MettingBanner from "../img/meeting.jpg";
+
 import notesImg1 from "../img/projects/user-home.jpg";
+import LoginPage from "../img/projects/loginPage.png";
+import HomePage from "../img/projects/homePage.png";
+import NoteTodo from "../img/projects/noteTodo.jpeg";
+
 import react from "../img/projects/react.png";
 import nodeJs from "../img/projects/nodejs.svg";
 import javaScript from "../img/projects/javascript.svg";
 import mongoDB from "../img/projects/mongodb.svg";
-import LoginPage from "../img/projects/loginPage.png";
-import HomePage from "../img/projects/homePage.png";
-import NoteTodo from "../img/projects/noteTodo.jpeg";
-import myProjectBanner from "../img/myProjects.png";
-import InternshipBanner from "../img/internshipBanner.jpeg";
-import MettingBanner from "../img/meeting.jpg";
+import mysql from "../img/projects/mysql.svg";
+import css from "../img/projects/css.svg";
 
 document.title = "Adarsh Suman | Works";
 
@@ -168,6 +173,105 @@ function WorksPage() {
                     </div>
                 </Accordion>
             </div>
+
+            <div className="container">
+                <div className="containerTitle">Some Other Projects</div>
+
+                <div className="img_text"
+                    data-aos="fade-up"
+                    data-aos-delay={aosDelay}
+                    data-aos-duration={aosDuration}
+                >
+                    <img src={notesImg1} alt="image not load" height="300px" />
+
+                    <div className='pointSection'>
+                        <div className='aboutPoints'>These are my persnal project.</div>
+                        <div className='aboutPoints'>Which are based on CSS and concept JavaScript.</div>
+                    </div>
+                </div>
+
+                <div
+                    id='technologies'
+                    data-aos="fade-up"
+                    data-aos-delay={aosDelay}
+                    data-aos-duration={aosDuration}
+                >
+                    <div>
+                        <div id='subTitle'>Technologies used</div>
+
+                        <div id='technologiesLogo'>
+                            <div>
+                                <img src={react} id="reactLogo"></img>
+                                <div>React</div>
+                            </div>
+                            <div>
+                                <img src={css} id="cssLogo" ></img>
+                                <div>CSS</div>
+                            </div>
+                            <div>
+                                <img src={javaScript} id='javaScriptLogo'></img>
+                                <div>JavaScript</div>
+                            </div>
+                            <div>
+                                <img src={mysql} id="mySqlLogo"></img>
+                                <div>mySQL</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br />
+                <Accordion title="JavaScript Based">
+                    <div className='pointSection'>
+                        <div className='accordionTitle'>SDT Calculator</div>
+                        <div className='aboutPoints'>This is a speed, time, and distance calculator.</div>
+                        <div className='aboutPoints'>
+                            <b>Concept:-</b> <br />
+                            Write any of two of them, and the third will be auto calculated. <br />
+                            I.e, if you write speed and distance, then time is automatically calculated.
+                        </div>
+                        <div id='link'>
+                            <a href='https://sdt.bhemu.me/' id='noteLink' target="_blank">
+                                <Button
+                                    title="Live Link"
+                                    color="sky"
+                                    sx={{ fontSize: "20px" }}
+                                />
+                            </a>
+                        </div>
+
+                        <div className='accordionTitle'>Multi Select</div>
+                        <div className='aboutPoints'>There are three Dropdowns, all of which have the same option of cars inside.</div>
+                        <div className='aboutPoints'>
+                            <b>Concept:-</b> <br />
+                            If you select a car in the first dropdown, then the selected car is automatically removed from the second and third dropdowns. <br />
+                            Similarly, if you select another car in the second dropdown the selected car is automatically removed from the first and third dropdowns.
+                        </div>
+                        <div id='link'>
+                            <a href='https://select.bhemu.me/' id='noteLink' target="_blank">
+                                <Button
+                                    title="Live Link"
+                                    color="sky"
+                                    sx={{ fontSize: "20px" }}
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </Accordion>
+
+                <Accordion title="CSS Based Designs" >
+                    <div className='img_text'>
+                        <img className='accordionImg' src={HomePage} />
+                        <div className='pointSection'>
+                            <div className='aboutPoints'>This is our new simple user-friendly UI.</div>
+                            <div className='aboutPoints'>Adding new notes is very easy from the input box in the navbar and by clicking the "Add Note" button.</div>
+                            <div className='aboutPoints'>Each note box shows us their note type in the right-upper corner, which helps us to navigate easily.</div>
+                            <div className='aboutPoints'>Each note box shows us the last saved time and date, which helps us to navigate easily.</div>
+                        </div>
+                    </div>
+                </Accordion>
+            </div>
+
             <FootBar />
         </div>
     )
