@@ -182,7 +182,7 @@ function WorksPage() {
                     data-aos-delay={aosDelay}
                     data-aos-duration={aosDuration}
                 >
-                    <img src={notesImg1} alt="image not load" height="300px" />
+                    {/* <img src={notesImg1} alt="image not load" height="300px" /> */}
 
                     <div className='pointSection'>
                         <div className='aboutPoints'>These are my persnal project.</div>
@@ -222,41 +222,46 @@ function WorksPage() {
 
                 <br />
                 <Accordion title="JavaScript Based">
-                    <div className='pointSection'>
-                        <div className='accordionTitle'>SDT Calculator</div>
-                        <div className='aboutPoints'>This is a speed, time, and distance calculator.</div>
-                        <div className='aboutPoints'>
-                            <b>Concept:-</b> <br />
-                            Write any of two of them, and the third will be auto calculated. <br />
-                            I.e, if you write speed and distance, then time is automatically calculated.
-                        </div>
-                        <div id='link'>
-                            <a href='https://sdt.bhemu.me/' id='noteLink' target="_blank">
-                                <Button
-                                    title="Live Link"
-                                    color="sky"
-                                    sx={{ fontSize: "20px" }}
-                                />
-                            </a>
+                    <div className='img_text' style={{ alignItems: "flex-end" }}>
+                        <div className='pointSection'>
+                            <div className='accordionTitle'>SDT Calculator</div>
+                            <div className='aboutPoints'>This is a speed, time, and distance calculator.</div>
+                            <div className='aboutPoints'>
+                                <b>Concept:-</b> <br />
+                                Write any of two of them, and the third will be auto calculated. <br />
+                                I.e, if you write speed and distance, then time is automatically calculated.
+                            </div>
+
                         </div>
 
-                        <div className='accordionTitle'>Multi Select</div>
-                        <div className='aboutPoints'>There are three Dropdowns, all of which have the same option of cars inside.</div>
-                        <div className='aboutPoints'>
-                            <b>Concept:-</b> <br />
-                            If you select a car in the first dropdown, then the selected car is automatically removed from the second and third dropdowns. <br />
-                            Similarly, if you select another car in the second dropdown the selected car is automatically removed from the first and third dropdowns.
-                        </div>
-                        <div id='link'>
-                            <a href='https://select.bhemu.me/' id='noteLink' target="_blank">
-                                <Button
-                                    title="Live Link"
-                                    color="sky"
-                                    sx={{ fontSize: "20px" }}
-                                />
-                            </a>
-                        </div>
+                        <a href='https://sdt.bhemu.me/' className='noteLink' target="_blank">
+                            <Button
+                                title="Live Link"
+                                color="sky"
+                                sx={{ fontSize: "20px" }}
+                            />
+                        </a>
                     </div>
+                    
+                    <div className='img_text' style={{ alignItems: "flex-end" }}>
+                        <div className='pointSection'>
+                            <div className='accordionTitle'>Multi Select</div>
+                            <div className='aboutPoints'>There are three Dropdowns, all of which have the same option of cars inside.</div>
+                            <div className='aboutPoints'>
+                                <b>Concept:-</b> <br />
+                                If you select a car in the first dropdown, then the selected car is automatically removed from the second and third dropdowns. <br />
+                                Similarly, if you select another car in the second dropdown the selected car is automatically removed from the first and third dropdowns.
+                            </div>
+                        </div>
+                        <a href='https://select.bhemu.me/' className='noteLink' target="_blank">
+                            <Button
+                                title="Live Link"
+                                color="sky"
+                                sx={{ fontSize: "20px" }}
+                            />
+                        </a>
+                    </div>
+
                 </Accordion>
 
                 <Accordion title="CSS Based Designs" >
