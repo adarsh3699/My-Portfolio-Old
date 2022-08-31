@@ -95,7 +95,7 @@ function WorksPage() {
                         <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
                         <div className='aboutPoints'>Type To-dos Come with Done CheckBox, which helps you remember your works.</div>
                         <div id='link'>
-                            <a href='https://notes.bhemu.me/' id='noteLink' target="_blank">
+                            <a href='https://notes.bhemu.me/' id='noteLink' target="_blank" rel="noreferrer">
                                 <Button
                                     title="Web-Link"
                                     color="sky"
@@ -214,7 +214,7 @@ function WorksPage() {
                             </div>
                             <div>
                                 <img src={mysql} id="mySqlLogo"></img>
-                                <div>mySQL</div>
+                                <div>MySQL</div>
                             </div>
                         </div>
                     </div>
@@ -234,15 +234,15 @@ function WorksPage() {
 
                         </div>
 
-                        <a href='https://sdt.bhemu.me/' className='noteLink' target="_blank">
+                        <a href='https://sdt.bhemu.me/' className='noteLink' target="_blank" rel="noreferrer">
                             <Button
                                 title="Live Link"
                                 color="sky"
-                                sx={{ fontSize: "20px" }}
+                                sx={{ fontSize: "20px", marginBottom: "10px" }}
                             />
                         </a>
                     </div>
-                    
+
                     <div className='img_text' style={{ alignItems: "flex-end" }}>
                         <div className='pointSection'>
                             <div className='accordionTitle'>Multi Select</div>
@@ -253,11 +253,29 @@ function WorksPage() {
                                 Similarly, if you select another car in the second dropdown the selected car is automatically removed from the first and third dropdowns.
                             </div>
                         </div>
-                        <a href='https://select.bhemu.me/' className='noteLink' target="_blank">
+                        <a href='https://select.bhemu.me/' className='noteLink' target="_blank" rel="noreferrer">
                             <Button
                                 title="Live Link"
                                 color="sky"
-                                sx={{ fontSize: "20px" }}
+                                sx={{ fontSize: "20px", marginBottom: "10px" }}
+                            />
+                        </a>
+                    </div>
+
+                    <div className='img_text' style={{ alignItems: "flex-end" }}>
+                        <div className='pointSection'>
+                            <div className='accordionTitle'>Bitcoin Live Prices</div>
+                            <div className='aboutPoints'>It shows the live price of Bitcoin in different currencies.</div>
+                            <div className='aboutPoints'>
+                                <b>Concept:-</b> <br />
+                                Get data from the server and render it on the frontend.
+                            </div>
+                        </div>
+                        <a href='https://bitcoin.bhemu.me/' className='noteLink' target="_blank" rel="noreferrer">
+                            <Button
+                                title="Live Link"
+                                color="sky"
+                                sx={{ fontSize: "20px", marginBottom: "10px" }}
                             />
                         </a>
                     </div>
@@ -265,14 +283,38 @@ function WorksPage() {
                 </Accordion>
 
                 <Accordion title="CSS Based Designs" >
-                    <div className='img_text'>
-                        <img className='accordionImg' src={HomePage} />
-                        <div className='pointSection'>
-                            <div className='aboutPoints'>This is our new simple user-friendly UI.</div>
-                            <div className='aboutPoints'>Adding new notes is very easy from the input box in the navbar and by clicking the "Add Note" button.</div>
-                            <div className='aboutPoints'>Each note box shows us their note type in the right-upper corner, which helps us to navigate easily.</div>
-                            <div className='aboutPoints'>Each note box shows us the last saved time and date, which helps us to navigate easily.</div>
+                    <div className='pointSection'>
+                        <div className='designs'>
+                            <div className='accordionTitle'>Design 1</div>
+                            <a href='https://design1.bhemu.me/' className='noteLink' target="_blank" rel="noreferrer">
+                                <Button
+                                    title="Live Link"
+                                    color="sky"
+                                    sx={{ fontSize: "20px" }}
+                                />
+                            </a>
                         </div>
+                        <div className='designs'>
+                            <div className='accordionTitle'>Design 2</div>
+                            <a href='https://design2.bhemu.me/' className='noteLink' target="_blank" rel="noreferrer">
+                                <Button
+                                    title="Live Link"
+                                    color="sky"
+                                    sx={{ fontSize: "20px" }}
+                                />
+                            </a>
+                        </div>
+                        <div className='designs'>
+                            <div className='accordionTitle'>Design 3</div>
+                            <a href='https://design3.bhemu.me/' className='noteLink' target="_blank" rel="noreferrer">
+                                <Button
+                                    title="Live Link"
+                                    color="sky"
+                                    sx={{ fontSize: "20px" }}
+                                />
+                            </a>
+                        </div>
+                        <b>Note:-</b> These are only non-functional designs.
                     </div>
                 </Accordion>
             </div>
