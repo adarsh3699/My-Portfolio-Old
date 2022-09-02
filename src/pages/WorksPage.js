@@ -16,12 +16,14 @@ import "../css/container.css";
 
 import myProjectBanner from "../img/myProjects.png";
 import InternshipBanner from "../img/internshipBanner.jpeg";
-import MettingBanner from "../img/meeting.jpg";
+// import MettingBanner from "../img/meeting.jpg";
 
 import notesImg1 from "../img/projects/user-home.jpg";
 import LoginPage from "../img/projects/loginPage.png";
 import HomePage from "../img/projects/homePage.png";
 import NoteTodo from "../img/projects/noteTodo.jpeg";
+import iitpLogo from "../img/projects/iitp-logo.png";
+import auricTouchLogo from "../img/projects/aurictouch-logo.png";
 
 import react from "../img/projects/react.png";
 import nodeJs from "../img/projects/nodejs.svg";
@@ -29,13 +31,18 @@ import javaScript from "../img/projects/javascript.svg";
 import mongoDB from "../img/projects/mongodb.svg";
 import mysql from "../img/projects/mysql.svg";
 import css from "../img/projects/css.svg";
+import muiLogo from "../img/projects/mui-logo.svg";
+
+import iitpCertificate from "../img/projects/iitp-certificate.pdf";
+import auricTouchCertificate from "../img/projects/auricTouch-certificate.pdf";
 
 document.title = "Adarsh Suman | Works";
 
 AOS.init();
 
-const aosDelay = "50";
+const aosDelay = "100";
 const aosDuration = "1000";
+const aosOffset = "250"
 
 function getWindowDimensions() {
     const { innerWidth: width, innerHeight: height } = window;
@@ -47,10 +54,22 @@ function WorksPage() {
     function myProject() {
         if (getWindowDimensions().width > 1000) {
             return animateScrollTo(600);
-        } else if (getWindowDimensions().width <= 1000 && getWindowDimensions().width > 750) {
+        } else if (getWindowDimensions().width <= 1000 && getWindowDimensions().width > 800) {
             return animateScrollTo(550);
-        } else if (getWindowDimensions().width <= 750) {
+        } else if (getWindowDimensions().width <= 800 && getWindowDimensions().width > 500) {
+            return animateScrollTo(500);
+        } else if (getWindowDimensions().width <= 500) {
             return animateScrollTo(350);
+        }
+    }
+
+    function myInternships() {
+        if (getWindowDimensions().width > 800) {
+            return animateScrollTo(1920);
+        } else if (getWindowDimensions().width <= 800 && getWindowDimensions().width > 500) {
+            return animateScrollTo(2000);
+        } else if (getWindowDimensions().width <= 500) {
+            return animateScrollTo(1900);
         }
     }
 
@@ -65,14 +84,14 @@ function WorksPage() {
                 </div>
                 <div className="each-slide-effect">
                     <div className='bannerImg' style={{ 'backgroundImage': `url(${InternshipBanner})` }}>
-                        <span>Internships</span>
+                        <span onClick={myInternships}>Internships</span>
                     </div>
                 </div>
-                <div className="each-slide-effect">
+                {/* <div className="each-slide-effect">
                     <div className='bannerImg' style={{ 'backgroundImage': `url(${MettingBanner})` }}>
                         <span>Slide 1</span>
                     </div>
-                </div>
+                </div> */}
             </Slide>
             <div className="mainTitle">My Works</div>
 
@@ -84,7 +103,7 @@ function WorksPage() {
                     data-aos-delay={aosDelay}
                     data-aos-duration={aosDuration}
                 >
-                    <img src={notesImg1} alt="image not load" height="300px" />
+                    <img src={notesImg1} alt="" height="300px" />
 
                     <div className='pointSection'>
                         <div className='aboutPoints'>This is a Multi-User Notes app.</div>
@@ -107,29 +126,25 @@ function WorksPage() {
                 </div>
 
                 <div
-                    id='technologies'
-                    data-aos="fade-up"
-                    data-aos-delay={aosDelay}
-                    data-aos-duration={aosDuration}
-                >
+                    id='technologies'>
                     <div>
                         <div id='subTitle'>Technologies used</div>
 
                         <div id='technologiesLogo'>
                             <div>
-                                <img src={react} id="reactLogo"></img>
+                                <img src={react} id="reactLogo" alt="" />
                                 <div>React</div>
                             </div>
                             <div>
-                                <img src={nodeJs} id="nodeJsLogo" ></img>
+                                <img src={nodeJs} id="nodeJsLogo" alt="" />
                                 <div>NodeJS</div>
                             </div>
                             <div>
-                                <img src={javaScript} id='javaScriptLogo'></img>
+                                <img src={javaScript} id='javaScriptLogo' alt="" />
                                 <div>JavaScript</div>
                             </div>
                             <div>
-                                <img src={mongoDB} id="mongoDbLogo"></img>
+                                <img src={mongoDB} id="mongoDbLogo" alt="" />
                                 <div>MongoDB</div>
                             </div>
                         </div>
@@ -139,7 +154,7 @@ function WorksPage() {
                 <br />
                 <Accordion title="Login Page">
                     <div className='img_text'>
-                        <img className='accordionImg' src={LoginPage} />
+                        <img className='accordionImg' src={LoginPage} alt="" />
                         <div className='pointSection'>
                             <div className='aboutPoints'>Our login system allows us to login with their email and password.</div>
                             <div className='aboutPoints'>Anyone can easily create their account with their email and password.</div>
@@ -152,7 +167,7 @@ function WorksPage() {
 
                 <Accordion title="Home Page" >
                     <div className='img_text'>
-                        <img className='accordionImg' src={HomePage} />
+                        <img className='accordionImg' src={HomePage} alt="" />
                         <div className='pointSection'>
                             <div className='aboutPoints'>This is our new simple user-friendly UI.</div>
                             <div className='aboutPoints'>Adding new notes is very easy from the input box in the navbar and by clicking the "Add Note" button.</div>
@@ -164,7 +179,7 @@ function WorksPage() {
 
                 <Accordion title="Notes" >
                     <div className='img_text'>
-                        <img className='accordionImg' src={NoteTodo} />
+                        <img className='accordionImg' src={NoteTodo} alt="" />
                         <div className='pointSection'>
                             <div className='aboutPoints'>This is our note dialog box, with a simple UI and easy to navigate.</div>
                             <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
@@ -174,15 +189,16 @@ function WorksPage() {
                 </Accordion>
             </div>
 
-            <div className="container">
+            <div className="container"
+                data-aos="fade-up"
+                data-aos-delay={aosDelay}
+                data-aos-duration={aosDuration}
+                data-aos-offset={aosOffset}
+            >
                 <div className="containerTitle">Some Other Projects</div>
 
-                <div className="img_text"
-                    data-aos="fade-up"
-                    data-aos-delay={aosDelay}
-                    data-aos-duration={aosDuration}
-                >
-                    {/* <img src={notesImg1} alt="image not load" height="300px" /> */}
+                <div className="img_text">
+                    {/* <img src={notesImg1} alt="" height="300px" /> */}
 
                     <div className='pointSection'>
                         <div className='aboutPoints'>These are my persnal project.</div>
@@ -191,29 +207,25 @@ function WorksPage() {
                 </div>
 
                 <div
-                    id='technologies'
-                    data-aos="fade-up"
-                    data-aos-delay={aosDelay}
-                    data-aos-duration={aosDuration}
-                >
+                    id='technologies'>
                     <div>
                         <div id='subTitle'>Technologies used</div>
 
                         <div id='technologiesLogo'>
                             <div>
-                                <img src={react} id="reactLogo"></img>
+                                <img src={react} id="reactLogo" alt="" />
                                 <div>React</div>
                             </div>
                             <div>
-                                <img src={css} id="cssLogo" ></img>
+                                <img src={css} id="cssLogo" alt="" />
                                 <div>CSS</div>
                             </div>
                             <div>
-                                <img src={javaScript} id='javaScriptLogo'></img>
+                                <img src={javaScript} id='javaScriptLogo' alt="" />
                                 <div>JavaScript</div>
                             </div>
                             <div>
-                                <img src={mysql} id="mySqlLogo"></img>
+                                <img src={mysql} id="mySqlLogo" alt="" />
                                 <div>MySQL</div>
                             </div>
                         </div>
@@ -317,6 +329,134 @@ function WorksPage() {
                         <b>Note:-</b> These are only non-functional designs.
                     </div>
                 </Accordion>
+            </div>
+
+            <div className="mainTitle">My Internships</div>
+
+            <div className="container"
+                data-aos="fade-up"
+                data-aos-delay={aosDelay}
+                data-aos-duration={aosDuration}
+                data-aos-offset={aosOffset}
+            >
+                <div className="containerTitle">Indian Institute Of Technology Patna (IIT Patna)</div>
+
+                <div className="img_text">
+                    <img src={iitpLogo} style={{ background: "#f1f1f1" }} alt="" height="300px" />
+
+                    <div className='pointSection'>
+                        <div className='aboutPoints'>Developed Facility evaluation System for college IITP.</div>
+                        <div className='aboutPoints'>Internships duration from 1 june 2022 to 15 july 2022.</div>
+                        <div className='aboutPoints'>Work on both the frontend and backend.</div>
+                        <div className='aboutPoints'>Created a multiuser login system for the facility, canditate, and admin.</div>
+                        <div className='aboutPoints'>Learned and did software architecture design of complete project.</div>
+
+                        <div id='link'>
+                            <a href="https://github.com/adarsh3699/Facility-Evaluation-System-IITP" id='noteLink' target="_blank" rel="noreferrer">
+                                <Button
+                                    title="Git Repo"
+                                    color="green"
+                                    sx={{ fontSize: "20px" }}
+                                />
+                            </a>
+                            <a href={iitpCertificate} id='noteLink' target="_blank" rel="noreferrer">
+                                <Button
+                                    title="Certificate"
+                                    color="sky"
+                                    sx={{ fontSize: "20px" }}
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div id='subTitle'>Technologies used</div>
+
+                        <div id='technologiesLogo'>
+                            <div>
+                                <img src={react} id="reactLogo" alt="" />
+                                <div>React</div>
+                            </div>
+                            <div>
+                                <img src={nodeJs} id="nodeJsLogo" alt="" />
+                                <div>NodeJS</div>
+                            </div>
+                            <div>
+                                <img src={javaScript} id='javaScriptLogo' alt="" />
+                                <div>JavaScript</div>
+                            </div>
+                            <div>
+                                <img src={mysql} id="mongoDbLogo" alt="" />
+                                <div>MongoDB</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container"
+                data-aos="fade-up"
+                data-aos-delay={aosDelay}
+                data-aos-duration={aosDuration}
+                data-aos-offset={aosOffset}
+            >
+                <div className="containerTitle">Auric Touch LLP</div>
+
+                <div className="img_text">
+                    <img src={auricTouchLogo} alt="" height="300px" />
+
+                    <div className='pointSection'>
+                        <div className='aboutPoints'>Work on Fantasy Points Optimizer for Auric Touch LLP.</div>
+                        <div className='aboutPoints'>Internships duration from 20 june 2022 to 20 September 2022.</div>
+                        <div className='aboutPoints'>Learned working with team.</div>
+                        <div className='aboutPoints'>Work on Frontend Part.</div>
+                        <div className='aboutPoints'>SetUp Authorization based Features.</div>
+
+                        <div id='link'>
+                            <a href="https://www.fantasypointsoptimizer.com/" id='noteLink' target="_blank" rel="noreferrer">
+                                <Button
+                                    title="Web-link"
+                                    color="green"
+                                    sx={{ fontSize: "20px" }}
+                                />
+                            </a>
+                            <a href={auricTouchCertificate} id='noteLink' target="_blank" rel="noreferrer">
+                                <Button
+                                    title="Certificate"
+                                    color="sky"
+                                    sx={{ fontSize: "20px" }}
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div id='subTitle'>Technologies used</div>
+
+                        <div id='technologiesLogo'>
+                            <div>
+                                <img src={react} id="reactLogo" alt="" />
+                                <div>React</div>
+                            </div>
+                            <div>
+                                <img src={nodeJs} id="nodeJsLogo" alt="" />
+                                <div>NodeJS</div>
+                            </div>
+                            <div>
+                                <img src={javaScript} id='javaScriptLogo' alt="" />
+                                <div>JavaScript</div>
+                            </div>
+                            <div>
+                                <img src={muiLogo} id="mongoDbLogo" alt="" />
+                                <div>Material UI</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <FootBar />

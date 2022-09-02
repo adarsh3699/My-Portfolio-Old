@@ -11,11 +11,6 @@ import "../css/container.css";
 import aboutMeIng from "../img/myImg.jpg";
 import logoFireIng from "../img/logoFire.jpg";
 import notesImg1 from "../img/projects/user-home.jpg";
-import notesImg2 from "../img/projects/notes-todos.jpg";
-import react from "../img/projects/react.png";
-import nodeJs from "../img/projects/nodejs.svg";
-import javaScript from "../img/projects/javascript.svg";
-import mongoDB from "../img/projects/mongodb.svg";
 
 document.title = "Adarsh Suman | About";
 
