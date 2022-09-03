@@ -42,7 +42,8 @@
     box-shadow: 0px 16px 32px 0px rgba(18, 18, 18, 0.2);
     border-radius: 5px;
     font-size: 23px;
-    color: #f1f1f1;
+    /* color: #f1f1f1; */
+    color: rgb(222, 75, 155);
     font-weight: bold;
     letter-spacing: 2px;
     text-align: center;
@@ -62,11 +63,7 @@
 
 .img_text img {
     border-radius: 5px;
-}
-
-.pointSection {
-    padding-left: 10px;
-    text-align: left;
+    margin-right: 10px;
 }
 
 .aboutPoints {
@@ -75,14 +72,11 @@
     list-style-type: square;
 }
 
-#link {
+.bottons {
     margin: 30px 0;
-    text-align: center;
-}
-
-#link a:hover {
-    transition-duration: 0.2s;
-    color: #9fd1db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #nextDiv {
@@ -99,6 +93,7 @@
     font-size: 25px;
     border-radius: 2px;
     background-color: #242526;
+    /* color: rgb(136, 115, 255); */
     text-align: center;
     padding: 3px 0 6px 0;
     margin-top: 50px;
@@ -183,13 +178,13 @@
         font-size: 15px;
     }
 
-    .pointSection {
-        margin: 20px 10px !important;
-    }
-
     .img_text {
         display: block;
         text-align: center;
+    }
+
+    .img_text img {
+        margin: unset;
     }
 
     #logoMoblie {

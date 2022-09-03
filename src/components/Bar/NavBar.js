@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 
-import "../css/bar.css";
+import "./bar.css";
 
-import logoImg from '../img/logo.png';
-import instaLogo from '../img//soical_logos/instagramWhite.svg';
-import youtubeLogo from '../img/soical_logos/youtubeWhite.svg';
-import mobileMenuIcon from '../img/menu.png';
+import logoImg from './img/logo.png';
+import instaLogo from './img/instagramWhite.svg';
+import youtubeLogo from './img/youtubeWhite.svg';
+import mobileMenuIcon from './img/menu.png';
 
 function Bar() {
     const mobileIconRef = useRef();

@@ -1,6 +1,6 @@
 import React from 'react';
-import Bar from "../components/Bar";
-import FootBar from "../components/FootBar";
+import NavBar from "../components/Bar/NavBar";
+import FootBar from "../components/Bar/FootBar";
 import {
     Animator, ScrollContainer, ScrollPage,
     batch, Fade, FadeIn, Move, MoveIn,
@@ -18,7 +18,7 @@ function HomePage() {
 
     return (
         <>
-            <Bar />
+            <NavBar />
 
             <ScrollContainer>
                 <ScrollPage page={0} key="0">

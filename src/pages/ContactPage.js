@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Bar from "../components/Bar";
-import FootBar from "../components/FootBar";
+import NavBar from "../components/Bar/NavBar";
+import FootBar from "../components/Bar/FootBar";
 import AOS from 'aos';
 import Button from '../components/Button';
 
 import 'aos/dist/aos.css';
-import "../css/contact.css"
+import "../css/contactPage.css"
 
 import emailIconImg from "../img/soical_logos/email.svg"
 import telegramIconImg from "../img/soical_logos/telegram.svg"
@@ -38,7 +38,7 @@ function AboutPage() {
 
     return (
         <div id="background">
-            <Bar />
+            <NavBar />
             <div id="title">Contact Me</div>
             <form id="msgUs" method="post" action="https://send.pageclip.co/YYFiRgfPYOw99mcNfB9R8RHgiwcappSO"
                 data-aos-offset={aosOffset}

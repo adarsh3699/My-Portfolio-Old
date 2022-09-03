@@ -81,7 +81,7 @@ a {
     transition-duration: 0.2s;
 }
 
-/* ..........................bottomBar.......................... */
+/* ..........................FootBar.......................... */
 #bottomBar {
     display: flex;
     justify-content: space-between;
@@ -154,7 +154,7 @@ a {
     }
 
     #footMemu div {
-        padding-bottom: 10px;
+        padding-bottom: 5px;
     }
 
     #footLogo {
@@ -162,7 +162,7 @@ a {
     }
 
     #footLogo img {
-        padding-top: 20px;
+        margin-top: 5px;
         height: 60px;
     }
 
@@ -201,5 +201,9 @@ a {
 
     #social {
         display: none;
+    }
+
+    #footMemu, #footSocial {
+        padding-top: 15px;
     }
 }

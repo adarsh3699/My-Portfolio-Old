@@ -1,11 +1,11 @@
 import React from 'react';
-import Bar from "../components/Bar";
-import FootBar from "../components/FootBar";
+import NavBar from "../components/Bar/NavBar";
+import FootBar from "../components/Bar/FootBar";
 import AOS from 'aos';
 import Button from '../components/Button';
 
 import 'aos/dist/aos.css';
-import "../css/about.css";
+import "../css/aboutPage.css";
 import "../css/container.css";
 
 import aboutMeIng from "../img/myImg.jpg";
@@ -23,7 +23,7 @@ const aosOffset = "250"
 function AboutPage() {
     return (
         <div id="background">
-            <Bar />
+            <NavBar />
             <div id="myIntro">
                 <div className="welcome_msg">
                     <p className="line-1 anim-typewriter">My name is <b>Adarsh</b> <a>Suman</a></p>
@@ -35,17 +35,14 @@ function AboutPage() {
                 data-aos-delay="50"
                 data-aos-duration={aosDuration}
             >
-
                 <div className="containerTitle">About Me</div>
 
                 <div className="img_text">
-
-                    <img src={aboutMeIng} alt="image not load" height="300px"
+                    <img src={aboutMeIng} alt="" height="300px"
                         data-aos="zoom-in"
                         data-aos-delay="50"
                         data-aos-duration={aosDuration}
                     />
-
 
                     <div className='pointSection'
                         data-aos="zoom-in-up"
@@ -75,16 +72,9 @@ function AboutPage() {
 
                 <div className="img_text text_img">
 
-                    <img src={logoFireIng} alt="image not load" height="300px" id="logoMoblie"
-                        data-aos="zoom-in"
-                        data-aos-delay={aosDelay}
-                        data-aos-duration={aosDuration}
-                    />
+                    <img src={logoFireIng} alt="" height="300px" id="logoMoblie" />
 
                     <div className='pointSection'
-                        data-aos="zoom-in-up"
-                        data-aos-delay={aosDelay}
-                        data-aos-duration={aosDuration}
                     >
                         <div className='aboutPoints'>Our logo is combination of A and S, where :-
 
@@ -97,12 +87,7 @@ function AboutPage() {
                         </div>
                     </div>
 
-                    <img src={logoFireIng} alt="image not load" height="300px" id="logoPc"
-                        data-aos="zoom-in"
-                        data-aos-delay={aosDelay}
-                        data-aos-duration={aosDuration}
-                    />
-
+                    <img src={logoFireIng} alt="" height="300px" id="logoPc" />
                 </div>
             </div>
 
@@ -115,16 +100,15 @@ function AboutPage() {
                 <div className="containerTitle">The Notes App</div>
 
                 <div className="img_text">
-
-                    <img src={notesImg1} alt="image not load" height="300px" />
+                    <img src={notesImg1} alt="" height="300px" />
 
                     <div className='pointSection'>
                         <div className='aboutPoints'>This is a Multi-User Notes app.</div>
                         <div className='aboutPoints'>Which allows multiple logins and new users can also create their own new account to login.</div>
                         <div className='aboutPoints'>Each user can keep their notes and to-dos separate and secure from others.</div>
                         <div className='aboutPoints'>Where user data and their notes store in encrypted form in Database.</div>
-                        <div id='link'>
-                            <a href='https://notes.bhemu.me/' id='noteLink' target="_blank">
+                        <div className='btns'>
+                            <a href='https://notes.bhemu.me/' id='noteLink' target="_blank" rel="noreferrer">
                                 <Button
                                     title="Web-Link"
                                     color="sky"

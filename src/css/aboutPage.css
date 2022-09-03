@@ -20,7 +20,6 @@
 }
 
 .line-1 {
-    width: 690px;
     border-right: 2px solid rgba(255, 255, 255, .75);
     white-space: nowrap;
     overflow: hidden;
@@ -28,6 +27,7 @@
     font-weight: 900;
     text-shadow: 2px 2px 4px #000000;
     letter-spacing: 2px;
+    width: calc( 100% + 5px);
 }
 
 .line-1 b {
@@ -40,7 +40,7 @@
 
 /*----------------Animation--------------- */
 .anim-typewriter {
-    animation: typewriter 4s steps(30) normal,
+    animation: typewriter 5s steps(30) normal,
         blinkTextCursor .7s ease-in-out infinite
 }
 
@@ -50,7 +50,7 @@
     }
 
     to {
-        width: 690px;
+        width: calc( 100% + 5px);
     }
 }
 
@@ -81,7 +81,7 @@
     border-radius: 5px;
 }
 
-#link {
+.btns {
     margin: 5%;
     display: flex;
 }
@@ -156,28 +156,15 @@
         height: 40px;
     }
 
-    /*----------------mWeb_Animation--------------- */
     .line-1 {
         font-size: 24px;
-        width: 350px;
         letter-spacing: 1.5px;
     }
 
-    .anim-typewriter2 {
-        width: 285px;
+    .pointSection {
+        text-align: center !important;
     }
 
-    @keyframes typewriter {
-        from {
-            width: 0;
-        }
-
-        to {
-            width: 350px;
-        }
-    }
-
-    /*----------------mWeb_Animation_End--------------- */
     .img_text {
         display: block;
         text-align: center;

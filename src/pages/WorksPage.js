@@ -1,10 +1,10 @@
 import React from 'react';
-import Bar from "../components/Bar";
-import FootBar from "../components/FootBar";
 import AOS from 'aos';
 import { Slide } from 'react-slideshow-image';
-import { Accordion } from '../components/Accordion/';
 import animateScrollTo from 'animated-scroll-to';
+import NavBar from "../components/Bar/NavBar";
+import FootBar from "../components/Bar/FootBar";
+import { Accordion } from '../components/Accordion/';
 import Button from '../components/Button';
 
 import '../css/accordion.css';
@@ -25,13 +25,13 @@ import NoteTodo from "../img/projects/noteTodo.jpeg";
 import iitpLogo from "../img/projects/iitp-logo.png";
 import auricTouchLogo from "../img/projects/aurictouch-logo.png";
 
-import react from "../img/projects/react.png";
-import nodeJs from "../img/projects/nodejs.svg";
-import javaScript from "../img/projects/javascript.svg";
-import mongoDB from "../img/projects/mongodb.svg";
-import mysql from "../img/projects/mysql.svg";
-import css from "../img/projects/css.svg";
-import muiLogo from "../img/projects/mui-logo.svg";
+import react from "../img/technologies/react.png";
+import nodeJs from "../img/technologies/nodejs.svg";
+import javaScript from "../img/technologies/javascript.svg";
+import mongoDB from "../img/technologies/mongodb.svg";
+import mysql from "../img/technologies/mysql.svg";
+import css from "../img/technologies/css.svg";
+import muiLogo from "../img/technologies/mui-logo.svg";
 
 import iitpCertificate from "../img/projects/iitp-certificate.pdf";
 import auricTouchCertificate from "../img/projects/auricTouch-certificate.pdf";
@@ -75,7 +75,7 @@ function WorksPage() {
 
     return (
         <div id="background">
-            <Bar />
+            <NavBar />
             <Slide>
                 <div className="each-slide-effect">
                     <div className='bannerImg' style={{ 'backgroundImage': `url(${myProjectBanner})` }}>
@@ -113,40 +113,36 @@ function WorksPage() {
                         <div className='aboutPoints'>This Notes app facilitates both Notes type and To-dos type with all your basic features.</div>
                         <div className='aboutPoints'>Type Notes provides you unlimited space for your notes with a self-extended input box.</div>
                         <div className='aboutPoints'>Type To-dos Come with Done CheckBox, which helps you remember your works.</div>
-                        <div id='link'>
+                        <div className='bottons'>
                             <a href='https://notes.bhemu.me/' id='noteLink' target="_blank" rel="noreferrer">
                                 <Button
                                     title="Web-Link"
                                     color="sky"
-                                    sx={{ fontSize: "20px" }}
                                 />
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div
-                    id='technologies'>
-                    <div>
-                        <div id='subTitle'>Technologies used</div>
+                <div className='technologies'>
+                    <div id='subTitle'>Technologies Used</div>
 
-                        <div id='technologiesLogo'>
-                            <div>
-                                <img src={react} id="reactLogo" alt="" />
-                                <div>React</div>
-                            </div>
-                            <div>
-                                <img src={nodeJs} id="nodeJsLogo" alt="" />
-                                <div>NodeJS</div>
-                            </div>
-                            <div>
-                                <img src={javaScript} id='javaScriptLogo' alt="" />
-                                <div>JavaScript</div>
-                            </div>
-                            <div>
-                                <img src={mongoDB} id="mongoDbLogo" alt="" />
-                                <div>MongoDB</div>
-                            </div>
+                    <div id='technologiesLogo'>
+                        <div>
+                            <img src={react} id="reactLogo" alt="" />
+                            <div>React</div>
+                        </div>
+                        <div>
+                            <img src={nodeJs} id="nodeJsLogo" alt="" />
+                            <div>NodeJS</div>
+                        </div>
+                        <div>
+                            <img src={javaScript} id='javaScriptLogo' alt="" />
+                            <div>JavaScript</div>
+                        </div>
+                        <div>
+                            <img src={mongoDB} id="mongoDbLogo" alt="" />
+                            <div>MongoDB</div>
                         </div>
                     </div>
                 </div>
@@ -206,28 +202,25 @@ function WorksPage() {
                     </div>
                 </div>
 
-                <div
-                    id='technologies'>
-                    <div>
-                        <div id='subTitle'>Technologies used</div>
+                <div id='technologies'>
+                    <div id='subTitle'>Technologies Used</div>
 
-                        <div id='technologiesLogo'>
-                            <div>
-                                <img src={react} id="reactLogo" alt="" />
-                                <div>React</div>
-                            </div>
-                            <div>
-                                <img src={css} id="cssLogo" alt="" />
-                                <div>CSS</div>
-                            </div>
-                            <div>
-                                <img src={javaScript} id='javaScriptLogo' alt="" />
-                                <div>JavaScript</div>
-                            </div>
-                            <div>
-                                <img src={mysql} id="mySqlLogo" alt="" />
-                                <div>MySQL</div>
-                            </div>
+                    <div id='technologiesLogo'>
+                        <div>
+                            <img src={react} id="reactLogo" alt="" />
+                            <div>React</div>
+                        </div>
+                        <div>
+                            <img src={css} id="cssLogo" alt="" />
+                            <div>CSS</div>
+                        </div>
+                        <div>
+                            <img src={javaScript} id='javaScriptLogo' alt="" />
+                            <div>JavaScript</div>
+                        </div>
+                        <div>
+                            <img src={mysql} id="mySqlLogo" alt="" />
+                            <div>MySQL</div>
                         </div>
                     </div>
                 </div>
@@ -250,7 +243,7 @@ function WorksPage() {
                             <Button
                                 title="Live Link"
                                 color="sky"
-                                sx={{ fontSize: "20px", marginBottom: "10px" }}
+                                sx={{ marginBottom: "10px" }}
                             />
                         </a>
                     </div>
@@ -269,7 +262,7 @@ function WorksPage() {
                             <Button
                                 title="Live Link"
                                 color="sky"
-                                sx={{ fontSize: "20px", marginBottom: "10px" }}
+                                sx={{ marginBottom: "10px" }}
                             />
                         </a>
                     </div>
@@ -287,7 +280,7 @@ function WorksPage() {
                             <Button
                                 title="Live Link"
                                 color="sky"
-                                sx={{ fontSize: "20px", marginBottom: "10px" }}
+                                sx={{ marginBottom: "10px" }}
                             />
                         </a>
                     </div>
@@ -302,7 +295,6 @@ function WorksPage() {
                                 <Button
                                     title="Live Link"
                                     color="sky"
-                                    sx={{ fontSize: "20px" }}
                                 />
                             </a>
                         </div>
@@ -312,7 +304,6 @@ function WorksPage() {
                                 <Button
                                     title="Live Link"
                                     color="sky"
-                                    sx={{ fontSize: "20px" }}
                                 />
                             </a>
                         </div>
@@ -322,7 +313,6 @@ function WorksPage() {
                                 <Button
                                     title="Live Link"
                                     color="sky"
-                                    sx={{ fontSize: "20px" }}
                                 />
                             </a>
                         </div>
@@ -351,46 +341,42 @@ function WorksPage() {
                         <div className='aboutPoints'>Created a multiuser login system for the facility, canditate, and admin.</div>
                         <div className='aboutPoints'>Learned and did software architecture design of complete project.</div>
 
-                        <div id='link'>
+                        <div className='bottons'>
                             <a href="https://github.com/adarsh3699/Facility-Evaluation-System-IITP" id='noteLink' target="_blank" rel="noreferrer">
                                 <Button
                                     title="Git Repo"
                                     color="green"
-                                    sx={{ fontSize: "20px" }}
                                 />
                             </a>
                             <a href={iitpCertificate} id='noteLink' target="_blank" rel="noreferrer">
                                 <Button
                                     title="Certificate"
                                     color="sky"
-                                    sx={{ fontSize: "20px" }}
                                 />
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div>
-                    <div>
-                        <div id='subTitle'>Technologies used</div>
+                <div className='technologies'>
+                    <div id='subTitle'>Technologies Used</div>
 
-                        <div id='technologiesLogo'>
-                            <div>
-                                <img src={react} id="reactLogo" alt="" />
-                                <div>React</div>
-                            </div>
-                            <div>
-                                <img src={nodeJs} id="nodeJsLogo" alt="" />
-                                <div>NodeJS</div>
-                            </div>
-                            <div>
-                                <img src={javaScript} id='javaScriptLogo' alt="" />
-                                <div>JavaScript</div>
-                            </div>
-                            <div>
-                                <img src={mysql} id="mongoDbLogo" alt="" />
-                                <div>MongoDB</div>
-                            </div>
+                    <div id='technologiesLogo'>
+                        <div>
+                            <img src={react} id="reactLogo" alt="" />
+                            <div>React</div>
+                        </div>
+                        <div>
+                            <img src={nodeJs} id="nodeJsLogo" alt="" />
+                            <div>NodeJS</div>
+                        </div>
+                        <div>
+                            <img src={javaScript} id='javaScriptLogo' alt="" />
+                            <div>JavaScript</div>
+                        </div>
+                        <div>
+                            <img src={mysql} id="mongoDbLogo" alt="" />
+                            <div>MongoDB</div>
                         </div>
                     </div>
                 </div>
@@ -414,46 +400,42 @@ function WorksPage() {
                         <div className='aboutPoints'>Work on Frontend Part.</div>
                         <div className='aboutPoints'>SetUp Authorization based Features.</div>
 
-                        <div id='link'>
+                        <div className='bottons'>
                             <a href="https://www.fantasypointsoptimizer.com/" id='noteLink' target="_blank" rel="noreferrer">
                                 <Button
                                     title="Web-link"
                                     color="green"
-                                    sx={{ fontSize: "20px" }}
                                 />
                             </a>
                             <a href={auricTouchCertificate} id='noteLink' target="_blank" rel="noreferrer">
                                 <Button
                                     title="Certificate"
                                     color="sky"
-                                    sx={{ fontSize: "20px" }}
                                 />
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div>
-                    <div>
-                        <div id='subTitle'>Technologies used</div>
+                <div className='technologies'>
+                    <div id='subTitle'>Technologies Used</div>
 
-                        <div id='technologiesLogo'>
-                            <div>
-                                <img src={react} id="reactLogo" alt="" />
-                                <div>React</div>
-                            </div>
-                            <div>
-                                <img src={nodeJs} id="nodeJsLogo" alt="" />
-                                <div>NodeJS</div>
-                            </div>
-                            <div>
-                                <img src={javaScript} id='javaScriptLogo' alt="" />
-                                <div>JavaScript</div>
-                            </div>
-                            <div>
-                                <img src={muiLogo} id="mongoDbLogo" alt="" />
-                                <div>Material UI</div>
-                            </div>
+                    <div id='technologiesLogo'>
+                        <div>
+                            <img src={react} id="reactLogo" alt="" />
+                            <div>React</div>
+                        </div>
+                        <div>
+                            <img src={nodeJs} id="nodeJsLogo" alt="" />
+                            <div>NodeJS</div>
+                        </div>
+                        <div>
+                            <img src={javaScript} id='javaScriptLogo' alt="" />
+                            <div>JavaScript</div>
+                        </div>
+                        <div>
+                            <img src={muiLogo} id="mongoDbLogo" alt="" />
+                            <div>Material UI</div>
                         </div>
                     </div>
                 </div>
