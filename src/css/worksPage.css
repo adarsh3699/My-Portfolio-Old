@@ -83,12 +83,6 @@
     margin-top: 20px;
 }
 
-#technologies {
-    margin: 20px 0;
-    width: 90%;
-    margin: 30px auto;
-}
-
 #subTitle {
     font-size: 25px;
     border-radius: 2px;
@@ -100,34 +94,28 @@
     margin-bottom: 20px;
 }
 
-#technologiesLogo {
+.technologies {
     display: flex;
     align-items: baseline;
     justify-content: space-around;
     text-align: center;
+    margin: 30px auto;
 }
 
-#reactLogo, #javaScriptLogo,
-#mySqlLogo, #cssLogo {
+.technologies img:hover {
+    transform: scale(1.10);
+    transition-duration: 0.2s;
+}
+
+.technologieImg {
     height: 60px;
 }
 
-#nodeJsLogo,
-#mongoDbLogo {
+.technologieImgWhite {
     background-color: white;
     border-radius: 5px;
     height: 58px;
     padding: 6px 7px;
-}
-
-#mySqlLogo {
-    background-color: white;
-    border-radius: 5px;
-}
-
-#technologiesLogo img:hover {
-    transform: scale(1.10);
-    transition-duration: 0.2s;
 }
 
 .accordionTitle {
@@ -148,14 +136,12 @@
 /* ...............................mWeb............................. */
 
 @media screen and (max-width: 1066px) {
-
-    #reactLogo, #javaScriptLogo,
-    #mySqlLogo, #cssLogo {
+    
+    .technologieImg {
         height: 50px;
     }
 
-    #nodeJsLogo,
-    #mongoDbLogo {
+    .technologieImgWhite {
         height: 48px;
     }
 }
@@ -196,28 +182,22 @@
         display: none;
     }
 
-    #technologies {
-        margin: 10px auto;
-    }
-
     #subTitle {
         font-size: 20px;
     }
 
-    #technologiesLogo {
+    .technologies {
         font-size: 15px;
+        margin: 10px auto;
         justify-content: space-between;
     }
 
-    #reactLogo, #javaScriptLogo,
-    #mySqlLogo, #cssLogo {
+    .technologieImg {
         height: 38px;
     }
 
-    #nodeJsLogo,
-    #mongoDbLogo {
-        height: 38px;
-        padding: 4px;
+    .technologieImgWhite {
+        height: 36px;
     }
 
     .accordionImg {
@@ -235,22 +215,24 @@
         height: 30vh;
     }
 
+    .mainTitle {
+        width: 70%;
+    }
+
     .accordionImg {
         width: 100%;
     }
 
-    #technologiesLogo {
+    .technologies {
         font-size: 12px;
-        justify-content: space-between;
+        width: 95%;
     }
 
-    #reactLogo, #javaScriptLogo,
-    #mySqlLogo, #cssLogo {
+    .technologieImg {
         height: 30px;
     }
 
-    #nodeJsLogo,
-    #mongoDbLogo {
+    .technologieImgWhite {
         height: 28px;
         padding: 4px;
     }

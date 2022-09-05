@@ -8,7 +8,7 @@ import {
 } from "react-scroll-motion";
 
 import 'aos/dist/aos.css';
-import '../css/home.css';
+import '../css/homePage.css';
 
 
 const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());

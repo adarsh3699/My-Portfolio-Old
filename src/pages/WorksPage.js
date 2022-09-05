@@ -23,7 +23,8 @@ import LoginPage from "../img/projects/loginPage.png";
 import HomePage from "../img/projects/homePage.png";
 import NoteTodo from "../img/projects/noteTodo.jpeg";
 import iitpLogo from "../img/projects/iitp-logo.png";
-import auricTouchLogo from "../img/projects/aurictouch-logo.png";
+import auricTouchLogo from "../img/projects/aurictouch_logo.png";
+import beAwizLogo from "../img/projects/beawiz_logo.png";
 
 import react from "../img/technologies/react.png";
 import nodeJs from "../img/technologies/nodejs.svg";
@@ -31,10 +32,13 @@ import javaScript from "../img/technologies/javascript.svg";
 import mongoDB from "../img/technologies/mongodb.svg";
 import mysql from "../img/technologies/mysql.svg";
 import css from "../img/technologies/css.svg";
-import muiLogo from "../img/technologies/mui-logo.svg";
+import muiLogo from "../img/technologies/mui_logo.svg";
+import phpLogo from "../img/technologies/php_logo.svg";
+import htmlLogo from "../img/technologies/html_logo.svg";
 
-import iitpCertificate from "../img/projects/iitp-certificate.pdf";
-import auricTouchCertificate from "../img/projects/auricTouch-certificate.pdf";
+import iitpCertificate from "../img/projects/iitp_certificate.pdf";
+import auricTouchCertificate from "../img/projects/auricTouch_certificate.pdf";
+import beCertificate from "../img/projects/beawiz_Certificate.pdf";
 
 document.title = "Adarsh Suman | Works";
 
@@ -124,26 +128,23 @@ function WorksPage() {
                     </div>
                 </div>
 
+                <div id='subTitle'>Technologies Used</div>
                 <div className='technologies'>
-                    <div id='subTitle'>Technologies Used</div>
-
-                    <div id='technologiesLogo'>
-                        <div>
-                            <img src={react} id="reactLogo" alt="" />
-                            <div>React</div>
-                        </div>
-                        <div>
-                            <img src={nodeJs} id="nodeJsLogo" alt="" />
-                            <div>NodeJS</div>
-                        </div>
-                        <div>
-                            <img src={javaScript} id='javaScriptLogo' alt="" />
-                            <div>JavaScript</div>
-                        </div>
-                        <div>
-                            <img src={mongoDB} id="mongoDbLogo" alt="" />
-                            <div>MongoDB</div>
-                        </div>
+                    <div>
+                        <img src={react} className="technologieImg" alt="" />
+                        <div>React</div>
+                    </div>
+                    <div>
+                        <img src={nodeJs} className="technologieImgWhite" alt="" />
+                        <div>NodeJS</div>
+                    </div>
+                    <div>
+                        <img src={javaScript} className='technologieImg' alt="" />
+                        <div>JavaScript</div>
+                    </div>
+                    <div>
+                        <img src={mongoDB} className="technologieImgWhite" alt="" />
+                        <div>MongoDB</div>
                     </div>
                 </div>
 
@@ -202,26 +203,23 @@ function WorksPage() {
                     </div>
                 </div>
 
-                <div id='technologies'>
-                    <div id='subTitle'>Technologies Used</div>
-
-                    <div id='technologiesLogo'>
-                        <div>
-                            <img src={react} id="reactLogo" alt="" />
-                            <div>React</div>
-                        </div>
-                        <div>
-                            <img src={css} id="cssLogo" alt="" />
-                            <div>CSS</div>
-                        </div>
-                        <div>
-                            <img src={javaScript} id='javaScriptLogo' alt="" />
-                            <div>JavaScript</div>
-                        </div>
-                        <div>
-                            <img src={mysql} id="mySqlLogo" alt="" />
-                            <div>MySQL</div>
-                        </div>
+                <div id='subTitle'>Technologies Used</div>
+                <div className='technologies'>
+                    <div>
+                        <img src={react} className="technologieImg" alt="" />
+                        <div>React</div>
+                    </div>
+                    <div>
+                        <img src={css} className="technologieImg" alt="" />
+                        <div>CSS</div>
+                    </div>
+                    <div>
+                        <img src={javaScript} className='technologieImg' alt="" />
+                        <div>JavaScript</div>
+                    </div>
+                    <div>
+                        <img src={mysql} className="technologieImgWhite" alt="" />
+                        <div>MySQL</div>
                     </div>
                 </div>
 
@@ -358,26 +356,23 @@ function WorksPage() {
                     </div>
                 </div>
 
+                <div id='subTitle'>Technologies Used</div>
                 <div className='technologies'>
-                    <div id='subTitle'>Technologies Used</div>
-
-                    <div id='technologiesLogo'>
-                        <div>
-                            <img src={react} id="reactLogo" alt="" />
-                            <div>React</div>
-                        </div>
-                        <div>
-                            <img src={nodeJs} id="nodeJsLogo" alt="" />
-                            <div>NodeJS</div>
-                        </div>
-                        <div>
-                            <img src={javaScript} id='javaScriptLogo' alt="" />
-                            <div>JavaScript</div>
-                        </div>
-                        <div>
-                            <img src={mysql} id="mongoDbLogo" alt="" />
-                            <div>MongoDB</div>
-                        </div>
+                    <div>
+                        <img src={react} className="technologieImg" alt="" />
+                        <div>React</div>
+                    </div>
+                    <div>
+                        <img src={nodeJs} className="technologieImgWhite" alt="" />
+                        <div>NodeJS</div>
+                    </div>
+                    <div>
+                        <img src={javaScript} className='technologieImg' alt="" />
+                        <div>JavaScript</div>
+                    </div>
+                    <div>
+                        <img src={mysql} className="technologieImgWhite" alt="" />
+                        <div>MongoDB</div>
                     </div>
                 </div>
             </div>
@@ -417,26 +412,79 @@ function WorksPage() {
                     </div>
                 </div>
 
+                <div id='subTitle'>Technologies Used</div>
                 <div className='technologies'>
-                    <div id='subTitle'>Technologies Used</div>
+                    <div>
+                        <img src={react} className="technologieImg" alt="" />
+                        <div>React</div>
+                    </div>
+                    <div>
+                        <img src={nodeJs} className="technologieImgWhite" alt="" />
+                        <div>NodeJS</div>
+                    </div>
+                    <div>
+                        <img src={javaScript} className='technologieImg' alt="" />
+                        <div>JavaScript</div>
+                    </div>
+                    <div>
+                        <img src={muiLogo} className="technologieImgWhite" alt="" />
+                        <div>Material UI</div>
+                    </div>
+                </div>
+            </div>
 
-                    <div id='technologiesLogo'>
-                        <div>
-                            <img src={react} id="reactLogo" alt="" />
-                            <div>React</div>
+            <div className="container"
+                data-aos="fade-up"
+                data-aos-delay={aosDelay}
+                data-aos-duration={aosDuration}
+                data-aos-offset={aosOffset}
+                style={{ marginBottom: "90px" }}
+            >
+                <div className="containerTitle">BeAwiz</div>
+
+                <div className="img_text">
+                    <img src={beAwizLogo} alt="" height="300px" />
+
+                    <div className='pointSection'>
+                        <div className='aboutPoints'>Work on BeAwiz Website for Be A Wiz Education.</div>
+                        <div className='aboutPoints'>Internships duration from 1 May 2022 to 1 june 2022.</div>
+                        <div className='aboutPoints'>Fixed css issues and enhanced responsiveness of website.</div>
+                        <div className='aboutPoints'>I added captcha to the login page.</div>
+
+                        <div className='bottons'>
+                            <a href="https://beawiz.com/" id='noteLink' target="_blank" rel="noreferrer">
+                                <Button
+                                    title="Web-link"
+                                    color="green"
+                                />
+                            </a>
+                            <a href={beCertificate} id='noteLink' target="_blank" rel="noreferrer">
+                                <Button
+                                    title="Certificate"
+                                    color="sky"
+                                />
+                            </a>
                         </div>
-                        <div>
-                            <img src={nodeJs} id="nodeJsLogo" alt="" />
-                            <div>NodeJS</div>
-                        </div>
-                        <div>
-                            <img src={javaScript} id='javaScriptLogo' alt="" />
-                            <div>JavaScript</div>
-                        </div>
-                        <div>
-                            <img src={muiLogo} id="mongoDbLogo" alt="" />
-                            <div>Material UI</div>
-                        </div>
+                    </div>
+                </div>
+
+                <div id='subTitle'>Technologies Used</div>
+                <div className='technologies'>
+                    <div>
+                        <img src={htmlLogo} className="technologieImg" alt="" />
+                        <div>HTML</div>
+                    </div>
+                    <div>
+                        <img src={phpLogo} className="technologieImg" alt="" />
+                        <div>PHP</div>
+                    </div>
+                    <div>
+                        <img src={javaScript} className='technologieImg' alt="" />
+                        <div>JavaScript</div>
+                    </div>
+                    <div>
+                        <img src={css} className="technologieImg" alt="" />
+                        <div>CSS</div>
                     </div>
                 </div>
             </div>

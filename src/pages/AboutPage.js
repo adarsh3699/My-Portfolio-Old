@@ -12,6 +12,8 @@ import aboutMeIng from "../img/myImg.jpg";
 import logoFireIng from "../img/logoFire.jpg";
 import notesImg1 from "../img/projects/user-home.jpg";
 
+import MyResume from "../img/projects/my_resume.pdf";
+
 document.title = "Adarsh Suman | About";
 
 AOS.init();
@@ -26,7 +28,7 @@ function AboutPage() {
             <NavBar />
             <div id="myIntro">
                 <div className="welcome_msg">
-                    <p className="line-1 anim-typewriter">My name is <b>Adarsh</b> <a>Suman</a></p>
+                    <p className="line-1 anim-typewriter">My name is <span id='fName'>Adarsh</span> <span id='lName'>Suman</span></p>
                 </div>
             </div>
 
@@ -57,6 +59,14 @@ function AboutPage() {
                         <div className='aboutPoints'>
                             Other than programming I use to spend time in gaming,
                             listening songs and graphics designing.
+                        </div>
+                        <div className='bottons'>
+                            <a href={MyResume} target="_blank" rel="noreferrer">
+                                <Button
+                                    title="My Resume"
+                                    color="sky"
+                                />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -107,7 +117,7 @@ function AboutPage() {
                         <div className='aboutPoints'>Which allows multiple logins and new users can also create their own new account to login.</div>
                         <div className='aboutPoints'>Each user can keep their notes and to-dos separate and secure from others.</div>
                         <div className='aboutPoints'>Where user data and their notes store in encrypted form in Database.</div>
-                        <div className='btns'>
+                        <div className='bottons'>
                             <a href='https://notes.bhemu.me/' id='noteLink' target="_blank" rel="noreferrer">
                                 <Button
                                     title="Web-Link"

@@ -30,11 +30,11 @@
     width: calc( 100% + 5px);
 }
 
-.line-1 b {
+#fName {
     color: #5cbbce;
 }
 
-.line-1 a {
+#lName {
     color: #f3246f;
 }
 
@@ -81,9 +81,11 @@
     border-radius: 5px;
 }
 
-.btns {
-    margin: 5%;
+.bottons {
+    margin: 30px 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #nextDiv {
