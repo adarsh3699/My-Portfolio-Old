@@ -440,7 +440,7 @@ function WorksPage() {
                 data-aos-offset={aosOffset}
                 style={{ marginBottom: "90px" }}
             >
-                <div className="containerTitle">BeAwiz</div>
+                <div className="containerTitle">Be A Wiz Education</div>
 
                 <div className="img_text">
                     <img src={beAwizLogo} alt="" height="300px" />
