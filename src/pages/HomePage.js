@@ -1,21 +1,28 @@
 import React from 'react';
-import NavBar from "../components/Bar/NavBar";
-import FootBar from "../components/Bar/FootBar";
+import NavBar from '../components/Bar/NavBar';
+import FootBar from '../components/Bar/FootBar';
 import {
-    Animator, ScrollContainer, ScrollPage,
-    batch, Fade, FadeIn, Move, MoveIn,
-    MoveOut, Sticky, StickyIn, ZoomIn
-} from "react-scroll-motion";
+    Animator,
+    ScrollContainer,
+    ScrollPage,
+    batch,
+    Fade,
+    FadeIn,
+    Move,
+    MoveIn,
+    MoveOut,
+    Sticky,
+    StickyIn,
+    ZoomIn,
+} from 'react-scroll-motion';
 
 import 'aos/dist/aos.css';
 import '../css/homePage.css';
-
 
 const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
 const FadeUp = batch(Fade(), Move(), Sticky());
 
 function HomePage() {
-
     return (
         <>
             <NavBar />
@@ -23,21 +30,25 @@ function HomePage() {
             <ScrollContainer>
                 <ScrollPage page={0} key="0">
                     <Animator animation={batch(Fade(), Sticky(50, 45), MoveOut(0, -200))}>
-                        <div id="welcome">Hello <span>World</span></div>
+                        <div id="welcome">
+                            Hello <span>World</span>
+                        </div>
                     </Animator>
                 </ScrollPage>
                 <ScrollPage page={1} key="1">
                     <Animator animation={ZoomInScrollOut}>
-                        <div id="myName">This is <span>Adarsh</span> Suman</div>
+                        <div id="myName">
+                            This is <span>Adarsh</span> Suman
+                        </div>
                     </Animator>
                 </ScrollPage>
                 <ScrollPage page={2} key="2">
                     <Animator animation={FadeUp}>
-                        <span id='iAm'>I am a 🤔</span>
+                        <span id="iAm">I am a 🤔</span>
                     </Animator>
                 </ScrollPage>
                 <ScrollPage page={3} key="3">
-                    <div id='myPoints'>
+                    <div id="myPoints">
                         <Animator animation={MoveIn(-1000, 0)}>Programmer👋🏻</Animator>
                         <Animator animation={MoveIn(1000, 0)}>Web App Developer</Animator>
                         Gamer
@@ -51,7 +62,6 @@ function HomePage() {
                     </Animator>
                 </ScrollPage>
             </ScrollContainer>
-
 
             <div className="waveWrapper waveAnimation">
                 <div className="waveWrapperInner bgTop">
@@ -67,7 +77,7 @@ function HomePage() {
 
             <FootBar />
         </>
-    )
+    );
 }
 
 export default HomePage;

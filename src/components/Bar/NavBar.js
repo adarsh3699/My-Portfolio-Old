@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from 'react';
 
-import "./bar.css";
+import './bar.css';
 
 import logoImg from './img/logo.png';
 import instaLogo from './img/instagramWhite.svg';
@@ -13,16 +13,16 @@ function Bar() {
     const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
 
     //component did mount
-    useEffect(function() {
+    useEffect(function () {
         document.addEventListener('click', handleClickOutside, true);
-      
+
         //component did un-mount
-        return function() {
+        return function () {
             document.removeEventListener('click', handleClickOutside, true);
-        }
+        };
     }, []);
-    
-    function handleClickOutside(e) {    
+
+    function handleClickOutside(e) {
         if (mobileIconRef.current && !mobileIconRef.current.contains(e.target)) {
             setIsMobileMenuVisible(false);
         }
@@ -32,13 +32,15 @@ function Bar() {
         setIsMobileMenuVisible(!isMobileMenuVisible);
     }
 
-    return(
+    return (
         <div id="bar">
             <div id="topBar">
                 <div id="logo">
                     <a href="/">
-                        <img src={logoImg} height="50px" />
-                        <div><span id="adarsh">Adarsh </span>Suman</div>
+                        <img src={logoImg} height="50px" alt="" />
+                        <div>
+                            <span id="adarsh">Adarsh </span>Suman
+                        </div>
                     </a>
                 </div>
 
@@ -50,32 +52,31 @@ function Bar() {
                 </div>
 
                 <div id="social">
-                    <a href="https://www.instagram.com/_adarsh.s/" target="_blank">
-                        <img src={instaLogo} height="27px" />
+                    <a href="https://www.instagram.com/_adarsh.s/" target="_blank" rel="noreferrer">
+                        <img src={instaLogo} height="27px" alt="" />
                     </a>
-                    <a href="https://www.youtube.com/channel/UCkdSVbjY4sS1I7hw9ZJMdew" target="_blank">
-                        <img src={youtubeLogo} height="22px" />                    
+                    <a href="https://www.youtube.com/channel/UCkdSVbjY4sS1I7hw9ZJMdew" target="_blank" rel="noreferrer">
+                        <img src={youtubeLogo} height="22px" alt="" />
                     </a>
                 </div>
 
                 <div id="mobileIcon" onClick={handleMobileMenuClick} ref={mobileIconRef}>
-                    <img src={mobileMenuIcon} />
+                    <img src={mobileMenuIcon} alt="" />
                 </div>
             </div>
 
-            {
-                isMobileMenuVisible ?
-                    <div id="mobileMenu">
-                        <a href="/" style={{borderTop: "1px #f1f1f1 solid"}}>Home</a>
-                        <a href="/about">About</a>
-                        <a href="/works">Works</a>
-                        <a href="/contact">Contact</a>
-                    </div>
-                    : null
-            }
-            
+            {isMobileMenuVisible ? (
+                <div id="mobileMenu">
+                    <a href="/" style={{ borderTop: '1px #f1f1f1 solid' }}>
+                        Home
+                    </a>
+                    <a href="/about">About</a>
+                    <a href="/works">Works</a>
+                    <a href="/contact">Contact</a>
+                </div>
+            ) : null}
         </div>
-    )
+    );
 }
 
 export default Bar;

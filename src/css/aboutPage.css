@@ -20,14 +20,14 @@
 }
 
 .line-1 {
-    border-right: 2px solid rgba(255, 255, 255, .75);
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
     white-space: nowrap;
     overflow: hidden;
     font-size: 50px;
     font-weight: 900;
     text-shadow: 2px 2px 4px #000000;
     letter-spacing: 2px;
-    width: calc( 100% + 5px);
+    width: calc(100% + 5px);
 }
 
 #fName {
@@ -40,8 +40,7 @@
 
 /*----------------Animation--------------- */
 .anim-typewriter {
-    animation: typewriter 5s steps(30) normal,
-        blinkTextCursor .7s ease-in-out infinite
+    animation: typewriter 5s steps(30) normal, blinkTextCursor 0.7s ease-in-out infinite;
 }
 
 @keyframes typewriter {
@@ -50,13 +49,13 @@
     }
 
     to {
-        width: calc( 100% + 5px);
+        width: calc(100% + 5px);
     }
 }
 
 @keyframes blinkTextCursor {
     from {
-        border-right-color: rgba(255, 255, 255, .75);
+        border-right-color: rgba(255, 255, 255, 0.75);
     }
 
     to {
@@ -122,13 +121,12 @@
 }
 
 #technologiesLogo img:hover {
-    transform: scale(1.10);
+    transform: scale(1.1);
     transition-duration: 0.2s;
 }
 
 /* ...............................mWeb............................. */
 @media screen and (max-width: 1139px) {
-
     #reactLogo,
     #javaScriptLogo {
         height: 50px;
