@@ -43,17 +43,18 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 33.3%;
+    width: fit-content;
     letter-spacing: 3px;
+    transition-duration: 0.5s;
 }
 
 #desktopMenu a {
-    padding: 0px 20px;
+    padding: 0px 25px;
 }
 
 #desktopMenu a:hover {
     transform: scale(1.1);
-    transition-duration: 0.2s;
+    transition-duration: 0.5s;
 }
 
 #mobileIcon {
@@ -134,18 +135,23 @@ a {
 }
 
 /* ..........................mWeb.......................... */
-@media screen and (max-width: 931px) {
+@media screen and (max-width: 1050px) {
     #logo {
-        width: 140px;
-    }
-
-    #desktopMenu {
-        width: 75%;
+        width: 20%;
+        transition-duration: 0.5s;
     }
 
     #social {
-        width: 84px;
+        width: 20%;
         margin-right: 5px;
+        transition-duration: 0.5s;
+    }
+}
+
+@media screen and (max-width: 931px) {
+    #desktopMenu a {
+        padding: 20;
+        transition-duration: 0.5s;
     }
 
     #footMemu {
@@ -176,7 +182,7 @@ a {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     #desktopMenu {
         display: none;
     }
