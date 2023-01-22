@@ -47,32 +47,15 @@ const aosDelay = '100';
 const aosDuration = '1000';
 const aosOffset = '250';
 
-function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = window;
-    return { width, height };
-}
-
 function WorksPage() {
     function myProject() {
-        if (getWindowDimensions().width > 1000) {
-            return animateScrollTo(600);
-        } else if (getWindowDimensions().width <= 1000 && getWindowDimensions().width > 800) {
-            return animateScrollTo(550);
-        } else if (getWindowDimensions().width <= 800 && getWindowDimensions().width > 500) {
-            return animateScrollTo(500);
-        } else if (getWindowDimensions().width <= 500) {
-            return animateScrollTo(350);
-        }
+        const myProjectDiv = document.getElementById('myProjects');
+        return animateScrollTo(myProjectDiv.getBoundingClientRect().top - 60);
     }
 
     function myInternships() {
-        if (getWindowDimensions().width > 800) {
-            return animateScrollTo(1920);
-        } else if (getWindowDimensions().width <= 800 && getWindowDimensions().width > 500) {
-            return animateScrollTo(2000);
-        } else if (getWindowDimensions().width <= 500) {
-            return animateScrollTo(1900);
-        }
+        const myInternshipDiv = document.getElementById('myInternships');
+        return animateScrollTo(myInternshipDiv.getBoundingClientRect().top - 60);
     }
 
     return (
@@ -95,7 +78,7 @@ function WorksPage() {
                     </div>
                 </div> */}
             </Slide>
-            <div className="mainTitle">My Works</div>
+            <div id='myProjects' className="mainTitle">Personal Projects</div>
 
             <div className="container">
                 <div className="containerTitle">The Notes App</div>
@@ -329,7 +312,7 @@ function WorksPage() {
                 </Accordion>
             </div>
 
-            <div className="mainTitle">My Internships</div>
+            <div id='myInternships' className="mainTitle">My Internships</div>
 
             <div
                 className="container"
