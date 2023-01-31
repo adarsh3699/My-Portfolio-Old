@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import logoImg from './img/logo.png';
 import googleImg from './img/google.png';
@@ -9,16 +10,16 @@ function FootBar() {
         <div id="bottomBar">
             <div id="footMemu">
                 <div>
-                    <a href="/">Home</a>
+                    <NavLink to="/">Home</NavLink>
                 </div>
                 <div>
-                    <a href="/about">About</a>
+                    <NavLink to="/about">About</NavLink>
                 </div>
                 <div>
-                    <a href="/works">Works</a>
+                    <NavLink to="/works">Works</NavLink>
                 </div>
                 <div>
-                    <a href="/contact">Contact</a>
+                    <NavLink to="/contact">Contact</NavLink>
                 </div>
             </div>
             <div id="footLogo">

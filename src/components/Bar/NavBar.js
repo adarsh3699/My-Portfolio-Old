@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
-
-import './bar.css';
+import { NavLink } from 'react-router-dom';
 
 import myLogoImg from './img/logo.png';
 import instaLogo from './img/instagramWhite.svg';
 import youtubeLogo from './img/youtubeWhite.svg';
 import mobileMenuIcon from './img/menu.png';
+
+import './bar.css';
 
 function Bar() {
     const mobileIconRef = useRef();
@@ -45,10 +46,10 @@ function Bar() {
                 </div>
 
                 <div id="desktopMenu">
-                    <a href="/">Home</a>
-                    <a href="/about">About</a>
-                    <a href="/works">Works</a>
-                    <a href="/contact">Contact</a>
+                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/about">About</NavLink>
+                    <NavLink to="/works">Works</NavLink>
+                    <NavLink to="/contact">Contact</NavLink>
                 </div>
 
                 <div id="social">
@@ -67,12 +68,12 @@ function Bar() {
 
             {isMobileMenuVisible ? (
                 <div id="mobileMenu">
-                    <a href="/" style={{ borderTop: '1px #f1f1f1 solid' }}>
+                    <NavLink to="/" style={{ borderTop: '1px #f1f1f1 solid' }}>
                         Home
-                    </a>
-                    <a href="/about">About</a>
-                    <a href="/works">Works</a>
-                    <a href="/contact">Contact</a>
+                    </NavLink>
+                    <NavLink to="/about">About</NavLink>
+                    <NavLink to="/works">Works</NavLink>
+                    <NavLink to="/contact">Contact</NavLink>
                 </div>
             ) : null}
         </div>
