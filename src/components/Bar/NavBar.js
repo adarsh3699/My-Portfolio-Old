@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
 import './bar.css';
 
-import logoImg from './img/logo.png';
+import myLogoImg from './img/logo.png';
 import instaLogo from './img/instagramWhite.svg';
 import youtubeLogo from './img/youtubeWhite.svg';
 import mobileMenuIcon from './img/menu.png';
@@ -37,7 +37,7 @@ function Bar() {
             <div id="topBar">
                 <div id="logo">
                     <a href="/">
-                        <img src={logoImg} height="50px" alt="" />
+                        <img src={myLogoImg} height="50px" alt="" />
                         <div>
                             <span id="adarsh">Adarsh </span>Suman
                         </div>
@@ -53,10 +53,10 @@ function Bar() {
 
                 <div id="social">
                     <a href="https://www.instagram.com/_adarsh.s/" target="_blank" rel="noreferrer">
-                        <img src={instaLogo} height="27px" alt="" />
+                        <img src={instaLogo} alt="" />
                     </a>
                     <a href="https://www.youtube.com/channel/UCkdSVbjY4sS1I7hw9ZJMdew" target="_blank" rel="noreferrer">
-                        <img src={youtubeLogo} height="22px" alt="" />
+                        <img src={youtubeLogo} alt="" />
                     </a>
                 </div>
 
