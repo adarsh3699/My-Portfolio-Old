@@ -1,40 +1,40 @@
 .container {
-    margin: 40px auto;
-    border-radius: 5px;
-    width: 90%;
-    padding: 10px;
-    color: #f4f4f3;
-    background-color: #2a2b2d;
-    box-shadow: 0px 16px 32px 0px rgba(18, 18, 18, 0.2);
-    font-size: 15px;
+	margin: 40px auto;
+	border-radius: 5px;
+	width: 90%;
+	padding: 10px;
+	color: #f4f4f3;
+	background-color: #2a2b2d;
+	box-shadow: 0px 16px 32px 0px rgba(18, 18, 18, 0.2);
+	font-size: 15px;
 }
 
 .containerTitle {
-    padding: 7px 10px;
-    margin-bottom: 10px;
-    /* color: rgb(222, 75, 155); */
-    color: rgb(40, 148, 209);
-    background-color: #242526;
-    border-radius: 5px;
-    font-size: 22px;
-    font-weight: bold;
+	padding: 7px 10px;
+	margin-bottom: 10px;
+	/* color: rgb(222, 75, 155); */
+	color: rgb(40, 148, 209);
+	background-color: #242526;
+	border-radius: 5px;
+	font-size: 22px;
+	font-weight: bold;
 }
 
 .pointSection {
-    margin-left: 10px;
+	margin-left: 10px;
 }
 
 .aboutPoints {
-    margin: 10px;
+	margin: 10px;
 }
 
 @media screen and (max-width: 750px) {
-    .container {
-        margin: 20px auto;
-    }
+	.container {
+		margin: 20px auto;
+	}
 
-    .pointSection {
-        margin: 30px 0 50px 10px;
-        text-align: left;
-    }
+	.pointSection {
+		margin: 30px 0 50px 10px;
+		text-align: left;
+	}
 }

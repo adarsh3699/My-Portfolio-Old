@@ -1,211 +1,211 @@
 #bar {
-    position: fixed;
-    top: 0px;
-    left: 0;
-    font-weight: 500;
-    font-size: 18px;
-    background-color: rgba(29, 28, 28, 0.9);
-    box-shadow: 0px 16px 32px 0px rgba(18, 18, 18, 0.2);
-    color: rgb(255, 255, 255);
-    width: 100%;
-    z-index: 100;
-    user-select: none;
+	position: fixed;
+	top: 0px;
+	left: 0;
+	font-weight: 500;
+	font-size: 18px;
+	background-color: rgba(29, 28, 28, 0.9);
+	box-shadow: 0px 16px 32px 0px rgba(18, 18, 18, 0.2);
+	color: rgb(255, 255, 255);
+	width: 100%;
+	z-index: 100;
+	user-select: none;
 }
 
 #topBar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 a {
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 #logo {
-    width: 33.3%;
-    letter-spacing: 2px;
+	width: 33.3%;
+	letter-spacing: 2px;
 }
 
 #logo a {
-    display: flex;
-    align-items: center;
-    width: fit-content;
+	display: flex;
+	align-items: center;
+	width: fit-content;
 }
 
 #adarsh {
-    font-size: 20px;
-    font-weight: bold;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 #desktopMenu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-    letter-spacing: 3px;
-    transition-duration: 0.5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: fit-content;
+	letter-spacing: 3px;
+	transition-duration: 0.5s;
 }
 
 #desktopMenu a {
-    padding: 0px 25px;
+	padding: 0px 25px;
 }
 
 #desktopMenu a:hover {
-    transform: scale(1.1);
-    transition-duration: 0.5s;
+	transform: scale(1.1);
+	transition-duration: 0.5s;
 }
 
 #mobileIcon {
-    display: none;
+	display: none;
 }
 
 #mobileIcon img {
-    height: 26px;
+	height: 26px;
 }
 
 #social {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 33.3%;
-    margin-right: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 33.3%;
+	margin-right: 20px;
 }
 
 #social a {
-    padding-right: 10px;
+	padding-right: 10px;
 }
 
 #social img:hover {
-    transform: scale(1.1);
-    transition-duration: 0.2s;
+	transform: scale(1.1);
+	transition-duration: 0.2s;
 }
 
 /* ..........................FootBar.......................... */
 #bottomBar {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    background-color: rgb(29, 27, 27);
-    color: white;
-    font-size: 15px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	background-color: rgb(29, 27, 27);
+	color: white;
+	font-size: 15px;
 }
 
 #bottomBar a {
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 #footMemu {
-    display: flex;
-    padding-top: 30px;
-    width: 33.5%;
-    letter-spacing: 1px;
+	display: flex;
+	padding-top: 30px;
+	width: 33.5%;
+	letter-spacing: 1px;
 }
 
 #footMemu a {
-    padding-left: 15px;
+	padding-left: 15px;
 }
 
 #footLogo {
-    text-align: center;
-    width: 33%;
-    font-size: 12px;
-    padding-bottom: 20px;
+	text-align: center;
+	width: 33%;
+	font-size: 12px;
+	padding-bottom: 20px;
 }
 
 #footSocial {
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 30px;
-    width: 33.5%;
-    /* letter-spacing: 1px; */
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 30px;
+	width: 33.5%;
+	/* letter-spacing: 1px; */
 }
 
 #footSocial a {
-    display: flex;
-    align-items: center;
-    height: fit-content;
-    padding-right: 15px;
+	display: flex;
+	align-items: center;
+	height: fit-content;
+	padding-right: 15px;
 }
 
 #footSocial img {
-    margin-right: 5px;
+	margin-right: 5px;
 }
 
 /* ..........................mWeb.......................... */
 @media screen and (max-width: 1050px) {
-    #logo {
-        width: 20%;
-        transition-duration: 0.5s;
-    }
+	#logo {
+		width: 20%;
+		transition-duration: 0.5s;
+	}
 
-    #social {
-        width: 20%;
-        margin-right: 5px;
-        transition-duration: 0.5s;
-    }
+	#social {
+		width: 20%;
+		margin-right: 5px;
+		transition-duration: 0.5s;
+	}
 }
 
 @media screen and (max-width: 931px) {
-    #desktopMenu a {
-        padding: 20;
-        transition-duration: 0.5s;
-    }
+	#desktopMenu a {
+		padding: 20;
+		transition-duration: 0.5s;
+	}
 
-    #footMemu {
-        display: block;
-        width: 32%;
-    }
+	#footMemu {
+		display: block;
+		width: 32%;
+	}
 
-    #footMemu div {
-        padding-bottom: 5px;
-    }
+	#footMemu div {
+		padding-bottom: 5px;
+	}
 
-    #footLogo img {
-        margin-top: 5px;
-        height: 60px;
-    }
+	#footLogo img {
+		margin-top: 5px;
+		height: 60px;
+	}
 
-    #footSocial {
-        display: block;
-    }
+	#footSocial {
+		display: block;
+	}
 
-    #footSocial a {
-        padding-bottom: 10px;
-        justify-content: flex-end;
-    }
+	#footSocial a {
+		padding-bottom: 10px;
+		justify-content: flex-end;
+	}
 }
 
 @media screen and (max-width: 800px) {
-    #desktopMenu {
-        display: none;
-    }
+	#desktopMenu {
+		display: none;
+	}
 
-    #mobileIcon {
-        display: flex;
-        justify-content: center;
-        padding: 10px 20px 10px 10px;
-    }
+	#mobileIcon {
+		display: flex;
+		justify-content: center;
+		padding: 10px 20px 10px 10px;
+	}
 
-    #mobileMenu a {
-        display: block;
-        color: white;
-        font-size: 17px;
-        text-decoration: none;
-        border-bottom: 1px #f1f1f1 solid;
-        padding: 9px;
-        text-align: center;
-        letter-spacing: 3px;
-    }
+	#mobileMenu a {
+		display: block;
+		color: white;
+		font-size: 17px;
+		text-decoration: none;
+		border-bottom: 1px #f1f1f1 solid;
+		padding: 9px;
+		text-align: center;
+		letter-spacing: 3px;
+	}
 
-    #social {
-        display: none;
-    }
+	#social {
+		display: none;
+	}
 
-    #footMemu,
-    #footSocial {
-        padding-top: 15px;
-    }
+	#footMemu,
+	#footSocial {
+		padding-top: 15px;
+	}
 }

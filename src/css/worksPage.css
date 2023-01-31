@@ -1,237 +1,237 @@
 .react-slideshow-container {
-    margin: 50px 0;
+	margin: 50px 0;
 }
 
 .bannerImg {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    background-size: cover;
-    height: 55vh;
-    margin: 0 2.7%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	background-size: cover;
+	height: 55vh;
+	margin: 0 2.7%;
 }
 
 .react-slideshow-container .default-nav {
-    margin: 15px;
-    height: 100%;
-    width: 2.7%;
-    background-color: rgba(179, 179, 179, 0.7) !important;
-    margin: unset;
-    border-radius: unset;
+	margin: 15px;
+	height: 100%;
+	width: 2.7%;
+	background-color: rgba(179, 179, 179, 0.7) !important;
+	margin: unset;
+	border-radius: unset;
 }
 
 .react-slideshow-container .default-nav:hover {
-    background-color: rgba(219, 219, 219, 0.7) !important;
+	background-color: rgba(219, 219, 219, 0.7) !important;
 }
 
 .each-slide-effect span {
-    font-size: 20px;
-    padding: 10px 20px;
-    background: #efefef;
-    text-align: center;
-    border-radius: 5px 5px 0 0;
-    cursor: pointer;
+	font-size: 20px;
+	padding: 10px 20px;
+	background: #efefef;
+	text-align: center;
+	border-radius: 5px 5px 0 0;
+	cursor: pointer;
 }
 /* ...........slider_End............. */
 
 .mainTitle {
-    width: 50%;
-    margin: 20px auto;
-    padding: 10px 0px !important;
-    background-color: #2a2b2d;
-    box-shadow: 0px 16px 32px 0px rgba(18, 18, 18, 0.2);
-    border-radius: 5px;
-    font-size: 23px;
-    /* color: #f1f1f1; */
-    color: rgb(222, 75, 155);
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-align: center;
+	width: 50%;
+	margin: 20px auto;
+	padding: 10px 0px !important;
+	background-color: #2a2b2d;
+	box-shadow: 0px 16px 32px 0px rgba(18, 18, 18, 0.2);
+	border-radius: 5px;
+	font-size: 23px;
+	/* color: #f1f1f1; */
+	color: rgb(222, 75, 155);
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-align: center;
 }
 
 .img_text {
-    display: flex;
+	display: flex;
 }
 
 #logoMoblie {
-    display: none;
+	display: none;
 }
 
 .text_img {
-    justify-content: space-between;
+	justify-content: space-between;
 }
 
 .img_text img {
-    border-radius: 5px;
-    margin-right: 10px;
+	border-radius: 5px;
+	margin-right: 10px;
 }
 
 .aboutPoints {
-    margin: 20px 10px;
-    display: list-item;
-    list-style-type: square;
+	margin: 20px 10px;
+	display: list-item;
+	list-style-type: square;
 }
 
 .bottons {
-    margin: 30px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	margin: 30px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 #nextDiv {
-    margin-top: 20px;
+	margin-top: 20px;
 }
 
 #subTitle {
-    font-size: 25px;
-    border-radius: 2px;
-    background-color: #242526;
-    /* color: rgb(136, 115, 255); */
-    text-align: center;
-    padding: 3px 0 6px 0;
-    margin-top: 50px;
-    margin-bottom: 20px;
+	font-size: 25px;
+	border-radius: 2px;
+	background-color: #242526;
+	/* color: rgb(136, 115, 255); */
+	text-align: center;
+	padding: 3px 0 6px 0;
+	margin-top: 50px;
+	margin-bottom: 20px;
 }
 
 .technologies {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-around;
-    text-align: center;
-    margin: 30px auto;
+	display: flex;
+	align-items: baseline;
+	justify-content: space-around;
+	text-align: center;
+	margin: 30px auto;
 }
 
 .technologies img:hover {
-    transform: scale(1.1);
-    transition-duration: 0.2s;
+	transform: scale(1.1);
+	transition-duration: 0.2s;
 }
 
 .technologieImg {
-    height: 60px;
+	height: 60px;
 }
 
 .technologieImgWhite {
-    background-color: white;
-    border-radius: 5px;
-    height: 58px;
-    padding: 6px 7px;
+	background-color: white;
+	border-radius: 5px;
+	height: 58px;
+	padding: 6px 7px;
 }
 
 .accordionTitle {
-    font-weight: bold;
-    font-size: 20px;
+	font-weight: bold;
+	font-size: 20px;
 }
 
 .accordionImg {
-    width: 50%;
+	width: 50%;
 }
 
 .designs {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
 }
 
 /* ...............................mWeb............................. */
 
 @media screen and (max-width: 1066px) {
-    .technologieImg {
-        height: 50px;
-    }
+	.technologieImg {
+		height: 50px;
+	}
 
-    .technologieImgWhite {
-        height: 48px;
-    }
+	.technologieImgWhite {
+		height: 48px;
+	}
 }
 
 @media screen and (max-width: 770px) {
-    .bannerImg {
-        margin: unset;
-        height: 50vh;
-    }
+	.bannerImg {
+		margin: unset;
+		height: 50vh;
+	}
 
-    .react-slideshow-container .default-nav {
-        width: unset !important;
-        height: 30px;
-        width: 30px !important;
-        border-radius: 50%;
-        margin: 15px;
-    }
+	.react-slideshow-container .default-nav {
+		width: unset !important;
+		height: 30px;
+		width: 30px !important;
+		border-radius: 50%;
+		margin: 15px;
+	}
 
-    .each-slide-effect span {
-        font-size: 15px;
-    }
+	.each-slide-effect span {
+		font-size: 15px;
+	}
 
-    .img_text {
-        display: block;
-        text-align: center;
-    }
+	.img_text {
+		display: block;
+		text-align: center;
+	}
 
-    .img_text img {
-        margin: unset;
-    }
+	.img_text img {
+		margin: unset;
+	}
 
-    #logoMoblie {
-        display: inline;
-        justify-content: center;
-    }
+	#logoMoblie {
+		display: inline;
+		justify-content: center;
+	}
 
-    #logoPc {
-        display: none;
-    }
+	#logoPc {
+		display: none;
+	}
 
-    #subTitle {
-        font-size: 20px;
-    }
+	#subTitle {
+		font-size: 20px;
+	}
 
-    .technologies {
-        font-size: 15px;
-        margin: 10px auto;
-        justify-content: space-between;
-    }
+	.technologies {
+		font-size: 15px;
+		margin: 10px auto;
+		justify-content: space-between;
+	}
 
-    .technologieImg {
-        height: 38px;
-    }
+	.technologieImg {
+		height: 38px;
+	}
 
-    .technologieImgWhite {
-        height: 36px;
-    }
+	.technologieImgWhite {
+		height: 36px;
+	}
 
-    .accordionImg {
-        width: 95%;
-    }
+	.accordionImg {
+		width: 95%;
+	}
 }
 
 @media screen and (max-width: 425px) {
-    .react-slideshow-container .default-nav {
-        margin: 10px;
-    }
+	.react-slideshow-container .default-nav {
+		margin: 10px;
+	}
 
-    .bannerImg {
-        height: 30vh;
-    }
+	.bannerImg {
+		height: 30vh;
+	}
 
-    .mainTitle {
-        width: 70%;
-    }
+	.mainTitle {
+		width: 70%;
+	}
 
-    .accordionImg {
-        width: 100%;
-    }
+	.accordionImg {
+		width: 100%;
+	}
 
-    .technologies {
-        font-size: 12px;
-        width: 95%;
-    }
+	.technologies {
+		font-size: 12px;
+		width: 95%;
+	}
 
-    .technologieImg {
-        height: 30px;
-    }
+	.technologieImg {
+		height: 30px;
+	}
 
-    .technologieImgWhite {
-        height: 28px;
-        padding: 4px;
-    }
+	.technologieImgWhite {
+		height: 28px;
+		padding: 4px;
+	}
 }
