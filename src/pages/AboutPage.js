@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+
 import NavBar from '../components/Bar/NavBar';
 import FootBar from '../components/Bar/FootBar';
 import AOS from 'aos';
@@ -131,9 +133,9 @@ function AboutPage() {
 							<a href="https://notes.bhemu.me/" id="noteLink" target="_blank" rel="noreferrer">
 								<Button title="Web-Link" color="sky" />
 							</a>
-							<a href="/works" id="knowMore">
+							<NavLink to="/works" id="knowMore">
 								<Button title="Know More" color="green" />
-							</a>
+							</NavLink>
 						</div>
 					</div>
 				</div>
