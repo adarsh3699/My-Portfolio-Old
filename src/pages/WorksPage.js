@@ -20,7 +20,7 @@ import InternshipBanner from '../img/internshipBanner.jpeg';
 import notesImg1 from '../img/projects/user-home.jpg';
 import LoginPage from '../img/projects/loginPage.png';
 import HomePage from '../img/projects/homePage.png';
-import NoteTodo from '../img/projects/noteTodo.jpeg';
+import SettingPage from '../img/projects/settingPage.png';
 import iitpLogo from '../img/projects/iitp-logo.png';
 import auricTouchLogo from '../img/projects/aurictouch_logo.png';
 import beAwizLogo from '../img/projects/beawiz_logo.png';
@@ -169,28 +169,28 @@ function WorksPage() {
 								Note" button.
 							</div>
 							<div className="aboutPoints">
-								Each note box shows us their note type in the right-upper corner, which helps us to
-								navigate easily.
+								Each note box shows us the last saved time and date, which helps us to navigate easily.
 							</div>
 							<div className="aboutPoints">
-								Each note box shows us the last saved time and date, which helps us to navigate easily.
+								You can now store both to-do and note types in the same file.
 							</div>
 						</div>
 					</div>
 				</Accordion>
 
-				<Accordion title="Notes">
+				<Accordion title="Setting Page">
 					<div className="img_text">
-						<img className="accordionImg" src={NoteTodo} alt="" />
+						<img className="accordionImg" src={SettingPage} alt="" />
 						<div className="pointSection">
 							<div className="aboutPoints">
-								This is our note dialog box, with a simple UI and easy to navigate.
+								We provide basic account and profile settings to keep everything up to date.
 							</div>
 							<div className="aboutPoints">
-								Type Notes provides you unlimited space for your notes with a self-extended input box.
+								The profile setting allows you to update your user name and profile picture.
 							</div>
+							<div className="aboutPoints">Account settings allow you to update your password.</div>
 							<div className="aboutPoints">
-								Type To-dos It comes with a Done CheckBox, which helps you remember your work progress.
+								In the "About" section, you will get the latest changes and fixes.
 							</div>
 						</div>
 					</div>
