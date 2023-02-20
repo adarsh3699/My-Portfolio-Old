@@ -48,8 +48,9 @@ function Routes() {
 					<Route
 						path="*"
 						element={
-							<center>
+							<center id='pageNotFound'>
 								<h1>Page Not Found</h1>
+								<div>Error: 404</div>
 							</center>
 						}
 					/>
