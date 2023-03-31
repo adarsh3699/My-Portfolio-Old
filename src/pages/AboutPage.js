@@ -31,7 +31,7 @@ function AboutPage() {
 			<div id="myIntro">
 				<div className="welcome_msg">
 					<p className="line-1 anim-typewriter">
-						My name is <span id="fName">Adarsh</span> <span id="lName">Suman</span>
+						Hi, This is <span id="fName">Adarsh</span> <span id="lName">Suman</span>
 					</p>
 				</div>
 			</div>
