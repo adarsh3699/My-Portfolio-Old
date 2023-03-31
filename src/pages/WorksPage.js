@@ -109,7 +109,7 @@ function WorksPage() {
 							Type To-dos Come with Done CheckBox, which helps you remember your works.
 						</div>
 						<div className="bottons">
-							<a href="https://notes.bhemu.me/" id="noteLink" target="_blank" rel="noreferrer">
+							<a href={"https://notes." + process.env.REACT_APP_MY_BASE_URL} id="noteLink" target="_blank" rel="noreferrer">
 								<Button title="Web-Link" color="sky" />
 							</a>
 						</div>
@@ -248,7 +248,7 @@ function WorksPage() {
 							</div>
 						</div>
 
-						<a href="https://sdt.bhemu.me/" className="noteLink" target="_blank" rel="noreferrer">
+						<a href={"https://sdt." + process.env.REACT_APP_MY_BASE_URL} className="noteLink" target="_blank" rel="noreferrer">
 							<Button title="Live Link" color="sky" sx={{ marginBottom: '10px' }} />
 						</a>
 					</div>
@@ -267,7 +267,7 @@ function WorksPage() {
 								automatically removed from the first and third dropdowns.
 							</div>
 						</div>
-						<a href="https://select.bhemu.me/" className="noteLink" target="_blank" rel="noreferrer">
+						<a href={"https://select." + process.env.REACT_APP_MY_BASE_URL} className="noteLink" target="_blank" rel="noreferrer">
 							<Button title="Live Link" color="sky" sx={{ marginBottom: '10px' }} />
 						</a>
 					</div>
@@ -283,7 +283,7 @@ function WorksPage() {
 								Get data from the server and render it on the frontend.
 							</div>
 						</div>
-						<a href="https://bitcoin.bhemu.me/" className="noteLink" target="_blank" rel="noreferrer">
+						<a href={"https://bitcoin." + process.env.REACT_APP_MY_BASE_URL} className="noteLink" target="_blank" rel="noreferrer">
 							<Button title="Live Link" color="sky" sx={{ marginBottom: '10px' }} />
 						</a>
 					</div>
@@ -293,19 +293,19 @@ function WorksPage() {
 					<div className="pointSection">
 						<div className="designs">
 							<div className="accordionTitle">Design 1</div>
-							<a href="https://design1.bhemu.me/" className="noteLink" target="_blank" rel="noreferrer">
+							<a href={"https://design1." + process.env.REACT_APP_MY_BASE_URL} className="noteLink" target="_blank" rel="noreferrer">
 								<Button title="Live Link" color="sky" />
 							</a>
 						</div>
 						<div className="designs">
 							<div className="accordionTitle">Design 2</div>
-							<a href="https://design2.bhemu.me/" className="noteLink" target="_blank" rel="noreferrer">
+							<a href={"https://design2." + process.env.REACT_APP_MY_BASE_URL} className="noteLink" target="_blank" rel="noreferrer">
 								<Button title="Live Link" color="sky" />
 							</a>
 						</div>
 						<div className="designs">
 							<div className="accordionTitle">Design 3</div>
-							<a href="https://design3.bhemu.me/" className="noteLink" target="_blank" rel="noreferrer">
+							<a href={"https://design3." + process.env.REACT_APP_MY_BASE_URL} className="noteLink" target="_blank" rel="noreferrer">
 								<Button title="Live Link" color="sky" />
 							</a>
 						</div>

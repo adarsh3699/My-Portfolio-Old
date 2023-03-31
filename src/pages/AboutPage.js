@@ -132,7 +132,7 @@ function AboutPage() {
 							Where user data and their notes store in encrypted form in Database.
 						</div>
 						<div className="bottons">
-							<a href="https://notes.bhemu.me/" id="noteLink" target="_blank" rel="noreferrer">
+							<a href={"https://notes." + process.env.REACT_APP_MY_BASE_URL} id="noteLink" target="_blank" rel="noreferrer">
 								<Button title="Web-Link" color="sky" />
 							</a>
 							<NavLink to="/works" id="knowMore">
