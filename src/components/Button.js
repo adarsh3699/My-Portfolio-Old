@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../css/button.css';
+import '../styles/button.css';
 
 function Button({ color, title, sx }) {
 	return (

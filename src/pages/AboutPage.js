@@ -7,8 +7,8 @@ import AOS from 'aos';
 import Button from '../components/Button';
 
 import 'aos/dist/aos.css';
-import '../css/aboutPage.css';
-import '../css/container.css';
+import '../styles/aboutPage.css';
+import '../styles/container.css';
 
 import aboutMeIng from '../img/myImg.jpg';
 import logoFireIng from '../img/logoFire.jpg';

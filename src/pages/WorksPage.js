@@ -7,11 +7,11 @@ import FootBar from '../components/Bar/FootBar';
 import { Accordion } from '../components/Accordion/';
 import Button from '../components/Button';
 
-import '../css/accordion.css';
+import '../styles/accordion.css';
 import 'react-slideshow-image/dist/styles.css';
 import 'aos/dist/aos.css';
-import '../css/worksPage.css';
-import '../css/container.css';
+import '../styles/worksPage.css';
+import '../styles/container.css';
 
 import myProjectBanner from '../img/myProjects.png';
 import InternshipBanner from '../img/internshipBanner.jpeg';

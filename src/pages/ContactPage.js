@@ -5,7 +5,7 @@ import AOS from 'aos';
 import Button from '../components/Button';
 
 import 'aos/dist/aos.css';
-import '../css/contactPage.css';
+import '../styles/contactPage.css';
 
 import emailIconImg from '../img/soical_logos/email.svg';
 import telegramIconImg from '../img/soical_logos/telegram.svg';
