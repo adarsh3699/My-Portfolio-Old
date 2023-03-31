@@ -32,6 +32,7 @@
 	border-radius: 5px 5px 0 0;
 	cursor: pointer;
 }
+
 /* ...........slider_End............. */
 
 .mainTitle {
@@ -67,7 +68,7 @@
 }
 
 .aboutPoints {
-	margin: 20px 10px;
+	margin: 15px 10px;
 	display: list-item;
 	list-style-type: square;
 }

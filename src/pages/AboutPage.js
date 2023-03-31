@@ -55,9 +55,10 @@ function AboutPage() {
 						data-aos-delay="50"
 						data-aos-duration={aosDuration}
 					>
-						<div className="aboutPoints">I'm in high school in the science stream.</div>
+
 						<div className="aboutPoints">I'm a programmer and a computer geek.</div>
-						<div className="aboutPoints">I have skill in Web Application Development.</div>
+						<div className="aboutPoints">I have one year of experience in this industry.</div>
+						<div className="aboutPoints">I have skill in Web Application Development as a full stack developer.</div>
 						<div className="aboutPoints">
 							I have experience in JavaScript, React, NodeJs, MySql, MongoDb, PHP, HTML and CSS.
 						</div>
@@ -68,6 +69,7 @@ function AboutPage() {
 							Other than programming I use to spend time in gaming, listening songs and graphics
 							designing.
 						</div>
+						<div className="aboutPoints">Currently, I'm in high school in the science stream.</div>
 						<div className="bottons">
 							<a href={MyResume} target="_blank" rel="noreferrer">
 								<Button title="My Resume" color="sky" />
