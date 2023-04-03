@@ -1,14 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import AOS from 'aos';
+
 import NavBar from '../components/Bar/NavBar';
 import FootBar from '../components/Bar/FootBar';
-import AOS from 'aos';
+import Container from '../components/Container/Container';
 import Button from '../components/Button';
 
 import 'aos/dist/aos.css';
 import '../styles/aboutPage.css';
-import '../styles/container.css';
 
 import aboutMeIng from '../img/myImg.jpg';
 import logoFireIng from '../img/logoFire.jpg';
@@ -36,9 +37,13 @@ function AboutPage() {
 				</div>
 			</div>
 
-			<div className="container" data-aos={aosStyle} data-aos-delay="50" data-aos-duration={aosDuration}>
-				<div className="containerTitle">About Me</div>
 
+			<Container
+				containerTitle='About Me'
+				aosStyle={aosStyle}
+				aosDelay='50'
+				aosDuration={aosDuration}
+			>
 				<div className="img_text">
 					<img
 						src={aboutMeIng}
@@ -77,17 +82,16 @@ function AboutPage() {
 						</div>
 					</div>
 				</div>
-			</div>
+			</Container>
 
-			<div
-				className="container"
-				data-aos-offset={aosOffset}
-				data-aos={aosStyle}
-				data-aos-delay={aosDelay}
-				data-aos-duration={aosDuration}
+
+			<Container
+				containerTitle='My Logo'
+				aosOffset={aosOffset}
+				aosStyle={aosStyle}
+				aosDelay={aosDelay}
+				aosDuration={aosDuration}
 			>
-				<div className="containerTitle">My Logo</div>
-
 				<div className="img_text text_img">
 					<img src={logoFireIng} alt="" height="300px" id="logoMoblie" />
 
@@ -104,19 +108,19 @@ function AboutPage() {
 						</div>
 					</div>
 
-					<img src={logoFireIng} alt="" height="300px" id="logoPc" />
+					<img src={logoFireIng} className="logoPc" alt="" height="300px" />
 				</div>
-			</div>
+			</Container>
 
-			<div
-				className="container"
-				data-aos-offset={aosOffset}
-				data-aos={aosStyle}
-				data-aos-delay={aosDelay}
-				data-aos-duration={aosDuration}
+
+			<Container
+				containerTitle='Bhemu Notes'
+				aosOffset={aosOffset}
+				aosStyle={aosStyle}
+				aosDelay={aosDelay}
+				aosDuration={aosDuration}
+				sx={{ marginBottom: '90px' }}
 			>
-				<div className="containerTitle">The Notes App</div>
-
 				<div className="img_text">
 					<img src={notesImg1} alt="" height="300px" />
 
@@ -141,7 +145,7 @@ function AboutPage() {
 						</div>
 					</div>
 				</div>
-			</div>
+			</Container>
 
 			<FootBar />
 		</div>

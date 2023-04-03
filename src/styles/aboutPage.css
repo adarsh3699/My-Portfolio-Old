@@ -28,6 +28,7 @@
 	text-shadow: 2px 2px 4px #000000;
 	letter-spacing: 2px;
 	width: calc(100% + 5px);
+	transition-duration: 1s;
 }
 
 #fName {
@@ -37,6 +38,7 @@
 #lName {
 	color: #f3246f;
 }
+
 
 /*----------------Animation--------------- */
 .anim-typewriter {
@@ -64,9 +66,8 @@
 }
 
 /*----------------Animation_End--------------- */
-.img_text {
-	display: flex;
-}
+
+
 
 #logoMoblie {
 	display: none;
@@ -76,80 +77,7 @@
 	justify-content: space-between;
 }
 
-.img_text img {
-	border-radius: 5px;
-}
-
-.bottons {
-	margin: 30px 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-#nextDiv {
-	margin-top: 20px;
-}
-
-#subTitle {
-	font-size: 25px;
-	border-radius: 2px;
-	background-color: #242526;
-	text-align: center;
-	padding: 3px 0 6px 0;
-	margin-top: 7%;
-	margin-bottom: 20px;
-}
-
-#technologiesLogo {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	text-align: center;
-}
-
-#reactLogo,
-#javaScriptLogo {
-	height: 60px;
-}
-
-#nodeJsLogo,
-#mongoDbLogo {
-	background-color: white;
-	height: 50px;
-	padding: 5px;
-}
-
-#technologiesLogo img:hover {
-	transform: scale(1.1);
-	transition-duration: 0.2s;
-}
-
 /* ...............................mWeb............................. */
-@media screen and (max-width: 1139px) {
-	#reactLogo,
-	#javaScriptLogo {
-		height: 50px;
-	}
-
-	#nodeJsLogo,
-	#mongoDbLogo {
-		height: 40px;
-	}
-}
-
-@media screen and (max-width: 1066px) {
-	#subTitle {
-		margin: 5% 0 15px 0;
-	}
-}
-
-@media screen and (max-width: 1015px) {
-	#subTitle {
-		margin: 10px 0 15px 0;
-	}
-}
-
 @media screen and (max-width: 750px) {
 	#myIntro {
 		width: 85%;
@@ -157,45 +85,25 @@
 	}
 
 	.line-1 {
-		font-size: 24px;
+		font-size: 30px;
 		letter-spacing: 1.5px;
-	}
-
-	.pointSection {
-		text-align: center !important;
-	}
-
-	.img_text {
-		display: block;
-		text-align: center;
 	}
 
 	#logoMoblie {
 		display: inline;
 		justify-content: center;
 	}
+}
 
-	#logoPc {
-		display: none;
+@media screen and (max-width: 470px) {
+	.line-1 {
+		font-size: 25px;
 	}
+}
 
-	#technologiesLogo {
-		font-size: 15px;
-	}
-
-	#subTitle {
-		margin: 30px 0 20px 0;
-		padding: 3px;
-	}
-
-	#reactLogo,
-	#javaScriptLogo {
-		height: 38px;
-	}
-
-	#nodeJsLogo,
-	#mongoDbLogo {
-		height: 30px;
-		padding: 4px;
+@media screen and (max-width: 390px) {
+	.line-1 {
+		font-size: 21px;
+		letter-spacing: 1px;
 	}
 }

@@ -22,6 +22,7 @@ function FootBar() {
 					<NavLink to="/contact">Contact</NavLink>
 				</div>
 			</div>
+
 			<div id="footLogo">
 				<img src={logoImg} alt="" />
 				<div>© 2022-25 (V 1.5)</div>

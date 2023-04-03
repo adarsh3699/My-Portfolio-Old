@@ -99,40 +99,40 @@ a {
 
 #footMemu {
 	display: flex;
-	padding-top: 30px;
+	padding-top: 25px;
 	width: 33.5%;
 	letter-spacing: 1px;
 }
 
 #footMemu a {
-	padding-left: 15px;
+	padding: 10px;
 }
 
 #footLogo {
 	text-align: center;
 	width: 33%;
-	font-size: 12px;
+	font-size: 13px;
 	padding-bottom: 20px;
 }
 
 #footSocial {
 	display: flex;
 	justify-content: flex-end;
-	padding-top: 30px;
+	padding-top: 14px;
 	width: 33.5%;
-	/* letter-spacing: 1px; */
 }
 
 #footSocial a {
 	display: flex;
 	align-items: center;
 	height: fit-content;
-	padding-right: 15px;
+	padding: 10px;
 }
 
 #footSocial img {
 	margin-right: 5px;
 }
+
 
 /* ..........................mWeb.......................... */
 @media screen and (max-width: 1050px) {
@@ -178,7 +178,7 @@ a {
 	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
 	#desktopMenu {
 		display: none;
 	}
@@ -204,8 +204,26 @@ a {
 		display: none;
 	}
 
-	#footMemu,
-	#footSocial {
+	#bottomBar {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#footMemu {
+		display: flex;
+		width: 100%;
 		padding-top: 15px;
+	}
+
+	#footLogo {
+		margin: 10px 10px 0px 10px;
+		width: unset;
+	}
+
+	#footSocial {
+		display: flex;
+		width: 100%;
+		padding: unset;
 	}
 }

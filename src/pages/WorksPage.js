@@ -2,16 +2,17 @@ import React from 'react';
 import AOS from 'aos';
 import { Slide } from 'react-slideshow-image';
 import animateScrollTo from 'animated-scroll-to';
+
+import { Accordion } from '../components/Accordion/';
 import NavBar from '../components/Bar/NavBar';
 import FootBar from '../components/Bar/FootBar';
-import { Accordion } from '../components/Accordion/';
 import Button from '../components/Button';
+import Container from '../components/Container/Container';
 
 import '../styles/accordion.css';
 import 'react-slideshow-image/dist/styles.css';
-import 'aos/dist/aos.css';
 import '../styles/worksPage.css';
-import '../styles/container.css';
+import 'aos/dist/aos.css';
 
 import myProjectBanner from '../img/myProjects.png';
 import InternshipBanner from '../img/internshipBanner.jpeg';
@@ -61,6 +62,7 @@ function WorksPage() {
 	return (
 		<div id="background">
 			<NavBar />
+
 			<Slide>
 				<div className="each-slide-effect">
 					<div className="bannerImg" style={{ backgroundImage: `url(${myProjectBanner})` }}>
@@ -78,13 +80,14 @@ function WorksPage() {
                     </div>
                 </div> */}
 			</Slide>
+
 			<div id="myProjects" className="mainTitle">
 				Personal Projects
 			</div>
 
-			<div className="container">
-				<div className="containerTitle">The Notes App</div>
-
+			<Container
+				containerTitle='Bhemu Notes'
+			>
 				<div className="img_text" data-aos="fade-up" data-aos-delay={aosDelay} data-aos-duration={aosDuration}>
 					<img src={notesImg1} alt="" height="300px" />
 
@@ -195,17 +198,16 @@ function WorksPage() {
 						</div>
 					</div>
 				</Accordion>
-			</div>
+			</Container>
 
-			<div
-				className="container"
-				data-aos="fade-up"
-				data-aos-delay={aosDelay}
-				data-aos-duration={aosDuration}
-				data-aos-offset={aosOffset}
+
+			<Container
+				containerTitle='Some Other Projects'
+				aosOffset={aosOffset}
+				aosStyle='fade-up'
+				aosDelay={aosDelay}
+				aosDuration={aosDuration}
 			>
-				<div className="containerTitle">Some Other Projects</div>
-
 				<div className="img_text">
 					{/* <img src={notesImg1} alt="" height="300px" /> */}
 
@@ -312,20 +314,20 @@ function WorksPage() {
 						<b>Note:-</b> These are only non-functional designs.
 					</div>
 				</Accordion>
-			</div>
+			</Container>
+
 
 			<div id="myInternships" className="mainTitle">
 				My Internships
 			</div>
 
-			<div
-				className="container"
-				data-aos="fade-up"
-				data-aos-delay={aosDelay}
-				data-aos-duration={aosDuration}
-				data-aos-offset={aosOffset}
+			<Container
+				containerTitle='Indian Institute Of Technology Patna (IIT Patna)'
+				aosStyle='fade-up'
+				aosOffset={aosOffset}
+				aosDelay={aosDelay}
+				aosDuration={aosDuration}
 			>
-				<div className="containerTitle">Indian Institute Of Technology Patna (IIT Patna)</div>
 
 				<div className="img_text">
 					<img src={iitpLogo} style={{ background: '#f1f1f1' }} alt="" height="300px" />
@@ -376,17 +378,16 @@ function WorksPage() {
 						<div>MongoDB</div>
 					</div>
 				</div>
-			</div>
+			</Container>
 
-			<div
-				className="container"
-				data-aos="fade-up"
-				data-aos-delay={aosDelay}
-				data-aos-duration={aosDuration}
-				data-aos-offset={aosOffset}
+
+			<Container
+				containerTitle='Auric Touch LLP'
+				aosStyle='fade-up'
+				aosOffset={aosOffset}
+				aosDelay={aosDelay}
+				aosDuration={aosDuration}
 			>
-				<div className="containerTitle">Auric Touch LLP</div>
-
 				<div className="img_text">
 					<img src={auricTouchLogo} alt="" height="300px" />
 
@@ -434,17 +435,17 @@ function WorksPage() {
 						<div>Material UI</div>
 					</div>
 				</div>
-			</div>
+			</Container>
 
-			<div
-				className="container"
-				data-aos="fade-up"
-				data-aos-delay={aosDelay}
-				data-aos-duration={aosDuration}
-				data-aos-offset={aosOffset}
-				style={{ marginBottom: '90px' }}
+
+			<Container
+				containerTitle='Be A Wiz Educatio'
+				aosStyle='fade-up'
+				aosOffset={aosOffset}
+				aosDelay={aosDelay}
+				aosDuration={aosDuration}
+				sx={{ marginBottom: '90px' }}
 			>
-				<div className="containerTitle">Be A Wiz Education</div>
 
 				<div className="img_text">
 					<img src={beAwizLogo} alt="" height="300px" />
@@ -485,7 +486,7 @@ function WorksPage() {
 						<div>CSS</div>
 					</div>
 				</div>
-			</div>
+			</Container>
 
 			<FootBar />
 		</div>
