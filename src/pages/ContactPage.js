@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import NavBar from '../components/Bar/NavBar';
-import FootBar from '../components/Bar/FootBar';
 import AOS from 'aos';
 import Button from '../components/Button';
 
@@ -37,8 +35,7 @@ function AboutPage() {
 	}
 
 	return (
-		<div id="background">
-			<NavBar />
+		<div className="background">
 			<div id="title">Contact Me</div>
 			<form
 				id="msgUs"
@@ -159,7 +156,6 @@ function AboutPage() {
 					</a>
 				</div>
 			</div>
-			<FootBar />
 		</div>
 	);
 }

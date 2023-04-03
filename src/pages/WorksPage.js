@@ -4,8 +4,6 @@ import { Slide } from 'react-slideshow-image';
 import animateScrollTo from 'animated-scroll-to';
 
 import { Accordion } from '../components/Accordion/';
-import NavBar from '../components/Bar/NavBar';
-import FootBar from '../components/Bar/FootBar';
 import Button from '../components/Button';
 import Container from '../components/Container/Container';
 
@@ -60,8 +58,7 @@ function WorksPage() {
 	}
 
 	return (
-		<div id="background">
-			<NavBar />
+		<div className="background">
 
 			<Slide>
 				<div className="each-slide-effect">
@@ -488,7 +485,6 @@ function WorksPage() {
 				</div>
 			</Container>
 
-			<FootBar />
 		</div>
 	);
 }

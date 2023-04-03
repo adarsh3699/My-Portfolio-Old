@@ -1,6 +1,10 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes as Switch, Route } from 'react-router-dom';
 
+import Loader from './components/Loader/Loader';
+import NavBar from './components/Bar/NavBar';
+import FootBar from './components/Bar/FootBar';
+
 // import HomePage from './pages/HomePage';
 // import AboutPage from "./pages/AboutPage";
 // import ContactPage from "./pages/ContactPage"
@@ -16,34 +20,19 @@ function Routes() {
 		<BrowserRouter>
 			<Suspense
 				fallback={
-					<>
+					<div className='background'>
 						<div id="loadingScreen">
-							Loading
-							<div id="loadingIcon">
-								<div className="lds-spinner">
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-								</div>
-							</div>
+							<div> Loading </div>
+							<Loader />
 						</div>
-					</>
+					</div>
 				}
 			>
 				<Switch>
-					<Route exact path="/" element={<HomePage />} />
-					<Route exact path="/about" element={<AboutPage />} />
-					<Route exact path="/works" element={<WorksPage />} />
-					<Route exact path="/contact" element={<ContactPage />} />
+					<Route exact path="/" element={<><NavBar /><HomePage /><FootBar /></>} />
+					<Route exact path="/about" element={<><NavBar /><AboutPage /><FootBar /></>} />
+					<Route exact path="/works" element={<><NavBar /><WorksPage /><FootBar /></>} />
+					<Route exact path="/contact" element={<><NavBar /><ContactPage /><FootBar /></>} />
 
 					<Route
 						path="*"

@@ -1,6 +1,5 @@
 import React from 'react';
-import NavBar from '../components/Bar/NavBar';
-import FootBar from '../components/Bar/FootBar';
+
 import {
 	Animator,
 	ScrollContainer,
@@ -25,8 +24,6 @@ const FadeUp = batch(Fade(), Move(), Sticky());
 function HomePage() {
 	return (
 		<>
-			<NavBar />
-
 			<ScrollContainer>
 				<ScrollPage page={0} key="0">
 					<Animator animation={batch(Fade(), Sticky(50, 45), MoveOut(0, -200))}>
@@ -74,8 +71,6 @@ function HomePage() {
 					<div className="wave waveBottom"></div>
 				</div>
 			</div>
-
-			<FootBar />
 		</>
 	);
 }

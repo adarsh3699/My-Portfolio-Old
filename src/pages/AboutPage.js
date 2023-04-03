@@ -3,8 +3,6 @@ import { NavLink } from 'react-router-dom';
 
 import AOS from 'aos';
 
-import NavBar from '../components/Bar/NavBar';
-import FootBar from '../components/Bar/FootBar';
 import Container from '../components/Container/Container';
 import Button from '../components/Button';
 
@@ -27,8 +25,7 @@ const aosOffset = '250';
 
 function AboutPage() {
 	return (
-		<div id="background">
-			<NavBar />
+		<div className="background">
 			<div id="myIntro">
 				<div className="welcome_msg">
 					<p className="line-1 anim-typewriter">
@@ -146,8 +143,6 @@ function AboutPage() {
 					</div>
 				</div>
 			</Container>
-
-			<FootBar />
 		</div>
 	);
 }
