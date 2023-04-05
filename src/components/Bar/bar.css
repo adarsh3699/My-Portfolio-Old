@@ -49,7 +49,7 @@ a {
 }
 
 #desktopMenu a {
-	padding: 0px 25px;
+	padding: 10px 25px;
 }
 
 #desktopMenu a:hover {
@@ -86,10 +86,11 @@ a {
 #bottomBar {
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
 	background-color: rgb(29, 27, 27);
 	color: white;
 	font-size: 15px;
+	width: 100%;
+	min-height: 150px;
 }
 
 #bottomBar a {
@@ -99,34 +100,36 @@ a {
 
 #footMemu {
 	display: flex;
-	padding-top: 25px;
+	margin-top: 15px;
 	width: 33.5%;
 	letter-spacing: 1px;
 }
 
 #footMemu a {
-	padding: 10px;
+	display: inline-block;
+	width: fit-content;
+	padding: 6px 15px;
 }
 
 #footLogo {
 	text-align: center;
 	width: 33%;
 	font-size: 13px;
-	padding-bottom: 20px;
 }
 
 #footSocial {
 	display: flex;
 	justify-content: flex-end;
-	padding-top: 14px;
+	margin-top: 10px;
 	width: 33.5%;
 }
 
 #footSocial a {
 	display: flex;
 	align-items: center;
+	padding: 10px 15px;
 	height: fit-content;
-	padding: 10px;
+	width: fit-content;
 }
 
 #footSocial img {
@@ -150,17 +153,13 @@ a {
 
 @media screen and (max-width: 931px) {
 	#desktopMenu a {
-		padding: 20;
+		padding: 10px 15px;
 		transition-duration: 0.5s;
 	}
 
 	#footMemu {
-		display: block;
+		flex-direction: column;
 		width: 32%;
-	}
-
-	#footMemu div {
-		padding-bottom: 5px;
 	}
 
 	#footLogo img {
@@ -169,12 +168,9 @@ a {
 	}
 
 	#footSocial {
-		display: block;
-	}
-
-	#footSocial a {
-		padding-bottom: 10px;
-		justify-content: flex-end;
+		flex-direction: column;
+		justify-content: unset;
+		align-items: end;
 	}
 }
 
@@ -211,19 +207,14 @@ a {
 	}
 
 	#footMemu {
-		display: flex;
 		width: 100%;
-		padding-top: 15px;
 	}
 
 	#footLogo {
-		margin: 10px 10px 0px 10px;
 		width: unset;
 	}
 
 	#footSocial {
-		display: flex;
 		width: 100%;
-		padding: unset;
 	}
 }

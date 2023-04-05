@@ -9,18 +9,10 @@ function FootBar() {
 	return (
 		<div id="bottomBar">
 			<div id="footMemu">
-				<div>
-					<NavLink to="/">Home</NavLink>
-				</div>
-				<div>
-					<NavLink to="/about">About</NavLink>
-				</div>
-				<div>
-					<NavLink to="/works">Works</NavLink>
-				</div>
-				<div>
-					<NavLink to="/contact">Contact</NavLink>
-				</div>
+				<NavLink to="/">Home</NavLink>
+				<NavLink to="/about">About</NavLink>
+				<NavLink to="/works">Works</NavLink>
+				<NavLink to="/contact">Contact</NavLink>
 			</div>
 
 			<div id="footLogo">
