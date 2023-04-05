@@ -24,6 +24,9 @@ function AboutPage() {
 	const [emailValue, setEmailValue] = useState('');
 	const [msgValue, setMsgValue] = useState('');
 
+	if (document.title !== 'Adarsh Suman | Contact') document.title = 'Adarsh Suman | Contact';
+
+
 	function handelEmailChange(e) {
 		const value = e.target.value;
 		setEmailValue(value);

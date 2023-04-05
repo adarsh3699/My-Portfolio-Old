@@ -38,8 +38,6 @@ import iitpCertificate from '../img/projects/iitp_certificate.pdf';
 import auricTouchCertificate from '../img/projects/auricTouch_certificate.pdf';
 import beCertificate from '../img/projects/beawiz_Certificate.pdf';
 
-document.title = 'Adarsh Suman | Works';
-
 AOS.init();
 
 const aosDelay = '100';
@@ -47,6 +45,9 @@ const aosDuration = '1000';
 const aosOffset = '250';
 
 function WorksPage() {
+	if (document.title !== 'Adarsh Suman | Works') document.title = 'Adarsh Suman | Works';
+
+
 	function myProject() {
 		const myProjectDiv = document.getElementById('myProjects');
 		return animateScrollTo(myProjectDiv.getBoundingClientRect().top - 60);

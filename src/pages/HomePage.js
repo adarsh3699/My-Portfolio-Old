@@ -22,6 +22,7 @@ const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
 const FadeUp = batch(Fade(), Move(), Sticky());
 
 function HomePage() {
+	if (document.title !== 'Adarsh Suman') document.title = 'Adarsh Suman';
 	return (
 		<>
 			<ScrollContainer>

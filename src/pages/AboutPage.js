@@ -15,7 +15,6 @@ import notesImg1 from '../img/projects/user-home.jpg';
 
 import MyResume from '../img/projects/my_resume.pdf';
 
-document.title = 'Adarsh Suman | About';
 
 AOS.init();
 const aosStyle = 'fade-up';
@@ -24,6 +23,9 @@ const aosDuration = '1000';
 const aosOffset = '250';
 
 function AboutPage() {
+	if (document.title !== 'Adarsh Suman | About') document.title = 'Adarsh Suman | About';
+
+
 	return (
 		<div className="background">
 			<div id="myIntro">
