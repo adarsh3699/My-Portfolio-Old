@@ -25,26 +25,26 @@ function HomePage() {
 	return (
 		<>
 			<ScrollContainer>
-				<ScrollPage page={0} key="0">
+				<ScrollPage>
 					<Animator animation={batch(Fade(), Sticky(50, 45), MoveOut(0, -200))}>
 						<div id="welcome">
 							Hello <span>World</span>
 						</div>
 					</Animator>
 				</ScrollPage>
-				<ScrollPage page={1} key="1">
+				<ScrollPage>
 					<Animator animation={ZoomInScrollOut}>
 						<div id="myName">
 							This is <span>Adarsh</span> Suman
 						</div>
 					</Animator>
 				</ScrollPage>
-				<ScrollPage page={2} key="2">
+				<ScrollPage>
 					<Animator animation={FadeUp}>
 						<span id="iAm">I am a 🤔</span>
 					</Animator>
 				</ScrollPage>
-				<ScrollPage page={3} key="3">
+				<ScrollPage>
 					<div id="myPoints">
 						<Animator animation={MoveIn(-1000, 0)}>Programmer👋🏻</Animator>
 						<Animator animation={MoveIn(1000, 0)}>Web App Developer</Animator>
@@ -53,9 +53,9 @@ function HomePage() {
 						<Animator animation={MoveOut(-1000, 0)}>See you 💛</Animator>
 					</div>
 				</ScrollPage>
-				<ScrollPage page={4} key="4">
+				<ScrollPage>
 					<Animator animation={batch(Fade(), Sticky(50, 45))}>
-						<div id="thankMsg">Thank you for visting my site</div>
+						<div id="thankMsg">Thank you 🤍</div>
 					</Animator>
 				</ScrollPage>
 			</ScrollContainer>
