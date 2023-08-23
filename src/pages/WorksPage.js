@@ -14,7 +14,7 @@ import 'aos/dist/aos.css';
 
 import myProjectBanner from '../img/myProjects.png';
 import InternshipBanner from '../img/internshipBanner.jpeg';
-// import MettingBanner from "../img/meeting.jpg";
+import MettingBanner from "../img/meeting.jpg";
 
 import notesImg1 from '../img/projects/user-home.jpg';
 import LoginPage from '../img/projects/loginPage.png';
@@ -72,11 +72,11 @@ function WorksPage() {
 						<span onClick={myInternships}>Internships</span>
 					</div>
 				</div>
-				{/* <div className="each-slide-effect">
-                    <div className='bannerImg' style={{ 'backgroundImage': `url(${MettingBanner})` }}>
-                        <span>Slide 1</span>
-                    </div>
-                </div> */}
+				<div className="each-slide-effect">
+					<div className='bannerImg' style={{ 'backgroundImage': `url(${MettingBanner})` }}>
+						<span>Team working</span>
+					</div>
+				</div>
 			</Slide>
 
 			<div id="myProjects" className="mainTitle">
@@ -110,7 +110,7 @@ function WorksPage() {
 							Type To-dos Come with Done CheckBox, which helps you remember your works.
 						</div>
 						<div className="bottons">
-							<a href={"https://notes." + process.env.REACT_APP_MY_BASE_URL} id="noteLink" target="_blank" rel="noreferrer">
+							<a href={"https://notes" + (window.location.host.split('www')[10] || process.env?.REACT_APP_MY_BASE_URL || '.bhemu.me')} id="noteLink" target="_blank" rel="noreferrer">
 								<Button title="Web-Link" color="sky" />
 							</a>
 						</div>
@@ -248,7 +248,7 @@ function WorksPage() {
 							</div>
 						</div>
 
-						<a href={"https://sdt." + process.env.REACT_APP_MY_BASE_URL} className="noteLink" target="_blank" rel="noreferrer">
+						<a href={"https://sdt" + (window.location.host.split('www')[10] || process.env?.REACT_APP_MY_BASE_URL || '.bhemu.me')} className="noteLink" target="_blank" rel="noreferrer">
 							<Button title="Live Link" color="sky" sx={{ marginBottom: '10px' }} />
 						</a>
 					</div>
@@ -267,7 +267,7 @@ function WorksPage() {
 								automatically removed from the first and third dropdowns.
 							</div>
 						</div>
-						<a href={"https://select." + process.env.REACT_APP_MY_BASE_URL} className="noteLink" target="_blank" rel="noreferrer">
+						<a href={"https://select" + (window.location.host.split('www')[10] || process.env?.REACT_APP_MY_BASE_URL || '.bhemu.me')} className="noteLink" target="_blank" rel="noreferrer">
 							<Button title="Live Link" color="sky" sx={{ marginBottom: '10px' }} />
 						</a>
 					</div>
@@ -283,7 +283,7 @@ function WorksPage() {
 								Get data from the server and render it on the frontend.
 							</div>
 						</div>
-						<a href={"https://bitcoin." + process.env.REACT_APP_MY_BASE_URL} className="noteLink" target="_blank" rel="noreferrer">
+						<a href={"https://bitcoin" + (window.location.host.split('www')[10] || process.env?.REACT_APP_MY_BASE_URL || '.bhemu.me')} className="noteLink" target="_blank" rel="noreferrer">
 							<Button title="Live Link" color="sky" sx={{ marginBottom: '10px' }} />
 						</a>
 					</div>
@@ -293,19 +293,19 @@ function WorksPage() {
 					<div className="pointSection">
 						<div className="designs">
 							<div className="accordionTitle">Design 1</div>
-							<a href={"https://design1." + process.env.REACT_APP_MY_BASE_URL} className="noteLink" target="_blank" rel="noreferrer">
+							<a href={"https://design1" + (window.location.host.split('www')[10] || process.env?.REACT_APP_MY_BASE_URL || '.bhemu.me')} className="noteLink" target="_blank" rel="noreferrer">
 								<Button title="Live Link" color="sky" />
 							</a>
 						</div>
 						<div className="designs">
 							<div className="accordionTitle">Design 2</div>
-							<a href={"https://design2." + process.env.REACT_APP_MY_BASE_URL} className="noteLink" target="_blank" rel="noreferrer">
+							<a href={"https://design2" + (window.location.host.split('www')[10] || process.env?.REACT_APP_MY_BASE_URL || '.bhemu.me')} className="noteLink" target="_blank" rel="noreferrer">
 								<Button title="Live Link" color="sky" />
 							</a>
 						</div>
 						<div className="designs">
 							<div className="accordionTitle">Design 3</div>
-							<a href={"https://design3." + process.env.REACT_APP_MY_BASE_URL} className="noteLink" target="_blank" rel="noreferrer">
+							<a href={"https://design3" + (window.location.host.split('www')[10] || process.env?.REACT_APP_MY_BASE_URL || '.bhemu.me')} className="noteLink" target="_blank" rel="noreferrer">
 								<Button title="Live Link" color="sky" />
 							</a>
 						</div>
