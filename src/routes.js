@@ -20,7 +20,7 @@ function Routes() {
 		<BrowserRouter>
 			<Suspense
 				fallback={
-					<div className='background'>
+					<div className="background">
 						<div id="loadingScreen">
 							<div> Loading </div>
 							<Loader />
@@ -29,15 +29,55 @@ function Routes() {
 				}
 			>
 				<Switch>
-					<Route exact path="/" element={<><NavBar /><HomePage /><FootBar /></>} />
-					<Route exact path="/about" element={<><NavBar /><AboutPage /><FootBar /></>} />
-					<Route exact path="/works" element={<><NavBar /><WorksPage /><FootBar /></>} />
-					<Route exact path="/contact" element={<><NavBar /><ContactPage /><FootBar /></>} />
+					<Route
+						exact
+						path="/"
+						element={
+							<>
+								<NavBar />
+								<HomePage />
+								<FootBar />
+							</>
+						}
+					/>
+					<Route
+						exact
+						path="/about"
+						element={
+							<>
+								<NavBar />
+								<AboutPage />
+								<FootBar />
+							</>
+						}
+					/>
+					<Route
+						exact
+						path="/works"
+						element={
+							<>
+								<NavBar />
+								<WorksPage />
+								<FootBar />
+							</>
+						}
+					/>
+					<Route
+						exact
+						path="/contact"
+						element={
+							<>
+								<NavBar />
+								<ContactPage />
+								<FootBar />
+							</>
+						}
+					/>
 
 					<Route
 						path="*"
 						element={
-							<center id='pageNotFound'>
+							<center id="pageNotFound">
 								<h1>Page Not Found</h1>
 								<div>Error: 404</div>
 							</center>

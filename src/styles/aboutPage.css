@@ -39,10 +39,11 @@
 	color: #f3246f;
 }
 
-
 /*----------------Animation--------------- */
 .anim-typewriter {
-	animation: typewriter 5s steps(30) normal, blinkTextCursor 0.7s ease-in-out infinite;
+	animation:
+		typewriter 5s steps(30) normal,
+		blinkTextCursor 0.7s ease-in-out infinite;
 }
 
 @keyframes typewriter {
@@ -66,8 +67,6 @@
 }
 
 /*----------------Animation_End--------------- */
-
-
 
 #logoMoblie {
 	display: none;

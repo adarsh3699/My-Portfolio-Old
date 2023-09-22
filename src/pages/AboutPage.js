@@ -15,7 +15,6 @@ import notesImg1 from '../img/projects/user-home.jpg';
 
 import MyResume from '../img/projects/my_resume.pdf';
 
-
 AOS.init();
 const aosStyle = 'fade-up';
 const aosDelay = '100';
@@ -24,7 +23,6 @@ const aosOffset = '250';
 
 function AboutPage() {
 	if (document.title !== 'Adarsh Suman | About') document.title = 'Adarsh Suman | About';
-
 
 	return (
 		<div className="background">
@@ -36,13 +34,7 @@ function AboutPage() {
 				</div>
 			</div>
 
-
-			<Container
-				containerTitle='About Me'
-				aosStyle={aosStyle}
-				aosDelay='50'
-				aosDuration={aosDuration}
-			>
+			<Container containerTitle="About Me" aosStyle={aosStyle} aosDelay="50" aosDuration={aosDuration}>
 				<div className="img_text">
 					<img
 						src={aboutMeIng}
@@ -59,19 +51,19 @@ function AboutPage() {
 						data-aos-delay="50"
 						data-aos-duration={aosDuration}
 					>
-
 						<div className="aboutPoints">I'm a programmer and a computer geek.</div>
-						<div className="aboutPoints">I have one year of experience in this industry.</div>
-						<div className="aboutPoints">I have skill in Web Application Development as a full stack developer.</div>
+						<div className="aboutPoints">I have more than two years of experience in this industry.</div>
 						<div className="aboutPoints">
-							I have experience in JavaScript, React, NodeJs, MySql, MongoDb, PHP, HTML and CSS.
+							I have skill in Web Application Development as a full stack developer.
+						</div>
+						<div className="aboutPoints">
+							I have experience in JavaScript, React, NodeJs, MySql, MongoDb, MERN, PHP, HTML and CSS.
 						</div>
 						<div className="aboutPoints">
 							I have done some of my personal projects and some internships at different companies.
 						</div>
 						<div className="aboutPoints">
-							Other than programming I use to spend time in gaming, listening songs and graphics
-							designing.
+							Other than programming I use to spend time in gaming, listening songs and video editing.
 						</div>
 						<div className="aboutPoints">Currently, I'm in high school in the science stream.</div>
 						<div className="bottons">
@@ -83,9 +75,8 @@ function AboutPage() {
 				</div>
 			</Container>
 
-
 			<Container
-				containerTitle='My Logo'
+				containerTitle="Our Logo"
 				aosOffset={aosOffset}
 				aosStyle={aosStyle}
 				aosDelay={aosDelay}
@@ -111,9 +102,8 @@ function AboutPage() {
 				</div>
 			</Container>
 
-
 			<Container
-				containerTitle='Bhemu Notes'
+				containerTitle="Bhemu Notes"
 				aosOffset={aosOffset}
 				aosStyle={aosStyle}
 				aosDelay={aosDelay}
@@ -126,16 +116,31 @@ function AboutPage() {
 					<div className="pointSection">
 						<div className="aboutPoints">This is a Multi-User Notes app.</div>
 						<div className="aboutPoints">
-							Which allows multiple logins and new users can also create their own new account to login.
+							Which allows all users separate logins, and new users can also create their own account.
 						</div>
 						<div className="aboutPoints">
-							Each user can keep their notes and to-dos separate and secure from others.
+							Each user can keep their notes and to-dos secure and safe from others.
 						</div>
 						<div className="aboutPoints">
-							Where user data and their notes store in encrypted form in Database.
+							The user can customize their account by changing their profile picture, name, and password
+							at any time.
+							{/* Users can also share their notes with others by just sharing the link of that note. */}
+						</div>
+						<div className="aboutPoints">
+							User data and their notes store in encrypted form in Database.
 						</div>
 						<div className="bottons">
-							<a href={"https://notes" + (window.location.host.split('www')[1] || process.env?.REACT_APP_MY_BASE_URL || '.bhemu.me')} id="noteLink" target="_blank" rel="noreferrer">
+							<a
+								href={
+									'https://notes' +
+									(window.location.host.split('www')[1] ||
+										process.env?.REACT_APP_MY_BASE_URL ||
+										'.bhemu.me')
+								}
+								id="noteLink"
+								target="_blank"
+								rel="noreferrer"
+							>
 								<Button title="Web-Link" color="sky" />
 							</a>
 							<NavLink to="/works" id="knowMore">

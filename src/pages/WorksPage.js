@@ -14,7 +14,7 @@ import 'aos/dist/aos.css';
 
 import myProjectBanner from '../img/myProjects.png';
 import InternshipBanner from '../img/internshipBanner.jpeg';
-import MettingBanner from "../img/meeting.jpg";
+import MettingBanner from '../img/meeting.jpg';
 
 import notesImg1 from '../img/projects/user-home.jpg';
 import LoginPage from '../img/projects/loginPage.png';
@@ -47,7 +47,6 @@ const aosOffset = '250';
 function WorksPage() {
 	if (document.title !== 'Adarsh Suman | Works') document.title = 'Adarsh Suman | Works';
 
-
 	function myProject() {
 		const myProjectDiv = document.getElementById('myProjects');
 		return animateScrollTo(myProjectDiv.getBoundingClientRect().top - 60);
@@ -60,7 +59,6 @@ function WorksPage() {
 
 	return (
 		<div className="background">
-
 			<Slide>
 				<div className="each-slide-effect">
 					<div className="bannerImg" style={{ backgroundImage: `url(${myProjectBanner})` }}>
@@ -73,7 +71,7 @@ function WorksPage() {
 					</div>
 				</div>
 				<div className="each-slide-effect">
-					<div className='bannerImg' style={{ 'backgroundImage': `url(${MettingBanner})` }}>
+					<div className="bannerImg" style={{ backgroundImage: `url(${MettingBanner})` }}>
 						<span>Team working</span>
 					</div>
 				</div>
@@ -83,25 +81,21 @@ function WorksPage() {
 				Personal Projects
 			</div>
 
-			<Container
-				containerTitle='Bhemu Notes'
-			>
+			<Container containerTitle="Bhemu Notes">
 				<div className="img_text" data-aos="fade-up" data-aos-delay={aosDelay} data-aos-duration={aosDuration}>
 					<img src={notesImg1} alt="" height="300px" />
 
 					<div className="pointSection">
 						<div className="aboutPoints">This is a Multi-User Notes app.</div>
 						<div className="aboutPoints">
-							Which allows multiple logins and new users can also create their own new account to login.
+							Which allows all users separate logins, and new users can also create their own account.
 						</div>
 						<div className="aboutPoints">
-							Each user can keep their notes and to-dos separate and secure from others.
+							User data and their notes are stored securely in encrypted form in the database.
 						</div>
 						<div className="aboutPoints">
-							Where user data and their notes store in encrypted form in Database.
-						</div>
-						<div className="aboutPoints">
-							This Notes app facilitates both Notes type and To-dos type with all your basic features.
+							This Notes app facilitates you to keep your Notes type and To-Dos type with all basic
+							features.
 						</div>
 						<div className="aboutPoints">
 							Type Notes provides you unlimited space for your notes with a self-extended input box.
@@ -109,8 +103,22 @@ function WorksPage() {
 						<div className="aboutPoints">
 							Type To-dos Come with Done CheckBox, which helps you remember your works.
 						</div>
+						<div className="aboutPoints">
+							Now you can store note types and todos in the same file, which makes taking notes more
+							handy.
+						</div>
 						<div className="bottons">
-							<a href={"https://notes" + (window.location.host.split('www')[1] || process.env?.REACT_APP_MY_BASE_URL || '.bhemu.me')} id="noteLink" target="_blank" rel="noreferrer">
+							<a
+								href={
+									'https://notes' +
+									(window.location.host.split('www')[1] ||
+										process.env?.REACT_APP_MY_BASE_URL ||
+										'.bhemu.me')
+								}
+								id="noteLink"
+								target="_blank"
+								rel="noreferrer"
+							>
 								<Button title="Web-Link" color="sky" />
 							</a>
 						</div>
@@ -150,7 +158,7 @@ function WorksPage() {
 							</div>
 							<div className="aboutPoints">
 								There is also an option to "forget password" in case you forget your password. In which
-								case you get an OTP on your registered email ID to change your password.
+								case you get an mail on your registered email ID to change your password.
 							</div>
 							<div className="aboutPoints">
 								Your privacy is our responsibility. That is why your information is end-to-end
@@ -173,7 +181,8 @@ function WorksPage() {
 								Each note box shows us the last saved time and date, which helps us to navigate easily.
 							</div>
 							<div className="aboutPoints">
-								You can now store both to-do and note types in the same file.
+								Now you can store note types and todos in the same file, which makes taking notes more
+								handy.
 							</div>
 						</div>
 					</div>
@@ -198,11 +207,10 @@ function WorksPage() {
 				</Accordion>
 			</Container>
 
-
 			<Container
-				containerTitle='Some Other Projects'
+				containerTitle="Some Other Projects"
 				aosOffset={aosOffset}
-				aosStyle='fade-up'
+				aosStyle="fade-up"
 				aosDelay={aosDelay}
 				aosDuration={aosDuration}
 			>
@@ -248,7 +256,17 @@ function WorksPage() {
 							</div>
 						</div>
 
-						<a href={"https://sdt" + (window.location.host.split('www')[1] || process.env?.REACT_APP_MY_BASE_URL || '.bhemu.me')} className="noteLink" target="_blank" rel="noreferrer">
+						<a
+							href={
+								'https://sdt' +
+								(window.location.host.split('www')[1] ||
+									process.env?.REACT_APP_MY_BASE_URL ||
+									'.bhemu.me')
+							}
+							className="noteLink"
+							target="_blank"
+							rel="noreferrer"
+						>
 							<Button title="Live Link" color="sky" sx={{ marginBottom: '10px' }} />
 						</a>
 					</div>
@@ -267,7 +285,17 @@ function WorksPage() {
 								automatically removed from the first and third dropdowns.
 							</div>
 						</div>
-						<a href={"https://select" + (window.location.host.split('www')[1] || process.env?.REACT_APP_MY_BASE_URL || '.bhemu.me')} className="noteLink" target="_blank" rel="noreferrer">
+						<a
+							href={
+								'https://select' +
+								(window.location.host.split('www')[1] ||
+									process.env?.REACT_APP_MY_BASE_URL ||
+									'.bhemu.me')
+							}
+							className="noteLink"
+							target="_blank"
+							rel="noreferrer"
+						>
 							<Button title="Live Link" color="sky" sx={{ marginBottom: '10px' }} />
 						</a>
 					</div>
@@ -283,7 +311,17 @@ function WorksPage() {
 								Get data from the server and render it on the frontend.
 							</div>
 						</div>
-						<a href={"https://bitcoin" + (window.location.host.split('www')[1] || process.env?.REACT_APP_MY_BASE_URL || '.bhemu.me')} className="noteLink" target="_blank" rel="noreferrer">
+						<a
+							href={
+								'https://bitcoin' +
+								(window.location.host.split('www')[1] ||
+									process.env?.REACT_APP_MY_BASE_URL ||
+									'.bhemu.me')
+							}
+							className="noteLink"
+							target="_blank"
+							rel="noreferrer"
+						>
 							<Button title="Live Link" color="sky" sx={{ marginBottom: '10px' }} />
 						</a>
 					</div>
@@ -293,19 +331,49 @@ function WorksPage() {
 					<div className="pointSection">
 						<div className="designs">
 							<div className="accordionTitle">Design 1</div>
-							<a href={"https://design1" + (window.location.host.split('www')[1] || process.env?.REACT_APP_MY_BASE_URL || '.bhemu.me')} className="noteLink" target="_blank" rel="noreferrer">
+							<a
+								href={
+									'https://design1' +
+									(window.location.host.split('www')[1] ||
+										process.env?.REACT_APP_MY_BASE_URL ||
+										'.bhemu.me')
+								}
+								className="noteLink"
+								target="_blank"
+								rel="noreferrer"
+							>
 								<Button title="Live Link" color="sky" />
 							</a>
 						</div>
 						<div className="designs">
 							<div className="accordionTitle">Design 2</div>
-							<a href={"https://design2" + (window.location.host.split('www')[1] || process.env?.REACT_APP_MY_BASE_URL || '.bhemu.me')} className="noteLink" target="_blank" rel="noreferrer">
+							<a
+								href={
+									'https://design2' +
+									(window.location.host.split('www')[1] ||
+										process.env?.REACT_APP_MY_BASE_URL ||
+										'.bhemu.me')
+								}
+								className="noteLink"
+								target="_blank"
+								rel="noreferrer"
+							>
 								<Button title="Live Link" color="sky" />
 							</a>
 						</div>
 						<div className="designs">
 							<div className="accordionTitle">Design 3</div>
-							<a href={"https://design3" + (window.location.host.split('www')[1] || process.env?.REACT_APP_MY_BASE_URL || '.bhemu.me')} className="noteLink" target="_blank" rel="noreferrer">
+							<a
+								href={
+									'https://design3' +
+									(window.location.host.split('www')[1] ||
+										process.env?.REACT_APP_MY_BASE_URL ||
+										'.bhemu.me')
+								}
+								className="noteLink"
+								target="_blank"
+								rel="noreferrer"
+							>
 								<Button title="Live Link" color="sky" />
 							</a>
 						</div>
@@ -314,19 +382,17 @@ function WorksPage() {
 				</Accordion>
 			</Container>
 
-
 			<div id="myInternships" className="mainTitle">
 				My Internships
 			</div>
 
 			<Container
-				containerTitle='Indian Institute Of Technology Patna (IIT Patna)'
-				aosStyle='fade-up'
+				containerTitle="Indian Institute Of Technology Patna (IIT Patna)"
+				aosStyle="fade-up"
 				aosOffset={aosOffset}
 				aosDelay={aosDelay}
 				aosDuration={aosDuration}
 			>
-
 				<div className="img_text">
 					<img src={iitpLogo} style={{ background: '#f1f1f1' }} alt="" height="300px" />
 
@@ -378,10 +444,9 @@ function WorksPage() {
 				</div>
 			</Container>
 
-
 			<Container
-				containerTitle='Auric Touch LLP'
-				aosStyle='fade-up'
+				containerTitle="Auric Touch LLP"
+				aosStyle="fade-up"
 				aosOffset={aosOffset}
 				aosDelay={aosDelay}
 				aosDuration={aosDuration}
@@ -435,16 +500,14 @@ function WorksPage() {
 				</div>
 			</Container>
 
-
 			<Container
-				containerTitle='Be A Wiz Educatio'
-				aosStyle='fade-up'
+				containerTitle="Be A Wiz Educatio"
+				aosStyle="fade-up"
 				aosOffset={aosOffset}
 				aosDelay={aosDelay}
 				aosDuration={aosDuration}
 				sx={{ marginBottom: '90px' }}
 			>
-
 				<div className="img_text">
 					<img src={beAwizLogo} alt="" height="300px" />
 
@@ -485,7 +548,6 @@ function WorksPage() {
 					</div>
 				</div>
 			</Container>
-
 		</div>
 	);
 }
