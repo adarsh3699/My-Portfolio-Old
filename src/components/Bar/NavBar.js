@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 
-import myLogoImg from './img/logo.png';
+// import myLogoImg from './img/logo.png';
+import myLogoImg from './img/newLogo.webp';
 import instaLogo from './img/instagramWhite.svg';
 import youtubeLogo from './img/youtubeWhite.svg';
 import mobileMenuIcon from './img/menu.png';
@@ -38,9 +39,9 @@ function Bar() {
 			<div id="topBar">
 				<div id="logo">
 					<a href="/">
-						<img src={myLogoImg} height="50px" alt="" />
+						<img src={myLogoImg} alt="" />
 						<div>
-							<span id="adarsh">Adarsh </span>Suman
+							<span id="adarsh">darsh </span>Suman
 						</div>
 					</a>
 				</div>

@@ -10,7 +10,8 @@ import 'aos/dist/aos.css';
 import '../styles/aboutPage.css';
 
 import aboutMeIng from '../img/myImg.jpg';
-import logoFireIng from '../img/logoFire.jpg';
+// import logoFireIng from '../img/logoFire.jpg';
+import newLogoWithBg from '../img/newLogoBlack.webp';
 import notesImg1 from '../img/projects/user-home.jpg';
 
 import MyResume from '../img/projects/my_resume.pdf';
@@ -83,7 +84,7 @@ function AboutPage() {
 				aosDuration={aosDuration}
 			>
 				<div className="img_text text_img">
-					<img src={logoFireIng} alt="" height="300px" id="logoMoblie" />
+					<img src={newLogoWithBg} alt="" height="300px" id="logoMoblie" />
 
 					<div className="pointSection">
 						<div className="aboutPoints">
@@ -98,7 +99,7 @@ function AboutPage() {
 						</div>
 					</div>
 
-					<img src={logoFireIng} className="logoPc" alt="" height="300px" />
+					<img src={newLogoWithBg} className="logoPc" alt="" height="300px" />
 				</div>
 			</Container>
 

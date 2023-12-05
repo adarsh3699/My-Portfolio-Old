@@ -27,6 +27,12 @@ a {
 #logo {
 	width: 33.3%;
 	letter-spacing: 2px;
+	/* background-color: rebeccapurple; */
+}
+
+#logo img {
+	height: 30px;
+	margin: 10px 2px 10px 15px;
 }
 
 #logo a {
@@ -116,6 +122,11 @@ a {
 	text-align: center;
 	width: 33%;
 	font-size: 13px;
+}
+
+#footLogo img {
+	height: 70px;
+	margin: 15px 0;
 }
 
 #footSocial {
