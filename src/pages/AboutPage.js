@@ -1,13 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import 'aos/dist/aos.css';
+import '../styles/aboutPage.css';
+
 import AOS from 'aos';
 
 import Container from '../components/Container/Container';
 import Button from '../components/Button';
-
-import 'aos/dist/aos.css';
-import '../styles/aboutPage.css';
 
 import aboutMeIng from '../img/myImg.jpg';
 // import logoFireIng from '../img/logoFire.jpg';
@@ -77,7 +77,7 @@ function AboutPage() {
 			</Container>
 
 			<Container
-				containerTitle="Our Logo"
+				containerTitle="Our New Logo"
 				aosOffset={aosOffset}
 				aosStyle={aosStyle}
 				aosDelay={aosDelay}
@@ -87,16 +87,18 @@ function AboutPage() {
 					<img src={newLogoWithBg} alt="" height="300px" id="logoMoblie" />
 
 					<div className="pointSection">
-						<div className="aboutPoints">
+						<div className="aboutPoints">This is our new logo.</div>
+						<div className="aboutPoints">It is a modern.</div>
+						{/* <div className="aboutPoints">
 							Our logo is combination of A and S, where :-
 							<li>A for Adarsh</li>
 							<li>S for Suman</li>
 						</div>
 
 						<div className="aboutPoints">
-							First time made this logo in className 5th during my Drawing className, after 1 year(in
-							className 6th) i made this logo on pc with Ms paint, Ms PowerPoint.
-						</div>
+							First time made this logo in className 5th during my Drawing class, after 1 year(in standard
+							6th) i made this logo on pc with Ms paint, Ms PowerPoint.
+						</div> */}
 					</div>
 
 					<img src={newLogoWithBg} className="logoPc" alt="" height="300px" />

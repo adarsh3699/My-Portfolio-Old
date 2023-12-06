@@ -37,14 +37,15 @@ function Bar() {
 	return (
 		<div id="bar">
 			<div id="topBar">
-				<div id="logo">
-					<a href="/">
-						<img src={myLogoImg} alt="" />
-						<div>
-							<span id="adarsh">darsh </span>Suman
-						</div>
-					</a>
-				</div>
+				<NavLink to="/" className="navBarBrandArea">
+					<img src={myLogoImg} alt="" />
+					<div className="navBarMyNamePc">
+						<span id="adarsh">darsh </span>Suman
+					</div>
+					<div className="navBarMyNameMb">
+						<span id="adarsh">darsh.S</span>
+					</div>
+				</NavLink>
 
 				<div id="desktopMenu">
 					<NavLink to="/">Home</NavLink>

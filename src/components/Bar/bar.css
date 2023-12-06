@@ -24,21 +24,20 @@ a {
 	text-decoration: none;
 }
 
-#logo {
+.navBarBrandArea {
 	width: 33.3%;
 	letter-spacing: 2px;
-	/* background-color: rebeccapurple; */
+	display: flex;
+	align-items: center;
 }
 
-#logo img {
+.navBarBrandArea img {
 	height: 30px;
 	margin: 10px 2px 10px 15px;
 }
 
-#logo a {
-	display: flex;
-	align-items: center;
-	width: fit-content;
+.navBarMyNameMb {
+	display: none;
 }
 
 #adarsh {
@@ -150,9 +149,17 @@ a {
 
 /* ..........................mWeb.......................... */
 @media screen and (max-width: 1050px) {
-	#logo {
-		width: 20%;
+	.navBarBrandArea {
+		width: fit-content;
 		transition-duration: 0.5s;
+	}
+
+	.navBarMyNamePc {
+		display: none;
+	}
+
+	.navBarMyNameMb {
+		display: block;
 	}
 
 	#social {
