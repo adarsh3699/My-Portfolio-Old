@@ -88,7 +88,8 @@ function AboutPage() {
 
 					<div className="pointSection">
 						<div className="aboutPoints">This is our new logo.</div>
-						<div className="aboutPoints">It is a modern.</div>
+						<div className="aboutPoints">It is modern and more vibrant.</div>
+						<div className="aboutPoints">This represents our creativity and vision.</div>
 						{/* <div className="aboutPoints">
 							Our logo is combination of A and S, where :-
 							<li>A for Adarsh</li>
