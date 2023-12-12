@@ -9,7 +9,7 @@ import AOS from 'aos';
 import Container from '../components/Container/Container';
 import Button from '../components/Button';
 
-import aboutMeIng from '../img/myImg.jpg';
+import aboutMeIng from '../img/myImg.jpeg';
 // import logoFireIng from '../img/logoFire.jpg';
 import newLogoWithBg from '../img/newLogoBlack.webp';
 import notesImg1 from '../img/projects/user-home.jpg';
