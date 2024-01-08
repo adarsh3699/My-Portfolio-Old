@@ -55,10 +55,20 @@ function Bar() {
 				</div>
 
 				<div id="social">
-					<a href="https://www.instagram.com/_adarsh.s/" target="_blank" rel="noreferrer">
+					<a
+						href="https://www.instagram.com/_adarsh.s/"
+						target="_blank"
+						aria-label="Instagram"
+						rel="noreferrer"
+					>
 						<img src={instaLogo} alt="" />
 					</a>
-					<a href="https://www.youtube.com/channel/UCkdSVbjY4sS1I7hw9ZJMdew" target="_blank" rel="noreferrer">
+					<a
+						href="https://www.youtube.com/channel/UCkdSVbjY4sS1I7hw9ZJMdew"
+						target="_blank"
+						aria-label="YouTube"
+						rel="noreferrer"
+					>
 						<img src={youtubeLogo} alt="" />
 					</a>
 				</div>
