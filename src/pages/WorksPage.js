@@ -108,17 +108,7 @@ function WorksPage() {
 							handy.
 						</div>
 						<div className="bottons">
-							<a
-								href={
-									'https://notes' +
-									(window.location.host.split('www')[1] ||
-										process.env?.REACT_APP_MY_BASE_URL ||
-										'.bhemu.me')
-								}
-								id="noteLink"
-								target="_blank"
-								rel="noreferrer"
-							>
+							<a href="https://notes.bhemu.me" id="noteLink" target="_blank" rel="noreferrer">
 								<Button title="Web-Link" color="sky" />
 							</a>
 						</div>
@@ -259,8 +249,8 @@ function WorksPage() {
 						<a
 							href={
 								'https://sdt' +
-								(window.location.host.split('www')[1] ||
-									process.env?.REACT_APP_MY_BASE_URL ||
+								(process.env?.REACT_APP_MY_BASE_URL ||
+									window.location.host.split('www')[1] ||
 									'.bhemu.me')
 							}
 							className="noteLink"
@@ -288,8 +278,8 @@ function WorksPage() {
 						<a
 							href={
 								'https://select' +
-								(window.location.host.split('www')[1] ||
-									process.env?.REACT_APP_MY_BASE_URL ||
+								(process.env?.REACT_APP_MY_BASE_URL ||
+									window.location.host.split('www')[1] ||
 									'.bhemu.me')
 							}
 							className="noteLink"
@@ -314,8 +304,8 @@ function WorksPage() {
 						<a
 							href={
 								'https://bitcoin' +
-								(window.location.host.split('www')[1] ||
-									process.env?.REACT_APP_MY_BASE_URL ||
+								(process.env?.REACT_APP_MY_BASE_URL ||
+									window.location.host.split('www')[1] ||
 									'.bhemu.me')
 							}
 							className="noteLink"
@@ -334,8 +324,8 @@ function WorksPage() {
 							<a
 								href={
 									'https://design1' +
-									(window.location.host.split('www')[1] ||
-										process.env?.REACT_APP_MY_BASE_URL ||
+									(process.env?.REACT_APP_MY_BASE_URL ||
+										window.location.host.split('www')[1] ||
 										'.bhemu.me')
 								}
 								className="noteLink"
@@ -350,8 +340,8 @@ function WorksPage() {
 							<a
 								href={
 									'https://design2' +
-									(window.location.host.split('www')[1] ||
-										process.env?.REACT_APP_MY_BASE_URL ||
+									(process.env?.REACT_APP_MY_BASE_URL ||
+										window.location.host.split('www')[1] ||
 										'.bhemu.me')
 								}
 								className="noteLink"
@@ -366,8 +356,8 @@ function WorksPage() {
 							<a
 								href={
 									'https://design3' +
-									(window.location.host.split('www')[1] ||
-										process.env?.REACT_APP_MY_BASE_URL ||
+									(process.env?.REACT_APP_MY_BASE_URL ||
+										window.location.host.split('www')[1] ||
 										'.bhemu.me')
 								}
 								className="noteLink"

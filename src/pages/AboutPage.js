@@ -137,8 +137,8 @@ function AboutPage() {
 							<a
 								href={
 									'https://notes' +
-									(window.location.host.split('www')[1] ||
-										process.env?.REACT_APP_MY_BASE_URL ||
+									(process.env?.REACT_APP_MY_BASE_URL ||
+										window.location.host.split('www')[1] ||
 										'.bhemu.me')
 								}
 								id="noteLink"
