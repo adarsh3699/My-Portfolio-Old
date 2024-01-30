@@ -100,9 +100,9 @@ function AboutPage() {
 				</div>
 
 				<div>
-					<a href="mailto:bhemu3699@gmail.com" className="socialLinksBox">
+					<a href="mailto:bhemu369@gmail.com" className="socialLinksBox">
 						<img src={emailIconImg} alt="" />
-						<div>bhemu3699@gmail.com</div>
+						<div>bhemu369@gmail.com</div>
 					</a>
 				</div>
 
@@ -129,7 +129,7 @@ function AboutPage() {
 
 				<div>
 					<a
-						href="https://www.youtube.com/channel/UCkdSVbjY4sS1I7hw9ZJMdew"
+						href="https://www.youtube.com/@gamingWithBhemu/"
 						target="_blank"
 						className="socialLinksBox"
 						rel="noreferrer"
