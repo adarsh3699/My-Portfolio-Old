@@ -1,7 +1,6 @@
 import React from 'react';
 import AOS from 'aos';
 import { Slide } from 'react-slideshow-image';
-import animateScrollTo from 'animated-scroll-to';
 
 import { Accordion } from '../components/Accordion/';
 import Button from '../components/Button';
@@ -27,12 +26,12 @@ import beAwizLogo from '../img/projects/beawiz_logo.png';
 import react from '../img/technologies/react.png';
 import nodeJs from '../img/technologies/nodejs.svg';
 import javaScript from '../img/technologies/javascript.svg';
-import mongoDB from '../img/technologies/mongodb.svg';
 import mysql from '../img/technologies/mysql.svg';
 import css from '../img/technologies/css.svg';
 import muiLogo from '../img/technologies/mui_logo.svg';
 import phpLogo from '../img/technologies/php_logo.svg';
 import htmlLogo from '../img/technologies/html_logo.svg';
+import firebaseLogo from '../img/technologies/firebase.svg';
 
 import iitpCertificate from '../img/projects/iitp_certificate.pdf';
 import auricTouchCertificate from '../img/projects/auricTouch_certificate.pdf';
@@ -47,27 +46,21 @@ const aosOffset = '250';
 function WorksPage() {
 	if (document.title !== 'Adarsh Suman | Works') document.title = 'Adarsh Suman | Works';
 
-	function myProject() {
-		const myProjectDiv = document.getElementById('myProjects');
-		return animateScrollTo(myProjectDiv.getBoundingClientRect().top - 60);
-	}
-
-	function myInternships() {
-		const myInternshipDiv = document.getElementById('myInternships');
-		return animateScrollTo(myInternshipDiv.getBoundingClientRect().top - 60);
-	}
-
 	return (
 		<div className="background">
 			<Slide>
 				<div className="each-slide-effect">
 					<div className="bannerImg" style={{ backgroundImage: `url(${myProjectBanner})` }}>
-						<span onClick={myProject}>My Projects</span>
+						<a className="bannderTag" href="#myProjects">
+							My Projects
+						</a>
 					</div>
 				</div>
 				<div className="each-slide-effect">
 					<div className="bannerImg" style={{ backgroundImage: `url(${InternshipBanner})` }}>
-						<span onClick={myInternships}>Internships</span>
+						<a className="bannderTag" href="#myInternships">
+							Internships
+						</a>
 					</div>
 				</div>
 				<div className="each-slide-effect">
@@ -76,45 +69,49 @@ function WorksPage() {
 					</div>
 				</div>
 			</Slide>
-
-			<div id="myProjects" className="mainTitle">
-				Personal Projects
+			<div id="myProjects">
+				<div className="mainTitle">Personal Projects</div>
 			</div>
-
-			<Container containerTitle="Bhemu Notes">
+			<Container containerTitle="Bhemu Notes" sx={{ marginTop: '0' }}>
 				<div className="img_text" data-aos="fade-up" data-aos-delay={aosDelay} data-aos-duration={aosDuration}>
 					<img src={notesImg1} alt="" height="300px" />
 
 					<div className="pointSection">
 						<div className="aboutPoints">This is a Multi-User Notes app.</div>
 						<div className="aboutPoints">
-							Which allows all users separate logins, and new users can also create their own account.
+							This Notes app facilitates you to keep your Notes type and To-Dos type with all basic
+							features.
 						</div>
 						<div className="aboutPoints">
 							User data and their notes are stored securely in encrypted form in the database.
 						</div>
 						<div className="aboutPoints">
-							This Notes app facilitates you to keep your Notes type and To-Dos type with all basic
-							features.
-						</div>
-						<div className="aboutPoints">
-							Type Notes provides you unlimited space for your notes with a self-extended input box.
-						</div>
-						<div className="aboutPoints">
-							Type To-dos Come with Done CheckBox, which helps you remember your works.
-						</div>
-						<div className="aboutPoints">
 							Now you can store note types and todos in the same file, which makes taking notes more
 							handy.
 						</div>
+						<div className="aboutPoints">Feature like group notes in a folder to keep them organized.</div>
+						<div className="aboutPoints">
+							Feature Like share notes with others by just sharing the link of that note.
+						</div>
+						<div className="aboutPoints">
+							<b>Demo Account:-</b> <br />
+							<b>Email: </b>demo@bhemu.com <b>Pass: </b>demo1234
+						</div>
 						<div className="bottons">
 							<a href="https://notes.bhemu.me" id="noteLink" target="_blank" rel="noreferrer">
-								<Button title="Web-Link" color="sky" />
+								<Button title="Live Link" color="green" />
+							</a>
+							<a
+								href="https://drive.google.com/drive/folders/1KsQkL1glnk2edPez8dhEFoGFBmNyAoEi?usp=drive_link"
+								id="noteLink"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<Button title="Demo Video" color="sky" />
 							</a>
 						</div>
 					</div>
 				</div>
-
 				<div id="subTitle">Technologies Used</div>
 				<div className="technologies">
 					<div>
@@ -122,19 +119,18 @@ function WorksPage() {
 						<div>React</div>
 					</div>
 					<div>
-						<img src={nodeJs} className="technologieImgWhite" alt="" />
-						<div>NodeJS</div>
-					</div>
-					<div>
 						<img src={javaScript} className="technologieImg" alt="" />
 						<div>JavaScript</div>
 					</div>
 					<div>
-						<img src={mongoDB} className="technologieImgWhite" alt="" />
-						<div>MongoDB</div>
+						<img src={firebaseLogo} className="technologieImgWhite" alt="" />
+						<div>Firebase</div>
+					</div>
+					<div>
+						<img src={muiLogo} className="technologieImgWhite" alt="" />
+						<div>Mui</div>
 					</div>
 				</div>
-
 				<br />
 				<Accordion title="Login Page">
 					<div className="img_text">
@@ -157,7 +153,6 @@ function WorksPage() {
 						</div>
 					</div>
 				</Accordion>
-
 				<Accordion title="Home Page">
 					<div className="img_text">
 						<img className="accordionImg" src={HomePage} alt="" />
@@ -177,7 +172,6 @@ function WorksPage() {
 						</div>
 					</div>
 				</Accordion>
-
 				<Accordion title="Setting Page">
 					<div className="img_text">
 						<img className="accordionImg" src={SettingPage} alt="" />
@@ -203,6 +197,7 @@ function WorksPage() {
 				aosStyle="fade-up"
 				aosDelay={aosDelay}
 				aosDuration={aosDuration}
+				sx={{ marginBottom: '0' }}
 			>
 				<div className="img_text">
 					{/* <img src={notesImg1} alt="" height="300px" /> */}
@@ -372,8 +367,8 @@ function WorksPage() {
 				</Accordion>
 			</Container>
 
-			<div id="myInternships" className="mainTitle">
-				My Internships
+			<div id="myInternships">
+				<div className="mainTitle">My Internships</div>
 			</div>
 
 			<Container
@@ -382,6 +377,7 @@ function WorksPage() {
 				aosOffset={aosOffset}
 				aosDelay={aosDelay}
 				aosDuration={aosDuration}
+				sx={{ marginTop: '0' }}
 			>
 				<div className="img_text">
 					<img src={iitpLogo} style={{ background: '#f1f1f1' }} alt="" height="300px" />

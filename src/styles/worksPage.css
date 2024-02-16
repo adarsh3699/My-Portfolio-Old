@@ -1,5 +1,5 @@
 .react-slideshow-container {
-	margin: 50px 0;
+	margin-top: 50px;
 }
 
 .bannerImg {
@@ -33,11 +33,25 @@
 	cursor: pointer;
 }
 
+.bannderTag {
+	color: black;
+	font-size: 20px;
+	padding: 10px 20px;
+	background: #efefef;
+	text-align: center;
+	border-radius: 5px 5px 0 0;
+}
+
 /* ...........slider_End............. */
+
+#myProjects,
+#myInternships {
+	padding: 60px 0 45px 0;
+}
 
 .mainTitle {
 	width: 50%;
-	margin: 20px auto;
+	margin: auto;
 	padding: 10px 0px !important;
 	background-color: #2a2b2d;
 	box-shadow: 0px 16px 32px 0px rgba(18, 18, 18, 0.2);

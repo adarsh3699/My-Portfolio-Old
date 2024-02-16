@@ -120,10 +120,12 @@ function AboutPage() {
 					<div className="pointSection">
 						<div className="aboutPoints">This is a Multi-User Notes app.</div>
 						<div className="aboutPoints">
-							Which allows all users separate logins, and new users can also create their own account.
+							Now you can store note types and todos in the same file, which makes taking notes more
+							handy.
 						</div>
+						<div className="aboutPoints">Feature like group notes in a folder to keep them organized.</div>
 						<div className="aboutPoints">
-							Each user can keep their notes and to-dos secure and safe from others.
+							Feature Like share notes with others by just sharing the link of that note.
 						</div>
 						<div className="aboutPoints">
 							The user can customize their account by changing their profile picture, name, and password
