@@ -229,7 +229,7 @@ function WorksPage() {
 				</div>
 
 				<br />
-				<Accordion title="JavaScript Based">
+				<Accordion title="Logic Based">
 					<div className="img_text" style={{ alignItems: 'flex-end' }}>
 						<div className="pointSection">
 							<div className="accordionTitle">SDT Calculator</div>
@@ -312,7 +312,7 @@ function WorksPage() {
 					</div>
 				</Accordion>
 
-				<Accordion title="CSS Based Designs">
+				<Accordion title="Designs Based">
 					<div className="pointSection">
 						<div className="designs">
 							<div className="accordionTitle">Design 1</div>
