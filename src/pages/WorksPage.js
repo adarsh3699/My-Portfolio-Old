@@ -17,6 +17,7 @@ import MettingBanner from '../img/meeting.jpg';
 
 import notesImg1 from '../img/projects/user-home.jpg';
 import priceCompresionImg from '../img/projects/priceComparisonPic.png';
+import sharplearnPic from '../img/projects/sharplearnPic.png';
 import LoginPage from '../img/projects/loginPage.png';
 import HomePage from '../img/projects/homePage.png';
 import SettingPage from '../img/projects/settingPage.png';
@@ -130,7 +131,7 @@ function WorksPage() {
 					</div>
 					<div>
 						<img src={muiLogo} className="technologieImgWhite" alt="" />
-						<div>Mui</div>
+						<div>Material UI</div>
 					</div>
 				</div>
 				<br />
@@ -203,27 +204,32 @@ function WorksPage() {
 							and other similar platforms.
 						</div>
 						<div className="aboutPoints">
-							Make informed purchasing decisions with comprehensive product insights.
-						</div>
-						<div className="aboutPoints">
 							Price comparison tool based on scraping data from multiple e-commerce shopping websites and
 							then comparing these prices to help users find the best deal for a specific product.
 						</div>
 						<div className="aboutPoints">
+							Make informed purchasing decisions with comprehensive product insights.
+						</div>
+						<div className="aboutPoints">
 							This tool is only for educational purposes and not for any commercial use.
 						</div>
-
-						<div className="bottons">
-							<a href="https://comparison.bhemu.me/" id="noteLink" target="_blank" rel="noreferrer">
-								<Button title="Live Link" color="green" />
-							</a>
+						<div className="aboutPoints">
+							To find screenshot of the website and demo video
 							<a
 								href="https://drive.google.com/drive/folders/1tr1z0BmaE2ejicSXNdXK_bk8kDnMCvxq?usp=drive_link"
 								id="noteLink"
 								target="_blank"
 								rel="noreferrer"
+								className="clcikHere"
 							>
-								<Button title="Demo Video" color="sky" />
+								{' '}
+								Click here.
+							</a>
+						</div>
+
+						<div className="bottons">
+							<a href="https://comparison.bhemu.me/" id="noteLink" target="_blank" rel="noreferrer">
+								<Button title="Live Link" color="green" />
 							</a>
 						</div>
 					</div>
@@ -248,63 +254,64 @@ function WorksPage() {
 					</div>
 				</div>
 				<br />
-				{/* <Accordion title="Login Page">
-					<div className="img_text">
-						<img className="accordionImg" src={LoginPage} alt="" />
-						<div className="pointSection">
-							<div className="aboutPoints">
-								Our login system allows us to login with their email and password.
-							</div>
-							<div className="aboutPoints">
-								Anyone can easily create their account with their email and password.
-							</div>
-							<div className="aboutPoints">
-								There is also an option to "forget password" in case you forget your password. In which
-								case you get an mail on your registered email ID to change your password.
-							</div>
-							<div className="aboutPoints">
-								Your privacy is our responsibility. That is why your information is end-to-end
-								encrypted.
-							</div>
+			</Container>
+
+			<Container containerTitle="SharpLearn">
+				<div className="img_text" data-aos="fade-up" data-aos-delay={aosDelay} data-aos-duration={aosDuration}>
+					<img src={sharplearnPic} alt="" height="300px" />
+
+					<div className="pointSection">
+						<div className="aboutPoints">A E_Commerce website of courses where you can buy courses.</div>
+						<div className="aboutPoints">
+							All working features like add to cart, buy now, course details, and many more.
+						</div>
+						<div className="aboutPoints">
+							Double page page for admin and user, where admin can add, delete, and update their courses.
+						</div>
+						<div className="aboutPoints">
+							This tool is only for educational purposes and not for any commercial use.
+						</div>
+						<div className="aboutPoints">
+							To find screenshot of the website and demo video
+							<a
+								href="https://drive.google.com/drive/folders/1KKfxOQVQRkos6li6YCkSXo96H69YV_p1?usp=drive_link"
+								id="noteLink"
+								target="_blank"
+								rel="noreferrer"
+								className="clcikHere"
+							>
+								{' '}
+								Click here.
+							</a>
+						</div>
+
+						<div className="bottons">
+							<a href="https://sharplearn.tech/" id="noteLink" target="_blank" rel="noreferrer">
+								<Button title="Live Link" color="green" />
+							</a>
 						</div>
 					</div>
-				</Accordion>
-				<Accordion title="Home Page">
-					<div className="img_text">
-						<img className="accordionImg" src={HomePage} alt="" />
-						<div className="pointSection">
-							<div className="aboutPoints">This is our new simple user-friendly UI.</div>
-							<div className="aboutPoints">
-								Adding new notes is very easy from the input box in the navbar and by clicking the "Add
-								Note" button.
-							</div>
-							<div className="aboutPoints">
-								Each note box shows us the last saved time and date, which helps us to navigate easily.
-							</div>
-							<div className="aboutPoints">
-								Now you can store note types and todos in the same file, which makes taking notes more
-								handy.
-							</div>
-						</div>
+				</div>
+				<div id="subTitle">Technologies Used</div>
+				<div className="technologies">
+					<div>
+						<img src={react} className="technologieImg" alt="" />
+						<div>React</div>
 					</div>
-				</Accordion>
-				<Accordion title="Setting Page">
-					<div className="img_text">
-						<img className="accordionImg" src={SettingPage} alt="" />
-						<div className="pointSection">
-							<div className="aboutPoints">
-								We provide basic account and profile settings to keep everything up to date.
-							</div>
-							<div className="aboutPoints">
-								The profile setting allows you to update your user name and profile picture.
-							</div>
-							<div className="aboutPoints">Account settings allow you to update your password.</div>
-							<div className="aboutPoints">
-								In the "About" section, you will get the latest changes and fixes.
-							</div>
-						</div>
+					<div>
+						<img src={javaScript} className="technologieImg" alt="" />
+						<div>JavaScript</div>
 					</div>
-				</Accordion> */}
+					<div>
+						<img src={firebaseLogo} className="technologieImgWhite" alt="" />
+						<div>Firebase</div>
+					</div>
+					<div>
+						<img src={muiLogo} className="technologieImgWhite" alt="" />
+						<div>Material UI</div>
+					</div>
+				</div>
+				<br />
 			</Container>
 
 			<Container

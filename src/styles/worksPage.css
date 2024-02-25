@@ -72,6 +72,14 @@
 	justify-content: space-between;
 }
 
+.clcikHere {
+	font-style: italic;
+}
+
+.clcikHere:hover {
+	text-decoration: underline;
+}
+
 #subTitle {
 	font-size: 25px;
 	border-radius: 2px;
