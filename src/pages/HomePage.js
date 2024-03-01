@@ -49,7 +49,7 @@ function HomePage() {
 					<div id="myPoints">
 						<Animator animation={MoveIn(-1000, 0)}>Programmer👋🏻</Animator>
 						<Animator animation={MoveIn(1000, 0)}>Web App Developer</Animator>
-						Gamer
+						Full Stack Developer
 						<Animator animation={MoveOut(1000, 0)}>And Human</Animator>
 						<Animator animation={MoveOut(-1000, 0)}>See you 💛</Animator>
 					</div>
