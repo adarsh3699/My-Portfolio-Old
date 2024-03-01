@@ -53,6 +53,28 @@
 	/* justify-content: center; */
 }
 
+.mySkillGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+	grid-gap: 50px 20%;
+	padding: 20px;
+}
+
+.mySkils {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.mySkils img {
+	height: 60px;
+	width: 65px;
+	object-fit: fill;
+	margin-bottom: 10px;
+	background-color: white;
+	border-radius: 5px;
+	padding: 5px;
+}
 @media screen and (max-width: 750px) {
 	.container {
 		margin: 20px auto;

@@ -11,17 +11,44 @@ import Button from '../components/Button';
 
 import aboutMeIng from '../img/myImg.jpeg';
 import myEducationImg from '../img/education.png';
-// import logoFireIng from '../img/logoFire.jpg';
-// import newLogoWithBg from '../img/newLogoBlack.webp';
-import notesImg1 from '../img/projects/user-home.jpg';
 
 import MyResume from '../img/projects/my_resume.pdf';
+
+import javaLogo from '../img/technologies/javaLogo.svg';
+import phpLogo from '../img/technologies/mongodb.svg';
+import jqueryLogo from '../img/technologies/jqueryLogo.svg';
+import JavaScriptLogo from '../img/technologies/javascript.svg';
+import nodejsLogo from '../img/technologies/nodejs.svg';
+import cssLogo from '../img/technologies/css.svg';
+import htmlLogo from '../img/technologies/html_logo.svg';
+import mysqlLogo from '../img/technologies/mysql.svg';
+import mongodbLogo from '../img/technologies/mongodb.svg';
+import mernLogo from '../img/technologies/mernLogo.webp';
+import expressLogo from '../img/technologies/express.svg';
+import reactLogo from '../img/technologies/reactjsLogo.svg';
+import reactNativeLogo from '../img/technologies/reactNativeLogo.png';
 
 AOS.init();
 const aosStyle = 'fade-up';
 const aosDelay = '100';
 const aosDuration = '1000';
 const aosOffset = '250';
+
+const mySkillArary = [
+	{ img: javaLogo, title: 'Java' },
+	{ img: phpLogo, title: 'PHP' },
+	{ img: jqueryLogo, title: 'JQuery' },
+	{ img: JavaScriptLogo, title: 'JadfvaScript' },
+	{ img: nodejsLogo, title: 'NodeJs' },
+	{ img: cssLogo, title: 'CSS' },
+	{ img: htmlLogo, title: 'HTML' },
+	{ img: mysqlLogo, title: 'MySql' },
+	{ img: mongodbLogo, title: 'MongoDb' },
+	{ img: mernLogo, title: 'MERN' },
+	{ img: expressLogo, title: 'Express' },
+	{ img: reactLogo, title: 'React' },
+	{ img: reactNativeLogo, title: 'React Native' },
+];
 
 function AboutPage() {
 	if (document.title !== 'Adarsh Suman | About') document.title = 'Adarsh Suman | About';
@@ -109,74 +136,21 @@ function AboutPage() {
 				</div>
 			</Container>
 
-			{/* <Container
-				containerTitle="My Skills"
-				aosOffset={aosOffset}
-				aosStyle={aosStyle}
-				aosDelay={aosDelay}
-				aosDuration={aosDuration}
-			>
-				<div className="img_text text_img">
-					<img src={newLogoWithBg} loading="lazy" alt="" height="300px" id="logoMoblie" />
-
-					<div className="pointSection">
-						<div className="aboutPoints">This is our new logo.</div>
-						<div className="aboutPoints">It is modern and more vibrant.</div>
-						<div className="aboutPoints">This represents our creativity and vision.</div>
-					</div>
-
-					<img src={newLogoWithBg} loading="lazy" className="logoPc" alt="" height="300px" />
-				</div>
-			</Container> */}
-
 			<Container
-				containerTitle="Bhemu Notes"
+				containerTitle="My Skills"
 				aosOffset={aosOffset}
 				aosStyle={aosStyle}
 				aosDelay={aosDelay}
 				aosDuration={aosDuration}
 				sx={{ marginBottom: '90px' }}
 			>
-				<div className="img_text">
-					<img src={notesImg1} loading="lazy" alt="" height="300px" />
-
-					<div className="pointSection">
-						<div className="aboutPoints">This is a Multi-User Notes app.</div>
-						<div className="aboutPoints">
-							Now you can store note types and todos in the same file, which makes taking notes more
-							handy.
+				<div className="mySkillGrid">
+					{mySkillArary.map((skill, index) => (
+						<div className="mySkils" key={index}>
+							<img src={skill.img} loading="lazy" alt="" />
+							{skill.title}
 						</div>
-						<div className="aboutPoints">Feature like group notes in a folder to keep them organized.</div>
-						<div className="aboutPoints">
-							Feature Like share notes with others by just sharing the link of that note.
-						</div>
-						<div className="aboutPoints">
-							The user can customize their account by changing their profile picture, name, and password
-							at any time.
-							{/* Users can also share their notes with others by just sharing the link of that note. */}
-						</div>
-						<div className="aboutPoints">
-							User data and their notes store in encrypted form in Database.
-						</div>
-						<div className="bottons">
-							<a
-								href={
-									'https://notes' +
-									(process.env?.REACT_APP_MY_BASE_URL ||
-										window.location.host.split('www')[1] ||
-										'.bhemu.me')
-								}
-								id="noteLink"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<Button title="Web-Link" color="sky" />
-							</a>
-							<NavLink to="/works" id="knowMore">
-								<Button title="Know More" color="green" />
-							</NavLink>
-						</div>
-					</div>
+					))}
 				</div>
 			</Container>
 		</div>

@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 
 import logoImg from './img/newLogo.webp';
 import googleImg from './img/google.png';
-import youtubeImg from './img/youtubeWhite.svg';
 import linkedInLogo from './img/linkedinWhite.svg';
 
 function FootBar() {

@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 // import myLogoImg from './img/logo.png';
 import myLogoImg from './img/newLogo.webp';
 import instaLogo from './img/instagramWhite.svg';
-import youtubeLogo from './img/youtubeWhite.svg';
 import linkedInLogo from './img/linkedinWhite.svg';
 import mobileMenuIcon from './img/menu.png';
 
