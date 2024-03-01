@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 import myLogoImg from './img/newLogo.webp';
 import instaLogo from './img/instagramWhite.svg';
 import youtubeLogo from './img/youtubeWhite.svg';
+import linkedInLogo from './img/linkedinWhite.svg';
 import mobileMenuIcon from './img/menu.png';
 
 import './bar.css';
@@ -56,20 +57,20 @@ function Bar() {
 
 				<div id="social">
 					<a
+						href="https://www.linkedin.com/in/adarsh3699/"
+						target="_blank"
+						aria-label="YouTube"
+						rel="noreferrer"
+					>
+						<img src={linkedInLogo} height="22.5px" alt="" />
+					</a>
+					<a
 						href="https://www.instagram.com/_adarsh.s/"
 						target="_blank"
 						aria-label="Instagram"
 						rel="noreferrer"
 					>
 						<img src={instaLogo} alt="" />
-					</a>
-					<a
-						href="https://www.youtube.com/channel/UCkdSVbjY4sS1I7hw9ZJMdew"
-						target="_blank"
-						aria-label="YouTube"
-						rel="noreferrer"
-					>
-						<img src={youtubeLogo} alt="" />
 					</a>
 				</div>
 

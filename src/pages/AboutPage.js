@@ -12,7 +12,7 @@ import Button from '../components/Button';
 import aboutMeIng from '../img/myImg.jpeg';
 import myEducationImg from '../img/education.png';
 // import logoFireIng from '../img/logoFire.jpg';
-import newLogoWithBg from '../img/newLogoBlack.webp';
+// import newLogoWithBg from '../img/newLogoBlack.webp';
 import notesImg1 from '../img/projects/user-home.jpg';
 
 import MyResume from '../img/projects/my_resume.pdf';

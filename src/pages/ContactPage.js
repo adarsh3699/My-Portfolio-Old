@@ -10,7 +10,6 @@ import telegramIconImg from '../img/soical_logos/telegram.svg';
 import instaIconImg from '../img/soical_logos/instagram.svg';
 import linkedinLogoImg from '../img/soical_logos/linkedinLogo.svg';
 import youtubeIconImg from '../img/soical_logos/youtube.svg';
-import websiteIconImg from '../img/soical_logos/website.svg';
 
 document.title = 'Adarsh Suman | Contact';
 

@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import logoImg from './img/newLogo.webp';
 import googleImg from './img/google.png';
 import youtubeImg from './img/youtubeWhite.svg';
+import linkedInLogo from './img/linkedinWhite.svg';
 
 function FootBar() {
 	return (
@@ -44,9 +45,9 @@ function FootBar() {
 					<div>GitHub</div>
 				</a>
 
-				<a href="https://www.youtube.com/channel/UCkdSVbjY4sS1I7hw9ZJMdew" target="_blank" rel="noreferrer">
-					<img src={youtubeImg} height="18px" alt="" />
-					<div> YouTube</div>
+				<a href="https://www.linkedin.com/in/adarsh3699/" target="_blank" rel="noreferrer">
+					<img src={linkedInLogo} height="18px" alt="" />
+					<div>LinkedIn</div>
 				</a>
 			</div>
 		</div>
