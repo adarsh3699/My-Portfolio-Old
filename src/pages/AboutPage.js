@@ -10,6 +10,7 @@ import Container from '../components/Container/Container';
 import Button from '../components/Button';
 
 import aboutMeIng from '../img/myImg.jpeg';
+import myEducationImg from '../img/education.png';
 // import logoFireIng from '../img/logoFire.jpg';
 import newLogoWithBg from '../img/newLogoBlack.webp';
 import notesImg1 from '../img/projects/user-home.jpg';
@@ -39,6 +40,7 @@ function AboutPage() {
 				<div className="img_text">
 					<img
 						src={aboutMeIng}
+						loading="lazy"
 						alt=""
 						height="300px"
 						data-aos="zoom-in"
@@ -52,11 +54,19 @@ function AboutPage() {
 						data-aos-delay="50"
 						data-aos-duration={aosDuration}
 					>
-						<div className="aboutPoints">I'm a programmer and a computer geek.</div>
-						<div className="aboutPoints">I have more than two years of experience in this industry.</div>
 						<div className="aboutPoints">
-							I have skill in Web Application Development as a full stack developer.
+							My Name is Adarsh Suman & I'm a programmer and a computer geek.
 						</div>
+
+						<div className="aboutPoints">
+							My hometown is Nalanda, Bihar, India.
+							{/* , but I currently reside in Punjab. */}
+						</div>
+
+						<div className="aboutPoints">
+							I have skills in web application development as a full-stack developer.
+						</div>
+						<div className="aboutPoints">I have more than two years of experience in this industry.</div>
 						<div className="aboutPoints">
 							I have experience in JavaScript, React, NodeJs, MySql, MongoDb, MERN, PHP, HTML and CSS.
 						</div>
@@ -64,9 +74,8 @@ function AboutPage() {
 							I have done some of my personal projects and some internships at different companies.
 						</div>
 						<div className="aboutPoints">
-							Other than programming I use to spend time in gaming, listening songs and video editing.
+							Other than programming, I spend time gaming, listening to songs, making videos, and editing.
 						</div>
-						<div className="aboutPoints">Currently, I'm in high school in the science stream.</div>
 						<div className="bottons">
 							<a href={MyResume} target="_blank" rel="noreferrer">
 								<Button title="My Resume" color="sky" />
@@ -77,34 +86,48 @@ function AboutPage() {
 			</Container>
 
 			<Container
-				containerTitle="Our New Logo"
+				containerTitle="My Education"
 				aosOffset={aosOffset}
 				aosStyle={aosStyle}
 				aosDelay={aosDelay}
 				aosDuration={aosDuration}
 			>
 				<div className="img_text text_img">
-					<img src={newLogoWithBg} alt="" height="300px" id="logoMoblie" />
+					<img src={myEducationImg} loading="lazy" alt="" height="300px" id="logoMoblie" />
+
+					<div className="pointSection">
+						<div className="aboutPoints">Currenly doing bachelor in technology from ___ To be Decided.</div>
+						<div className="aboutPoints">
+							Senior Secondary Schooling, BSEB - State Board, Magadh University (2022 - 2024)
+						</div>
+						<div className="aboutPoints">
+							Secondary Schooling, CBSE, R.P.S Public School, Bihar Sharif (2020 - 2021)
+						</div>
+					</div>
+
+					<img src={myEducationImg} loading="lazy" className="logoPc" alt="" height="300px" />
+				</div>
+			</Container>
+
+			{/* <Container
+				containerTitle="My Skills"
+				aosOffset={aosOffset}
+				aosStyle={aosStyle}
+				aosDelay={aosDelay}
+				aosDuration={aosDuration}
+			>
+				<div className="img_text text_img">
+					<img src={newLogoWithBg} loading="lazy" alt="" height="300px" id="logoMoblie" />
 
 					<div className="pointSection">
 						<div className="aboutPoints">This is our new logo.</div>
 						<div className="aboutPoints">It is modern and more vibrant.</div>
 						<div className="aboutPoints">This represents our creativity and vision.</div>
-						{/* <div className="aboutPoints">
-							Our logo is combination of A and S, where :-
-							<li>A for Adarsh</li>
-							<li>S for Suman</li>
-						</div>
-
-						<div className="aboutPoints">
-							First time made this logo in className 5th during my Drawing class, after 1 year(in standard
-							6th) i made this logo on pc with Ms paint, Ms PowerPoint.
-						</div> */}
 					</div>
 
-					<img src={newLogoWithBg} className="logoPc" alt="" height="300px" />
+					<img src={newLogoWithBg} loading="lazy" className="logoPc" alt="" height="300px" />
 				</div>
-			</Container>
+			</Container> */}
 
 			<Container
 				containerTitle="Bhemu Notes"
@@ -115,7 +138,7 @@ function AboutPage() {
 				sx={{ marginBottom: '90px' }}
 			>
 				<div className="img_text">
-					<img src={notesImg1} alt="" height="300px" />
+					<img src={notesImg1} loading="lazy" alt="" height="300px" />
 
 					<div className="pointSection">
 						<div className="aboutPoints">This is a Multi-User Notes app.</div>

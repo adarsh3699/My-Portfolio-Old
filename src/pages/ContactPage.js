@@ -8,6 +8,7 @@ import '../styles/contactPage.css';
 import emailIconImg from '../img/soical_logos/email.svg';
 import telegramIconImg from '../img/soical_logos/telegram.svg';
 import instaIconImg from '../img/soical_logos/instagram.svg';
+import linkedinLogoImg from '../img/soical_logos/linkedinLogo.svg';
 import youtubeIconImg from '../img/soical_logos/youtube.svg';
 import websiteIconImg from '../img/soical_logos/website.svg';
 
@@ -91,30 +92,36 @@ function AboutPage() {
 				data-aos-duration={aosDuration}
 			>
 				<div className="subTitle">Contact On </div>
-
 				<div>
 					<a href="mailto:adarsh3699@gmail.com" className="socialLinksBox">
 						<img src={emailIconImg} alt="" />
 						<div>adarsh3699@gmail.com</div>
 					</a>
 				</div>
-
 				<div>
 					<a href="mailto:bhemu369@gmail.com" className="socialLinksBox">
 						<img src={emailIconImg} alt="" />
 						<div>bhemu369@gmail.com</div>
 					</a>
 				</div>
-
 				<div>
 					<a href="https://t.me/adarsh3699" target="_blank" className="socialLinksBox" rel="noreferrer">
 						<img src={telegramIconImg} height="40px" alt="" />
 						<div>Telegram</div>
 					</a>
 				</div>
-
 				<div className="subTitle">Follow Me</div>
-
+				<div>
+					<a
+						href="https://www.instagram.com/_adarsh.s/"
+						target="_blank"
+						className="socialLinksBox"
+						rel="noreferrer"
+					>
+						<img style={{ borderRadius: '50%' }} src={linkedinLogoImg} alt="" />
+						<div>LinkedIn</div>
+					</a>
+				</div>
 				<div>
 					<a
 						href="https://www.instagram.com/_adarsh.s/"
@@ -126,7 +133,6 @@ function AboutPage() {
 						<div>Instagram</div>
 					</a>
 				</div>
-
 				<div>
 					<a
 						href="https://www.youtube.com/@gamingWithBhemu/"
@@ -138,7 +144,6 @@ function AboutPage() {
 						<div>YouTube</div>
 					</a>
 				</div>
-
 				<div>
 					<a href="https://github.com/adarsh3699" target="_blank" className="socialLinksBox" rel="noreferrer">
 						<svg height="30" viewBox="0 0 16 16" version="1.1" id="git">
@@ -148,13 +153,6 @@ function AboutPage() {
 							></path>
 						</svg>
 						<div>GitHub</div>
-					</a>
-				</div>
-
-				<div>
-					<a href="https://www.bhemu.me/" target="blank" className="socialLinksBox">
-						<img src={websiteIconImg} alt="" />
-						<div>Website</div>
 					</a>
 				</div>
 			</div>

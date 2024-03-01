@@ -25,7 +25,7 @@ import iitpLogo from '../img/projects/iitp-logo.png';
 import auricTouchLogo from '../img/projects/aurictouch_logo.png';
 import beAwizLogo from '../img/projects/beawiz_logo.png';
 
-import react from '../img/technologies/react.png';
+import react from '../img/technologies/reactjsLogo.svg';
 import nodeJs from '../img/technologies/nodejs.svg';
 import express from '../img/technologies/express.svg';
 import javaScript from '../img/technologies/javascript.svg';
