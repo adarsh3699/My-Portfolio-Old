@@ -485,6 +485,22 @@ function WorksPage() {
 								<Button title="Live Link" color="sky" />
 							</a>
 						</div>
+						<div className="designs">
+							<div className="accordionTitle">Design 4</div>
+							<a
+								href={
+									'https://design4' +
+									(process.env?.REACT_APP_MY_BASE_URL ||
+										window.location.host.split('www')[1] ||
+										'.bhemu.me')
+								}
+								className="noteLink"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<Button title="Live Link" color="sky" />
+							</a>
+						</div>
 						<b>Note:-</b> These are only non-functional designs.
 					</div>
 				</Accordion>
