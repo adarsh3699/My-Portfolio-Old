@@ -38,7 +38,7 @@ const mySkillArary = [
 	{ img: javaLogo, title: 'Java' },
 	{ img: phpLogo, title: 'PHP' },
 	{ img: jqueryLogo, title: 'JQuery' },
-	{ img: JavaScriptLogo, title: 'JadfvaScript' },
+	{ img: JavaScriptLogo, title: 'JavaScript' },
 	{ img: nodejsLogo, title: 'NodeJs' },
 	{ img: cssLogo, title: 'CSS' },
 	{ img: htmlLogo, title: 'HTML' },
