@@ -11,6 +11,7 @@ import Button from '../components/Button';
 
 import aboutMeIng from '../img/myImg.jpeg';
 import myEducationImg from '../img/education.png';
+import myWork from '../img/myWork.webp';
 
 import MyResume from '../img/projects/my_resume.pdf';
 
@@ -133,6 +134,53 @@ function AboutPage() {
 					</div>
 
 					<img src={myEducationImg} loading="lazy" className="logoPc" alt="" height="300px" />
+				</div>
+			</Container>
+
+			<Container containerTitle="My Works" aosStyle={aosStyle} aosDelay="50" aosDuration={aosDuration}>
+				<div className="img_text">
+					<img src={myWork} loading="lazy" alt="" height="300px" />
+
+					<div className="pointSection">
+						<div className="aboutPoints">
+							Im a full-stack developer and I have done some of my personal projects and some internships
+							like :-
+						</div>
+
+						<div className="aboutPoints">
+							Bhemu Notes
+							<li>An advance note app called Bhemu Notes</li>
+							<li>
+								Feature like taking notes quickly and easily with support for shortcuts, and we can also
+								share notes with others.
+							</li>
+						</div>
+
+						<div className="aboutPoints">
+							Price Comparison Website
+							<li>
+								Price comparison tools help you find the best deal across Amazon, Flipkart, Myntra,
+								Paytm, and other similar platforms.
+							</li>
+							<li>
+								It is based on scraping data from multiple e-commerce shopping websites to find the best
+								deal for a specific product.
+							</li>
+						</div>
+						<div className="aboutPoints">
+							Sharplearn
+							<li>E-commerce website of courses where you can buy courses.</li>
+							<li>
+								Double portal system for admin and user, where admin can add, delete, and update their
+								courses.
+							</li>
+						</div>
+						<div className="bottons">
+							<NavLink to="/works">
+								<Button title="Know More" color="sky" />
+							</NavLink>
+						</div>
+					</div>
 				</div>
 			</Container>
 

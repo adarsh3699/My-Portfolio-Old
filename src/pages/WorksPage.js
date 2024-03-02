@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import AOS from 'aos';
 import { Slide } from 'react-slideshow-image';
 
@@ -46,32 +46,51 @@ const aosDelay = '100';
 const aosDuration = '1000';
 const aosOffset = '250';
 
+const slideImages = [
+	{
+		url: myProjectBanner,
+		caption: 'My Projects',
+		navigateTo: '#myProjects',
+	},
+	{
+		url: InternshipBanner,
+		caption: 'Internships',
+		navigateTo: '#myInternships',
+	},
+	{
+		url: MettingBanner,
+		caption: 'Team working',
+	},
+];
+
 function WorksPage() {
 	if (document.title !== 'Adarsh Suman | Works') document.title = 'Adarsh Suman | Works';
 
+	const handleBannerClick = useCallback(() => {
+		document.documentElement.style.scrollBehavior = 'smooth';
+		setTimeout(() => {
+			document.documentElement.style = null;
+		}, 1200);
+	}, []);
+
 	return (
 		<div className="background">
-			<Slide>
-				<div className="each-slide-effect">
-					<div className="bannerImg" style={{ backgroundImage: `url(${myProjectBanner})` }}>
-						<a className="bannderTag" href="#myProjects">
-							My Projects
-						</a>
+			<Slide transitionDuration="700">
+				{slideImages.map((each, index) => (
+					<div key={index} className="each-slide-effect">
+						<div className="bannerImg" style={{ backgroundImage: `url(${each.url})` }}>
+							<a
+								className="bannderTag"
+								onClick={each?.navigateTo ? handleBannerClick : null}
+								href={each?.navigateTo}
+							>
+								{each.caption}
+							</a>
+						</div>
 					</div>
-				</div>
-				<div className="each-slide-effect">
-					<div className="bannerImg" style={{ backgroundImage: `url(${InternshipBanner})` }}>
-						<a className="bannderTag" href="#myInternships">
-							Internships
-						</a>
-					</div>
-				</div>
-				<div className="each-slide-effect">
-					<div className="bannerImg" style={{ backgroundImage: `url(${MettingBanner})` }}>
-						<span>Team working</span>
-					</div>
-				</div>
+				))}
 			</Slide>
+
 			<div id="myProjects">
 				<div className="mainTitle">Personal Projects</div>
 			</div>
@@ -266,7 +285,8 @@ function WorksPage() {
 							All working features like add to cart, buy now, course details, and many more.
 						</div>
 						<div className="aboutPoints">
-							Double page page for admin and user, where admin can add, delete, and update their courses.
+							Double portal system for admin and user, where admin can add, delete, and update their
+							courses.
 						</div>
 						<div className="aboutPoints">
 							This tool is only for educational purposes and not for any commercial use.
@@ -280,7 +300,6 @@ function WorksPage() {
 								rel="noreferrer"
 								className="clcikHere"
 							>
-								{' '}
 								Click here.
 							</a>
 						</div>

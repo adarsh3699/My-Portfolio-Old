@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes as Switch, Route } from 'react-router-dom';
 
+import ScroolToTop from './components/ScrollToTop';
 import Loader from './components/Loader/Loader';
 import NavBar from './components/Bar/NavBar';
 import FootBar from './components/Bar/FootBar';
@@ -28,6 +29,7 @@ function Routes() {
 					</div>
 				}
 			>
+				<ScroolToTop />
 				<Switch>
 					<Route
 						exact
