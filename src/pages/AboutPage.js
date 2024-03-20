@@ -28,6 +28,7 @@ import mernLogo from '../img/technologies/mernLogo.webp';
 import expressLogo from '../img/technologies/express.svg';
 import reactLogo from '../img/technologies/reactjsLogo.svg';
 import reactNativeLogo from '../img/technologies/reactNativeLogo.png';
+import tailwindcssLogo from '../img/technologies/tailwindcss.svg';
 
 AOS.init();
 const aosStyle = 'fade-up';
@@ -38,17 +39,18 @@ const aosOffset = '250';
 const mySkillArary = [
 	{ img: javaLogo, title: 'Java' },
 	{ img: phpLogo, title: 'PHP' },
-	{ img: jqueryLogo, title: 'JQuery' },
-	{ img: JavaScriptLogo, title: 'JavaScript' },
-	{ img: nodejsLogo, title: 'NodeJs' },
-	{ img: cssLogo, title: 'CSS' },
-	{ img: htmlLogo, title: 'HTML' },
-	{ img: mysqlLogo, title: 'MySql' },
-	{ img: mongodbLogo, title: 'MongoDb' },
-	{ img: mernLogo, title: 'MERN' },
-	{ img: expressLogo, title: 'Express' },
 	{ img: reactLogo, title: 'React' },
 	{ img: reactNativeLogo, title: 'React Native' },
+	{ img: htmlLogo, title: 'HTML' },
+	{ img: JavaScriptLogo, title: 'JavaScript' },
+	{ img: jqueryLogo, title: 'JQuery' },
+	{ img: cssLogo, title: 'CSS' },
+	{ img: tailwindcssLogo, title: 'Tailwind CSS' },
+	{ img: nodejsLogo, title: 'NodeJs' },
+	{ img: mysqlLogo, title: 'MySql' },
+	{ img: mongodbLogo, title: 'MongoDb' },
+	{ img: expressLogo, title: 'Express' },
+	{ img: mernLogo, title: 'MERN' },
 ];
 
 function AboutPage() {
@@ -96,7 +98,8 @@ function AboutPage() {
 						</div>
 						<div className="aboutPoints">I have more than two years of experience in this industry.</div>
 						<div className="aboutPoints">
-							I have experience in JavaScript, React, NodeJs, MySql, MongoDb, MERN, PHP, HTML and CSS.
+							I have experience in JavaScript, React, NodeJs, MySql, MongoDb, MERN, PHP, HTML, CSS and
+							more.
 						</div>
 						<div className="aboutPoints">
 							I have done some of my personal projects and some internships at different companies.

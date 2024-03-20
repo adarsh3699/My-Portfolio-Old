@@ -35,6 +35,7 @@ import muiLogo from '../img/technologies/mui_logo.svg';
 import phpLogo from '../img/technologies/php_logo.svg';
 import htmlLogo from '../img/technologies/html_logo.svg';
 import firebaseLogo from '../img/technologies/firebase.svg';
+import tailwindLogo from '../img/technologies/tailwindcss.svg';
 
 import iitpCertificate from '../img/projects/iitp_certificate.pdf';
 import auricTouchCertificate from '../img/projects/auricTouch_certificate.pdf';
@@ -630,8 +631,8 @@ function WorksPage() {
 						<div>React</div>
 					</div>
 					<div>
-						<img src={nodeJs} className="technologieImgWhite" alt="" />
-						<div>NodeJS</div>
+						<img src={tailwindLogo} className="technologieImgWhite" alt="" />
+						<div>Tailwind CSS</div>
 					</div>
 					<div>
 						<img src={javaScript} className="technologieImg" alt="" />
