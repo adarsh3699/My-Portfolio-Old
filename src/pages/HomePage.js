@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import {
 	Animator,
@@ -56,7 +57,9 @@ function HomePage() {
 				</ScrollPage>
 				<ScrollPage>
 					<Animator animation={batch(Fade(), Sticky(50, 45))}>
-						<div id="thankMsg">Thank you 🤍</div>
+						<NavLink to="/about" id="thankMsg">
+							Know more 👈🏻
+						</NavLink>
 					</Animator>
 				</ScrollPage>
 			</ScrollContainer>
