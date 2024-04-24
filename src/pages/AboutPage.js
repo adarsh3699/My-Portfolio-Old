@@ -128,9 +128,7 @@ function AboutPage() {
 
 					<div className="pointSection">
 						<div className="aboutPoints">Currenly doing bachelor in technology from ___ To be Decided.</div>
-						<div className="aboutPoints">
-							Senior Secondary Schooling, BSEB - State Board, Magadh University (2022 - 2024)
-						</div>
+						<div className="aboutPoints">Senior Secondary Schooling, BSEB - State Board (2022 - 2024)</div>
 						<div className="aboutPoints">
 							Secondary Schooling, CBSE, R.P.S Public School, Bihar Sharif (2020 - 2021)
 						</div>
