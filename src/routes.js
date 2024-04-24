@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from 'react';
-import { BrowserRouter, Routes as Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Navigate, Routes as Switch, Route } from 'react-router-dom';
 
 import ScroolToTop from './components/ScrollToTop';
 import Loader from './components/Loader/Loader';
@@ -76,15 +76,7 @@ function Routes() {
 						}
 					/>
 
-					<Route
-						path="*"
-						element={
-							<center id="pageNotFound">
-								<h1>Page Not Found</h1>
-								<div>Error: 404</div>
-							</center>
-						}
-					/>
+					<Route path="*" element={<Navigate to="/" />} />
 				</Switch>
 			</Suspense>
 		</BrowserRouter>
