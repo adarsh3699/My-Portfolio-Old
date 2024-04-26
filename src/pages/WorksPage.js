@@ -100,7 +100,7 @@ function WorksPage() {
 					<img src={notesImg1} alt="" height="300px" />
 
 					<div className="pointSection">
-						<div className="aboutPoints">This is a Multi-User Notes app.</div>
+						<div className="aboutPoints">This is an advance note app called Bhemu Notes.</div>
 						<div className="aboutPoints">
 							This Notes app facilitates you to keep your Notes type and To-Dos type with all basic
 							features.
