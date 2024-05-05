@@ -49,8 +49,8 @@ function HomePage() {
 				<ScrollPage>
 					<div id="myPoints">
 						<Animator animation={MoveIn(-1000, 0)}>Programmer👋🏻</Animator>
-						<Animator animation={MoveIn(1000, 0)}>Web App Developer</Animator>
-						Full Stack Developer
+						<Animator animation={MoveIn(1000, 0)}>Full Stack Developer</Animator>
+						Android Developer
 						<Animator animation={MoveOut(1000, 0)}>And Human</Animator>
 						<Animator animation={MoveOut(-1000, 0)}>See you 💛</Animator>
 					</div>

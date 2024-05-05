@@ -531,12 +531,68 @@ function WorksPage() {
 			</div>
 
 			<Container
-				containerTitle="Indian Institute Of Technology Patna (IIT Patna)"
+				containerTitle="Auric Touch LLP"
 				aosStyle="fade-up"
 				aosOffset={aosOffset}
 				aosDelay={aosDelay}
 				aosDuration={aosDuration}
 				sx={{ marginTop: '0' }}
+			>
+				<div className="img_text">
+					<img src={auricTouchLogo} alt="" height="300px" />
+
+					<div className="pointSection">
+						<div className="aboutPoints">Work on Fantasy Points Optimizer for Auric Touch LLP.</div>
+						<div className="aboutPoints">
+							Internships duration from 20th june 2022 to 31st October 2022.
+						</div>
+						<div className="aboutPoints">Learned working with team.</div>
+						<div className="aboutPoints">Work on Frontend Part.</div>
+						<div className="aboutPoints">Setup authorization-based features and many other features</div>
+
+						<div className="bottons">
+							<a
+								href="https://www.fantasypointsoptimizer.com/"
+								id="noteLink"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<Button title="Web-link" color="green" />
+							</a>
+							<a href={auricTouchCertificate} id="noteLink" target="_blank" rel="noreferrer">
+								<Button title="Certificate" color="sky" />
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div id="subTitle">Technologies Used</div>
+				<div className="technologies">
+					<div>
+						<img src={react} className="technologieImg" alt="" />
+						<div>React</div>
+					</div>
+					<div>
+						<img src={tailwindLogo} className="technologieImgWhite" alt="" />
+						<div>Tailwind CSS</div>
+					</div>
+					<div>
+						<img src={javaScript} className="technologieImg" alt="" />
+						<div>JavaScript</div>
+					</div>
+					<div>
+						<img src={muiLogo} className="technologieImgWhite" alt="" />
+						<div>Material UI</div>
+					</div>
+				</div>
+			</Container>
+
+			<Container
+				containerTitle="Indian Institute Of Technology Patna (IIT Patna)"
+				aosStyle="fade-up"
+				aosOffset={aosOffset}
+				aosDelay={aosDelay}
+				aosDuration={aosDuration}
 			>
 				<div className="img_text">
 					<img src={iitpLogo} style={{ background: '#f1f1f1' }} alt="" height="300px" />
@@ -585,62 +641,6 @@ function WorksPage() {
 					<div>
 						<img src={mysql} className="technologieImgWhite" alt="" />
 						<div>MongoDB</div>
-					</div>
-				</div>
-			</Container>
-
-			<Container
-				containerTitle="Auric Touch LLP"
-				aosStyle="fade-up"
-				aosOffset={aosOffset}
-				aosDelay={aosDelay}
-				aosDuration={aosDuration}
-			>
-				<div className="img_text">
-					<img src={auricTouchLogo} alt="" height="300px" />
-
-					<div className="pointSection">
-						<div className="aboutPoints">Work on Fantasy Points Optimizer for Auric Touch LLP.</div>
-						<div className="aboutPoints">
-							Internships duration from 20th june 2022 to 31st October 2022.
-						</div>
-						<div className="aboutPoints">Learned working with team.</div>
-						<div className="aboutPoints">Work on Frontend Part.</div>
-						<div className="aboutPoints">Setup authorization-based features and many other features</div>
-
-						<div className="bottons">
-							<a
-								href="https://www.fantasypointsoptimizer.com/"
-								id="noteLink"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<Button title="Web-link" color="green" />
-							</a>
-							<a href={auricTouchCertificate} id="noteLink" target="_blank" rel="noreferrer">
-								<Button title="Certificate" color="sky" />
-							</a>
-						</div>
-					</div>
-				</div>
-
-				<div id="subTitle">Technologies Used</div>
-				<div className="technologies">
-					<div>
-						<img src={react} className="technologieImg" alt="" />
-						<div>React</div>
-					</div>
-					<div>
-						<img src={tailwindLogo} className="technologieImgWhite" alt="" />
-						<div>Tailwind CSS</div>
-					</div>
-					<div>
-						<img src={javaScript} className="technologieImg" alt="" />
-						<div>JavaScript</div>
-					</div>
-					<div>
-						<img src={muiLogo} className="technologieImgWhite" alt="" />
-						<div>Material UI</div>
 					</div>
 				</div>
 			</Container>

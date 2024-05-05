@@ -30,54 +30,16 @@ function Routes() {
 				}
 			>
 				<ScroolToTop />
+				<NavBar />
 				<Switch>
-					<Route
-						exact
-						path="/"
-						element={
-							<>
-								<NavBar />
-								<HomePage />
-								<FootBar />
-							</>
-						}
-					/>
-					<Route
-						exact
-						path="/about"
-						element={
-							<>
-								<NavBar />
-								<AboutPage />
-								<FootBar />
-							</>
-						}
-					/>
-					<Route
-						exact
-						path="/works"
-						element={
-							<>
-								<NavBar />
-								<WorksPage />
-								<FootBar />
-							</>
-						}
-					/>
-					<Route
-						exact
-						path="/contact"
-						element={
-							<>
-								<NavBar />
-								<ContactPage />
-								<FootBar />
-							</>
-						}
-					/>
+					<Route exact path="/" element={<HomePage />} />
+					<Route exact path="/about" element={<AboutPage />} />
+					<Route exact path="/works" element={<WorksPage />} />
+					<Route exact path="/contact" element={<ContactPage />} />
 
 					<Route path="*" element={<Navigate to="/" />} />
 				</Switch>
+				<FootBar />
 			</Suspense>
 		</BrowserRouter>
 	);

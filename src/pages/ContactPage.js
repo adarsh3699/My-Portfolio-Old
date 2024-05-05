@@ -112,7 +112,7 @@ function AboutPage() {
 				<div className="subTitle">Follow Me</div>
 				<div>
 					<a
-						href="https://www.instagram.com/_adarsh.s/"
+						href="https://www.linkedin.com/in/adarsh3699/"
 						target="_blank"
 						className="socialLinksBox"
 						rel="noreferrer"
