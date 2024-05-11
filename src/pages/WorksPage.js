@@ -306,8 +306,11 @@ function WorksPage() {
 						</div>
 
 						<div className="bottons">
-							<a href="https://sharplearn.tech/" id="noteLink" target="_blank" rel="noreferrer">
+							<a href="https://sharplearn.bhemu.me/" id="noteLink" target="_blank" rel="noreferrer">
 								<Button title="Live Link" color="green" />
+							</a>
+							<a href="https://admin-sharplearn.bhemu.me/" id="noteLink" target="_blank" rel="noreferrer">
+								<Button title="Admin Link" color="sky" />
 							</a>
 						</div>
 					</div>
