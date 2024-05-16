@@ -60,9 +60,9 @@ function AboutPage() {
 		<div className="background">
 			<div id="myIntro">
 				<div className="welcome_msg">
-					<p className="line-1 anim-typewriter">
+					<div className="line-1 anim-typewriter">
 						Hi, This is <span id="fName">Adarsh</span> <span id="lName">Suman</span>
-					</p>
+					</div>
 				</div>
 			</div>
 
@@ -108,9 +108,7 @@ function AboutPage() {
 							Other than programming, I spend time gaming, listening to songs, making videos, and editing.
 						</div>
 						<div className="bottons">
-							<a href={MyResume} target="_blank" rel="noreferrer">
-								<Button title="My Resume" color="sky" />
-							</a>
+							<Button href={MyResume} title="My Resume" target="_blank" color="sky" />
 						</div>
 					</div>
 				</div>
@@ -148,16 +146,16 @@ function AboutPage() {
 							like :-
 						</div>
 
-						<div className="aboutPoints">
+						<ul className="aboutPoints">
 							Bhemu Notes
 							<li>An advance note app called Bhemu Notes</li>
 							<li>
 								Feature like taking notes quickly and easily with support for shortcuts, and we can also
 								share notes with others.
 							</li>
-						</div>
+						</ul>
 
-						<div className="aboutPoints">
+						<ul className="aboutPoints">
 							Price Comparison Website
 							<li>
 								Price comparison tools help you find the best deal across Amazon, Flipkart, Myntra,
@@ -167,15 +165,15 @@ function AboutPage() {
 								It is based on scraping data from multiple e-commerce shopping websites to find the best
 								deal for a specific product.
 							</li>
-						</div>
-						<div className="aboutPoints">
+						</ul>
+						<ul className="aboutPoints">
 							Sharplearn
 							<li>E-commerce website of courses where you can buy courses.</li>
 							<li>
 								Double portal system for admin and user, where admin can add, delete, and update their
 								courses.
 							</li>
-						</div>
+						</ul>
 						<div className="bottons">
 							<NavLink to="/works">
 								<Button title="Know More" color="sky" />

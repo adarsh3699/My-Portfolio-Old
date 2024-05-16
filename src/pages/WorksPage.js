@@ -121,17 +121,14 @@ function WorksPage() {
 							<b>Email: </b>demo@bhemu.com <b>Pass: </b>demo1234
 						</div>
 						<div className="bottons">
-							<a href="https://notes.bhemu.me" id="noteLink" target="_blank" rel="noreferrer">
-								<Button title="Live Link" color="green" />
-							</a>
-							<a
+							<Button href="https://notes.bhemu.me" target="_blank" title="Live Link" color="green" />
+
+							<Button
 								href="https://drive.google.com/drive/folders/1KsQkL1glnk2edPez8dhEFoGFBmNyAoEi?usp=drive_link"
-								id="noteLink"
+								title="Demo Video"
+								color="sky"
 								target="_blank"
-								rel="noreferrer"
-							>
-								<Button title="Demo Video" color="sky" />
-							</a>
+							/>
 						</div>
 					</div>
 				</div>
@@ -242,15 +239,17 @@ function WorksPage() {
 								rel="noreferrer"
 								className="clcikHere"
 							>
-								{' '}
 								Click here.
 							</a>
 						</div>
 
 						<div className="bottons">
-							<a href="https://comparison.bhemu.me/" id="noteLink" target="_blank" rel="noreferrer">
-								<Button title="Live Link" color="green" />
-							</a>
+							<Button
+								href="https://comparison.bhemu.me/"
+								title="Live Link"
+								color="green"
+								target="_blank"
+							/>
 						</div>
 					</div>
 				</div>
@@ -306,12 +305,19 @@ function WorksPage() {
 						</div>
 
 						<div className="bottons">
-							<a href="https://sharplearn.bhemu.me/" id="noteLink" target="_blank" rel="noreferrer">
-								<Button title="Live Link" color="green" />
-							</a>
-							<a href="https://admin-sharplearn.bhemu.me/" id="noteLink" target="_blank" rel="noreferrer">
-								<Button title="Admin Link" color="sky" />
-							</a>
+							<Button
+								href="https://sharplearn.bhemu.me/"
+								title="Live Link"
+								color="green"
+								target="_blank"
+							/>
+
+							<Button
+								href="https://admin-sharplearn.bhemu.me/"
+								title="Admin Link"
+								color="sky"
+								target="_blank"
+							/>
 						</div>
 					</div>
 				</div>
@@ -387,19 +393,18 @@ function WorksPage() {
 							</div>
 						</div>
 
-						<a
+						<Button
 							href={
 								'https://sdt' +
 								(process.env?.REACT_APP_MY_BASE_URL ||
 									window.location.host.split('www')[1] ||
 									'.bhemu.me')
 							}
-							className="noteLink"
+							title="Live Link"
+							color="sky"
 							target="_blank"
-							rel="noreferrer"
-						>
-							<Button title="Live Link" color="sky" sx={{ marginBottom: '10px' }} />
-						</a>
+							sx={{ marginBottom: '10px' }}
+						/>
 					</div>
 
 					<div className="img_text" style={{ alignItems: 'flex-end' }}>
@@ -416,19 +421,19 @@ function WorksPage() {
 								automatically removed from the first and third dropdowns.
 							</div>
 						</div>
-						<a
+
+						<Button
 							href={
 								'https://select' +
 								(process.env?.REACT_APP_MY_BASE_URL ||
 									window.location.host.split('www')[1] ||
 									'.bhemu.me')
 							}
-							className="noteLink"
+							title="Live Link"
+							color="sky"
 							target="_blank"
-							rel="noreferrer"
-						>
-							<Button title="Live Link" color="sky" sx={{ marginBottom: '10px' }} />
-						</a>
+							sx={{ marginBottom: '10px' }}
+						/>
 					</div>
 
 					<div className="img_text" style={{ alignItems: 'flex-end' }}>
@@ -442,19 +447,19 @@ function WorksPage() {
 								Get data from the server and render it on the frontend.
 							</div>
 						</div>
-						<a
+
+						<Button
 							href={
 								'https://bitcoin' +
 								(process.env?.REACT_APP_MY_BASE_URL ||
 									window.location.host.split('www')[1] ||
 									'.bhemu.me')
 							}
-							className="noteLink"
+							title="Live Link"
+							color="sky"
+							sx={{ marginBottom: '10px' }}
 							target="_blank"
-							rel="noreferrer"
-						>
-							<Button title="Live Link" color="sky" sx={{ marginBottom: '10px' }} />
-						</a>
+						/>
 					</div>
 				</Accordion>
 
@@ -462,67 +467,63 @@ function WorksPage() {
 					<div className="pointSection">
 						<div className="designs">
 							<div className="accordionTitle">Design 1</div>
-							<a
+
+							<Button
 								href={
 									'https://design1' +
 									(process.env?.REACT_APP_MY_BASE_URL ||
 										window.location.host.split('www')[1] ||
 										'.bhemu.me')
 								}
-								className="noteLink"
+								title="Live Link"
+								color="sky"
 								target="_blank"
-								rel="noreferrer"
-							>
-								<Button title="Live Link" color="sky" />
-							</a>
+							/>
 						</div>
 						<div className="designs">
 							<div className="accordionTitle">Design 2</div>
-							<a
+
+							<Button
 								href={
 									'https://design2' +
 									(process.env?.REACT_APP_MY_BASE_URL ||
 										window.location.host.split('www')[1] ||
 										'.bhemu.me')
 								}
-								className="noteLink"
+								title="Live Link"
+								color="sky"
 								target="_blank"
-								rel="noreferrer"
-							>
-								<Button title="Live Link" color="sky" />
-							</a>
+							/>
 						</div>
 						<div className="designs">
 							<div className="accordionTitle">Design 3</div>
-							<a
+
+							<Button
 								href={
 									'https://design3' +
 									(process.env?.REACT_APP_MY_BASE_URL ||
 										window.location.host.split('www')[1] ||
 										'.bhemu.me')
 								}
-								className="noteLink"
+								title="Live Link"
+								color="sky"
 								target="_blank"
-								rel="noreferrer"
-							>
-								<Button title="Live Link" color="sky" />
-							</a>
+							/>
 						</div>
 						<div className="designs">
 							<div className="accordionTitle">Design 4</div>
-							<a
+
+							<Button
 								href={
 									'https://design4' +
 									(process.env?.REACT_APP_MY_BASE_URL ||
 										window.location.host.split('www')[1] ||
 										'.bhemu.me')
 								}
-								className="noteLink"
+								title="Live Link"
+								color="sky"
 								target="_blank"
-								rel="noreferrer"
-							>
-								<Button title="Live Link" color="sky" />
-							</a>
+							/>
 						</div>
 						<b>Note:-</b> These are only non-functional designs.
 					</div>
@@ -554,17 +555,14 @@ function WorksPage() {
 						<div className="aboutPoints">Setup authorization-based features and many other features</div>
 
 						<div className="bottons">
-							<a
+							<Button
 								href="https://www.fantasypointsoptimizer.com/"
-								id="noteLink"
+								title="Web-link"
+								color="green"
 								target="_blank"
-								rel="noreferrer"
-							>
-								<Button title="Web-link" color="green" />
-							</a>
-							<a href={auricTouchCertificate} id="noteLink" target="_blank" rel="noreferrer">
-								<Button title="Certificate" color="sky" />
-							</a>
+							/>
+
+							<Button href={auricTouchCertificate} title="Certificate" color="sky" target="_blank" />
 						</div>
 					</div>
 				</div>
@@ -612,17 +610,14 @@ function WorksPage() {
 						</div>
 
 						<div className="bottons">
-							<a
+							<Button
 								href="https://github.com/adarsh3699/Facility-Evaluation-System-IITP"
-								id="noteLink"
+								title="Git Repo"
+								color="green"
 								target="_blank"
-								rel="noreferrer"
-							>
-								<Button title="Git Repo" color="green" />
-							</a>
-							<a href={iitpCertificate} id="noteLink" target="_blank" rel="noreferrer">
-								<Button title="Certificate" color="sky" />
-							</a>
+							/>
+
+							<Button href={iitpCertificate} title="Certificate" color="sky" target="_blank" />
 						</div>
 					</div>
 				</div>
@@ -666,12 +661,8 @@ function WorksPage() {
 						<div className="aboutPoints">I added captcha to the login page.</div>
 
 						<div className="bottons">
-							<a href="https://beawiz.com/" id="noteLink" target="_blank" rel="noreferrer">
-								<Button title="Web-link" color="green" />
-							</a>
-							<a href={beCertificate} id="noteLink" target="_blank" rel="noreferrer">
-								<Button title="Certificate" color="sky" />
-							</a>
+							<Button href="https://beawiz.com/" title="Web-link" color="green" target="_blank" />
+							<Button href={beCertificate} title="Certificate" color="sky" target="_blank" />
 						</div>
 					</div>
 				</div>

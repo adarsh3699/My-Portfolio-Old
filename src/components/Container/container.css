@@ -1,7 +1,8 @@
 .container {
 	margin: 40px auto;
+	box-sizing: border-box;
 	border-radius: 5px;
-	width: 90%;
+	width: 92%;
 	padding: 10px;
 	color: #f4f4f3;
 	background-color: #2a2b2d;
@@ -37,13 +38,14 @@
 .aboutPoints {
 	margin: 10px 20px;
 	display: list-item;
+	padding: unset;
 	list-style-type: square;
 	line-height: 20px;
 }
 
 .aboutPoints li {
-	display: list-item;
 	list-style-type: disc;
+	margin-left: 12px;
 }
 
 .bottons {
