@@ -22,6 +22,7 @@ import JavaScriptLogo from '../img/technologies/javascript.svg';
 import nodejsLogo from '../img/technologies/nodejs.svg';
 import cssLogo from '../img/technologies/css.svg';
 import htmlLogo from '../img/technologies/html_logo.svg';
+import firebaseLogo from '../img/technologies/firebase.svg';
 import mysqlLogo from '../img/technologies/mysql.svg';
 import mongodbLogo from '../img/technologies/mongodb.svg';
 import mernLogo from '../img/technologies/mernLogo.webp';
@@ -46,6 +47,7 @@ const mySkillArary = [
 	{ img: jqueryLogo, title: 'JQuery' },
 	{ img: cssLogo, title: 'CSS' },
 	{ img: tailwindcssLogo, title: 'Tailwind CSS' },
+	{ img: firebaseLogo, title: 'Firebase' },
 	{ img: nodejsLogo, title: 'NodeJs' },
 	{ img: mysqlLogo, title: 'MySql' },
 	{ img: mongodbLogo, title: 'MongoDb' },
