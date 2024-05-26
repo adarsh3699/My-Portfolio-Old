@@ -35,18 +35,19 @@ function Bar() {
 	}
 
 	return (
-		<div id="bar">
+		<nav id="navbar">
 			<div id="topBar">
-				<NavLink to="/" className="navBarBrandArea">
-					<img src={myLogoImg} alt="" />
-					<div className="navBarMyNamePc">
-						<span id="adarsh">darsh </span>Suman
-					</div>
-					<div className="navBarMyNameMb">
-						<span id="adarsh">darsh.S</span>
-					</div>
-				</NavLink>
-
+				<div className="navBarBrandArea">
+					<NavLink to="/">
+						<img src={myLogoImg} alt="" />
+						<div className="navBarMyNamePc">
+							<span id="adarsh">darsh </span>Suman
+						</div>
+						<div className="navBarMyNameMb">
+							<span id="adarsh">darsh.S</span>
+						</div>
+					</NavLink>
+				</div>
 				<div id="desktopMenu">
 					<NavLink to="/">Home</NavLink>
 					<NavLink to="/about">About</NavLink>
@@ -88,7 +89,7 @@ function Bar() {
 					<NavLink to="/contact">Contact</NavLink>
 				</div>
 			) : null}
-		</div>
+		</nav>
 	);
 }
 

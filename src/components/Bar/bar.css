@@ -1,4 +1,4 @@
-#bar {
+#navbar {
 	position: fixed;
 	top: 0px;
 	left: 0;
@@ -27,8 +27,12 @@ a {
 .navBarBrandArea {
 	width: 33.3%;
 	letter-spacing: 2px;
+}
+
+.navBarBrandArea a {
 	display: flex;
 	align-items: center;
+	width: fit-content;
 }
 
 .navBarBrandArea img {
