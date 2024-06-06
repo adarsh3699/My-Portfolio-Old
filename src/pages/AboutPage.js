@@ -127,7 +127,9 @@ function AboutPage() {
 					<img src={myEducationImg} loading="lazy" alt="" height="300px" id="logoMoblie" />
 
 					<div className="pointSection">
-						<div className="aboutPoints">Currenly doing bachelor in technology from ___ To be Decided.</div>
+						<div className="aboutPoints">
+							Currently doing a bachelor in technology from Lovely Professional University (LPU).
+						</div>
 						<div className="aboutPoints">Senior Secondary Schooling, BSEB - State Board (2022 - 2024)</div>
 						<div className="aboutPoints">
 							Secondary Schooling, CBSE, R.P.S Public School, Bihar Sharif (2020 - 2021)

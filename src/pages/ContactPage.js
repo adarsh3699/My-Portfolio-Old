@@ -40,7 +40,7 @@ function AboutPage() {
 		<div className="background">
 			<div id="title">Contact Me</div>
 			<form
-				id="msgUs"
+				id="msgUsForm"
 				method="post"
 				action="https://send.pageclip.co/YYFiRgfPYOw99mcNfB9R8RHgiwcappSO"
 				data-aos-offset={aosOffset}
@@ -48,33 +48,28 @@ function AboutPage() {
 				data-aos-delay={aosDelay}
 				data-aos-duration={aosDuration}
 			>
-				<div>
-					<input
-						type="email"
-						placeholder=" Enter Your Email"
-						required
-						name="email"
-						id="email"
-						value={emailValue}
-						onChange={handelEmailChange}
-					/>
-				</div>
+				<input
+					type="email"
+					placeholder=" Enter Your Email"
+					required
+					name="email"
+					id="email"
+					value={emailValue}
+					onChange={handelEmailChange}
+				/>
+				<textarea
+					id="textArea"
+					required
+					name="body"
+					placeholder="Write your msg here"
+					value={msgValue}
+					onChange={handelMsgChange}
+				></textarea>
 
-				<div>
-					<textarea
-						id="textArea"
-						required
-						name="body"
-						placeholder="Write your msg here"
-						value={msgValue}
-						onChange={handelMsgChange}
-					></textarea>
-				</div>
 				<Button
 					title="Send"
 					color="orange"
 					sx={{
-						marginBottom: '10px',
 						width: '150px',
 						height: '40px',
 						fontSize: '18px',
@@ -109,7 +104,9 @@ function AboutPage() {
 						<div>Telegram</div>
 					</a>
 				</div>
-				<div className="subTitle">Follow Me</div>
+				<div className="subTitle" style={{ marginTop: '20px' }}>
+					Follow Me
+				</div>
 				<div>
 					<a
 						href="https://www.linkedin.com/in/adarsh3699/"
