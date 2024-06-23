@@ -125,6 +125,12 @@
 	width: 50%;
 }
 
+.DesignsBased {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(calc(33% - 10px), 1fr));
+	gap: 10px;
+}
+
 .designs {
 	display: flex;
 	align-items: center;

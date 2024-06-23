@@ -464,7 +464,7 @@ function WorksPage() {
 				</Accordion>
 
 				<Accordion title="Designs Based">
-					<div className="pointSection">
+					<div className="pointSection DesignsBased">
 						<div className="designs">
 							<div className="accordionTitle">Design 1</div>
 
@@ -525,8 +525,8 @@ function WorksPage() {
 								target="_blank"
 							/>
 						</div>
-						<b>Note:-</b> These are only non-functional designs.
 					</div>
+					<b style={{ margin: '0 10px' }}>Note:-</b>These are only non-functional designs.
 				</Accordion>
 			</Container>
 
