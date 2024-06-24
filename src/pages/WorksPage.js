@@ -64,6 +64,8 @@ const slideImages = [
 	},
 ];
 
+const designBasedProjects = Array(6).fill(null);
+
 function WorksPage() {
 	if (document.title !== 'Adarsh Suman | Works') document.title = 'Adarsh Suman | Works';
 
@@ -465,66 +467,20 @@ function WorksPage() {
 
 				<Accordion title="Designs Based">
 					<div className="pointSection DesignsBased">
-						<div className="designs">
-							<div className="accordionTitle">Design 1</div>
+						{designBasedProjects.map((_, index) => (
+							<div className="designs" key={index}>
+								<div className="accordionTitle">Design {index + 1}</div>
 
-							<Button
-								href={
-									'https://design1' +
-									(process.env?.REACT_APP_MY_BASE_URL ||
-										window.location.host.split('www')[1] ||
-										'.bhemu.me')
-								}
-								title="Live Link"
-								color="sky"
-								target="_blank"
-							/>
-						</div>
-						<div className="designs">
-							<div className="accordionTitle">Design 2</div>
-
-							<Button
-								href={
-									'https://design2' +
-									(process.env?.REACT_APP_MY_BASE_URL ||
-										window.location.host.split('www')[1] ||
-										'.bhemu.me')
-								}
-								title="Live Link"
-								color="sky"
-								target="_blank"
-							/>
-						</div>
-						<div className="designs">
-							<div className="accordionTitle">Design 3</div>
-
-							<Button
-								href={
-									'https://design3' +
-									(process.env?.REACT_APP_MY_BASE_URL ||
-										window.location.host.split('www')[1] ||
-										'.bhemu.me')
-								}
-								title="Live Link"
-								color="sky"
-								target="_blank"
-							/>
-						</div>
-						<div className="designs">
-							<div className="accordionTitle">Design 4</div>
-
-							<Button
-								href={
-									'https://design4' +
-									(process.env?.REACT_APP_MY_BASE_URL ||
-										window.location.host.split('www')[1] ||
-										'.bhemu.me')
-								}
-								title="Live Link"
-								color="sky"
-								target="_blank"
-							/>
-						</div>
+								<Button
+									href={`https://design${index + 1}
+										${process.env?.REACT_APP_MY_BASE_URL || '.bhemu.me'}`}
+									// window.location.host.split('www')[1] ||
+									title="Live Link"
+									color="sky"
+									target="_blank"
+								/>
+							</div>
+						))}
 					</div>
 					<b style={{ margin: '0 10px' }}>Note:-</b>These are only non-functional designs.
 				</Accordion>
