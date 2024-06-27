@@ -102,21 +102,24 @@ function WorksPage() {
 					<img src={notesImg1} alt="" height="300px" />
 
 					<div className="pointSection">
-						<div className="aboutPoints">This is an advance note app called Bhemu Notes.</div>
 						<div className="aboutPoints">
-							This Notes app facilitates you to keep your Notes type and To-Dos type with all basic
-							features.
+							This is an advance note app called <b>Bhemu Notes</b>.
 						</div>
 						<div className="aboutPoints">
-							User data and their notes are stored securely in encrypted form in the database.
+							This Notes app facilitates a <b>feature-rich text editor</b> for more creative notes.
 						</div>
 						<div className="aboutPoints">
-							Now you can store note types and todos in the same file, which makes taking notes more
-							handy.
+							User data and their notes are stored in <b>encrypted</b> form in the database.
 						</div>
-						<div className="aboutPoints">Feature like group notes in a folder to keep them organized.</div>
 						<div className="aboutPoints">
-							Feature Like share notes with others by just sharing the link of that note.
+							Feature like group notes in a <b>folder</b> to keep them organized.
+						</div>
+						<div className="aboutPoints">
+							Feature like exporting a note as <b>PDF</b>.
+						</div>
+						<div className="aboutPoints">
+							Now you can <b>share notes</b> with others as an editor or viewer by just sharing the link
+							to that note.
 						</div>
 						<div className="aboutPoints">
 							<b>Demo Account:-</b> <br />
