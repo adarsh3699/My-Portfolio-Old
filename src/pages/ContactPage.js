@@ -87,13 +87,19 @@ function AboutPage() {
 			>
 				<div className="subTitle">Contact On </div>
 				<div>
-					<a href="mailto:adarsh3699@gmail.com" className="socialLinksBox">
+					<a
+						href="https://mail.google.com/mail/?view=cm&fs=1&to=adarsh3699@gmail.com"
+						className="socialLinksBox"
+					>
 						<img src={emailIconImg} alt="" />
 						<div>adarsh3699@gmail.com</div>
 					</a>
 				</div>
 				<div>
-					<a href="mailto:bhemu369@gmail.com" className="socialLinksBox">
+					<a
+						href="https://mail.google.com/mail/?view=cm&fs=1&to=bhemu399@gmail.com"
+						className="socialLinksBox"
+					>
 						<img src={emailIconImg} alt="" />
 						<div>bhemu369@gmail.com</div>
 					</a>
@@ -131,7 +137,7 @@ function AboutPage() {
 				</div>
 				<div>
 					<a
-						href="https://www.youtube.com/@gamingWithBhemu/"
+						href="https://www.youtube.com/@CodingWithBhemu"
 						target="_blank"
 						className="socialLinksBox"
 						rel="noreferrer"
