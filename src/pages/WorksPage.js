@@ -75,6 +75,7 @@ function WorksPage() {
 			document.documentElement.style = null;
 		}, 1200);
 	}, []);
+	console.log(process.env.REACT_APP_MY_BASE_URL);
 
 	return (
 		<div className="background">
@@ -126,7 +127,12 @@ function WorksPage() {
 							<b>Email: </b>demo@bhemu.com <b>Pass: </b>demo1234
 						</div>
 						<div className="bottons">
-							<Button href="https://notes.bhemu.me" target="_blank" title="Live Link" color="green" />
+							<Button
+								href={`https://notes${process.env.REACT_APP_MY_BASE_URL || 'bhemu.me'}`}
+								target="_blank"
+								title="Live Link"
+								color="green"
+							/>
 
 							<Button
 								href="https://drive.google.com/drive/folders/1KsQkL1glnk2edPez8dhEFoGFBmNyAoEi?usp=drive_link"
@@ -250,7 +256,7 @@ function WorksPage() {
 
 						<div className="bottons">
 							<Button
-								href="https://comparison.bhemu.me/"
+								href={`https://comparison${process.env.REACT_APP_MY_BASE_URL || 'bhemu.me'}`}
 								title="Live Link"
 								color="green"
 								target="_blank"
@@ -311,14 +317,14 @@ function WorksPage() {
 
 						<div className="bottons">
 							<Button
-								href="https://sharplearn.bhemu.me/"
+								href="https://sharplearn.vercel.app"
 								title="Live Link"
 								color="green"
 								target="_blank"
 							/>
 
 							<Button
-								href="https://admin-sharplearn.bhemu.me/"
+								href="https://sharplearn-admin.vercel.app/"
 								title="Admin Link"
 								color="sky"
 								target="_blank"
@@ -477,7 +483,6 @@ function WorksPage() {
 								<Button
 									href={`https://design${index + 1}
 										${process.env?.REACT_APP_MY_BASE_URL || '.bhemu.me'}`}
-									// window.location.host.split('www')[1] ||
 									title="Live Link"
 									color="sky"
 									target="_blank"
