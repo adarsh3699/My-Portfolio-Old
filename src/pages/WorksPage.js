@@ -1,26 +1,25 @@
 import React, { useCallback } from 'react';
 import AOS from 'aos';
-import { Slide } from 'react-slideshow-image';
 
 import { Accordion } from '../components/Accordion/';
+import WaveCard from '../components/waveCard/WaveCard';
 import Button from '../components/Button';
 import Container from '../components/Container/Container';
 
 import '../styles/accordion.css';
-import 'react-slideshow-image/dist/styles.css';
 import '../styles/worksPage.css';
 import 'aos/dist/aos.css';
 
-import myProjectBanner from '../img/myProjects.png';
-import InternshipBanner from '../img/internshipBanner.jpeg';
-import MettingBanner from '../img/meeting.jpg';
+import myProjectBanner from '../img/banner/myProjects.png';
+import InternshipBanner from '../img/banner/internshipBanner.jpeg';
+import MettingBanner from '../img/banner/meeting.jpg';
+import BhemuNotesBanner from '../img/banner/bhemuNotes.png';
+import ComparisonBanner from '../img/banner/comparison.png';
+import SharplearnBanner from '../img/banner/sharplearn.png';
 
 import notesImg1 from '../img/projects/user-home.jpg';
 import priceCompresionImg from '../img/projects/priceComparisonPic.png';
 import sharplearnPic from '../img/projects/sharplearnPic.png';
-import LoginPage from '../img/projects/loginPage.png';
-import HomePage from '../img/projects/homePage.png';
-import SettingPage from '../img/projects/settingPage.png';
 import iitpLogo from '../img/projects/iitp-logo.png';
 import auricTouchLogo from '../img/projects/aurictouch_logo.png';
 import beAwizLogo from '../img/projects/beawiz_logo.png';
@@ -47,16 +46,19 @@ const aosDelay = '100';
 const aosDuration = '1000';
 const aosOffset = '250';
 
-const slideImages = [
+const slideList = [
 	{
 		url: myProjectBanner,
 		caption: 'My Projects',
-		navigateTo: '#myProjects',
+		navigateTo: 'myProjects',
 	},
+	{ url: BhemuNotesBanner, caption: 'Bhemu Notes', grayOut: true },
+	{ url: ComparisonBanner, caption: 'Price Comparison', grayOut: true },
+	{ url: SharplearnBanner, caption: 'SharpLearn', grayOut: true },
 	{
 		url: InternshipBanner,
 		caption: 'Internships',
-		navigateTo: '#myInternships',
+		navigateTo: 'myInternships',
 	},
 	{
 		url: MettingBanner,
@@ -69,35 +71,19 @@ const designBasedProjects = Array(6).fill(null);
 function WorksPage() {
 	if (document.title !== 'Adarsh Suman | Works') document.title = 'Adarsh Suman | Works';
 
-	const handleBannerClick = useCallback(() => {
-		document.documentElement.style.scrollBehavior = 'smooth';
-		setTimeout(() => {
-			document.documentElement.style = null;
-		}, 1200);
+	const onSlideClick = useCallback((navigateTo) => {
+		const element = document.getElementById(navigateTo);
+		window.scrollTo({ top: element?.offsetTop, behavior: 'smooth' });
 	}, []);
-	console.log(process.env.REACT_APP_MY_BASE_URL);
 
 	return (
 		<div className="background">
-			<Slide transitionDuration="700">
-				{slideImages.map((each, index) => (
-					<div key={index} className="each-slide-effect">
-						<div className="bannerImg" style={{ backgroundImage: `url(${each.url})` }}>
-							<a
-								className="bannderTag"
-								onClick={each?.navigateTo ? handleBannerClick : null}
-								href={each?.navigateTo}
-							>
-								{each.caption}
-							</a>
-						</div>
-					</div>
-				))}
-			</Slide>
+			<WaveCard slideList={slideList} onSlideClick={onSlideClick} />
 
 			<div id="myProjects">
 				<div className="mainTitle">Personal Projects</div>
 			</div>
+
 			<Container containerTitle="Bhemu Notes" sx={{ marginTop: '0' }}>
 				<div className="img_text" data-aos="fade-up" data-aos-delay={aosDelay} data-aos-duration={aosDuration}>
 					<img src={notesImg1} alt="" height="300px" />
@@ -162,64 +148,6 @@ function WorksPage() {
 						<div>Material UI</div>
 					</div>
 				</div>
-				<br />
-				<Accordion title="Login Page">
-					<div className="img_text">
-						<img className="accordionImg" src={LoginPage} alt="" />
-						<div className="pointSection">
-							<div className="aboutPoints">
-								Our login system allows us to login with their email and password.
-							</div>
-							<div className="aboutPoints">
-								Anyone can easily create their account with their email and password.
-							</div>
-							<div className="aboutPoints">
-								There is also an option to "forget password" in case you forget your password. In which
-								case you get an mail on your registered email ID to change your password.
-							</div>
-							<div className="aboutPoints">
-								Your privacy is our responsibility. That is why your information is end-to-end
-								encrypted.
-							</div>
-						</div>
-					</div>
-				</Accordion>
-				<Accordion title="Home Page">
-					<div className="img_text">
-						<img className="accordionImg" src={HomePage} alt="" />
-						<div className="pointSection">
-							<div className="aboutPoints">This is our new simple user-friendly UI.</div>
-							<div className="aboutPoints">
-								Adding new notes is very easy from the input box in the navbar and by clicking the "Add
-								Note" button.
-							</div>
-							<div className="aboutPoints">
-								Each note box shows us the last saved time and date, which helps us to navigate easily.
-							</div>
-							<div className="aboutPoints">
-								Now you can store note types and todos in the same file, which makes taking notes more
-								handy.
-							</div>
-						</div>
-					</div>
-				</Accordion>
-				<Accordion title="Setting Page">
-					<div className="img_text">
-						<img className="accordionImg" src={SettingPage} alt="" />
-						<div className="pointSection">
-							<div className="aboutPoints">
-								We provide basic account and profile settings to keep everything up to date.
-							</div>
-							<div className="aboutPoints">
-								The profile setting allows you to update your user name and profile picture.
-							</div>
-							<div className="aboutPoints">Account settings allow you to update your password.</div>
-							<div className="aboutPoints">
-								In the "About" section, you will get the latest changes and fixes.
-							</div>
-						</div>
-					</div>
-				</Accordion>
 			</Container>
 
 			<Container containerTitle="Price Comparison Website">

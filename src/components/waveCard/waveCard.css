@@ -1,0 +1,119 @@
+/* @import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:500,700'); */
+
+:root {
+	--index: calc(1vw + 1vh);
+	--transition: cubic-bezier(0.1, 0.7, 0, 1);
+}
+
+.WaveCard {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+.items {
+	display: flex;
+
+	gap: 0.5rem;
+	perspective: calc(var(--index) * 35);
+}
+
+.item {
+	display: flex;
+	align-items: self-end;
+	justify-content: center;
+	width: calc(var(--index) * 4);
+	height: calc(var(--index) * 12);
+	background-color: #222;
+	background-size: cover;
+	background-position: center;
+	cursor: pointer;
+	transition: transform 1s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
+	will-change: transform, filter, rotateY, width;
+	transition-duration: 1.5s;
+}
+
+.grayOut {
+	filter: grayscale(1) brightness(0.5);
+}
+
+.item div {
+	background-color: white;
+	padding: 5px;
+	border-radius: 5px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.item::before,
+.item::after {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 20px;
+	right: calc(var(--index) * -1);
+}
+
+.item::after {
+	left: calc(var(--index) * -1);
+}
+
+.items .item:hover {
+	filter: inherit;
+	transform: translateZ(calc(var(--index) * 10));
+	width: 32vw;
+	z-index: 100;
+	margin: 0 0.45vw;
+}
+
+/*Right*/
+.items .item:hover + * {
+	filter: grayscale(1) brightness(0.5);
+	transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+	z-index: -1;
+}
+
+.items .item:hover + * + * {
+	filter: grayscale(1) brightness(0.5);
+	transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
+	z-index: -2;
+}
+
+.items .item:hover + * + * + * {
+	filter: grayscale(1) brightness(0.5);
+	transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
+	z-index: -3;
+}
+
+.items .item:hover + * + * + * + * {
+	filter: grayscale(1) brightness(0.5);
+	transform: translateZ(calc(var(--index) * 0.6)) rotateY(15deg);
+	z-index: -4;
+}
+.items .item:hover + * {
+	filter: grayscale(1) brightness(0.5);
+}
+
+/*Left*/
+.items .item:has(+ :hover) {
+	filter: inherit;
+	filter: grayscale(1) brightness(0.5);
+	transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
+}
+
+.items .item:has(+ * + :hover) {
+	filter: grayscale(1) brightness(0.5);
+	transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
+}
+
+.items .item:has(+ * + * + :hover) {
+	filter: grayscale(1) brightness(0.5);
+	transform: translateZ(calc(var(--index) * 2.5)) rotateY(-30deg);
+}
+
+.items .item:has(+ * + * + * + :hover) {
+	filter: grayscale(1) brightness(0.5);
+	transform: translateZ(calc(var(--index) * 0.6)) rotateY(-15deg);
+}
