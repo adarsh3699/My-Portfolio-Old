@@ -14,8 +14,7 @@
 .project {
 	background-size: cover;
 	background-position: center;
-	background-color: red;
-	height: 260px;
+	aspect-ratio: 16/10;
 	border-radius: 10px;
 	border: 1px #2a2b2d solid;
 	/* box-shadow: 0px 16px 32px 0px rgba(18, 18, 18, 0.2); */
@@ -64,4 +63,100 @@
 .projectContent img:hover {
 	transform: scale(1.25);
 	transition-duration: 0.7s;
+}
+
+/* ..................Modal..................... */
+.react-responsive-modal-modal {
+	background-color: #2a2b2d;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	color: white;
+	max-width: 60%;
+	max-height: 80%;
+	overflow: auto;
+	padding: unset;
+}
+
+.react-responsive-modal-modal::-webkit-scrollbar {
+	display: none;
+}
+
+.modal-bar {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	padding: 5px 10px 5px 15px;
+	box-sizing: border-box;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #2a2b2d;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+.closeBtn {
+	cursor: pointer;
+	padding: 0 10px;
+	font-size: 35px;
+}
+
+.modal-content {
+	padding: 10px;
+	/* text-align: center; */
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+.react-slideshow-container {
+	max-width: 100%;
+	/* max-height: 90%; */
+}
+
+.sliderImg {
+	aspect-ratio: 16/9;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	background-size: cover;
+}
+
+.react-slideshow-container .default-nav {
+	margin: 15px !important;
+	margin: unset;
+	background-color: unset !important;
+	fill: white;
+	height: 50px;
+	width: 50px;
+}
+
+.react-slideshow-container + ul.indicators {
+	top: 50%;
+	margin-top: 10px;
+}
+
+.react-slideshow-container + ul.indicators li {
+	padding: 0 10px;
+}
+
+.react-slideshow-container + ul.indicators .each-slideshow-indicator:before {
+	background: white;
+	height: 10px;
+	width: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+	#projectGrid {
+		grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#projectGrid {
+		grid-template-columns: repeat(auto-fill, minmax(80%, 1fr));
+		gap: 20px;
+	}
 }

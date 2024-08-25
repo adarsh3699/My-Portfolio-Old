@@ -39,7 +39,7 @@
 	margin: 10px 20px;
 	display: list-item;
 	padding: unset;
-	list-style-type: square;
+	list-style-type: disc;
 	line-height: 20px;
 }
 

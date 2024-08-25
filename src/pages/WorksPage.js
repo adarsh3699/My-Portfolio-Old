@@ -15,6 +15,9 @@ import myProjectBanner from '../img/banner/myProjects.png';
 import InternshipBanner from '../img/banner/internshipBanner.jpeg';
 import MettingBanner from '../img/banner/meeting.jpg';
 import BhemuNotesBanner from '../img/banner/bhemuNotes.png';
+import NotesLoginIMG from '../img/projects/notesLogin.png';
+import NoteSettingsImg from '../img/projects/noteSetting.png';
+import NotesMenuIMG from '../img/projects/notesMenu.png';
 import ComparisonBanner from '../img/banner/comparison.png';
 import SharplearnBanner from '../img/banner/sharplearn.png';
 
@@ -68,9 +71,84 @@ const slideList = [
 ];
 
 const projectList = [
-	{ name: 'Bhemu Notes', photo: BhemuNotesBanner },
-	{ name: 'Price Comparison Web', photo: ComparisonBanner },
-	{ name: 'SharpLearn', photo: SharplearnBanner },
+	{
+		name: 'Bhemu Notes',
+		img: [BhemuNotesBanner, NotesLoginIMG, NoteSettingsImg, NotesMenuIMG],
+		description: [
+			<>
+				This is an advance note app called <b>Bhemu Notes.</b>
+			</>,
+			<>
+				This Notes app facilitates a <b>feature-rich text editor</b> for more creative notes.
+			</>,
+			<>
+				User data and their notes are stored in <b>encrypted</b> form in the database.
+			</>,
+			<>
+				Feature like group notes in a <b>folder</b> to keep them organized.
+			</>,
+			<>
+				Feature like exporting a note as <b>PDF</b>.
+			</>,
+			<>
+				Now you can <b>share notes</b> with others as an editor or viewer by just sharing the link to that note.
+			</>,
+			<>
+				<b>Demo Account:-</b> <br />
+				<b>Email: </b>demo@bhemu.com <b>Pass: </b>demo1234
+			</>,
+		],
+	},
+	{
+		name: 'Price Comparison Web',
+		img: [ComparisonBanner],
+		description: [
+			<>
+				Price comparison tools help you find the best deal across Amazon, Flipkart, Myntra, Paytm, and other
+				similar platforms.
+			</>,
+			<>
+				Price comparison tool based on scraping data from multiple e-commerce shopping websites and then
+				comparing these prices to help users find the best deal for a specific product.
+			</>,
+			<>Make informed purchasing decisions with comprehensive product insights.</>,
+			<>This tool is only for educational purposes and not for any commercial use.</>,
+			<>
+				To find screenshot of the website and demo video{' '}
+				<a
+					href="https://drive.google.com/drive/folders/1tr1z0BmaE2ejicSXNdXK_bk8kDnMCvxq?usp=drive_link"
+					id="noteLink"
+					target="_blank"
+					rel="noreferrer"
+					className="clcikHere"
+				>
+					Click here.
+				</a>
+			</>,
+		],
+	},
+	{
+		name: 'SharpLearn',
+		img: [SharplearnBanner],
+		description: [
+			<>A E_Commerce website of courses where you can buy courses.</>,
+			<>All working features like add to cart, buy now, course details, and many more.</>,
+			<>Double portal system for admin and user, where admin can add, delete, and update their courses.</>,
+			<>This tool is only for educational purposes and not for any commercial use.</>,
+			<>
+				To find screenshot of the website and demo video{' '}
+				<a
+					href="https://drive.google.com/drive/folders/1KKfxOQVQRkos6li6YCkSXo96H69YV_p1?usp=drive_link"
+					id="noteLink"
+					target="_blank"
+					rel="noreferrer"
+					className="clcikHere"
+				>
+					Click here.
+				</a>
+			</>,
+		],
+	},
 ];
 
 const designBasedProjects = Array(6).fill(null);

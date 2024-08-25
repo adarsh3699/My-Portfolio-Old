@@ -29,13 +29,13 @@
 
 #myProjects,
 #myInternships {
-	padding: 60px 0 45px 0;
+	padding: 60px 0 40px 0;
 }
 
 .mainTitle {
 	width: 50%;
 	margin: auto;
-	padding: 10px 0px !important;
+	padding: 10px;
 	background-color: #2a2b2d;
 	box-shadow: 0px 16px 32px 0px rgba(18, 18, 18, 0.2);
 	border-radius: 5px;
