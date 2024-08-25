@@ -57,8 +57,8 @@ function HomePage() {
 				</ScrollPage>
 				<ScrollPage>
 					<Animator animation={batch(Fade(), Sticky(50, 45))}>
-						<NavLink to="/about" id="thankMsg">
-							Know more 👈🏻
+						<NavLink to="/about" id="homeKnoeMoreBtn">
+							Know more
 						</NavLink>
 					</Animator>
 				</ScrollPage>
