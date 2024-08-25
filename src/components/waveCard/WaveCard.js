@@ -1,9 +1,31 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './waveCard.css';
 
 function WaveCard({ slideList, onSlideClick }) {
+	useEffect(() => {
+		const slides = document.querySelectorAll('.item');
+
+		slides.forEach((slide) => {
+			slide.addEventListener('mouseover', () => {
+				slides.forEach((p) => {
+					if (p !== slide) {
+						p.classList.add('dimmed');
+					} else {
+						p.classList.add('highlighted');
+					}
+				});
+			});
+
+			slide.addEventListener('mouseout', () => {
+				slides.forEach((p) => {
+					p.classList.remove('dimmed', 'highlighted');
+				});
+			});
+		});
+	}, []);
+
 	return (
-		<div className="WaveCard">
+		<div id="WaveCard">
 			<div className="items">
 				{slideList?.map((slide, index) => (
 					<div

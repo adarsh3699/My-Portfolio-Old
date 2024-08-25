@@ -5,21 +5,21 @@
 	--transition: cubic-bezier(0.1, 0.7, 0, 1);
 }
 
-.WaveCard {
+#WaveCard {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-top: 100px;
+	margin-top: 120px;
 }
 
 .items {
 	display: flex;
-
 	gap: 0.5rem;
 	perspective: calc(var(--index) * 35);
 }
 
 .item {
+	border-radius: 10px;
 	display: flex;
 	align-items: self-end;
 	justify-content: center;
@@ -29,9 +29,8 @@
 	background-size: cover;
 	background-position: center;
 	cursor: pointer;
-	transition: transform 1s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
+	transition: transform 1s var(--transition), filter 1.5s var(--transition), width 1.25s var(--transition);
 	will-change: transform, filter, rotateY, width;
-	transition-duration: 1.5s;
 }
 
 .grayOut {
@@ -63,57 +62,54 @@
 .items .item:hover {
 	filter: inherit;
 	transform: translateZ(calc(var(--index) * 10));
-	width: 32vw;
+	width: 30vw;
 	z-index: 100;
 	margin: 0 0.45vw;
 }
 
 /*Right*/
 .items .item:hover + * {
-	filter: grayscale(1) brightness(0.5);
 	transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
 	z-index: -1;
 }
 
 .items .item:hover + * + * {
-	filter: grayscale(1) brightness(0.5);
 	transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
 	z-index: -2;
 }
 
 .items .item:hover + * + * + * {
-	filter: grayscale(1) brightness(0.5);
 	transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
 	z-index: -3;
 }
 
 .items .item:hover + * + * + * + * {
-	filter: grayscale(1) brightness(0.5);
 	transform: translateZ(calc(var(--index) * 0.6)) rotateY(15deg);
 	z-index: -4;
-}
-.items .item:hover + * {
-	filter: grayscale(1) brightness(0.5);
 }
 
 /*Left*/
 .items .item:has(+ :hover) {
 	filter: inherit;
-	filter: grayscale(1) brightness(0.5);
 	transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
 }
 
 .items .item:has(+ * + :hover) {
-	filter: grayscale(1) brightness(0.5);
 	transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
 }
 
 .items .item:has(+ * + * + :hover) {
-	filter: grayscale(1) brightness(0.5);
 	transform: translateZ(calc(var(--index) * 2.5)) rotateY(-30deg);
 }
 
 .items .item:has(+ * + * + * + :hover) {
-	filter: grayscale(1) brightness(0.5);
 	transform: translateZ(calc(var(--index) * 0.6)) rotateY(-15deg);
+}
+
+#WaveCard .item.dimmed {
+	filter: grayscale(1) brightness(0.5);
+}
+
+#WaveCard .item.highlighted {
+	filter: unset;
 }

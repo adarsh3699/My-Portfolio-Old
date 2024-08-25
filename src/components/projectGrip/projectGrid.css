@@ -1,0 +1,67 @@
+#projectGrid {
+	margin: 0 auto 40px;
+	box-sizing: border-box;
+	width: 92%;
+	padding: 10px;
+	color: #f4f4f3;
+	/* box-shadow: 0px 16px 32px 0px rgba(18, 18, 18, 0.2); */
+	font-size: 15px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(30%, 10fr));
+	gap: 50px 30px;
+}
+
+.project {
+	background-size: cover;
+	background-position: center;
+	background-color: red;
+	height: 260px;
+	border-radius: 10px;
+	border: 1px #2a2b2d solid;
+	/* box-shadow: 0px 16px 32px 0px rgba(18, 18, 18, 0.2); */
+	transition-duration: 1s;
+	/* box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.8); */
+	display: flex;
+	align-items: flex-end;
+	user-select: none;
+	cursor: pointer;
+}
+
+.project:hover {
+	transform: scale(1.1);
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+#projectGrid .project.dimmed {
+	filter: grayscale(1) brightness(0.5);
+}
+
+#projectGrid .project.highlighted {
+	filter: unset;
+}
+
+.projectContent {
+	width: 100%;
+	justify-content: space-between;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 10px;
+	border-radius: 0 0 10px 10px;
+	display: none;
+}
+
+.projectTitle {
+	font-size: 20px;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.project:hover .projectContent {
+	display: flex;
+}
+
+.projectContent img:hover {
+	transform: scale(1.25);
+	transition-duration: 0.7s;
+}

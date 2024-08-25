@@ -5,6 +5,7 @@ import { Accordion } from '../components/Accordion/';
 import WaveCard from '../components/waveCard/WaveCard';
 import Button from '../components/Button';
 import Container from '../components/Container/Container';
+import ProjectGrip from '../components/projectGrip/ProjectGrid';
 
 import '../styles/accordion.css';
 import '../styles/worksPage.css';
@@ -66,6 +67,12 @@ const slideList = [
 	},
 ];
 
+const projectList = [
+	{ name: 'Bhemu Notes', photo: BhemuNotesBanner },
+	{ name: 'Price Comparison Web', photo: ComparisonBanner },
+	{ name: 'SharpLearn', photo: SharplearnBanner },
+];
+
 const designBasedProjects = Array(6).fill(null);
 
 function WorksPage() {
@@ -83,6 +90,8 @@ function WorksPage() {
 			<div id="myProjects">
 				<div className="mainTitle">Personal Projects</div>
 			</div>
+
+			<ProjectGrip projectList={projectList} />
 
 			<Container containerTitle="Bhemu Notes" sx={{ marginTop: '0' }}>
 				<div className="img_text" data-aos="fade-up" data-aos-delay={aosDelay} data-aos-duration={aosDuration}>
