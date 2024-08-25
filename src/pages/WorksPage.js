@@ -22,8 +22,8 @@ import ComparisonBanner from '../img/banner/comparison.png';
 import SharplearnBanner from '../img/banner/sharplearn.png';
 
 import notesImg1 from '../img/projects/user-home.jpg';
-import priceCompresionImg from '../img/projects/priceComparisonPic.png';
-import sharplearnPic from '../img/projects/sharplearnPic.png';
+// import priceCompresionImg from '../img/projects/priceComparisonPic.png';
+// import sharplearnPic from '../img/projects/sharplearnPic.png';
 import iitpLogo from '../img/projects/iitp-logo.png';
 import auricTouchLogo from '../img/projects/aurictouch_logo.png';
 import beAwizLogo from '../img/projects/beawiz_logo.png';
@@ -98,6 +98,12 @@ const projectList = [
 				<b>Email: </b>demo@bhemu.com <b>Pass: </b>demo1234
 			</>,
 		],
+		techStack: [
+			{ name: 'React', logo: react },
+			{ name: 'JavaScript', logo: javaScript },
+			{ name: 'Firebase', logo: firebaseLogo },
+			{ name: 'Material UI', logo: muiLogo },
+		],
 	},
 	{
 		name: 'Price Comparison Web',
@@ -126,6 +132,12 @@ const projectList = [
 				</a>
 			</>,
 		],
+		techStack: [
+			{ name: 'React', logo: react },
+			{ name: 'JavaScript', logo: javaScript },
+			{ name: 'Node.Js', logo: nodeJs, whiteBg: true },
+			{ name: 'Express', logo: express, whiteBg: true },
+		],
 	},
 	{
 		name: 'SharpLearn',
@@ -147,6 +159,12 @@ const projectList = [
 					Click here.
 				</a>
 			</>,
+		],
+		techStack: [
+			{ name: 'React', logo: react },
+			{ name: 'JavaScript', logo: javaScript },
+			{ name: 'Firebase', logo: firebaseLogo },
+			{ name: 'Material UI', logo: muiLogo },
 		],
 	},
 ];
@@ -236,7 +254,7 @@ function WorksPage() {
 					</div>
 				</div>
 			</Container>
-
+			{/* 
 			<Container containerTitle="Price Comparison Website">
 				<div className="img_text" data-aos="fade-up" data-aos-delay={aosDelay} data-aos-duration={aosDuration}>
 					<img src={priceCompresionImg} alt="" height="300px" />
@@ -367,7 +385,7 @@ function WorksPage() {
 					</div>
 				</div>
 				<br />
-			</Container>
+			</Container> */}
 
 			<Container
 				containerTitle="Some Other Projects"

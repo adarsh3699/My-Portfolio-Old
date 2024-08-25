@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useCallback } from 'react';
 
-// import Modal from '../modal/Modal';
 import { Modal } from 'react-responsive-modal';
 import { Slide } from 'react-slideshow-image';
+
 import 'react-slideshow-image/dist/styles.css';
 import 'react-responsive-modal/styles.css';
 import './projectGrid.css';
@@ -78,6 +78,8 @@ function ProjectGrid({ projectList }) {
 }
 
 function RenderModal({ isModalOpen, setIsModalOpen, handleModal, modalData }) {
+	console.log(modalData);
+
 	return (
 		<Modal
 			open={isModalOpen}
@@ -108,6 +110,20 @@ function RenderModal({ isModalOpen, setIsModalOpen, handleModal, modalData }) {
 						{each}
 					</div>
 				))}
+
+				<div id="subTitle">Technologies Used</div>
+				<div className="technologies">
+					{modalData?.techStack?.map((each, index) => (
+						<div key={index}>
+							<img
+								src={each.logo}
+								className={each?.whiteBg ? 'technologieImgWhite' : 'technologieImg'}
+								alt=""
+							/>
+							<div>{each.name}</div>
+						</div>
+					))}
+				</div>
 			</div>
 		</Modal>
 	);
