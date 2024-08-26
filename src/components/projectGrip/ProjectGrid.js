@@ -48,6 +48,11 @@ function ProjectGrid({ projectList }) {
 		[isModalOpen]
 	);
 
+	const opneProjectUrl = useCallback((url) => {
+		window.open(url, '_blank');
+		return true;
+	}, []);
+
 	return (
 		<>
 			<div id="projectGrid">
@@ -60,7 +65,12 @@ function ProjectGrid({ projectList }) {
 					>
 						<div className="projectContent">
 							<div className="projectTitle">{project?.name}</div>
-							<img src={LinkLogo} height="20px" alt="" />
+							<img
+								src={LinkLogo}
+								height="20px"
+								onClick={() => opneProjectUrl(project?.url) & handleModal()}
+								alt=""
+							/>
 						</div>
 					</div>
 				))}
@@ -78,8 +88,6 @@ function ProjectGrid({ projectList }) {
 }
 
 function RenderModal({ isModalOpen, setIsModalOpen, handleModal, modalData }) {
-	console.log(modalData);
-
 	return (
 		<Modal
 			open={isModalOpen}
@@ -91,7 +99,9 @@ function RenderModal({ isModalOpen, setIsModalOpen, handleModal, modalData }) {
 			center
 		>
 			<div className="modal-bar">
-				<span>{modalData?.name?.toUpperCase()}</span>
+				<a href={modalData.url} className="modalTile" target="_blank" rel="noreferrer">
+					{modalData?.name?.toUpperCase()}
+				</a>
 				<span className="closeBtn" onClick={handleModal}>
 					&times;
 				</span>

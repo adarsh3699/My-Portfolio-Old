@@ -98,6 +98,10 @@
 	scrollbar-width: none; /* Firefox */
 }
 
+.modalTile:hover {
+	text-decoration: underline;
+}
+
 .closeBtn {
 	cursor: pointer;
 	padding: 0 10px;

@@ -104,6 +104,7 @@ const projectList = [
 			{ name: 'Firebase', logo: firebaseLogo },
 			{ name: 'Material UI', logo: muiLogo },
 		],
+		url: `https://notes${process.env.REACT_APP_MY_BASE_URL || 'bhemu.me'}`,
 	},
 	{
 		name: 'Price Comparison Web',
@@ -138,6 +139,7 @@ const projectList = [
 			{ name: 'Node.Js', logo: nodeJs, whiteBg: true },
 			{ name: 'Express', logo: express, whiteBg: true },
 		],
+		url: `https://comparison${process.env.REACT_APP_MY_BASE_URL || 'bhemu.me'}`,
 	},
 	{
 		name: 'SharpLearn',
@@ -166,6 +168,7 @@ const projectList = [
 			{ name: 'Firebase', logo: firebaseLogo },
 			{ name: 'Material UI', logo: muiLogo },
 		],
+		url: 'https://sharplearn.vercel.app',
 	},
 ];
 
