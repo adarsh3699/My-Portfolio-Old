@@ -33,9 +33,8 @@ function WaveCard({ slideList, onSlideClick }) {
 						className={`item ${slide.grayOut && 'grayOut'}`}
 						tabIndex="0"
 						style={{ backgroundImage: `url(${slide.url})` }}
-						onClick={() => onSlideClick(slide.navigateTo)}
 					>
-						<div>{slide.caption}</div>
+						<div onClick={() => onSlideClick(slide.navigateTo)}>{slide.caption}</div>
 					</div>
 				))}
 			</div>

@@ -40,9 +40,11 @@
 .item div {
 	background-color: white;
 	padding: 5px;
-	border-radius: 5px;
+	border-radius: 5px 5px 0 0;
 	white-space: nowrap;
 	overflow: hidden;
+	/* border: 1px #2f3032 solid; */
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
 	text-overflow: ellipsis;
 }
 
@@ -65,6 +67,7 @@
 	width: 30vw;
 	z-index: 100;
 	margin: 0 0.45vw;
+	border: 1px #2f3032 solid;
 }
 
 /*Right*/
@@ -112,4 +115,16 @@
 
 #WaveCard .item.highlighted {
 	filter: unset;
+}
+
+@media screen and (max-width: 1000px) {
+	.items .item:hover {
+		width: 35vw;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.items .item:hover {
+		width: 50vw;
+	}
 }

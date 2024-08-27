@@ -101,7 +101,9 @@ function RenderModal({ isModalOpen, setIsModalOpen, handleModal, modalData }) {
 			<div className="modal-bar">
 				<a href={modalData.url} className="modalTile" target="_blank" rel="noreferrer">
 					{modalData?.name?.toUpperCase()}
+					<img src={LinkLogo} height="20px" alt="" />
 				</a>
+
 				<span className="closeBtn" onClick={handleModal}>
 					&times;
 				</span>

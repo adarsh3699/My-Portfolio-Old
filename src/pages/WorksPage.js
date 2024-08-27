@@ -19,11 +19,14 @@ import NotesLoginIMG from '../img/projects/notesLogin.png';
 import NoteSettingsImg from '../img/projects/noteSetting.png';
 import NotesMenuIMG from '../img/projects/notesMenu.png';
 import ComparisonBanner from '../img/banner/comparison.png';
+import ComparisonHome from '../img/projects/comparisonHome.png';
 import SharplearnBanner from '../img/banner/sharplearn.png';
+import SharplearnAllCourse from '../img/projects/SharpLearn_AllCourse.png';
+import SharplearnCourse from '../img/projects/SharpLearn_Course.png';
+import SharplearnCart from '../img/projects/SharpLearn_Cart.png';
+import SharplearnLogin from '../img/projects/SharpLearn_Login.png';
 
 import notesImg1 from '../img/projects/user-home.jpg';
-// import priceCompresionImg from '../img/projects/priceComparisonPic.png';
-// import sharplearnPic from '../img/projects/sharplearnPic.png';
 import iitpLogo from '../img/projects/iitp-logo.png';
 import auricTouchLogo from '../img/projects/aurictouch_logo.png';
 import beAwizLogo from '../img/projects/beawiz_logo.png';
@@ -94,6 +97,17 @@ const projectList = [
 				Now you can <b>share notes</b> with others as an editor or viewer by just sharing the link to that note.
 			</>,
 			<>
+				Screenshot and Demonstration Video{' '}
+				<a
+					href="https://drive.google.com/drive/folders/1KsQkL1glnk2edPez8dhEFoGFBmNyAoEi?usp=drive_link"
+					target="_blank"
+					rel="noreferrer"
+					className="clcikHere"
+				>
+					Click Here.
+				</a>
+			</>,
+			<>
 				<b>Demo Account:-</b> <br />
 				<b>Email: </b>demo@bhemu.com <b>Pass: </b>demo1234
 			</>,
@@ -108,7 +122,7 @@ const projectList = [
 	},
 	{
 		name: 'Price Comparison Web',
-		img: [ComparisonBanner],
+		img: [ComparisonBanner, ComparisonHome],
 		description: [
 			<>
 				Price comparison tools help you find the best deal across Amazon, Flipkart, Myntra, Paytm, and other
@@ -121,7 +135,7 @@ const projectList = [
 			<>Make informed purchasing decisions with comprehensive product insights.</>,
 			<>This tool is only for educational purposes and not for any commercial use.</>,
 			<>
-				To find screenshot of the website and demo video{' '}
+				To find screenshot of the website and Demonstration video{' '}
 				<a
 					href="https://drive.google.com/drive/folders/1tr1z0BmaE2ejicSXNdXK_bk8kDnMCvxq?usp=drive_link"
 					id="noteLink"
@@ -143,14 +157,14 @@ const projectList = [
 	},
 	{
 		name: 'SharpLearn',
-		img: [SharplearnBanner],
+		img: [SharplearnLogin, SharplearnAllCourse, SharplearnCourse, SharplearnCart],
 		description: [
 			<>A E_Commerce website of courses where you can buy courses.</>,
 			<>All working features like add to cart, buy now, course details, and many more.</>,
 			<>Double portal system for admin and user, where admin can add, delete, and update their courses.</>,
 			<>This tool is only for educational purposes and not for any commercial use.</>,
 			<>
-				To find screenshot of the website and demo video{' '}
+				To find screenshot of the website and Demonstration video{' '}
 				<a
 					href="https://drive.google.com/drive/folders/1KKfxOQVQRkos6li6YCkSXo96H69YV_p1?usp=drive_link"
 					id="noteLink"
@@ -183,7 +197,7 @@ function WorksPage() {
 	}, []);
 
 	return (
-		<div className="background">
+		<div className="background" id="worksPage">
 			<WaveCard slideList={slideList} onSlideClick={onSlideClick} />
 
 			<div id="myProjects">
@@ -191,204 +205,6 @@ function WorksPage() {
 			</div>
 
 			<ProjectGrip projectList={projectList} />
-
-			<Container containerTitle="Bhemu Notes" sx={{ marginTop: '0' }}>
-				<div className="img_text" data-aos="fade-up" data-aos-delay={aosDelay} data-aos-duration={aosDuration}>
-					<img src={notesImg1} alt="" height="300px" />
-
-					<div className="pointSection">
-						<div className="aboutPoints">
-							This is an advance note app called <b>Bhemu Notes</b>.
-						</div>
-						<div className="aboutPoints">
-							This Notes app facilitates a <b>feature-rich text editor</b> for more creative notes.
-						</div>
-						<div className="aboutPoints">
-							User data and their notes are stored in <b>encrypted</b> form in the database.
-						</div>
-						<div className="aboutPoints">
-							Feature like group notes in a <b>folder</b> to keep them organized.
-						</div>
-						<div className="aboutPoints">
-							Feature like exporting a note as <b>PDF</b>.
-						</div>
-						<div className="aboutPoints">
-							Now you can <b>share notes</b> with others as an editor or viewer by just sharing the link
-							to that note.
-						</div>
-						<div className="aboutPoints">
-							<b>Demo Account:-</b> <br />
-							<b>Email: </b>demo@bhemu.com <b>Pass: </b>demo1234
-						</div>
-						<div className="bottons">
-							<Button
-								href={`https://notes${process.env.REACT_APP_MY_BASE_URL || 'bhemu.me'}`}
-								target="_blank"
-								title="Live Link"
-								color="green"
-							/>
-
-							<Button
-								href="https://drive.google.com/drive/folders/1KsQkL1glnk2edPez8dhEFoGFBmNyAoEi?usp=drive_link"
-								title="Demo Video"
-								color="sky"
-								target="_blank"
-							/>
-						</div>
-					</div>
-				</div>
-				<div id="subTitle">Technologies Used</div>
-				<div className="technologies">
-					<div>
-						<img src={react} className="technologieImg" alt="" />
-						<div>React</div>
-					</div>
-					<div>
-						<img src={javaScript} className="technologieImg" alt="" />
-						<div>JavaScript</div>
-					</div>
-					<div>
-						<img src={firebaseLogo} className="technologieImgWhite" alt="" />
-						<div>Firebase</div>
-					</div>
-					<div>
-						<img src={muiLogo} className="technologieImgWhite" alt="" />
-						<div>Material UI</div>
-					</div>
-				</div>
-			</Container>
-			{/* 
-			<Container containerTitle="Price Comparison Website">
-				<div className="img_text" data-aos="fade-up" data-aos-delay={aosDelay} data-aos-duration={aosDuration}>
-					<img src={priceCompresionImg} alt="" height="300px" />
-
-					<div className="pointSection">
-						<div className="aboutPoints">
-							Price comparison tools help you find the best deal across Amazon, Flipkart, Myntra, Paytm,
-							and other similar platforms.
-						</div>
-						<div className="aboutPoints">
-							Price comparison tool based on scraping data from multiple e-commerce shopping websites and
-							then comparing these prices to help users find the best deal for a specific product.
-						</div>
-						<div className="aboutPoints">
-							Make informed purchasing decisions with comprehensive product insights.
-						</div>
-						<div className="aboutPoints">
-							This tool is only for educational purposes and not for any commercial use.
-						</div>
-						<div className="aboutPoints">
-							To find screenshot of the website and demo video
-							<a
-								href="https://drive.google.com/drive/folders/1tr1z0BmaE2ejicSXNdXK_bk8kDnMCvxq?usp=drive_link"
-								id="noteLink"
-								target="_blank"
-								rel="noreferrer"
-								className="clcikHere"
-							>
-								Click here.
-							</a>
-						</div>
-
-						<div className="bottons">
-							<Button
-								href={`https://comparison${process.env.REACT_APP_MY_BASE_URL || 'bhemu.me'}`}
-								title="Live Link"
-								color="green"
-								target="_blank"
-							/>
-						</div>
-					</div>
-				</div>
-				<div id="subTitle">Technologies Used</div>
-				<div className="technologies">
-					<div>
-						<img src={react} className="technologieImg" alt="" />
-						<div>React</div>
-					</div>
-					<div>
-						<img src={javaScript} className="technologieImg" alt="" />
-						<div>JavaScript</div>
-					</div>
-					<div>
-						<img src={nodeJs} className="technologieImgWhite" alt="" />
-						<div>Node.Js</div>
-					</div>
-					<div>
-						<img src={express} className="technologieImgWhite" alt="" />
-						<div>Express</div>
-					</div>
-				</div>
-				<br />
-			</Container>
-
-			<Container containerTitle="SharpLearn">
-				<div className="img_text" data-aos="fade-up" data-aos-delay={aosDelay} data-aos-duration={aosDuration}>
-					<img src={sharplearnPic} alt="" height="300px" />
-
-					<div className="pointSection">
-						<div className="aboutPoints">A E_Commerce website of courses where you can buy courses.</div>
-						<div className="aboutPoints">
-							All working features like add to cart, buy now, course details, and many more.
-						</div>
-						<div className="aboutPoints">
-							Double portal system for admin and user, where admin can add, delete, and update their
-							courses.
-						</div>
-						<div className="aboutPoints">
-							This tool is only for educational purposes and not for any commercial use.
-						</div>
-						<div className="aboutPoints">
-							To find screenshot of the website and demo video
-							<a
-								href="https://drive.google.com/drive/folders/1KKfxOQVQRkos6li6YCkSXo96H69YV_p1?usp=drive_link"
-								id="noteLink"
-								target="_blank"
-								rel="noreferrer"
-								className="clcikHere"
-							>
-								Click here.
-							</a>
-						</div>
-
-						<div className="bottons">
-							<Button
-								href="https://sharplearn.vercel.app"
-								title="Live Link"
-								color="green"
-								target="_blank"
-							/>
-
-							<Button
-								href="https://sharplearn-admin.vercel.app/"
-								title="Admin Link"
-								color="sky"
-								target="_blank"
-							/>
-						</div>
-					</div>
-				</div>
-				<div id="subTitle">Technologies Used</div>
-				<div className="technologies">
-					<div>
-						<img src={react} className="technologieImg" alt="" />
-						<div>React</div>
-					</div>
-					<div>
-						<img src={javaScript} className="technologieImg" alt="" />
-						<div>JavaScript</div>
-					</div>
-					<div>
-						<img src={firebaseLogo} className="technologieImgWhite" alt="" />
-						<div>Firebase</div>
-					</div>
-					<div>
-						<img src={muiLogo} className="technologieImgWhite" alt="" />
-						<div>Material UI</div>
-					</div>
-				</div>
-				<br />
-			</Container> */}
 
 			<Container
 				containerTitle="Some Other Projects"
