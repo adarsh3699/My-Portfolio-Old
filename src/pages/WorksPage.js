@@ -26,7 +26,6 @@ import SharplearnCourse from '../img/projects/SharpLearn_Course.png';
 import SharplearnCart from '../img/projects/SharpLearn_Cart.png';
 import SharplearnLogin from '../img/projects/SharpLearn_Login.png';
 
-import notesImg1 from '../img/projects/user-home.jpg';
 import iitpLogo from '../img/projects/iitp-logo.png';
 import auricTouchLogo from '../img/projects/aurictouch_logo.png';
 import beAwizLogo from '../img/projects/beawiz_logo.png';

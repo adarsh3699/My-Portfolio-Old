@@ -1,6 +1,6 @@
 {
 	"name": "my-web-new",
-	"version": "1.5.1",
+	"version": "2.0.1",
 	"private": true,
 	"dependencies": {
 		"aos": "^2.3.4",
