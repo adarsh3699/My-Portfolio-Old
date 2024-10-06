@@ -12,7 +12,6 @@ import LinkLogo from '../../img/linkLogo.svg';
 function ProjectGrid({ projectList }) {
 	const [isModalOpen, setIsModalOpen] = useState(false);
 	const [modalData, setModalData] = useState({});
-	console.log(modalData);
 
 	useEffect(() => {
 		const projects = document.querySelectorAll('.project');
@@ -128,6 +127,7 @@ function RenderModal({ isModalOpen, setIsModalOpen, handleModal, modalData }) {
 					{modalData?.techStack?.map((each, index) => (
 						<div key={index}>
 							<img
+								loading="lazy"
 								src={each.logo}
 								className={each?.whiteBg ? 'technologieImgWhite' : 'technologieImg'}
 								alt=""

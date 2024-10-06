@@ -25,6 +25,12 @@ import SharplearnAllCourse from '../img/projects/SharpLearn_AllCourse.png';
 import SharplearnCourse from '../img/projects/SharpLearn_Course.png';
 import SharplearnCart from '../img/projects/SharpLearn_Cart.png';
 import SharplearnLogin from '../img/projects/SharpLearn_Login.png';
+import basicCalc from '../img/projects/bhemuCalc/basicCalc.png';
+import sdtCalc from '../img/projects/bhemuCalc/sdtCalc.png';
+import detCalc from '../img/projects/bhemuCalc/detCalc.png';
+import primeGen from '../img/projects/bhemuCalc/primeGen.png';
+import primeChecker from '../img/projects/bhemuCalc/primeChecker.png';
+import numCoverter from '../img/projects/bhemuCalc/numCoverter.png';
 
 import iitpLogo from '../img/projects/iitp-logo.png';
 import auricTouchLogo from '../img/projects/aurictouch_logo.png';
@@ -61,6 +67,7 @@ const slideList = [
 	{ url: BhemuNotesBanner, caption: 'Bhemu Notes', grayOut: true },
 	{ url: ComparisonBanner, caption: 'Price Comparison', grayOut: true },
 	{ url: SharplearnBanner, caption: 'SharpLearn', grayOut: true },
+	{ url: basicCalc, caption: 'Bhemu Calculator', grayOut: true },
 	{
 		url: InternshipBanner,
 		caption: 'Internships',
@@ -182,6 +189,44 @@ const projectList = [
 			{ name: 'Material UI', logo: muiLogo },
 		],
 		url: 'https://sharplearn.vercel.app',
+	},
+	{
+		name: 'Bhemu Calculator',
+		img: [basicCalc, detCalc, sdtCalc, primeGen, primeChecker, numCoverter],
+		description: [
+			<>
+				It supports all essential arithmetic functions and <b>history tracking</b> for previous calculations.
+			</>,
+			<>
+				A specialized tool to calculate the <b>determinant</b> of any square matrix, providing quick results for
+				users working with matrices in linear algebra.
+			</>,
+			<>
+				Bhemu calculator offers a <b>Number Converter</b> that easily converts numbers between various numeral
+				systems (binary, decimal, hexadecimal, etc.)
+			</>,
+			<>
+				<b>With a clean,modern UI,</b> Bhemu Calculator provides an intuitive and smooth user experience,
+				ensuring accessibility for both general and advanced users.
+			</>,
+			<>
+				To find of <b>Demonstration video</b> of the Bhemu Calculator Web App {' > '}
+				<a
+					href="https://youtu.be/Z-2RT_VU9Z8?si=ZuoevL3GWY_HA9g-"
+					target="_blank"
+					rel="noreferrer"
+					className="clcikHere"
+				>
+					Click Here.
+				</a>
+			</>,
+		],
+		techStack: [
+			{ name: 'React', logo: react },
+			{ name: 'JavaScript', logo: javaScript },
+			{ name: 'CSS', logo: css },
+		],
+		url: `https://calc${process.env.REACT_APP_MY_BASE_URL || 'bhemu.me'}`,
 	},
 ];
 
