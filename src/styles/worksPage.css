@@ -195,4 +195,16 @@
 		height: 28px;
 		padding: 4px;
 	}
+
+	.DesignsBased {
+		grid-template-columns: repeat(auto-fit, minmax(calc(50% - 10px), 1fr));
+	}
+
+	.accordionTitle {
+		font-size: 18px;
+	}
+
+	.DesignsBased .button {
+		font-size: 15px;
+	}
 }
