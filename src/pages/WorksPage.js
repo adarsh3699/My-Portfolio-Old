@@ -119,7 +119,7 @@ const projectList = [
 			{ name: 'Node.Js', logo: nodeJs, whiteBg: true },
 			{ name: 'Express', logo: express, whiteBg: true },
 		],
-		url: `https://comparison${process.env.REACT_APP_MY_BASE_URL || 'bhemu.me'}`,
+		url: `https://niraksh${process.env.REACT_APP_MY_BASE_URL_2 || 'bhemu.me'}`,
 	},
 	{
 		name: 'Bhemu Notes',
