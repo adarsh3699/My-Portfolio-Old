@@ -31,6 +31,13 @@ import detCalc from '../img/projects/bhemuCalc/detCalc.png';
 import primeGen from '../img/projects/bhemuCalc/primeGen.png';
 import primeChecker from '../img/projects/bhemuCalc/primeChecker.png';
 import numCoverter from '../img/projects/bhemuCalc/numCoverter.png';
+import Niraksh_Home from '../img/projects/nirakshGuardian/homepage.png';
+import medicine_details from '../img/projects/nirakshGuardian/medicine_detail.png';
+import prescription_explainer from '../img/projects/nirakshGuardian/prescription_explainer.png';
+import doctor_suggest from '../img/projects/nirakshGuardian/doctor_suggest.png';
+import assistant_chat from '../img/projects/nirakshGuardian/assistant_chat.png';
+import drug_drug_interaction from '../img/projects/nirakshGuardian/drug_drug_interaction.png';
+
 
 import iitpLogo from '../img/projects/iitp-logo.png';
 import auricTouchLogo from '../img/projects/aurictouch_logo.png';
@@ -80,6 +87,40 @@ const slideList = [
 ];
 
 const projectList = [
+	{
+		name: 'Niraksh Guardian',
+		img: [Niraksh_Home, medicine_details, prescription_explainer, doctor_suggest, assistant_chat, drug_drug_interaction],
+		description: [
+			<>
+				<b>Doctor Suggestion:</b> Uses AI to recommend the best doctors based on the patient's symptoms or disease.
+			</>,
+			<>
+				<b>Medicine Search:</b> Enables users to search for medicines and retrieve details such as dosage, uses, and side effects.
+
+			</>,
+			<><b>Prescription Explainer:</b> Helps users understand complex medical prescriptions by breaking them down into simpler terms.</>,
+			<><b>Drug-Drug Interaction Checker:</b> Warns users about potential harmful interactions between different medicines.</>,
+			<>
+				To find screenshot of the website and Demonstration video{' '}
+				<a
+					href="https://drive.google.com/drive/folders/1Fm09LLNd4dpkwiq_v3KdWQv0vPOTtV-k?usp=drive_link"
+					id="noteLink"
+					target="_blank"
+					rel="noreferrer"
+					className="clcikHere"
+				>
+					Click here.
+				</a>
+			</>,
+		],
+		techStack: [
+			{ name: 'React', logo: react },
+			{ name: 'JavaScript', logo: javaScript },
+			{ name: 'Node.Js', logo: nodeJs, whiteBg: true },
+			{ name: 'Express', logo: express, whiteBg: true },
+		],
+		url: `https://comparison${process.env.REACT_APP_MY_BASE_URL || 'bhemu.me'}`,
+	},
 	{
 		name: 'Bhemu Notes',
 		img: [BhemuNotesBanner, NotesLoginIMG, NoteSettingsImg, NotesMenuIMG],
